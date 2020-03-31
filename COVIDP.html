@@ -11,7 +11,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-      <script src="//cdn.jsdelivr.net/npm/jstat@latest/dist/jstat.min.js></script>
+      <script src="statistics.min.js" type="text/javascript"></script>
 
 
  		<!--<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script> -->
@@ -43,7 +43,9 @@
   let curr_month="3"
   let days=0;
   let index=0;
+  let range=0;
   let type = "Confirmed"
+  let selected_day =0;
   const map = new d3plus.Geomap()
   .config(config_new)
   .data(itemList[0])
@@ -58,24 +60,27 @@
     $('#days').on('click', 'a.days', function() {
         click_day = parseInt($(this).data( "day" ));
         const primary_var = $("input[name='my_options']:checked").val();
-        const test_arr =[0,10];
+        const test_arr =[0,range];
+        selected_day = click_day;
          map
           .data(itemList[click_day])
-           .colorScaleConfig({midpoint: 10})
-           .axisConfig({
-             domain:{test_arr},
-             barConfig: {
-               stroke: "white"
-             },
-             shapeConfig: {
-               labelConfig: {
-                 fontColor: "white"
-               },
-               stroke: "#979797"
-             }
-           })
+           .colorScaleConfig({axisConfig: {
+               domain: test_arr
+             }})
           .render();
     });
+
+
+   var handle = $( "#custom-handle" );
+   $( "#slider" ).slider({
+     create: function() {
+       handle.text( $( this ).slider( "value" ) );
+     },
+     slide: function( event, ui ) {
+       range=ui.value;
+       handle.text( ui.value );
+     }
+   });
 
 
     $( "#slider-range" ).slider({
@@ -104,19 +109,8 @@
 
 
  $("#test").button().click(function(){
-     const map = new d3plus.Geomap()
-  .config(config_new)
-  .data(itemList[0])
-  .colorScale("Confirmed")
-  .render();
-  
-setTimeout(() => {
-  map
-    .data(itemList[4])
-    .colorScale("Death")
-    .render();
-}, 000);
 
+   console.log(corr_test(selected_day));
 
 
 
@@ -151,57 +145,12 @@ setTimeout(() => {
  ////test
 
 
-const measure1 = "Adults Who Haven't Seen a Doctor in the Past 12 Months Due to Cost";
-
-const data1 = [
-  {
-  "ID State": "42",
-  "State": "Pennsylvania",
-  "Year": "2016",
-  "Adults Who Haven't Seen a Doctor in the Past 12 Months Due to Cost": 11.100000381469727
-  },
-  {
-  "ID State": "56",
-  "State": "Wyoming",
-  "Year": "2016",
-  "Adults Who Haven't Seen a Doctor in the Past 12 Months Due to Cost": 14.399999618530273
-  },
-  {
-  "ID State": "02",
-  "State": "Alaska",
-  "Year": "2016",
-  "Adults Who Haven't Seen a Doctor in the Past 12 Months Due to Cost": 13
-  }
-];
-
-const measure2 = "30-Day Hospital Readmission Rate Among Medicare Patients";
-
-const data2 = [
-  {
-  "ID State": "29",
-  "State": "Missouri",
-  "Year": "2015",
-  "30-Day Hospital Readmission Rate Among Medicare Patients": 17
-  },
-  {
-  "ID State": "01",
-  "State": "Alabama",
-  "Year": "2015",
-  "30-Day Hospital Readmission Rate Among Medicare Patients": 16.399999618530273
-  },
-  {
-  "ID State": "04",
-  "State": "Arizona",
-  "Year": "2015",
-  "30-Day Hospital Readmission Rate Among Medicare Patients": 15.300000190734863
-  }
-];
-
-
-
 const config = {
   groupBy: "ID State",
-  label: d => d.State,
+  label: function(d) {
+      const text = d.County + "</br>Confirmed: " + d.Confirmed + "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death + "<BR/>Population: "+ d.TotalPop + "</br>Gini Index: " + d.IncomeIneq + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>UnInsured 35to64 10k: " + d.insured35to64_per10k ;
+      return "" + text;
+  },
   ocean: "transparent",
   projection: "geoAlbersUsa",
   topojson: "https://d3plus.org/topojson/states.json",
@@ -209,17 +158,47 @@ const config = {
   type: "Geomap"
 };
 
+ const config_point = ({
+    groupBy: "id",
+    label: function(d) {
+      return d.County_Name.toString() + ", id:" +d.id.toString() + "::"+ d.State_Name.toString() + "</br>" + " Deaths:" + d.Death + " Confirmed:" + d.Confirmed;
+    },
+    point: function(d) {
+      return [d.Longitude, d.Latitude];
+    },
+    pointSize: function(d) {
+      if(d){
+        if (d.Death>20){
+          ret_val= 20;
+        }
+        else{
+          ret_val= d.Death;
+        }
+
+      }
+      else{
+        ret_val= 0;
+      }
+      return ret_val;
+    },
+    pointSizeMin: 1,
+    pointSizeMax: 10
+  })
+
 
 
 /////end jquery
 /////end jquery
 
-function corr_test(){
-  let income = objArray.map(a => a.IncomeIneq);
-  let Confirmed  = objArray.map(a => a.Confirmed);
-  var seq = jStat.seq(income);
-  var seq2 = jStat.seq(Confirmed);
-  return jStat.corrcoeff( seq, seq2 );
+function corr_test(the_day){
+  //let income = itemList[the_day].map(a => a.IncomeIneq);
+    var bodyVars = {
+        Confirmed: 'metric',
+        Death: 'metric'
+    };
+    var stats = new Statistics(itemList[the_day], bodyVars);
+    var r = stats.correlationCoefficient('Confirmed', 'Death');
+    return r
 
 }
 
@@ -391,6 +370,10 @@ function get_data(day_num){
           
 
         </div>
+      <h5>Scale Max</h5>
+      <div id="slider">
+        <div id="custom-handle" class="ui-slider-handle"></div>
+      </div>
     </div>
     <div class="col-sm-0 col-md-6 col-lg-9" style="background-color:pink;">
       <div id="container">
