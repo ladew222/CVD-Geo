@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<head>
+		<title>Bootstrap Example</title>
+		<meta charset="utf-8">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/jstat@latest/dist/jstat.min.js></script>
+
+
+ 		<!--<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script> -->
+ 		<!--<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css" /> -->
+		<link rel="stylesheet" href="main.css">
+
+	</head>
+	<title></title>
+</head>
+
+<body>
+<script src="http://d3plus.org/js/d3.min.js"></script>
+<!-- D3.js -->
+<script src="https://d3plus.org/js/d3plus.v2.0.0-alpha.25.full.min.js"></script>
+
+<script type="text/javascript">
+
+  const config_new = {
+  groupBy: "id",
+  label: d => d.id,
+  ocean: "transparent",
+  projection: "geoAlbersUsa",
+  topojson: "https://d3plus.org/topojson/counties.json",
+  type: "Geomap"
+};
+
+  let itemList=[];
+  let curr_day="14"
+  let curr_month="3"
+  let days=0;
+  let index=0;
+  let type = "Confirmed"
+  const map = new d3plus.Geomap()
+  .config(config_new)
+  .data(itemList[0])
+  .colorScale("Confirmed");
+
+
+ $(document).ready(function(){
+    map
+    .select('#viz')
+    .render();
+
+    $('#days').on('click', 'a.days', function() {
+        click_day = parseInt($(this).data( "day" ));
+        const primary_var = $("input[name='my_options']:checked").val();  
+         map
+          .data(itemList[click_day])
+          .colorScale("Confirmed")
+          .render();
+    });
+
+
+    $( "#slider-range" ).slider({
+      range: true,
+      min: new Date('2020.03.14').getTime() / 1000,
+      max: new Date('2020.03.30').getTime() / 1000,
+      step: 86400,
+      values: [ new Date('2020.03.14').getTime() / 1000, new Date('2020.03.14').getTime() / 1000 ],
+      slide: function( event, ui ) {
+        const start_date = new Date(ui.values[ 0 ] *1000);
+        const end_date= new Date(ui.values[ 1 ] *1000);
+        const start_month = start_date.getUTCMonth() + 1; //months from 1-12
+        const start_day = start_date.getUTCDate(); + 1; //months from 1-12
+        
+        curr_day = start_day; 
+        curr_month = start_month;
+        const diffTime = Math.abs(start_date - end_date);
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+        days= diffDays;
+         $( "#amount" ).val( (new Date(ui.values[ 0 ] *1000).toDateString() ) + " - " + end_date.toDateString() );
+      } 
+    });
+
+    $( "#amount" ).val( (new Date($( "#slider-range" ).slider( "values", 0 )*1000).toDateString()) +
+      " - " + (new Date($( "#slider-range" ).slider( "values", 1 )*1000)).toDateString());
+
+
+ $("#test").button().click(function(){
+     const map = new d3plus.Geomap()
+  .config(config_new)
+  .data(itemList[0])
+  .colorScale("Confirmed")
+  .render();
+  
+setTimeout(() => {
+  map
+    .data(itemList[4])
+    .colorScale("Death")
+    .render();
+}, 000);
+
+
+
+
+  });
+
+        //    button click
+    $("#btnSubmit").button().click(function(){
+      //$('#viz').empty();
+        if(days==0){
+          map_loop();
+        }   //data-last-value="43"
+        else{
+          for (i = 0; i < days; i++) {
+            get_data(i);
+            day_now = parseInt(curr_day)+i;
+           $("#days").append("<a class='days' data-day='" + i +  "'  href='#'>"+ curr_month + "/" + day_now +  "</a></br>");
+          }
+        }
+        
+    });  
+
+    $('#my_radio_box').change(function(){
+        type= $("input[name='my_options']:checked").val();        
+
+    });
+
+ });
+
+
+
+
+ ////test
+
+
+const measure1 = "Adults Who Haven't Seen a Doctor in the Past 12 Months Due to Cost";
+
+const data1 = [
+  {
+  "ID State": "42",
+  "State": "Pennsylvania",
+  "Year": "2016",
+  "Adults Who Haven't Seen a Doctor in the Past 12 Months Due to Cost": 11.100000381469727
+  },
+  {
+  "ID State": "56",
+  "State": "Wyoming",
+  "Year": "2016",
+  "Adults Who Haven't Seen a Doctor in the Past 12 Months Due to Cost": 14.399999618530273
+  },
+  {
+  "ID State": "02",
+  "State": "Alaska",
+  "Year": "2016",
+  "Adults Who Haven't Seen a Doctor in the Past 12 Months Due to Cost": 13
+  }
+];
+
+const measure2 = "30-Day Hospital Readmission Rate Among Medicare Patients";
+
+const data2 = [
+  {
+  "ID State": "29",
+  "State": "Missouri",
+  "Year": "2015",
+  "30-Day Hospital Readmission Rate Among Medicare Patients": 17
+  },
+  {
+  "ID State": "01",
+  "State": "Alabama",
+  "Year": "2015",
+  "30-Day Hospital Readmission Rate Among Medicare Patients": 16.399999618530273
+  },
+  {
+  "ID State": "04",
+  "State": "Arizona",
+  "Year": "2015",
+  "30-Day Hospital Readmission Rate Among Medicare Patients": 15.300000190734863
+  }
+];
+
+
+
+const config = {
+  groupBy: "ID State",
+  label: d => d.State,
+  ocean: "transparent",
+  projection: "geoAlbersUsa",
+  topojson: "https://d3plus.org/topojson/states.json",
+  /*time: d => d.Year || d["End Year"],*/
+  type: "Geomap"
+};
+
+
+
+/////end jquery
+/////end jquery
+
+function corr_test(){
+  let income = objArray.map(a => a.IncomeIneq);
+  let Confirmed  = objArray.map(a => a.Confirmed);
+  var seq = jStat.seq(income);
+  var seq2 = jStat.seq(Confirmed);
+  return jStat.corrcoeff( seq, seq2 );
+
+}
+
+
+
+function render_points(selector,loc){
+	 map
+			.config({
+				data: itemList,
+				groupBy: "id",
+				colorScale: selector,
+				label: function(d) {
+					 //console.log(d.Death == null ?  'fallBackValue' : d.Death.toString());
+					 //deaths =  d.Death == null ?  'fallBackValue' : d.Death.toString();
+					 return d.County_Name.toString() + ", id:" +d.id.toString() + "::"+ d.State_Name.toString() + "</br>" + " Deaths:" + d.Death + " Confirmed:" + d.Confirmed;
+				},
+				point: function(d) {
+					return [d.Longitude, d.Latitude];
+				},
+				pointSize: function(d) {
+					if(d){
+						if (d.Death>20){
+							ret_val= 20;
+						}
+						else{
+							ret_val= d.Death;
+						}
+					 	
+					}
+					else{
+					  ret_val= 0;
+					}
+					return ret_val;
+				},
+				pointSizeMin: 1,
+				pointSizeMax: 10
+			})
+			.render();
+}
+
+
+function render_pleth(selector,loc,states,num){
+ map
+		  .label(function(d) {
+		    var text = d.County + "</br>Confirmed: " + d.Confirmed + "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death + "<BR/>Population: "+ d.TotalPop + "</br>Gini Index: " + d.IncomeIneq + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>UnInsured 35to64 10k: " + d.insured35to64_per10k ;
+		    return "" + text;
+		  })
+		/*  .tooltipConfig({
+    		body: function(d) {
+		      return "Confirmed:" + d.Confirmed + "</br> Deaths:" + d.Death;;
+		    }
+		  })*/
+		  .config({
+		    data: itemList[num],
+		    fitFilter: function(d) {
+          const state = d.id.split('US')[1].substring(0, 2);
+          if(states>0){
+            return states.indexOf(state)>0;
+          }
+          else{
+            return ["02", "15", "43", "60", "66", "69", "72", "78"].indexOf(state)<0;
+          }
+          
+		    },
+		    colorScale: selector,
+		  /*  fitFilter: function(d) {
+		        return ["05000US20173","05000US41019", "05000US32003", "05000US12086", "05000US48029", "05000US33009","05000US53073"].indexOf(d.id) < 0;
+		    },*/
+		    topojson: "https://d3plus.org/topojson/counties.json"
+		  })
+		  .render();
+
+}
+function map_loop(){
+
+let counter = 0;
+
+const intervalId = setInterval(() => {
+  $("#header").html("<h3>" + curr_month + "/"+  parseInt(counter+ curr_day)  + "</h3>");
+  render_pleth(selected_value,"#viz",0,counter);
+  counter += 1;
+if (counter === itemList.length) {
+    console.log('Done');
+    clearInterval(intervalId);
+  }
+}, 7000);
+
+}
+
+
+function get_data(day_num){
+    itemList[day_num] = [];
+    //curr_day
+    d3.csv("county_fips_revised.csv", function(fipsData) {
+    let the_day = parseInt(curr_day)+day_num;
+    const formattedDay = ("0" + the_day).slice(-2);
+    const formattedMonth = ("0" + curr_month).slice(-2);
+    d3.csv("https://raw.githubusercontent.com/tomquisel/covid19-data/master/data/csv/" + "2020-" + formattedMonth + "-" + formattedDay + ".csv" , function(cvData) {
+      cvData.forEach(function(cvItem) {    ///new RegExp('/contact\\b', 'g').test(href)
+        //const regexp = new RegExp(cvItem.county_name, 'i');
+        const result = fipsData.filter(fipsItem => fipsItem.State== cvItem.State_Name  && new RegExp(cvItem.County_Name, 'i').test(fipsItem.County));
+        if (result[0]){
+          result[0].id = "05000US"+ result[0].fips;
+          //AsiaPop10k <- ((acs_Data$JWOE047/acs_Data$JWAE001)*10000)
+          Object.assign(result[0],cvItem);  
+          result[0].ConfirmedPer10K=Number((Math.round(((result[0].Confirmed/result[0].TotalPop)*10000) * 100) / 100).toFixed(3));
+          itemList[day_num].push(result[0]);
+        }
+        else{
+          console.log(cvItem.County_Name + " " + cvItem.State_Name + " Not Found");
+        }
+        console.log("done");
+         
+      });
+      //alert("done"+ + "2020-" + formattedMonth + "-" + formattedDay + ".csv")
+    });
+  });
+
+}
+
+
+
+
+
+
+
+</script>
+
+
+<div class="container">
+  <h1>Hello World!</h1>
+  <div class="row">
+  	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    
+    </div>
+    <div class="col-sm-3 col-md-6 col-lg-3" style="background-color:yellow;">
+      <div id="header"></div>
+
+      <p>
+      <label for="amount">Date range:</label>
+        <input type="text" id="amount" style="border: 0; color: #f6931f; font-weight: bold;" size="100"/>
+      </p>
+      <div id="slider-range"></div> 
+    </br>
+        <input id = "btnSubmit" type="submit" value="Get Data"/>
+        <input id = "test" type="submit" value="Test"/>
+      </br>
+      <form id="my_radio_box">
+        <div class="form-check">
+          <input class="form-check-input" name="my_options" type="radio" name="exampleRadios" id="exampleRadios1" value="Confirmed" checked>
+          <label class="form-check-label" for="exampleRadios1">
+            Confirmed
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" name="my_options" type="radio" name="exampleRadios" id="exampleRadios2" value="ConfirmedPer10K" >
+          <label class="form-check-label" for="exampleRadios2">
+            Confirmed per 10K
+          </label>
+        </div>
+        <div class="form-check disabled">
+          <input class="form-check-input" name="my_options" type="radio" name="exampleRadios" id="exampleRadios3" value="Death" >
+          <label class="form-check-label" for="exampleRadios3">
+            Fatalities
+          </label>
+        </div>
+      </form>
+        <div id="days">
+          
+
+        </div>
+    </div>
+    <div class="col-sm-0 col-md-6 col-lg-9" style="background-color:pink;">
+      <div id="container">
+    	 <div id="viz" style="height: 600px"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

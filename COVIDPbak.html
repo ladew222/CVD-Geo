@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<head>
+		<title>Bootstrap Example</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+ 		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+ 		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css" />
+		<link rel="stylesheet" href="main.css">
+
+	</head>
+	<title></title>
+</head>
+
+<body>
+<script src="http://d3plus.org/js/d3.min.js"></script>
+<!-- D3.js -->
+<script src="https://d3plus.org/js/d3plus.v2.0.0-alpha.25.full.min.js"></script>
+
+<script type="text/javascript">
+
+  $(function() {
+    $( "#slider-range" ).slider({
+      range: true,
+      min: new Date('2010.01.01').getTime() / 1000,
+      max: new Date('2014.01.01').getTime() / 1000,
+      step: 86400,
+      values: [ new Date('2013.01.01').getTime() / 1000, new Date('2013.02.01').getTime() / 1000 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( (new Date(ui.values[ 0 ] *1000).toDateString() ) + " - " + (new Date(ui.values[ 1 ] *1000)).toDateString() );
+      }
+    });
+    $( "#amount" ).val( (new Date($( "#slider-range" ).slider( "values", 0 )*1000).toDateString()) +
+      " - " + (new Date($( "#slider-range" ).slider( "values", 1 )*1000)).toDateString());
+  });
+
+/////end jquery
+/////end jquery
+
+
+
+
+
+function render_points(itemList,selector){
+	new d3plus.Geomap()
+			.config({
+				data: itemList,
+				groupBy: "id",
+				colorScale: selector,
+				label: function(d) {
+					 //console.log(d.Death == null ?  'fallBackValue' : d.Death.toString());
+					 //deaths =  d.Death == null ?  'fallBackValue' : d.Death.toString();
+					 return d.County_Name.toString() + ", id:" +d.id.toString() + "::"+ d.State_Name.toString() + "</br>" + " Deaths:" + d.Death + " Confirmed:" + d.Confirmed;
+				},
+				point: function(d) {
+					return [d.Longitude, d.Latitude];
+				},
+				pointSize: function(d) {
+					if(d){
+						if (d.Death>20){
+							ret_val= 20;
+						}
+						else{
+							ret_val= d.Death;
+						}
+					 	
+					}
+					else{
+					  ret_val= 0;
+					}
+					return ret_val;
+				},
+				pointSizeMin: 1,
+				pointSizeMax: 10
+			})
+			.select("#viz")
+			.render();
+}
+
+function render_pleth(itemList,selector){
+
+new d3plus.Geomap()
+		  .label(function(d) {
+		    var text =  "id:" + d.id.toString() + "::"+"Confirmed:" + d.Confirmed + "</br> Deaths:" + d.Death;
+		    return "" + text;
+		  })
+		/*  .tooltipConfig({
+    		body: function(d) {
+		      return "Confirmed:" + d.Confirmed + "</br> Deaths:" + d.Death;;
+		    }
+		  })*/
+		  .config({
+
+		    data: itemList,
+		    fitFilter: function(d) {
+		    	return d.id.split('US')[1].substring(0, 2)!='02' || d.id.split('US')[1].substring(0, 2)!='15';
+		    },
+		    colorScale: selector,
+		  /*  fitFilter: function(d) {
+		        return ["05000US20173","05000US41019", "05000US32003", "05000US12086", "05000US48029", "05000US33009","05000US53073"].indexOf(d.id) < 0;
+		    },*/
+		    topojson: "https://d3plus.org/topojson/counties.json"
+		  })
+		  .select("#viz")
+		  .render();
+
+}
+
+
+
+
+d3.csv("county_fips_revised.csv", function(fipsData) {
+  d3.csv("https://raw.githubusercontent.com/tomquisel/covid19-data/master/data/csv/2020-03-14.csv", function(cvData) {
+  	let itemList=[];
+  	let finalList=[];
+  	cvData.forEach(function(cvItem) {    ///new RegExp('/contact\\b', 'g').test(href)
+  		//const regexp = new RegExp(cvItem.county_name, 'i');
+  		const result = fipsData.filter(fipsItem => fipsItem.state_name == cvItem.State_Name  && new RegExp(cvItem.County_Name, 'i').test(fipsItem.county_name));
+  		if (result[0]){
+  			result[0].id = "05000US"+ result[0].fips;
+  			Object.assign(result[0],cvItem);
+  			itemList.push(result[0]);
+  		}
+  		else{
+  			console.log(cvItem.County_Name + " " + cvItem.State_Name + " Not Found");
+  		}
+  		d3.csv("export.csv", function(cenData) {
+  			cenData.forEach(function(cenItem) { 
+  				const result = itemList.filter(mergedItem => mergedItem.fips == cenItem.fips);
+  				if (result[0]){
+  					Object.assign(result[0],cenItem);
+  					//Test_Data$EuropePop10k <- ((acs_Data$JWOE002/acs_Data$JWAE001)*10000)
+  					result[0].ConfirmedPer10k= ((result[0].Confirmed/result[0].TotalPop)*10000)
+  					finalList.push(result[0]);
+  				}
+  				else{
+  					finalList.push(cenItem);
+  				}
+  			});
+  			render_pleth(finalList,"ConfirmedPer10k");
+  			
+
+		});
+  		//console.log(data1);
+  		//console.log(d2);
+  		//console.log( data1.county_name );
+  		//console.log("fips:"+ data1.county_name + "actual:"+ d2.County_Name);
+  		//console.log(result);
+  		//console.log(cvItem);
+  		console.log("done");
+  	   
+  	});
+
+ 
+
+		
+     
+  });
+});
+
+
+</script>
+
+
+<div class="container">
+  <h1>Hello World!</h1>
+  <div class="row">
+  	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div id="viz" style="height: 1000px"></div>
+ 
+      </div>
+    <div class="col-sm-3 col-md-6 col-lg-4" style="background-color:yellow;">
+      <p id="value-time"></p>
+      bhbmb,bh
+      jk
+    </div>
+    <div class="col-sm-0 col-md-6 col-lg-8" style="background-color:pink;">
+    	nm,b
+    	hm,
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<head>
+		<title>Bootstrap Example</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	</head>
+	<title></title>
+</head>
+
+<body>
+<div class="radarChart"></div>
+
+<div class="container-fluid">
+	<h1>Hello World!</h1>
+	<p>Resize the browser window to see the effect.</p>
+	<div class="row">
+		<div class="col-sm-4" style="background-color:lavender;"><div id="viz2"></div></div>
+		<div class="col-sm-8" style="background-color:lavender;"><div id="viz"></div></div>
+	</div>
+</div>
+</DIV>
+<script src="http://d3plus.org/js/d3.min.js"></script>
+<!-- D3.js -->
+<script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+<script src="https://d3js.org/d3-path.v1.min.js" charset="utf-8"></script>
+<script src="https://d3plus.org/js/d3plus.v2.0.0-alpha.25.full.min.js"></script>
+<script type="text/javascript">
+	new d3plus.Geomap()
+			.config({
+				data: "03-09-2020us.csv",
+				groupBy: "ProvinceState",
+				colorScale: "Deaths",
+				label: function(d) {
+					return d.ProvinceState;
+				},
+				point: function(d) {
+					return [d.Longitude, d.Latitude];
+				},
+				pointSize: function(d) {
+					return d.Confirmed;
+				},
+				pointSizeMin: 1,
+				pointSizeMax: 10
+			})
+			.render();
+
+
+</script>
+
+</body>
+</html>
