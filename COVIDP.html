@@ -89,7 +89,7 @@
     $( "#slider-range" ).slider({
       range: true,
       min: new Date('2020.03.14').getTime() / 1000,
-      max: new Date('2020.03.30').getTime() / 1000,
+      max: new Date().getTime() / 1000,
       step: 86400,
       values: [ new Date('2020.03.14').getTime() / 1000, new Date('2020.03.14').getTime() / 1000 ],
       slide: function( event, ui ) {
@@ -129,7 +129,7 @@
           for (i = 0; i < days; i++) {
             get_data(i);
             day_now = parseInt(curr_day)+i;
-           $("#days").append("<a class='days' data-day='" + i +  "'  href='#'>"+ curr_month + "/" + day_now +  "</a></br>");
+           $("#days").append("<a class='days' data-day='" + i +  "'  href='#'>View "+ curr_month + "/" + day_now +  "</a></br>");
           }
         }
         
