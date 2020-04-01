@@ -11,6 +11,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="pearson-correlation.js"></script>
       <script src="statistics.min.js" type="text/javascript"></script>
 
 
@@ -187,14 +188,18 @@ const config = {
 /////end jquery
 
 function corr_test(the_day){
-  //let income = itemList[the_day].map(a => a.IncomeIneq);
-    var bodyVars = {
-        Confirmed: 'metric',
-        Death: 'metric'
-    };
-    var stats = new Statistics(itemList[the_day], bodyVars);
-    var r = stats.correlationCoefficient('Confirmed', 'Death');
-    return r
+    let IncomeIneq = itemList[0].map(a => a.IncomeIneq);
+    let IncomeIneq_int = IncomeIneq.map(Number);
+    let Confirmed = itemList[0].map(a => a.Confirmed);
+    let Confirmed_int = Confirmed.map(Number);
+    var data = new Array(
+        IncomeIneq,
+        Confirmed
+    );
+    console.log(pearson(IncomeIneq_int,Confirmed_int));
+
+
+    return corr(data,0,1);
 
 }
 
