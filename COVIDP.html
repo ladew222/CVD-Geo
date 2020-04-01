@@ -49,6 +49,7 @@
   let range=0;
   let type = "Confirmed"
   let selected_day =0;
+  let state = 0;
   const map = new d3plus.Geomap()
   .config(config_new)
   .data(itemList[0])
@@ -64,12 +65,14 @@
         click_day = parseInt($(this).data( "day" ));
         const primary_var = $("input[name='my_options']:checked").val();
         const test_arr =[0,range];
+
         selected_day = click_day;
          map
           .data(itemList[click_day])
            .colorScaleConfig({axisConfig: {
                domain: test_arr
              }})
+
           .render();
     });
 
@@ -97,7 +100,6 @@
         const end_date= new Date(ui.values[ 1 ] *1000);
         const start_month = start_date.getUTCMonth() + 1; //months from 1-12
         const start_day = start_date.getUTCDate(); + 1; //months from 1-12
-        
         curr_day = start_day; 
         curr_month = start_month;
         const diffTime = Math.abs(start_date - end_date);
@@ -112,27 +114,17 @@
 
 
  $("#test").button().click(function(){
-
    console.log(corr_test(selected_day));
-
-
-
   });
 
         //    button click
     $("#btnSubmit").button().click(function(){
       //$('#viz').empty();
-        if(days==0){
-          map_loop();
-        }   //data-last-value="43"
-        else{
-          for (i = 0; i < days; i++) {
+        for (i = 0; i < days; i++) {
             get_data(i);
             day_now = parseInt(curr_day)+i;
-           $("#days").append("<a class='days' data-day='" + i +  "'  href='#'>View "+ curr_month + "/" + day_now +  "</a></br>");
-          }
+            $("#days").append("<a class='days' data-day='" + i +  "'  href='#'>View "+ curr_month + "/" + day_now +  "</a></br>");
         }
-        
     });  
 
     $('#my_radio_box').change(function(){
@@ -143,7 +135,24 @@
  });
 
 
+  d3.csv("us-state-fips.csv", function(error, data) {
+      var select = d3.select("#states")
+          .append("div")
+          .append("select")
 
+      select
+          .on("change", function(d) {
+              var value = d3.select(this).property("st");
+              alert(value);
+          });
+
+      select.selectAll("option")
+          .data(data)
+          .enter()
+          .append("option")
+          .attr("stname", function (d) { return d.st; })
+          .text(function (d) { return d.stname; });
+  });
 
  ////test
 
@@ -160,36 +169,7 @@ const config = {
   type: "Geomap"
 };
 
- const config_point = ({
-    groupBy: "id",
-    label: function(d) {
-      return d.County_Name.toString() + ", id:" +d.id.toString() + "::"+ d.State_Name.toString() + "</br>" + " Deaths:" + d.Death + " Confirmed:" + d.Confirmed;
-    },
-    point: function(d) {
-      return [d.Longitude, d.Latitude];
-    },
-    pointSize: function(d) {
-      if(d){
-        if (d.Death>20){
-          ret_val= 20;
-        }
-        else{
-          ret_val= d.Death;
-        }
 
-      }
-      else{
-        ret_val= 0;
-      }
-      return ret_val;
-    },
-    pointSizeMin: 1,
-    pointSizeMax: 10
-  })
-
-
-
-/////end jquery
 /////end jquery
 
 function corr_test(the_day){
@@ -204,91 +184,6 @@ function corr_test(the_day){
 
 }
 
-
-
-function render_points(selector,loc){
-	 map
-			.config({
-				data: itemList,
-				groupBy: "id",
-				colorScale: selector,
-				label: function(d) {
-					 //console.log(d.Death == null ?  'fallBackValue' : d.Death.toString());
-					 //deaths =  d.Death == null ?  'fallBackValue' : d.Death.toString();
-					 return d.County_Name.toString() + ", id:" +d.id.toString() + "::"+ d.State_Name.toString() + "</br>" + " Deaths:" + d.Death + " Confirmed:" + d.Confirmed;
-				},
-				point: function(d) {
-					return [d.Longitude, d.Latitude];
-				},
-				pointSize: function(d) {
-					if(d){
-						if (d.Death>20){
-							ret_val= 20;
-						}
-						else{
-							ret_val= d.Death;
-						}
-					 	
-					}
-					else{
-					  ret_val= 0;
-					}
-					return ret_val;
-				},
-				pointSizeMin: 1,
-				pointSizeMax: 10
-			})
-			.render();
-}
-
-
-function render_pleth(selector,loc,states,num){
- map
-		  .label(function(d) {
-		    var text = d.County + "</br>Confirmed: " + d.Confirmed + "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death + "<BR/>Population: "+ d.TotalPop + "</br>Gini Index: " + d.IncomeIneq + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>UnInsured 35to64 10k: " + d.insured35to64_per10k ;
-		    return "" + text;
-		  })
-		/*  .tooltipConfig({
-    		body: function(d) {
-		      return "Confirmed:" + d.Confirmed + "</br> Deaths:" + d.Death;;
-		    }
-		  })*/
-		  .config({
-		    data: itemList[num],
-		    fitFilter: function(d) {
-          const state = d.id.split('US')[1].substring(0, 2);
-          if(states>0){
-            return states.indexOf(state)>0;
-          }
-          else{
-            return ["02", "15", "43", "60", "66", "69", "72", "78"].indexOf(state)<0;
-          }
-          
-		    },
-		    colorScale: selector,
-		  /*  fitFilter: function(d) {
-		        return ["05000US20173","05000US41019", "05000US32003", "05000US12086", "05000US48029", "05000US33009","05000US53073"].indexOf(d.id) < 0;
-		    },*/
-		    topojson: "https://d3plus.org/topojson/counties.json"
-		  })
-		  .render();
-
-}
-function map_loop(){
-
-let counter = 0;
-
-const intervalId = setInterval(() => {
-  $("#header").html("<h3>" + curr_month + "/"+  parseInt(counter+ curr_day)  + "</h3>");
-  render_pleth(selected_value,"#viz",0,counter);
-  counter += 1;
-if (counter === itemList.length) {
-    console.log('Done');
-    clearInterval(intervalId);
-  }
-}, 7000);
-
-}
 
 
 function get_data(day_num){
@@ -331,7 +226,17 @@ function get_data(day_num){
 
 
 <div class="container">
-  <h1>Hello World!</h1>
+    <section class="pt-5 pb-5 ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 class="mt-0 mb-3 ">Interests and Program Explorer</h1>
+                    <div class="breadcrumbs">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
   <div class="row">
   	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
     
@@ -346,7 +251,7 @@ function get_data(day_num){
       <div id="slider-range"></div> 
     </br>
         <input id = "btnSubmit" type="submit" value="Get Data"/>
-        <input id = "test" type="submit" value="Test"/>
+        <input id = "test" type="submit" value="Correlation Test"/>
       </br>
       <form id="my_radio_box">
         <div class="form-check">
@@ -376,6 +281,13 @@ function get_data(day_num){
       <div id="slider">
         <div id="custom-handle" class="ui-slider-handle"></div>
       </div>
+        <p>
+            <div id="states">
+
+            </div>
+
+        </p>
+        <input id = "test" type="submit" value="Correlation Test"/>
     </div>
     <div class="col-sm-0 col-md-6 col-lg-9" style="background-color:pink;">
       <div id="container">
