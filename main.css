@@ -40,7 +40,9 @@ path.d3plus-Shape {
   text-align: center;
   line-height: 1.6em;
 }
-
+.ui-slider{
+  border: 1px solid #f69421 !important;
+}
 .p-head{
   font-size:16px;
   padding-bottom: 8px;
@@ -61,6 +63,7 @@ path.d3plus-Shape {
   padding: 12px;
   background: white;
   margin-top: 18px;
+  border: 1px solid;
 }
 
 .title{
