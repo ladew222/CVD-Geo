@@ -40,3 +40,16 @@ path.d3plus-Shape {
   text-align: center;
   line-height: 1.6em;
 }
+
+.p-head{
+  font-size:16px;
+  padding-bottom: 8px;
+  font-weight: 800;
+}
+.p-other{
+  font-size: 10px;
+  font-weight: 400;
+  padding-bottom: 4px;
+  margin: 0px;
+  padding-top: 0px;
+}
