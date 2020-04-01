@@ -42,21 +42,20 @@
   type: "Geomap"
 };
 
-  let itemList=[];
-  let curr_day="14"
-  let curr_month="3"
-  let days=0;
-  let index=0;
-  let range=0;
-  let type = "Confirmed"
-  let selected_day =0;
-  let selected_state = 0;
+  var viz = {
+      itemList:[],
+      start_day: "3",
+      start_month: "14",
+      number_days:0,
+      primary_var:"Confirmed",
+      active_day: 0,
+      active_state:0
+  };
+
   const map = new d3plus.Geomap()
   .config(config_new)
   .data(itemList[0])
   .colorScale("Confirmed");
-
-
 
 
  $(document).ready(function(){
@@ -65,17 +64,16 @@
     .render();
 
     $('#days').on('click', 'a.days', function() {
-        click_day = parseInt($(this).data( "day" ));
+        const click_day = parseInt($(this).data( "day" ));
         const primary_var = $("input[name='my_options']:checked").val();
-        const test_arr =[0,range];
-
-        selected_day = click_day;
+        const test_arr =[0,viz.number_days];
+        viz.active_day=click_day;
          map
            .data(itemList[click_day])
            .fitFilter(function(d) {
-               const state = d.id.split('US')[1].substring(0, 2);
-               if( selected_state!=0  ){
-                   return [ selected_state].indexOf(state)<0;
+               const state = parseInt(d.id.split('US')[1].substring(0, 2));
+               if( viz.active_state!=0  ){
+                   return [ viz.active_state].indexOf(state)<0;
                }
                else{
                    return true;
@@ -112,12 +110,11 @@
         const end_date= new Date(ui.values[ 1 ] *1000);
         const start_month = start_date.getUTCMonth() + 1; //months from 1-12
         const start_day = start_date.getUTCDate(); + 1; //months from 1-12
-
-        curr_day = start_day; 
-        curr_month = start_month;
+        viz.start_day=start_day;
+        viz.start_month=start_month;
         const diffTime = Math.abs(start_date - end_date);
         const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
-        days= diffDays;
+        viz.number_days= diffDays;
          $( "#amount" ).val( (new Date(ui.values[ 0 ] *1000).toDateString() ) + " - " + end_date.toDateString() );
       } 
     });
@@ -127,22 +124,23 @@
 
 
 $("#test").button().click(function(){
-    $( "#corr-res" ).html(corr_test(selected_day));
+    delta();
+    //$( "#corr-res" ).html(corr_test(selected_day));
 
 });
 
         //    button click
     $("#btnSubmit").button().click(function(){
       //$('#viz').empty();
-        for (i = 0; i < days; i++) {
+        for (i = 0; i < viz.number_days; i++) {
             get_data(i);
-            day_now = parseInt(curr_day)+i;
+            let day_now = parseInt(curr_day)+i;
             $("#days").append("<a class='days' data-day='" + i +  "'  href='#'>View "+ curr_month + "/" + day_now +  "</a></br>");
         }
     });  
 
     $('#my_radio_box').change(function(){
-        type= $("input[name='my_options']:checked").val();        
+        viz.primary_var = $("input[name='my_options']:checked").val();
 
     });
 
@@ -184,7 +182,28 @@ const config = {
   type: "Geomap"
 };
 
+function delta(){
 
+
+
+    itemList[0].forEach(function(d){ d['Confirmed'] = +d['Confirmed']; });
+    itemList[2].forEach(function(d){ d['Confirmed'] = +d['Confirmed']; });
+
+  const result = Object.values([...itemList[0], ...itemList[2]].reduce((acc, { id, Confirmed }) => {
+      acc[id] = { id, Confirmed_diff:  Confirmed - (acc[id] ? acc[id].Confirmed : 0)  };
+      return acc;
+  }, {}));
+
+    itemList[current_day] = (itemList[current_day], result) =>
+        a1.map(itm => ({
+            ...a2.find((item) => (item.id === itm.id) && item),
+            ...itm
+        }));
+
+    console.log(result);
+
+
+}
 /////end jquery
 
 function corr_test(the_day){
@@ -196,11 +215,11 @@ function corr_test(the_day){
         let Confirmed= null;
         let val1 = null
         if (selected_state !=0){
-            Confirmed = itemList[the_day].filter(function(obj) {
+            Confirmed = itemList[viz.active_day].filter(function(obj) {
                 return parseInt(obj.state)==parseInt(selected_state);
             }).map(function(obj) { return obj[val]; });
 
-            val1 = itemList[the_day].filter(function(obj) {
+            val1 = itemList[viz.active_day].filter(function(obj) {
                 return parseInt(obj.state)==parseInt(selected_state);
             }).map(function(obj) { return obj.Confirmed; });
 
@@ -225,12 +244,12 @@ function corr_test(the_day){
 
 
 function get_data(day_num){
-    itemList[day_num] = [];
+    viz.itemList[day_num] = [];
     //curr_day
     d3.csv("county_fips_revised.csv", function(fipsData) {
-    let the_day = parseInt(curr_day)+day_num;
+    let the_day = parseInt(viz.start_day)+day_num;
     const formattedDay = ("0" + the_day).slice(-2);
-    const formattedMonth = ("0" + curr_month).slice(-2);
+    const formattedMonth = ("0" + viz.start_month).slice(-2);
     d3.csv("https://raw.githubusercontent.com/tomquisel/covid19-data/master/data/csv/" + "2020-" + formattedMonth + "-" + formattedDay + ".csv" , function(cvData) {
       cvData.forEach(function(cvItem) {    ///new RegExp('/contact\\b', 'g').test(href)
         //const regexp = new RegExp(cvItem.county_name, 'i');
@@ -240,7 +259,7 @@ function get_data(day_num){
           //AsiaPop10k <- ((acs_Data$JWOE047/acs_Data$JWAE001)*10000)
           Object.assign(result[0],cvItem);  
           result[0].ConfirmedPer10K=Number((Math.round(((result[0].Confirmed/result[0].TotalPop)*10000) * 100) / 100).toFixed(3));
-          itemList[day_num].push(result[0]);
+          viz.itemList[day_num].push(result[0]);
         }
         else{
           console.log(cvItem.County_Name + " " + cvItem.State_Name + " Not Found");
