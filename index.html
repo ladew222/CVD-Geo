@@ -194,18 +194,21 @@ function delta(){
     viz.itemList[0].forEach(function(d){ d['Confirmed'] = +d['Confirmed']; });
     viz.itemList[2].forEach(function(d){ d['Confirmed'] = +d['Confirmed']; });
 
-  const result = Object.values([...viz.itemList[0], ...viz.itemList[viz.number_days-1]].reduce((acc, { id, Confirmed }) => {
-      acc[id] = { id, Confirmed_diff:  Confirmed - (acc[id] ? acc[id].Confirmed : 0)  };
+  const result = Object.values([...viz.itemList[0], ...viz.itemList[viz.active_day]].reduce((acc, { id, Confirmed }) => {
+      acc[id] = { id, Confirmed_diff:  (Confirmed / (acc[id] ? acc[id].Confirmed : 0)*100 ) };
       return acc;
   }, {}));
 
-    viz.itemList[viz.active_day] = (viz.itemList[viz.active_day], result) =>
-    a1.map(itm => ({
-        ...a2.find((item) => (item.id === itm.id) && item),
-        ...itm
-    }));
+    const a1 =  result;
+    const a2 = itemList[viz.active_day];
+    const mergeById = (a1, a2) =>
+        a1.map(itm => ({
+            ...a2.find((item) => (item.id === itm.id) && item),
+            ...itm
+        }));
 
     console.log(result);
+
 
 }
 /////end jquery
