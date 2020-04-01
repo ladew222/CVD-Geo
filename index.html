@@ -49,8 +49,8 @@
       number_days:0,
       primary_var:"Confirmed",
       active_day: 0,
-      active_state:0
-      color_range:0
+      active_state:0,
+      color_range:0,
   };
 
   const map = new d3plus.Geomap()
@@ -194,7 +194,7 @@ function delta(){
     viz.itemList[0].forEach(function(d){ d['Confirmed'] = +d['Confirmed']; });
     viz.itemList[2].forEach(function(d){ d['Confirmed'] = +d['Confirmed']; });
 
-  const result = Object.values([...itemList[0], ...itemList[2]].reduce((acc, { id, Confirmed }) => {
+  const result = Object.values([...viz.itemList[0], ...viz.itemList[viz.number_days-1]].reduce((acc, { id, Confirmed }) => {
       acc[id] = { id, Confirmed_diff:  Confirmed - (acc[id] ? acc[id].Confirmed : 0)  };
       return acc;
   }, {}));
