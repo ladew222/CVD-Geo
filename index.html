@@ -54,7 +54,7 @@
 
   const map = new d3plus.Geomap()
   .config(config_new)
-  .data(itemList[0])
+  .data(viz.itemList[0])
   .colorScale("Confirmed");
 
 
@@ -69,7 +69,7 @@
         const test_arr =[0,viz.number_days];
         viz.active_day=click_day;
          map
-           .data(itemList[click_day])
+           .data(viz.itemList[viz.active_day])
            .fitFilter(function(d) {
                const state = parseInt(d.id.split('US')[1].substring(0, 2));
                if( viz.active_state!=0  ){
@@ -134,8 +134,8 @@ $("#test").button().click(function(){
       //$('#viz').empty();
         for (i = 0; i < viz.number_days; i++) {
             get_data(i);
-            let day_now = parseInt(curr_day)+i;
-            $("#days").append("<a class='days' data-day='" + i +  "'  href='#'>View "+ curr_month + "/" + day_now +  "</a></br>");
+            let day_now = parseInt(viz.start_day)+i;
+            $("#days").append("<a class='days' data-day='" + i +  "'  href='#'>View "+ viz.start_month + "/" + day_now +  "</a></br>");
         }
     });  
 
@@ -186,19 +186,19 @@ function delta(){
 
 
 
-    itemList[0].forEach(function(d){ d['Confirmed'] = +d['Confirmed']; });
-    itemList[2].forEach(function(d){ d['Confirmed'] = +d['Confirmed']; });
+    viz.itemList[0].forEach(function(d){ d['Confirmed'] = +d['Confirmed']; });
+    viz.itemList[2].forEach(function(d){ d['Confirmed'] = +d['Confirmed']; });
 
   const result = Object.values([...itemList[0], ...itemList[2]].reduce((acc, { id, Confirmed }) => {
       acc[id] = { id, Confirmed_diff:  Confirmed - (acc[id] ? acc[id].Confirmed : 0)  };
       return acc;
   }, {}));
 
-    itemList[current_day] = (itemList[current_day], result) =>
+   /* viz.itemList[viz.active_day] = (itemList[viz.active_day], result) =>
         a1.map(itm => ({
             ...a2.find((item) => (item.id === itm.id) && item),
             ...itm
-        }));
+        }));*/
 
     console.log(result);
 
