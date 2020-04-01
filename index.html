@@ -50,6 +50,7 @@
       primary_var:"Confirmed",
       active_day: 0,
       active_state:0
+      color_range:0
   };
 
   const map = new d3plus.Geomap()
@@ -57,6 +58,9 @@
   .data(viz.itemList[0])
   .colorScale("Confirmed");
 
+  ///////////////////////////////////////////////
+  /////////////// Jquery Section ////////////////
+  ///////////////////////////////////////////////
 
  $(document).ready(function(){
     map
@@ -66,7 +70,7 @@
     $('#days').on('click', 'a.days', function() {
         const click_day = parseInt($(this).data( "day" ));
         const primary_var = $("input[name='my_options']:checked").val();
-        const test_arr =[0,viz.number_days];
+        const test_arr =[0,viz.color_range];
         viz.active_day=click_day;
          map
            .data(viz.itemList[viz.active_day])
@@ -93,7 +97,7 @@
        handle.text( $( this ).slider( "value" ) );
      },
      slide: function( event, ui ) {
-       range=ui.value;
+       viz.color_range=ui.value;
        handle.text( ui.value );
      }
    });
@@ -146,6 +150,10 @@ $("#test").button().click(function(){
 
  });
 
+  ///////////////////////////////////////////////
+  /////////////// JS Section ////////////////
+  ///////////////////////////////////////////////
+
   d3.csv("us-state-fips.csv", function(error, data) {
       var select = d3.select("#states")
           .append("div")
@@ -164,10 +172,7 @@ $("#test").button().click(function(){
           .text(function (d) { return d.stname; });
   });
 
-  ////test
 
-
- ////test
 
 
 const config = {
