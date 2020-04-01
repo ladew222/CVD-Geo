@@ -56,6 +56,8 @@
   .colorScale("Confirmed");
 
 
+
+
  $(document).ready(function(){
     map
     .select('#viz')
@@ -68,7 +70,25 @@
 
         selected_day = click_day;
          map
-          .data(itemList[click_day])
+           .data(itemList[click_day])
+           .fitFilter(function(d) {
+               const state = d.id.split('US')[1].substring(0, 2);
+               if(state!=0){
+                   //return ["0", state].indexOf(state)?0;
+                   return states.indexOf(state)>0;
+               }
+               else{
+                   return states.indexOf(state)>0;
+               }
+
+                 if (state!=0){
+                     return ["0", state].indexOf(d.id) > 0;
+                 }
+                 else{
+                     return true;
+                 }
+
+             })
            .colorScaleConfig({axisConfig: {
                domain: test_arr
              }})
@@ -100,6 +120,7 @@
         const end_date= new Date(ui.values[ 1 ] *1000);
         const start_month = start_date.getUTCMonth() + 1; //months from 1-12
         const start_day = start_date.getUTCDate(); + 1; //months from 1-12
+
         curr_day = start_day; 
         curr_month = start_month;
         const diffTime = Math.abs(start_date - end_date);
@@ -134,7 +155,6 @@
 
  });
 
-
   d3.csv("us-state-fips.csv", function(error, data) {
       var select = d3.select("#states")
           .append("div")
@@ -142,7 +162,7 @@
 
       select
           .on("change", function(d) {
-              var value = d3.select(this).property("st");
+              var value = d3.select(this).property("value");
               alert(value);
           });
 
@@ -150,9 +170,12 @@
           .data(data)
           .enter()
           .append("option")
-          .attr("stname", function (d) { return d.st; })
+          .attr("value", function (d) { return d.st; })
           .text(function (d) { return d.stname; });
   });
+
+  ////test
+
 
  ////test
 
