@@ -199,14 +199,13 @@ function delta(){
       return acc;
   }, {}));
 
-   /* viz.itemList[viz.active_day] = (itemList[viz.active_day], result) =>
-        a1.map(itm => ({
-            ...a2.find((item) => (item.id === itm.id) && item),
-            ...itm
-        }));*/
+    viz.itemList[viz.active_day] = (viz.itemList[viz.active_day], result) =>
+    a1.map(itm => ({
+        ...a2.find((item) => (item.id === itm.id) && item),
+        ...itm
+    }));
 
     console.log(result);
-
 
 }
 /////end jquery
