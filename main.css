@@ -53,3 +53,19 @@ path.d3plus-Shape {
   margin: 0px;
   padding-top: 0px;
 }
+
+.corr-rs{
+  padding-top: 20px;
+  color: #f6931f;
+  font-weight: bold;
+  padding: 12px;
+  background: white;
+  margin-top: 18px;
+}
+
+.title{
+  color: #f6931f;
+}
+.days a{
+  color: #005b06;
+}

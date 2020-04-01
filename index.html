@@ -194,10 +194,26 @@ function corr_test(the_day){
     let out_str="<div class='corr-rs'>";
     testArr.forEach(function(number, i) {
         let val = testArr[i];
-        const val1 = itemList[the_day].map(a => a[val]);
-        const val1_int = val1.map(Number);
-        const Confirmed = itemList[0].map(a => a.Confirmed);
+        let Confirmed= null;
+        let val1 = null
+        if (selected_state !=0){
+            Confirmed = itemList[the_day].filter(function(obj) {
+                return obj.state=selected_state;
+            }).map(function(obj) { return obj[val]; });
+
+            val1 = itemList[the_day].filter(function(obj) {
+                return obj.state=selected_state;
+            }).map(function(obj) { return obj.Confirmed; });
+
+        }
+        else{
+            Confirmed = itemList[0].map(a => a.Confirmed);
+            val1 = itemList[the_day].map(a => a[val]);
+
+        }
         const Confirmed_int = Confirmed.map(Number);
+        const val1_int = val1.map(Number);
+
         const result = (Math.round(pearson(val1_int,Confirmed_int) * 100) / 100).toFixed(2);
         out_str+= val + ": " + result + " </br>";
     });
@@ -253,7 +269,7 @@ function get_data(day_num){
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h1 class="mt-0 mb-3 ">COVID Data Explorer</h1>
+                    <h1 class="mt-0 mb-3 title">COVID Data Explorer</h1>
                     <div class="breadcrumbs">
                     </div>
                 </div>
@@ -269,7 +285,7 @@ function get_data(day_num){
 
       <p>
       <label for="amount">Date range:</label>
-        <input type="text" id="amount" style="border: 0; color: #f6931f; font-weight: bold;" size="30"/>
+        <input type="text" id="amount" style="border: 0;padding-left: 8px; color: #f6931f; font-weight: bold;" size="30"/>
       </p>
       <div id="slider-range"></div> 
     </br>
