@@ -126,9 +126,10 @@
       " - " + (new Date($( "#slider-range" ).slider( "values", 1 )*1000)).toDateString());
 
 
- $("#test").button().click(function(){
-   console.log(corr_test(selected_day));
-  });
+$("#test").button().click(function(){
+    $( "#corr-res" ).html(corr_test(selected_day));
+
+});
 
         //    button click
     $("#btnSubmit").button().click(function(){
@@ -188,18 +189,21 @@ const config = {
 /////end jquery
 
 function corr_test(the_day){
-    let IncomeIneq = itemList[0].map(a => a.IncomeIneq);
-    let IncomeIneq_int = IncomeIneq.map(Number);
-    let Confirmed = itemList[0].map(a => a.Confirmed);
-    let Confirmed_int = Confirmed.map(Number);
-    var data = new Array(
-        IncomeIneq,
-        Confirmed
-    );
-    console.log(pearson(IncomeIneq_int,Confirmed_int));
+    let testArr=["IncomeIneq","EuropePop10k","AsiaPop10k","insured35to64_per10k","white10k","med_age"];
 
+    let out_str="<div class='corr-rs'>";
+    testArr.forEach(function(number, i) {
+        let val = testArr[i];
+        const val1 = itemList[the_day].map(a => a[val]);
+        const val1_int = val1.map(Number);
+        const Confirmed = itemList[0].map(a => a.Confirmed);
+        const Confirmed_int = Confirmed.map(Number);
+        const result = (Math.round(pearson(val1_int,Confirmed_int) * 100) / 100).toFixed(2);
+        out_str+= val + ": " + result + " </br>";
+    });
+    out_str+="</div>";
 
-    return corr(data,0,1);
+    return out_str
 
 }
 
@@ -309,6 +313,11 @@ function get_data(day_num){
 
         </p>
         <input id = "test" type="submit" value="Correlation Test"/>
+
+        <div id="corr-res">
+
+        </div>
+
     </div>
     <div class="col-sm-0 col-md-6 col-lg-9" >
       <div id="container">
