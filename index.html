@@ -191,16 +191,35 @@ function delta(){
 
 
 
+
     viz.itemList[0].forEach(function(d){ d['Confirmed'] = +d['Confirmed']; });
     viz.itemList[2].forEach(function(d){ d['Confirmed'] = +d['Confirmed']; });
 
-  const result = Object.values([...viz.itemList[0], ...viz.itemList[viz.active_day]].reduce((acc, { id, Confirmed }) => {
-      acc[id] = { id, Confirmed_diff:  (Confirmed / (acc[id] ? acc[id].Confirmed : 0)*100 ) };
-      return acc;
-  }, {}));
+    let arr1=viz.itemList[0];
+    let arr2 =viz.itemList[2];
+
+   /* const arr1 = [
+        {"id": "5c5030b9a1ccb11fe8c321f4", "quantity": 1},
+        {"id": "344430b94t4t34rwefewfdff", "quantity": 5},
+        {"id": "342343343t4t34rwefewfd53", "quantity": 3}
+    ];
+    const arr2 = [
+        {"id": "5c5030b9a1ccb11fe8c321f4", "quantity": 2},
+        {"id": "344430b94t4t34rwefewfdff", "quantity": 1}
+    ];*/
+
+    const result = Object.values([...arr1, ...arr2].reduce((acc, { id, Confirmed }) => {
+        acc[id] = { id, Confirmed: (acc[id] ? acc[id].Confirmed : 0) + Confirmed, conf:(acc[id] ? acc[id].Confirmed : 0) , conf2: Confirmed,per_change: (Confirmed/(acc[id] ? acc[id].Confirmed : .01))*100    };
+        return acc;
+    }, {}));
+
+    console.log(result);
+
+
+
 
     const a1 =  result;
-    const a2 = itemList[viz.active_day];
+    const a2 = viz.itemList[2];
     const mergeById = (a1, a2) =>
         a1.map(itm => ({
             ...a2.find((item) => (item.id === itm.id) && item),
