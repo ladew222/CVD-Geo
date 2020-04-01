@@ -244,7 +244,7 @@ function get_data(day_num){
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h1 class="mt-0 mb-3 ">Interests and Program Explorer</h1>
+                    <h1 class="mt-0 mb-3 ">COVID Data Explorer</h1>
                     <div class="breadcrumbs">
                     </div>
                 </div>
@@ -255,18 +255,20 @@ function get_data(day_num){
   	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
     
     </div>
-    <div class="col-sm-3 col-md-6 col-lg-3" style="background-color:yellow;">
+    <div class="col-sm-3 col-md-6 col-lg-3" style="background-color:silver;padding-bottom:60px">
       <div id="header"></div>
 
       <p>
       <label for="amount">Date range:</label>
-        <input type="text" id="amount" style="border: 0; color: #f6931f; font-weight: bold;" size="100"/>
+        <input type="text" id="amount" style="border: 0; color: #f6931f; font-weight: bold;" size="30"/>
       </p>
       <div id="slider-range"></div> 
     </br>
         <input id = "btnSubmit" type="submit" value="Get Data"/>
-        <input id = "test" type="submit" value="Correlation Test"/>
       </br>
+        </br>
+        </br>
+        <B>Color Variable</B>
       <form id="my_radio_box">
         <div class="form-check">
           <input class="form-check-input" name="my_options" type="radio" name="exampleRadios" id="exampleRadios1" value="Confirmed" checked>
@@ -303,7 +305,7 @@ function get_data(day_num){
         </p>
         <input id = "test" type="submit" value="Correlation Test"/>
     </div>
-    <div class="col-sm-0 col-md-6 col-lg-9" style="background-color:pink;">
+    <div class="col-sm-0 col-md-6 col-lg-9" >
       <div id="container">
     	 <div id="viz" style="height: 600px"></div>
       </div>
