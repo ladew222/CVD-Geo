@@ -67,6 +67,8 @@
     .select('#viz')
     .render();
 
+     $( document ).tooltip();
+
     $('#days').on('click', 'a.days', function() {
         const click_day = parseInt($(this).data( "day" ));
         const primary_var = $("input[name='my_options']:checked").val();
@@ -161,7 +163,7 @@
 
 $("#test").button().click(function(){
 
-    $( "#corr-res" ).html(corr_test(selected_day));
+    $( "#corr-res" ).html(corr_test(viz.active_day));
 
 });
 
@@ -365,9 +367,13 @@ function get_data(day_num){
       </p>
       <div id="slider-range"></div> 
     </br>
-        <input id = "btnSubmit" type="submit" value="Get Data"/>
+        <input id = "btnSubmit" title="This will retrive the data for the above data range. You can then choose any of the days below to show on right" type="submit" value="Get Data"/>
       </br>
         </br>
+        <div id="days">
+
+
+        </div>
         </br>
       <div id="color-choose">
         <B class="gr">Color Variable</B>
@@ -391,17 +397,14 @@ function get_data(day_num){
           </label>
         </div>
           <div class="form-check">
-              <input class="form-check-input" name="my_options" type="radio" name="exampleRadios" id="exampleRadios4" value="Percent_Change" >
+              <input class="form-check-input" name="my_options" title="This calculates the percent change from the first date in the range to the curent displayed" type="radio" name="exampleRadios" id="exampleRadios4" value="Percent_Change" >
               <label class="form-check-label" for="exampleRadios3">
                   Percent increase start
               </label>
           </div>
       </form>
       </div>
-        <div id="days">
 
-
-        </div>
       <h5>Scale Max</h5>
       <div id="slider">
         <div id="custom-handle" class="ui-slider-handle"></div>
