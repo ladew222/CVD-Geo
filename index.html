@@ -74,6 +74,9 @@
         const primary_var = $("input[name='my_options']:checked").val();
         const test_arr =[0,viz.color_range];
         viz.active_day=click_day;
+        $("a.days").removeClass("active");
+        // $(".tab").addClass("active"); // instead of this do the below
+        $(this).addClass("active");
 
         if(primary_var=='Percent_Change'){
             new Promise(function(fulfill, reject){
@@ -173,7 +176,7 @@ $("#test").button().click(function(){
         for (i = 0; i < viz.number_days; i++) {
             get_data(i);
             let day_now = parseInt(viz.start_day)+i;
-            $("#days").append("<a class='days' data-day='" + i +  "'  href='#'>View "+ viz.start_month + "/" + day_now +  "</a></br>");
+            $("#days").append("<a class='days' data-day='" + i +  "'  href='#'>View map for "+ viz.start_month + "/" + day_now +  "</a></br>");
         }
     });  
 
