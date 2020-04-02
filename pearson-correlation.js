@@ -18,5 +18,5 @@ const pearson = (x, y) => {
 };
 let arrX = [20, 54, 54, 65, 45];
 let arrY = [22, 11, 21, 34, 87];
-let R = pcorr(arrX, arrY);
+let R = pearson(arrX, arrY);
 console.log('arrX', arrX, 'arrY', arrY, 'R', R);
