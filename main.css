@@ -71,7 +71,7 @@ path.d3plus-Shape {
 }
 a.days{
   color: #005b06;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 #color-choose{
@@ -101,5 +101,5 @@ button, html input[type=button], input[type=reset], input[type=submit]{
   padding-right: 8px;
 }
 .active{
-  font-weight: 800;
+  font-weight: 900;
 }
