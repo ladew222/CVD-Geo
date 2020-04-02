@@ -73,6 +73,16 @@ path.d3plus-Shape {
   color: #005b06;
 }
 
-.color-choose{
+#color-choose{
+  background: white;
+  padding: 12px;
+  border: 1px solid #f6931f;
+}
+.gr{
+  color: #08582c;
+  font-size: 16px;
+}
 
+button, html input[type=button], input[type=reset], input[type=submit]{
+  border: 1px solid #f6931f;
 }

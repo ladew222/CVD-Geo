@@ -81,7 +81,7 @@
                 map
                     .data(viz.itemList[viz.active_day])
                     .label(function(d) {
-                        var text = d.County  + "</br>% change: "+ d.Percent_Change +"</br>Confirmed: " + d.Confirmed +"</br>Previous Confirmed: "+ d.conf +  "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death + "<BR/>Population: "+ d.TotalPop + "</br>Gini Index: " + d.IncomeIneq + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>UnInsured 35to64 10k: " + d.insured35to64_per10k ;
+                        var text = "<b class='p-head'>"+ d.County + "</br>% change: "+ d.Percent_Change +"</br>Confirmed: " + d.Confirmed +"</br>Previous Confirmed: "+ d.conf +  "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death + "<BR/>Population: "+ d.TotalPop + "</br>Gini Index: " + d.IncomeIneq + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>UnInsured 35to64 10k: " + d.insured35to64_per10k + "</span>" ;
                         return text;
                      })
                     .fitFilter(function(d) {
@@ -160,8 +160,8 @@
 
 
 $("#test").button().click(function(){
-    delta();
-    //$( "#corr-res" ).html(corr_test(selected_day));
+
+    $( "#corr-res" ).html(corr_test(selected_day));
 
 });
 
@@ -370,7 +370,7 @@ function get_data(day_num){
         </br>
         </br>
       <div id="color-choose">
-        <B>Color Variable</B>
+        <B class="gr">Color Variable</B>
       <form id="my_radio_box">
         <div class="form-check">
           <input class="form-check-input" name="my_options" type="radio" name="exampleRadios" id="exampleRadios1" value="Confirmed" checked>
