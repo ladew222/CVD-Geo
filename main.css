@@ -86,3 +86,16 @@ path.d3plus-Shape {
 button, html input[type=button], input[type=reset], input[type=submit]{
   border: 1px solid #f6931f;
 }
+
+.b-container{
+  display: flex;
+}
+.fixed{
+  width: 200px;
+}
+.flex-item{
+  flex-grow: 1;
+}
+#states{
+  padding-right: 8px;
+}
