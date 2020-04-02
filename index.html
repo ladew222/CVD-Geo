@@ -72,22 +72,54 @@
         const primary_var = $("input[name='my_options']:checked").val();
         const test_arr =[0,viz.color_range];
         viz.active_day=click_day;
-         map
-           .data(viz.itemList[viz.active_day])
-           .fitFilter(function(d) {
-               const state = parseInt(d.id.split('US')[1].substring(0, 2));
-               if( viz.active_state!=0  ){
-                   return [ viz.active_state].indexOf(state)<0;
-               }
-               else{
-                   return true;
-               }
-             })
-           .colorScaleConfig({axisConfig: {
-               domain: test_arr
-             }})
 
-          .render();
+        if(primary_var=='Percent_Change'){
+            new Promise(function(fulfill, reject){
+                //do something for 5 second
+                fulfill(delta());
+            }).then(function(result){
+                map
+                    .data(viz.itemList[viz.active_day])
+                    .label(function(d) {
+                        var text = d.County  + "</br>% change: "+ d.Percent_Change +"</br>Confirmed: " + d.Confirmed + "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death + "<BR/>Population: "+ d.TotalPop + "</br>Gini Index: " + d.IncomeIneq + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>UnInsured 35to64 10k: " + d.insured35to64_per10k ;
+                        return text;
+                     })
+                    .fitFilter(function(d) {
+                        const state = parseInt(d.id.split('US')[1].substring(0, 2));
+                        if( viz.active_state!=0  ){
+                            return [ viz.active_state].indexOf(state)<0;
+                        }
+                        else{
+                            return true;
+                        }
+                    })
+                    .colorScaleConfig({axisConfig: {
+                            domain: test_arr
+                        }})
+
+                    .render();
+            });
+        }
+        else{
+            map
+                .data(viz.itemList[viz.active_day])
+                .fitFilter(function(d) {
+                    const state = parseInt(d.id.split('US')[1].substring(0, 2));
+                    if( viz.active_state!=0  ){
+                        return [ viz.active_state].indexOf(state)<0;
+                    }
+                    else{
+                        return true;
+                    }
+                })
+                .colorScaleConfig({axisConfig: {
+                        domain: test_arr
+                    }})
+
+                .render();
+        }
+
+
     });
 
 
@@ -209,7 +241,7 @@ function delta(){
     ];*/
 
     const result = Object.values([...arr1, ...arr2].reduce((acc, { id, Confirmed }) => {
-        acc[id] = { id, Confirmed_tot: (acc[id] ? acc[id].Confirmed_tot : 0) + Confirmed, conf:(acc[id] ? acc[id].Confirmed_tot : 0) , conf2: Confirmed,per_change: (Confirmed/(acc[id] ? acc[id].Confirmed_tot : .01))*100};
+        acc[id] = { id, Confirmed_tot: (acc[id] ? acc[id].Confirmed_tot : 0) + Confirmed, conf:(acc[id] ? acc[id].Confirmed_tot : 0) , conf2: Confirmed,Percent_Change: (Confirmed/(acc[id] ? acc[id].Confirmed_tot : .01))*100};
         return acc;
     }, {}));
 
@@ -351,12 +383,18 @@ function get_data(day_num){
             Confirmed per 10K
           </label>
         </div>
-        <div class="form-check disabled">
+        <div class="form-check">
           <input class="form-check-input" name="my_options" type="radio" name="exampleRadios" id="exampleRadios3" value="Death" >
           <label class="form-check-label" for="exampleRadios3">
             Fatalities
           </label>
         </div>
+          <div class="form-check">
+              <input class="form-check-input" name="my_options" type="radio" name="exampleRadios" id="exampleRadios4" value="Percent_Change" >
+              <label class="form-check-label" for="exampleRadios3">
+                  Percent increase start
+              </label>
+          </div>
       </form>
         <div id="days">
 
