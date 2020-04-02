@@ -103,3 +103,6 @@ button, html input[type=button], input[type=reset], input[type=submit]{
 .active{
   font-weight: 900;
 }
+a.days.active{
+  font-weight: 900;
+}
