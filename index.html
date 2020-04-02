@@ -292,9 +292,10 @@ function corr_test(the_day){
             val1 = viz.itemList[the_day].map(a => a[val]);
 
         }
+
         const Confirmed_int = Confirmed.map(Number);
         const val1_int = val1.map(Number);
-
+        const test =pearson(val1_int,Confirmed_int);
         const result = (Math.round(pearson(val1_int,Confirmed_int) * 100) / 100).toFixed(2);
         out_str+= val + ": " + result + " </br>";
     });
