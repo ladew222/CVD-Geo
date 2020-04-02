@@ -274,7 +274,7 @@ function corr_test(the_day){
         let val = testArr[i];
         let Confirmed= null;
         let val1 = null
-        if (selected_state !=0){
+        if (viz.active_state !=0){
             Confirmed = itemList[viz.active_day].filter(function(obj) {
                 return parseInt(obj.state)==parseInt(selected_state);
             }).map(function(obj) { return obj[val]; });
