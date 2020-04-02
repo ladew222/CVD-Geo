@@ -72,7 +72,11 @@
     $('#days').on('click', 'a.days', function() {
         const click_day = parseInt($(this).data( "day" ));
         const primary_var = $("input[name='my_options']:checked").val();
-        const test_arr =[0,viz.color_range];
+        let test_arr =[0,viz.color_range];
+        if (primary_var=="IncomeIneq" || primary_var=="Fatality_Rate"){
+            const adj =  viz.color_range/100;
+            test_arr =[0,adj];
+        }
         viz.active_day=click_day;
         $("a.days").removeClass("active");
         // $(".tab").addClass("active"); // instead of this do the below
@@ -129,7 +133,7 @@
 
 
    var handle = $( "#custom-handle" );
-   $( "#slider" ).slider({
+   $( "#slider" ).slider({max:200,
      create: function() {
        handle.text( $( this ).slider( "value" ) );
      },
