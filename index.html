@@ -81,7 +81,7 @@
                 map
                     .data(viz.itemList[viz.active_day])
                     .label(function(d) {
-                        var text = d.County  + "</br>% change: "+ d.Percent_Change +"</br>Confirmed: " + d.Confirmed + "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death + "<BR/>Population: "+ d.TotalPop + "</br>Gini Index: " + d.IncomeIneq + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>UnInsured 35to64 10k: " + d.insured35to64_per10k ;
+                        var text = d.County  + "</br>% change: "+ d.Percent_Change +"</br>Confirmed: " + d.Confirmed +"</br>Previous Confirmed: "+ d.conf +  "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death + "<BR/>Population: "+ d.TotalPop + "</br>Gini Index: " + d.IncomeIneq + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>UnInsured 35to64 10k: " + d.insured35to64_per10k ;
                         return text;
                      })
                     .fitFilter(function(d) {
@@ -93,10 +93,10 @@
                             return true;
                         }
                     })
+                    .colorScale(primary_var)
                     .colorScaleConfig({axisConfig: {
                             domain: test_arr
                         }})
-
                     .render();
             });
         }
@@ -112,10 +112,10 @@
                         return true;
                     }
                 })
+                .colorScale(primary_var)
                 .colorScaleConfig({axisConfig: {
                         domain: test_arr
                     }})
-
                 .render();
         }
 
@@ -369,6 +369,7 @@ function get_data(day_num){
       </br>
         </br>
         </br>
+      <div id="color-choose">
         <B>Color Variable</B>
       <form id="my_radio_box">
         <div class="form-check">
@@ -396,6 +397,7 @@ function get_data(day_num){
               </label>
           </div>
       </form>
+      </div>
         <div id="days">
 
 
