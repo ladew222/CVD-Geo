@@ -218,6 +218,11 @@ $("#test").button().click(function(){
   });
 
 
+  function paddy(num, padlen, padchar) {
+      var pad_char = typeof padchar !== 'undefined' ? padchar : '0';
+      var pad = new Array(1 + padlen).join(pad_char);
+      return (pad + num).slice(-pad.length);
+  }
 
 
 const config = {
@@ -324,7 +329,10 @@ function get_data(day_num){
         //const regexp = new RegExp(cvItem.county_name, 'i');
         const result = fipsData.filter(fipsItem => fipsItem.State== cvItem.State_Name  && new RegExp(cvItem.County_Name, 'i').test(fipsItem.County));
         if (result[0]){
-          result[0].id = "05000US"+ result[0].fips;
+          //lets pad here move to input file in future
+          const county_pad = paddy(result[0].county, 3);
+          const state_pad =  paddy(result[0].state, 2);
+          result[0].id = "05000US"+ state_pad+county_pad;
           //AsiaPop10k <- ((acs_Data$JWOE047/acs_Data$JWAE001)*10000)
           Object.assign(result[0],cvItem);  
           result[0].ConfirmedPer10K=Number((Math.round(((result[0].Confirmed/result[0].TotalPop)*10000) * 100) / 100).toFixed(3));
