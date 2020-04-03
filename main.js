@@ -172,10 +172,10 @@ $(document).ready(function(){
 ///////////////////////////////////////////////
 
 
-function getAllIndexes(arr, val) {
+function getAllIndexes(arr) {
     var indexes = [], i;
     for(i = 0; i < arr.length; i++)
-        if (arr[i] === val)
+        if (arr[i] == null)
             indexes.push(i);
     return indexes;
 }
