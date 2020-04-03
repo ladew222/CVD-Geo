@@ -73,10 +73,7 @@
         const click_day = parseInt($(this).data( "day" ));
         const primary_var = $("input[name='my_options']:checked").val();
         let test_arr =[0,viz.color_range];
-        if (primary_var=="IncomeIneq" || primary_var=="Fatality_Rate"){
-            const adj =  viz.color_range/100;
-            test_arr =[0,adj];
-        }
+
         viz.active_day=click_day;
         $("a.days").removeClass("active");
         // $(".tab").addClass("active"); // instead of this do the below
@@ -186,6 +183,13 @@ $("#test").button().click(function(){
 
     $('#my_radio_box').change(function(){
         viz.primary_var = $("input[name='my_options']:checked").val();
+
+        if (viz.primary_var=="ConfirmedPer10K"){
+            $("#slider").slider('option',{min: 0, max: 5,step: 0.05,});
+        }
+        if( viz.primary_var=="Fatality_Rate") {
+            $("#slider").slider('option',{min: 0, max: .5,step: 0.005,});
+        }
 
     });
 
@@ -453,11 +457,6 @@ function get_data(day_num){
                 <input id = "test" type="submit" title="This will display for the Pearson correlation coefficients for the display variables for the state or all for the selected day. Higher numbers indicate stronger relationships." value="Correlate"/>
             </div>
         </div>
-
-
-
-
-
         <div id="corr-res">
 
         </div>
