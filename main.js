@@ -171,6 +171,15 @@ $(document).ready(function(){
 /////////////// JS Section ////////////////
 ///////////////////////////////////////////////
 
+
+function getAllIndexes(arr, val) {
+    var indexes = [], i;
+    for(i = 0; i < arr.length; i++)
+        if (arr[i] === val)
+            indexes.push(i);
+    return indexes;
+}
+
 d3.csv("us-state-fips.csv", function(error, data) {
     var select = d3.select("#states")
         .append("div")
@@ -277,6 +286,9 @@ function corr_test(the_day){
 
         const Confirmed_int = Confirmed.map(Number);
         const val1_int = val1.map(Number);
+        const nulls =getAllIndexes(val1_int, "undefined");
+        Confirmed_int.splice(nulls);
+        val1_int.splice(nulls);
         const test =pearson(val1_int,Confirmed_int);
         const result = (Math.round(pearson(val1_int,Confirmed_int) * 100) / 100).toFixed(2);
         out_str+= val + ": " + result + " </br>";

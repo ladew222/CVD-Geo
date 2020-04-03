@@ -16,7 +16,7 @@ const pearson = (x, y) => {
   x.forEach(reduce);
   return (minLength * sumXY - sumX * sumY) / Math.sqrt((minLength * sumX2 - sumX * sumX) * (minLength * sumY2 - sumY * sumY));
 };
-let arrX = [20, 54, 54, 65, 45];
+/*let arrX = [20, 54, 54, 65, 45];
 let arrY = [22, 11, 21, 34, 87];
 let R = pearson(arrX, arrY);
-console.log('arrX', arrX, 'arrY', arrY, 'R', R);
+console.log('arrX', arrX, 'arrY', arrY, 'R', R);*/
