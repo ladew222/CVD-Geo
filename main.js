@@ -154,7 +154,6 @@ $(document).ready(function(){
         viz.primary_var = $("input[name='my_options']:checked").val();
 
         if (viz.primary_var=="ConfirmedPer10K"){
-            alert("ok");
             $("#slider").slider('option',{min: 0, max: 5,step: 0.05,});
         }
         if (viz.primary_var=="Confirmed"){
@@ -320,11 +319,12 @@ function get_data(day_num){
                     const state_pad =  paddy(result[0].state, 2);
                     result[0].id = "05000US"+ state_pad+county_pad;
                     //AsiaPop10k <- ((acs_Data$JWOE047/acs_Data$JWAE001)*10000)
-                    result[0].Confirmed = parseFloat(result[0].Confirmed);
-                    result[0].TotalPop = parseFloat(result[0].TotalPop);
-                    result[0].ConfirmedPer10K=Number(((((result[0].Confirmed/result[0].TotalPop)*10000) * 100) / 100).toFixed(3));
+                    cvItem.Confirmed = parseFloat(cvItem.Confirmed);
                     cvItem.Death = parseFloat(cvItem.Death);
                     cvItem.Fatality_Rate = parseFloat(cvItem.Fatality_Rate);
+                    result[0].TotalPop = parseFloat(result[0].TotalPop);
+                    result[0].ConfirmedPer10K=((result[0].TotalPop/10000)/cvItem.Confirmed);
+                    //result[0].ConfirmedPer10K=Number(((((result[0].Confirmed/result[0].TotalPop)*10000) * 100) / 100).toFixed(3));
                     Object.assign(result[0],cvItem);
                     result[0].TotalPop = parseFloat(result[0].TotalPop);
                     result[0].IncomeIneq = parseFloat(result[0].IncomeIneq);
