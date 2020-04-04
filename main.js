@@ -156,6 +156,9 @@ $(document).ready(function(){
         if (viz.primary_var=="ConfirmedPer10K"){
             $("#slider").slider('option',{min: 0, max: 5,step: 0.05,});
         }
+        if (viz.primary_var=="Confirmed"){
+            $("#slider").slider('option',{min: 0, max: 1000,step: 10,});
+        }
         if( viz.primary_var=="Fatality_Rate") {
             $("#slider").slider('option',{min: 0, max: .5,step: 0.005,});
         }
