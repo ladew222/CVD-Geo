@@ -316,8 +316,16 @@ function get_data(day_num){
                     const state_pad =  paddy(result[0].state, 2);
                     result[0].id = "05000US"+ state_pad+county_pad;
                     //AsiaPop10k <- ((acs_Data$JWOE047/acs_Data$JWAE001)*10000)
-                    Object.assign(result[0],cvItem);
                     result[0].ConfirmedPer10K=Number((Math.round(((result[0].Confirmed/result[0].TotalPop)*10000) * 100) / 100).toFixed(3));
+                    cvItem.Death = parseFloat(cvItem.Death);
+                    cvItem.Fatality_Rate = parseFloat(cvItem.Fatality_Rate);
+                    Object.assign(result[0],cvItem);
+                    result[0].TotalPop = parseFloat(result[0].TotalPop);
+                    result[0].IncomeIneq = parseFloat(result[0].IncomeIneq);
+                    result[0].med_age = parseFloat(result[0].med_age);
+                    result[0].AsiaPop10k = parseFloat(result[0].AsiaPop10k);
+                    result[0].white10k = parseFloat(result[0].white10k);
+                    result[0].EuropePop10k = parseFloat(result[0].EuropePop10k);
                     viz.itemList[day_num].push(result[0]);
                 }
                 else{
