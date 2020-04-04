@@ -154,6 +154,7 @@ $(document).ready(function(){
         viz.primary_var = $("input[name='my_options']:checked").val();
 
         if (viz.primary_var=="ConfirmedPer10K"){
+            alert("ok");
             $("#slider").slider('option',{min: 0, max: 5,step: 0.05,});
         }
         if (viz.primary_var=="Confirmed"){
@@ -163,7 +164,7 @@ $(document).ready(function(){
             $("#slider").slider('option',{min: 0, max: .5,step: 0.005,});
         }
         if( viz.primary_var=="Percent_Change") {
-            $("#slider").slider('option',{min: 0, max: 1500,step: 10});
+            $("#slider").slider('option',{min: 0, max: 3000,step: 10});
         }
 
     });
@@ -319,7 +320,8 @@ function get_data(day_num){
                     const state_pad =  paddy(result[0].state, 2);
                     result[0].id = "05000US"+ state_pad+county_pad;
                     //AsiaPop10k <- ((acs_Data$JWOE047/acs_Data$JWAE001)*10000)
-                    result[0].ConfirmedPer10K=Number((Math.round(((result[0].Confirmed/result[0].TotalPop)*10000) * 100) / 100).toFixed(3));
+                    result[0].Confirmed = parseFloat(result[0].Confirmed);
+                    result[0].ConfirmedPer10K=Number(((((result[0].Confirmed/result[0].TotalPop)*10000) * 100) / 100).toFixed(3));
                     cvItem.Death = parseFloat(cvItem.Death);
                     cvItem.Fatality_Rate = parseFloat(cvItem.Fatality_Rate);
                     Object.assign(result[0],cvItem);
