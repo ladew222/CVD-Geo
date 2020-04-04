@@ -268,29 +268,27 @@ function corr_test(the_day){
         let val = testArr[i];
         let Confirmed= null;
         let val1 = null
+        let Filtered = null;
         if (viz.active_state !=0){
-            Confirmed = itemList[viz.active_day].filter(function(obj) {
-                return parseInt(obj.state)==parseInt(selected_state);
-            }).map(function(obj) { return obj[val]; });
-
-            val1 = itemList[viz.active_day].filter(function(obj) {
-                return parseInt(obj.state)==parseInt(selected_state);
-            }).map(function(obj) { return obj.Confirmed; });
-
+            Filtered = itemList[viz.active_day].filter(function (el) {
+                return el.state == parseInt(selected_state);
+            });
         }
         else{
-            Confirmed = viz.itemList[0].map(a => a.Confirmed);
-            val1 = viz.itemList[the_day].map(a => a[val]);
-
+            Filtered = viz.itemList[viz.active_day];
         }
 
-        const Confirmed_int = Confirmed.map(Number);
-        const val1_int = val1.map(Number);
-        const nulls =getAllIndexes(val1_int, "undefined");
-        Confirmed_int.splice(nulls);
-        val1_int.splice(nulls);
-        const test =pearson(val1_int,Confirmed_int);
-        const result = (Math.round(pearson(val1_int,Confirmed_int) * 100) / 100).toFixed(2);
+        var bodyVars = {
+            [val]: 'metric',
+            Confirmed: 'metric'
+        };
+
+        var stats = new Statistics(Filtered, bodyVars);
+        Filtered.forEach(function(d){ d['Confirmed'] = +d['Confirmed']; });
+        Filtered.forEach(function(d){ d[val] = +d[val]; });
+        var r = stats.correlationCoefficient(val, 'Confirmed');
+        console.log(r);
+        const result =r.correlationCoefficient.toFixed(2);
         out_str+= val + ": " + result + " </br>";
     });
     out_str+="</div>";
