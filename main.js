@@ -126,6 +126,7 @@ $(document).ready(function(){
             const diffTime = Math.abs(start_date - end_date);
             const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
             viz.number_days= diffDays;
+            if()
             $( "#amount" ).val( (new Date(ui.values[ 0 ] *1000).toDateString() ) + " - " + end_date.toDateString() );
         }
     });
