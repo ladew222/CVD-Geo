@@ -310,6 +310,21 @@ function delta(){
 }
 /////end jquery
 
+function create_bar(strength,factor)
+{
+    const l1 = "<svg class='bar' width=\""+ strength*factor +"\" height=\"10\">"
+    const l2 = null;
+    if (Math.sign(strength)==1){
+        const l2 ="<rect x=\"0\" y=\"0\" width=\""+ strength*(factor-5) + "\" height=\"10\" fill=\"green\" />";
+    }
+    else{
+        strength= Math.abs((strength);
+        const l2 ="<rect x=\"0\" y=\"0\" width=\""+ strength*(factor-5) + "\" height=\"10\" fill=\"green\" />";
+    }
+
+    const l3 ="</svg>";
+    return l1+ l2+l3;
+}
 function corr_test(the_day){
     let testArr=["IncomeIneq","EuropePop10k","AsiaPop10k","insured35to64_per10k","white10k","med_age"];
 
@@ -339,7 +354,8 @@ function corr_test(the_day){
         var r = stats.correlationCoefficient(val, 'Confirmed');
         console.log(r);
         const result =r.correlationCoefficient.toFixed(2);
-        out_str+= val + ": " + result + " </br>";
+        const bar = create_bar(result,140);
+        out_str+= "<div class='corr'><div class='cor-val'>'" +  val + ": " + result +  "</div>" + bar + "</div> </br>";
     });
     out_str+="</div>";
 

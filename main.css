@@ -226,3 +226,14 @@ border-radius: 0px;
   border-right: 1px solid #003300;
 
 }
+.cor-val{
+  width: 65%;
+}
+.bar{
+  width: 35%;
+  margin-top: 5px;
+}
+.corr{
+  display: flex;
+  justify-content: space-between;
+}
