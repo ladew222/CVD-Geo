@@ -20,6 +20,7 @@ var viz = {
     active_day: 0,
     active_state:0,
     color_range:0,
+    days_in_month: 30
 };
 
 const map = new d3plus.Geomap()
@@ -121,12 +122,12 @@ $(document).ready(function(){
             const end_date= new Date(ui.values[ 1 ] *1000);
             const start_month = start_date.getUTCMonth() + 1; //months from 1-12
             const start_day = start_date.getUTCDate(); + 1; //months from 1-12
+            viz.days_in_month = getDaysInMonth(start_month,2020);
             viz.start_day=start_day;
             viz.start_month=start_month;
             const diffTime = Math.abs(start_date - end_date);
             const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
             viz.number_days= diffDays;
-            if()
             $( "#amount" ).val( (new Date(ui.values[ 0 ] *1000).toDateString() ) + " - " + end_date.toDateString() );
         }
     });
@@ -146,8 +147,18 @@ $(document).ready(function(){
         //$('#viz').empty();
         for (i = 0; i < viz.number_days; i++) {
             get_data(i);
-            let day_now = parseInt(viz.start_day)+i;
-            $("#days").append("<a class='days' data-day='" + i +  "'  href='#'>View map for "+ viz.start_month + "/" + day_now +  "</a></br>");
+            let day_now = null;
+            let month_now = null;
+            if (viz.start_day+i > viz.days_in_month){
+                month_now = viz.start_month+1;
+                day_now = (parseInt(viz.start_day)+i) - viz.days_in_month;
+            }
+            else{
+                month_now = viz.start_month;
+               day_now = parseInt(viz.start_day)+i;
+            }
+            //if need switch month
+            $("#days").append("<a class='days' data-day='" + i +  "'  href='#'>View map for "+  month_now  + "/" + day_now +  "</a></br>");
         }
     });
 
@@ -175,6 +186,13 @@ $(document).ready(function(){
 /////////////// JS Section ////////////////
 ///////////////////////////////////////////////
 
+var getDaysInMonth = function(month,year) {
+    // Here January is 1 based
+    //Day 0 is the last day in the previous month
+    return new Date(year, month, 0).getDate();
+// Here January is 0 based
+// return new Date(year, month+1, 0).getDate();
+};
 
 function getAllIndexes(arr) {
     var indexes = [], i;
@@ -308,8 +326,18 @@ function get_data(day_num){
     //curr_day
     d3.csv("county_fips_revised.csv", function(fipsData) {
         let the_day = parseInt(viz.start_day)+day_num;
-        const formattedDay = ("0" + the_day).slice(-2);
-        const formattedMonth = ("0" + viz.start_month).slice(-2);
+        let formattedDay = null;
+        let formattedMonth = null;
+        //const days_left_in_month = viz.days_in_month-viz.start_day;
+        if (the_day>viz.days_in_month){
+            formattedMonth = ("0" + (parseInt(viz.start_month)+1)).slice(-2);
+            the_day = (the_day-parseInt(viz.days_in_month));
+            formattedDay = ("0" + the_day).slice(-2);
+        }
+        else{
+            formattedDay = ("0" + the_day).slice(-2);
+            formattedMonth = ("0" + viz.start_month).slice(-2);
+        }
         d3.csv("https://raw.githubusercontent.com/tomquisel/covid19-data/master/data/csv/" + "2020-" + formattedMonth + "-" + formattedDay + ".csv" , function(cvData) {
             cvData.forEach(function(cvItem) {    ///new RegExp('/contact\\b', 'g').test(href)
                 //const regexp = new RegExp(cvItem.county_name, 'i');
