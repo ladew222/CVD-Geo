@@ -54,26 +54,51 @@ $(document).ready(function(){
                 //do something for 5 second
                 fulfill(delta());
             }).then(function(result){
-                map
-                    .data(viz.itemList[viz.active_day])
-                    .label(function(d) {
-                        var text =  "<b class='p-head'>"+ d.County + "</b><span class='p-other'>" + "</br>% Change: "+ d.Percent_Change +"</br>Confirmed: " + d.Confirmed +"</br>Previous Confirmed: "+ d.conf +  "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death + "<BR/>Fatality Rate: " + d.Fatality_Rate +  "<BR/>Population: "+ d.TotalPop + "</br>Gini Index: " + d.IncomeIneq + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>UnInsured 35to64 10k: " + d.insured35to64_per10k + "</span>" ;
-                        return text;
-                    })
-                    .fitFilter(function(d) {
-                        const state = parseInt(d.id.split('US')[1].substring(0, 2));
-                        if( viz.active_state!=0  ){
-                            return [ viz.active_state].indexOf(state)<0;
-                        }
-                        else{
-                            return true;
-                        }
-                    })
-                    .colorScale(primary_var)
-                    .colorScaleConfig({axisConfig: {
-                            domain: test_arr
-                        }})
-                    .render();
+                if (viz.color_range==0){
+
+                    map
+                        .data(viz.itemList[viz.active_day])
+                        .label(function(d) {
+                            var text =  "<b class='p-head'>"+ d.County + "</b><span class='p-other'>" + "</br>% Change: "+ d.Percent_Change +"</br>Confirmed: " + d.Confirmed +"</br>Previous Confirmed: "+ d.Confirm_old +"</br>Now Confirmed: "+ d.Confirm_new +  "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death + "<BR/>Fatality Rate: " + d.Fatality_Rate +  "<BR/>Population: "+ d.TotalPop + "</br>Gini Index: " + d.IncomeIneq + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>UnInsured 35to64 10k: " + d.insured35to64_per10k + "</span>" ;
+                            return text;
+                        })
+                        .fitFilter(function(d) {
+                            const state = parseInt(d.id.split('US')[1].substring(0, 2));
+                            if( viz.active_state!=0  ){
+                                return [ viz.active_state].indexOf(state)<0;
+                            }
+                            else{
+                                return true;
+                            }
+                        })
+                        .colorScale(primary_var)
+                        .render();
+                }
+                else{
+                    map
+                        .data(viz.itemList[viz.active_day])
+                        .label(function(d) {
+                            var text =  "<b class='p-head'>"+ d.County + "</b><span class='p-other'>" + "</br>% Change: "+ d.Percent_Change +"</br>Confirmed: "  + d.Confirmed +"</br>Previous Confirmed: "+ d.Confirm_old +"</br>Now Confirmed: "+ d.Confirm_new +  "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death + "<BR/>Fatality Rate: " + d.Fatality_Rate +  "<BR/>Population: "+ d.TotalPop + "</br>Gini Index: " + d.IncomeIneq + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>UnInsured 35to64 10k: " + d.insured35to64_per10k + "</span>" ;
+                            return text;
+                        })
+                        .fitFilter(function(d) {
+                            const state = parseInt(d.id.split('US')[1].substring(0, 2));
+                            if( viz.active_state!=0  ){
+                                return [ viz.active_state].indexOf(state)<0;
+                            }
+                            else{
+                                return true;
+                            }
+                        })
+                        .colorScale(primary_var)
+                        .colorScaleConfig({axisConfig: {
+                                domain: test_arr
+                            }})
+                        .render();
+
+                }
+
+
             });
         }
         else{
@@ -175,7 +200,7 @@ $(document).ready(function(){
             $("#slider").slider('option',{min: 0, max: .5,step: 0.005,});
         }
         if( viz.primary_var=="Percent_Change") {
-            $("#slider").slider('option',{min: 0, max: 3000,step: 10});
+            $("#slider").slider('option',{ min:0,max: 200,step: 1});
         }
 
     });
@@ -242,9 +267,6 @@ const config = {
 
 function delta(){
 
-    viz.itemList[0].forEach(function(d){ d['Confirmed'] = +d['Confirmed']; });
-    viz.itemList[viz.active_day].forEach(function(d){ d['Confirmed'] = +d['Confirmed']; });
-
     let arr1=viz.itemList[0];
     let arr2 =viz.itemList[viz.active_day];
 
@@ -259,7 +281,7 @@ function delta(){
      ];*/
 
     const result = Object.values([...arr1, ...arr2].reduce((acc, { id, Confirmed }) => {
-        acc[id] = { id, Confirmed_tot: (acc[id] ? acc[id].Confirmed_tot : 0) + Confirmed, conf:(acc[id] ? acc[id].Confirmed_tot : 0) , conf2: Confirmed,Percent_Change: ((Confirmed - (acc[id] ? acc[id].Confirmed_tot : 0)) /(acc[id] ? acc[id].Confirmed_tot : .01))*100};
+        acc[id] = { id, Confirmed_tot:  Confirmed - (acc[id] ? acc[id].Confirmed_tot : 0) , Confirm_old:(acc[id] ? acc[id].Confirmed_tot : 0) , Confirm_new: Confirmed, Percent_Change:  (Confirmed - (acc[id] ? acc[id].Confirmed_tot : 0))/(acc[id] ? acc[id].Confirmed_tot : 0)};
         return acc;
     }, {}));
 
