@@ -326,7 +326,7 @@ function create_bar(strength,factor)
     return l1+ l2+l3;
 }
 function corr_test(the_day){
-    let testArr=["IncomeIneq","EuropePop10k","AsiaPop10k","insured35to64_per10k","white10k","med_age","perCapitaIncome","bachelor_degreeM_per10k","perCapitaIncome"];
+    let testArr=["IncomeIneq","EuropePop10k","AsiaPop10k","insured35to64_per10k","white10k","med_age","perCapitaIncome","bachelor_degreeM_per10k","perCapitaIncome","UrbanPer10k"];
 
     let out_str="<div class='corr-rs'>";
     testArr.forEach(function(number, i) {
@@ -380,6 +380,9 @@ function corr_test(the_day){
                 break;
             case 'bachelor_degreeM_per10k':
                 title ="Men with bachelor's degrees per-10k";
+                break;
+            case 'UrbanPer10k':
+                title ="Urban per 10k";
                 break;
 
         }
@@ -435,6 +438,7 @@ function get_data(day_num){
                     result[0].EuropePop10k = parseFloat(result[0].EuropePop10k);
                     result[0].perCapitaIncome = parseFloat(result[0].perCapitaIncome);
                     result[0].bachelor_degreeM_per10k = parseFloat(result[0].bachelor_degreeM_per10k);
+                    result[0].UrbanPer10k = parseFloat(result[0].UrbanPer10k);
                     viz.itemList[day_num].push(result[0]);
                 }
                 else{
