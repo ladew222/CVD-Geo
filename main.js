@@ -313,13 +313,13 @@ function delta(){
 function create_bar(strength,factor)
 {
     const l1 = "<svg class='bar' width=\""+ strength*factor +"\" height=\"10\">"
-    const l2 = null;
+    let l2 = null;
     if (Math.sign(strength)==1){
-        const l2 ="<rect x=\"0\" y=\"0\" width=\""+ strength*(factor-5) + "\" height=\"10\" fill=\"green\" />";
+        l2 ="<rect x=\"0\" y=\"0\" width=\""+ strength*(factor-5) + "\" height=\"10\" fill=\"green\" />";
     }
     else{
-        strength= Math.abs((strength);
-        const l2 ="<rect x=\"0\" y=\"0\" width=\""+ strength*(factor-5) + "\" height=\"10\" fill=\"green\" />";
+        strength= Math.abs(strength);
+        l2 ="<rect x=\"0\" y=\"0\" width=\""+ strength*(factor-5) + "\" height=\"10\" fill=\"red\" />";
     }
 
     const l3 ="</svg>";
@@ -355,7 +355,7 @@ function corr_test(the_day){
         console.log(r);
         const result =r.correlationCoefficient.toFixed(2);
         const bar = create_bar(result,140);
-        out_str+= "<div class='corr'><div class='cor-val'>'" +  val + ": " + result +  "</div>" + bar + "</div> </br>";
+        out_str+= "<div class='corr'><div class='cor-val'>" +  val + ": " + result +  "</div>" + bar + "</div>";
     });
     out_str+="</div>";
 
