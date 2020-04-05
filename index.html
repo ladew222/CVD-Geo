@@ -47,7 +47,7 @@
                     <a href="/">Home</a>
                 </li>
                 <li>
-                    <a href="/about.html">Map Information</a>
+                    <a href="#" class="cus_dy_lnk">Map Information</a>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
@@ -151,11 +151,26 @@
         </div>
     </div>
     <div class="col-sm-0 col-md-6 col-lg-9" >
-      <div id="container">
+      <div id="container" class="main-content">
     	 <div id="viz" style="height: 600px"></div>
       </div>
     </div>
   </div>
+</div>
+<div class="hidden">
+    <Br/>
+    <Br/>
+    <Br/>
+    <Br/>
+    <p>
+    This data viewer uses data from <a href="https://github.com/tomquisel/covid19-data">Tom Quisel's COVID-19 database</a> and provides a variety of ways to look at the day
+    data. The goal is to allow better understanding of county level data. In particular, it allows users to look at a variety of factor and on and across differnt dates.  It should not replace advice
+    and expertise of the CDC and other state and governmental agencies as the tools and methods used are somewhat rudimentary. It currently being developed and data validation has not yet occurred. There are some counties that are missing in the display which will hopefully be resolved soon. The Pearson test of correlation also is not yet built to handle null values.
+    </p>
+    <p>
+       <h4>How to:</h4>
+        To start return to the main page and slide the slider below the dates on the left panel. This will let you select a range of dates. Then click get data.  Now you can choose days and dimensions to view the map.
+    </p>
 </div>
 </body>
 </html>

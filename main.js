@@ -161,11 +161,24 @@ $(document).ready(function(){
         " - " + (new Date($( "#slider-range" ).slider( "values", 1 )*1000)).toDateString());
 
 
+    $(".cus_dy_lnk").click(function(){
+
+        $( ".main-content" ).html($( ".hidden" ).html());
+
+    });
+
+    $(".cus_dy_lnk").on("click", "a", function(){
+
+        $( ".main-content" ).html($( ".hidden</p>" ).html());
+    });
+
     $("#test").button().click(function(){
 
         $( "#corr-res" ).html(corr_test(viz.active_day));
 
     });
+
+
 
     //    button click
     $("#btnSubmit").button().click(function(){
