@@ -326,7 +326,7 @@ function create_bar(strength,factor)
     return l1+ l2+l3;
 }
 function corr_test(the_day){
-    let testArr=["IncomeIneq","EuropePop10k","AsiaPop10k","insured35to64_per10k","white10k","med_age"];
+    let testArr=["IncomeIneq","EuropePop10k","AsiaPop10k","insured35to64_per10k","white10k","med_age","perCapitaIncome","bachelor_degreeM_per10k","perCapitaIncome"];
 
     let out_str="<div class='corr-rs'>";
     testArr.forEach(function(number, i) {
@@ -355,7 +355,35 @@ function corr_test(the_day){
         console.log(r);
         const result =r.correlationCoefficient.toFixed(2);
         const bar = create_bar(result,140);
-        out_str+= "<div class='corr'><div class='cor-val'>" +  val + ": " + result +  "</div>" + bar + "</div>";
+        let title="";
+        switch (val) {
+            case 'IncomeIneq':
+                title ='Gini Index of Income equality 0 is perfect equality 1 is perfect inequality';
+                break;
+            case 'EuropePop10k':
+                title ='Number of people born in Europe per 10k';
+                break;
+            case 'AsiaPop10k':
+                title ='Number of people born in Asia per 10k';
+                break;
+            case 'insured35to64_per10k':
+                title ='Number of people insured(35 to 64) per 10k';
+                break;
+            case 'insured35to64_per10k':
+                title ='Number of people insured(35 to 64) per 10k';
+                break;
+            case 'white10k':
+                title ='Number of white people per 10k';
+                break;
+            case 'med_age':
+                title ='Number of white people per 10k';
+                break;
+            case 'bachelor_degreeM_per10k':
+                title ="Men with bachelor's degrees per-10k";
+                break;
+
+        }
+        out_str+= "<div class='corr' title ='" + title + "'><div class='cor-val'>" +  val + ": " + result +  "</div>" + bar + "</div>";
     });
     out_str+="</div>";
 
@@ -405,6 +433,8 @@ function get_data(day_num){
                     result[0].AsiaPop10k = parseFloat(result[0].AsiaPop10k);
                     result[0].white10k = parseFloat(result[0].white10k);
                     result[0].EuropePop10k = parseFloat(result[0].EuropePop10k);
+                    result[0].perCapitaIncome = parseFloat(result[0].perCapitaIncome);
+                    result[0].bachelor_degreeM_per10k = parseFloat(result[0].bachelor_degreeM_per10k);
                     viz.itemList[day_num].push(result[0]);
                 }
                 else{
