@@ -163,14 +163,10 @@ $(document).ready(function(){
 
     $(".cus_dy_lnk").click(function(){
 
-        $( ".main-content" ).html($( ".hidden" ).html());
+        $( "#viz" ).html($( ".hidden" ).html());
 
     });
 
-    $(".cus_dy_lnk").on("click", "a", function(){
-
-        $( ".main-content" ).html($( ".hidden</p>" ).html());
-    });
 
     $("#test").button().click(function(){
 
