@@ -59,7 +59,7 @@ $(document).ready(function(){
                     map
                         .data(viz.itemList[viz.active_day])
                         .label(function(d) {
-                            var text =  "<b class='p-head'>"+ d.County + "</b><span class='p-other'>" + "</br>% Change: "+ d.Percent_Change +"</br>Confirmed: " + d.Confirmed +"</br>Previous Confirmed: "+ d.Confirm_old +"</br>Now Confirmed: "+ d.Confirm_new +  "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death + "<BR/>Fatality Rate: " + d.Fatality_Rate +  "<BR/>Population: "+ d.TotalPop + "</br>Gini Index: " + d.IncomeIneq + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>UnInsured 35to64 10k: " + d.insured35to64_per10k + "</span>" ;
+                            var text =  "<b class='p-head'>"+ d.County + "</b><span class='p-other'>" + "</br>% Change: "+ d.Percent_Change +"</br>Confirmed: "+ "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death + "<BR/>Fatality Rate: " + d.Fatality_Rate +  "<BR/>Population: "+ d.TotalPop + "</br>Gini Index: " + d.IncomeIneq + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>UnInsured 35to64 10k: " + d.insured35to64_per10k + "</span>" ;
                             return text;
                         })
                         .fitFilter(function(d) {
@@ -78,7 +78,7 @@ $(document).ready(function(){
                     map
                         .data(viz.itemList[viz.active_day])
                         .label(function(d) {
-                            var text =  "<b class='p-head'>"+ d.County + "</b><span class='p-other'>" + "</br>% Change: "+ d.Percent_Change +"</br>Confirmed: "  + d.Confirmed +"</br>Previous Confirmed: "+ d.Confirm_old +"</br>Now Confirmed: "+ d.Confirm_new +  "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death + "<BR/>Fatality Rate: " + d.Fatality_Rate +  "<BR/>Population: "+ d.TotalPop + "</br>Gini Index: " + d.IncomeIneq + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>UnInsured 35to64 10k: " + d.insured35to64_per10k + "</span>" ;
+                            var text =  "<b class='p-head'>"+ d.County + "</b><span class='p-other'>" + "</br>% Change: "+ d.Percent_Change +"</br>Confirmed: "  + d.Confirmed +  "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death + "<BR/>Fatality Rate: " + d.Fatality_Rate +  "<BR/>Population: "+ d.TotalPop + "</br>Gini Index: " + d.IncomeIneq + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>UnInsured 35to64 10k: " + d.insured35to64_per10k + "</span>" ;
                             return text;
                         })
                         .fitFilter(function(d) {
@@ -200,7 +200,7 @@ $(document).ready(function(){
             $("#slider").slider('option',{min: 0, max: .5,step: 0.005,});
         }
         if( viz.primary_var=="Percent_Change") {
-            $("#slider").slider('option',{ min:0,max: 200,step: 1});
+            $("#slider").slider('option',{ min:0,max: 1200,step: 5});
         }
 
     });
@@ -297,6 +297,12 @@ function delta(){
         );
     }
     viz.itemList[viz.active_day] = merged;
+    //viz.itemList[0].forEach(function(d){ d['Confirmed'] = +d['Confirmed']; });
+    viz.itemList[viz.active_day].forEach(function(d){
+        if( isFinite(d['Percent_Change'])==false){
+            d['Percent_Change']=1000;
+        }
+    });
 
     console.log(merged);
 
