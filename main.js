@@ -40,18 +40,18 @@ function build_map(primary_var){
 
     if(viz.mobility_data==true){
         map.label(function(d) {
-            var text =  "<b class='p-head'>"+ d.County + "</b><span class='p-other'>" + "</br>% Change: "+ d.Percent_Change +"</br>Confirmed: "+ "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death + "<BR/>Fatality Rate: " + d.Fatality_Rate +  "<BR/>Population: "+ d.TotalPop + "</br>Residential Mobility: " + d.Residential + "<BR/>Workplace Mobility: "+ d.Workplaces + "<BR/>Retail & recreation mobility:" + d["Retail & recreation"] +"</br>Gini Index: " + d.IncomeIneq + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>UnInsured 35to64 10k: " + d.insured35to64_per10k + "</span>" ;
+            var text =  "<b class='p-head'>"+ d.County + "</b><span class='p-other'>" + "</br>% Change: "+ d.Percent_Change +"</br>Confirmed: "+ d.Confirmed + "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death + "<BR/>Fatality Rate: " + d.Fatality_Rate +  "<BR/>Population: "+ d.TotalPop + "</br>Residential Mobility: " + d.Residential + "<BR/>Workplace Mobility: "+ d.Workplaces + "<BR/>Retail & recreation mobility:" + d["Retail & recreation"] +"</br>Gini Index: " + d.IncomeIneq + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>UnInsured 35to64 10k: " + d.insured35to64_per10k + "</span>" ;
             return text;
         })
     }
     else{
         map.label(function(d) {
-            var text =  "<b class='p-head'>"+ d.County + "</b><span class='p-other'>" + "</br>% Change: "+ d.Percent_Change +"</br>Confirmed: "+ "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death + "<BR/>Fatality Rate: " + d.Fatality_Rate +  "<BR/>Population: "+ d.TotalPop  +"</br>Gini Index: " + d.IncomeIneq + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>UnInsured 35to64 10k: " + d.insured35to64_per10k + "</span>" ;
+            var text =  "<b class='p-head'>"+ d.County + "</b><span class='p-other'>" + "</br>% Change: "+ d.Percent_Change +"</br>Confirmed: "+  d.Confirmed + "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death + "<BR/>Fatality Rate: " + d.Fatality_Rate +  "<BR/>Population: "+ d.TotalPop  +"</br>Gini Index: " + d.IncomeIneq + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>UnInsured 35to64 10k: " + d.insured35to64_per10k + "</span>" ;
             return text;
         })
 
     }
-
+    let test_arr =[0,viz.color_range];
     if(primary_var=='Percent_Change'){
         new Promise(function(fulfill, reject){
             //do something for 5 second
@@ -242,7 +242,7 @@ $(document).ready(function(){
             }
             //if need switch month
             $("#days .c1").append("<a class='days' data-type='std' data-day='" + i +  "'  href='#'>View map for "+  month_now  + "/" + day_now +  "</a></br>");
-            $("#days .c2").append("<a class='days' data-type='mobile' data-day='" + i +  "'  href='#'>Mobility Data "+  month_now  + "/" + day_now +  "</a></br>");
+            $("#days .c2").append("<a class='days' data-type='mobile' data-day='" + i +  "'  href='#'>With Mobility Data </a></br>");
         }
 
     });
