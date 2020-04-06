@@ -20,13 +20,112 @@ var viz = {
     active_day: 0,
     active_state:0,
     color_range:0,
-    days_in_month: 30
+    days_in_month: 30,
+    mobility_data: false,
 };
 
 const map = new d3plus.Geomap()
     .config(config_new)
     .data(viz.itemList[0])
     .colorScale("Confirmed");
+
+
+
+function build_map(primary_var){
+
+
+    $("a.days").removeClass("active");
+    // $(".tab").addClass("active"); // instead of this do the below
+    $(this).addClass("active");
+
+    if(viz.mobility_data==true){
+        map.label(function(d) {
+            var text =  "<b class='p-head'>"+ d.County + "</b><span class='p-other'>" + "</br>% Change: "+ d.Percent_Change +"</br>Confirmed: "+ "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death + "<BR/>Fatality Rate: " + d.Fatality_Rate +  "<BR/>Population: "+ d.TotalPop + "</br>Residential Mobility: " + d.Residential + "<BR/>Workplace Mobility: "+ d.Workplaces + "<BR/>Retail & recreation mobility:" + d["Retail & recreation"] +"</br>Gini Index: " + d.IncomeIneq + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>UnInsured 35to64 10k: " + d.insured35to64_per10k + "</span>" ;
+            return text;
+        })
+    }
+    else{
+        map.label(function(d) {
+            var text =  "<b class='p-head'>"+ d.County + "</b><span class='p-other'>" + "</br>% Change: "+ d.Percent_Change +"</br>Confirmed: "+ "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death + "<BR/>Fatality Rate: " + d.Fatality_Rate +  "<BR/>Population: "+ d.TotalPop  +"</br>Gini Index: " + d.IncomeIneq + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>UnInsured 35to64 10k: " + d.insured35to64_per10k + "</span>" ;
+            return text;
+        })
+
+    }
+
+    if(primary_var=='Percent_Change'){
+        new Promise(function(fulfill, reject){
+            //do something for 5 second
+            fulfill(delta());
+        }).then(function(result){
+
+            if (viz.color_range==0){
+
+                map
+                    .data(viz.itemList[viz.active_day])
+                    .label(function(d) {
+                        var text =  "<b class='p-head'>"+ d.County + "</b><span class='p-other'>" + "</br>% Change: "+ d.Percent_Change +"</br>Confirmed: "+ "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death + "<BR/>Fatality Rate: " + d.Fatality_Rate +  "<BR/>Population: "+ d.TotalPop + mobility+ "</br>Gini Index: " + d.IncomeIneq + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>UnInsured 35to64 10k: " + d.insured35to64_per10k + "</span>" ;
+                        return text;
+                    })
+                    .fitFilter(function(d) {
+                        const state = parseInt(d.id.split('US')[1].substring(0, 2));
+                        if( viz.active_state!=0  ){
+                            return [ viz.active_state].indexOf(state)<0;
+                        }
+                        else{
+                            return true;
+                        }
+                    })
+                    .colorScale(primary_var)
+                    .render();
+            }
+            else{
+                map
+                    .data(viz.itemList[viz.active_day])
+                    .label(function(d) {
+                        var text =  "<b class='p-head'>"+ d.County + "</b><span class='p-other'>" + "</br>% Change: "+ d.Percent_Change +"</br>Confirmed: "  + d.Confirmed +  "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death + "<BR/>Fatality Rate: " + d.Fatality_Rate +  "<BR/>Population: "+ d.TotalPop + mobility + "</br>Gini Index: " + d.IncomeIneq + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>UnInsured 35to64 10k: " + d.insured35to64_per10k + "</span>" ;
+                        return text;
+                    })
+                    .fitFilter(function(d) {
+                        const state = parseInt(d.id.split('US')[1].substring(0, 2));
+                        if( viz.active_state!=0  ){
+                            return [ viz.active_state].indexOf(state)<0;
+                        }
+                        else{
+                            return true;
+                        }
+                    })
+                    .colorScale(primary_var)
+                    .colorScaleConfig({axisConfig: {
+                            domain: test_arr
+                        }})
+                    .render();
+
+            }
+
+
+        });
+    }
+    else{
+        map
+            .data(viz.itemList[viz.active_day])
+            .fitFilter(function(d) {
+                const state = parseInt(d.id.split('US')[1].substring(0, 2));
+                if( viz.active_state!=0  ){
+                    return [ viz.active_state].indexOf(state)<0;
+                }
+                else{
+                    return true;
+                }
+            })
+            .colorScale(primary_var)
+            .colorScaleConfig({axisConfig: {
+                    domain: test_arr
+                }})
+            .render();
+    }
+
+
+}
 
 ///////////////////////////////////////////////
 /////////////// Jquery Section ////////////////
@@ -39,86 +138,32 @@ $(document).ready(function(){
 
     $( document ).tooltip();
 
+    $(".two-col").on("click", "c1", function(event){
+        console.log($(this).text());
+    });
+
     $('#days').on('click', 'a.days', function() {
         const click_day = parseInt($(this).data( "day" ));
+        const click_type = $(this).data( "type" );
         const primary_var = $("input[name='my_options']:checked").val();
         let test_arr =[0,viz.color_range];
-
         viz.active_day=click_day;
-        $("a.days").removeClass("active");
-        // $(".tab").addClass("active"); // instead of this do the below
-        $(this).addClass("active");
 
-        if(primary_var=='Percent_Change'){
+        if(click_type=='mobile'){
+            viz.mobility_data=true;
             new Promise(function(fulfill, reject){
                 //do something for 5 second
-                fulfill(delta());
+                fulfill(get_mobile_data(viz.active_day));
             }).then(function(result){
-                if (viz.color_range==0){
-
-                    map
-                        .data(viz.itemList[viz.active_day])
-                        .label(function(d) {
-                            var text =  "<b class='p-head'>"+ d.County + "</b><span class='p-other'>" + "</br>% Change: "+ d.Percent_Change +"</br>Confirmed: "+ "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death + "<BR/>Fatality Rate: " + d.Fatality_Rate +  "<BR/>Population: "+ d.TotalPop + "</br>Gini Index: " + d.IncomeIneq + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>UnInsured 35to64 10k: " + d.insured35to64_per10k + "</span>" ;
-                            return text;
-                        })
-                        .fitFilter(function(d) {
-                            const state = parseInt(d.id.split('US')[1].substring(0, 2));
-                            if( viz.active_state!=0  ){
-                                return [ viz.active_state].indexOf(state)<0;
-                            }
-                            else{
-                                return true;
-                            }
-                        })
-                        .colorScale(primary_var)
-                        .render();
-                }
-                else{
-                    map
-                        .data(viz.itemList[viz.active_day])
-                        .label(function(d) {
-                            var text =  "<b class='p-head'>"+ d.County + "</b><span class='p-other'>" + "</br>% Change: "+ d.Percent_Change +"</br>Confirmed: "  + d.Confirmed +  "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death + "<BR/>Fatality Rate: " + d.Fatality_Rate +  "<BR/>Population: "+ d.TotalPop + "</br>Gini Index: " + d.IncomeIneq + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>UnInsured 35to64 10k: " + d.insured35to64_per10k + "</span>" ;
-                            return text;
-                        })
-                        .fitFilter(function(d) {
-                            const state = parseInt(d.id.split('US')[1].substring(0, 2));
-                            if( viz.active_state!=0  ){
-                                return [ viz.active_state].indexOf(state)<0;
-                            }
-                            else{
-                                return true;
-                            }
-                        })
-                        .colorScale(primary_var)
-                        .colorScaleConfig({axisConfig: {
-                                domain: test_arr
-                            }})
-                        .render();
-
-                }
-
-
+                build_map( primary_var);
             });
         }
         else{
-            map
-                .data(viz.itemList[viz.active_day])
-                .fitFilter(function(d) {
-                    const state = parseInt(d.id.split('US')[1].substring(0, 2));
-                    if( viz.active_state!=0  ){
-                        return [ viz.active_state].indexOf(state)<0;
-                    }
-                    else{
-                        return true;
-                    }
-                })
-                .colorScale(primary_var)
-                .colorScaleConfig({axisConfig: {
-                        domain: test_arr
-                    }})
-                .render();
+            build_map(primary_var);
         }
+
+
+
 
 
     });
@@ -166,6 +211,11 @@ $(document).ready(function(){
         $( "#viz" ).html($( ".hidden" ).html());
 
     });
+    $(".test").click(function(){
+
+        get_mobile_data(0);
+
+    });
 
 
     $("#test").button().click(function(){
@@ -173,7 +223,6 @@ $(document).ready(function(){
         $( "#corr-res" ).html(corr_test(viz.active_day));
 
     });
-
 
 
     //    button click
@@ -192,8 +241,10 @@ $(document).ready(function(){
                day_now = parseInt(viz.start_day)+i;
             }
             //if need switch month
-            $("#days").append("<a class='days' data-day='" + i +  "'  href='#'>View map for "+  month_now  + "/" + day_now +  "</a></br>");
+            $("#days .c1").append("<a class='days' data-type='std' data-day='" + i +  "'  href='#'>View map for "+  month_now  + "/" + day_now +  "</a></br>");
+            $("#days .c2").append("<a class='days' data-type='mobile' data-day='" + i +  "'  href='#'>Mobility Data "+  month_now  + "/" + day_now +  "</a></br>");
         }
+
     });
 
     $('#my_radio_box').change(function(){
@@ -335,8 +386,10 @@ function create_bar(strength,factor)
     return l1+ l2+l3;
 }
 function corr_test(the_day){
-    let testArr=["IncomeIneq","EuropePop10k","AsiaPop10k","insured35to64_per10k","white10k","med_age","perCapitaIncome","bachelor_degreeM_per10k","perCapitaIncome","UrbanPer10k"];
-
+    let testArr=["IncomeIneq","EuropePop10k","AsiaPop10k","insured35to64_per10k","white10k","med_age","perCapitaIncome","bachelor_degreeM_per10k","perCapitaIncome","UrbanPer10k","Grocery & pharmacy","Retail & recreation"];
+    if(viz.mobility_data==true){
+        testArr.push("Residential","Workplaces");
+    }
     let out_str="<div class='corr-rs'>";
     testArr.forEach(function(number, i) {
         let val = testArr[i];
@@ -392,7 +445,15 @@ function corr_test(the_day){
                 break;
             case 'UrbanPer10k':
                 title ="Urban per 10k";
+            case 'Residential':
+                title ="Residential mobility reported by google on 3-29";
                 break;
+            case 'Workplaces':
+                title ="Workplace mobility as reported by google on 3-29";
+                break;
+            case 'Retail & recreation':
+                title="Retail & recreation mobility as reported by google on 3-29";
+                break
 
         }
         out_str+= "<div class='corr' title ='" + title + "'><div class='cor-val'>" +  val + ": " + result +  "</div>" + bar + "</div>";
@@ -400,6 +461,27 @@ function corr_test(the_day){
     out_str+="</div>";
 
     return out_str
+
+}
+
+function get_mobile_data(day_num){
+    let new_list =[];
+    d3.csv("mobility_report_US-3-29.csv", function(mobData) {
+        mobData.forEach(function(mobItem) {
+            const result = viz.itemList[day_num].filter(mainItem => mainItem.State_Name == mobItem.State  && new RegExp(mainItem.County_Name, 'i').test(mobItem.Region));  //mainItem.County_Name
+            if (result[0]){
+                mobItem.Residential= parseFloat(mobItem.Residential);
+                Object.assign(result[0],mobItem);
+                new_list.push(result[0]);
+            }
+            else{
+                console.log(mobItem.State + " " + mobItem.Region + " Not Found");
+            }
+        });
+        let test_arr =[0,viz.color_range];
+        viz.itemList[day_num] = new_list;
+
+    });
 
 }
 

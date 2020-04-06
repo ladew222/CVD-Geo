@@ -233,7 +233,14 @@ border-radius: 0px;
   width: 20%;
   margin-top: 5px;
 }
-.corr{
+.corr,.two-col{
   display: flex;
   justify-content: space-between;
+}
+
+.c1{
+  width: 50%;
+}
+.c2{
+  width: 50%;
 }
