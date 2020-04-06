@@ -34,9 +34,7 @@ const map = new d3plus.Geomap()
 function build_map(primary_var){
 
 
-    $("a.days").removeClass("active");
     // $(".tab").addClass("active"); // instead of this do the below
-    $(this).addClass("active");
 
     if(viz.mobility_data==true){
         map.label(function(d) {
