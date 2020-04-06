@@ -145,6 +145,7 @@ $(document).ready(function(){
     $('#days').on('click', 'a.days', function() {
         const click_day = parseInt($(this).data( "day" ));
         const click_type = $(this).data( "type" );
+        $(this).toggleClass( "active" );
         const primary_var = $("input[name='my_options']:checked").val();
         let test_arr =[0,viz.color_range];
         viz.active_day=click_day;
