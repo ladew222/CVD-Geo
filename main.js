@@ -34,8 +34,6 @@ const map = new d3plus.Geomap()
 function build_map(primary_var){
 
 
-    // $(".tab").addClass("active"); // instead of this do the below
-
     if(viz.mobility_data==true){
         map.label(function(d) {
             var text =  "<b class='p-head'>"+ d.County + "</b><span class='p-other'>" + "</br>Confirmed: "+ d.Confirmed + "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death + "<BR/>Fatality Rate: " + d.Fatality_Rate +  "<BR/>Population: "+ d.TotalPop + "</br>Residential Mobility: " + d.Residential + "<BR/>Workplace Mobility: "+ d.Workplaces + "<BR/>Retail & recreation mobility:" + d["Retail & recreation"] +"</br>Gini Index: " + d.IncomeIneq + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>UnInsured 35to64 10k: " + d.insured35to64_per10k + "</span>" ;
@@ -143,7 +141,10 @@ $(document).ready(function(){
     $('#days').on('click', 'a.days', function() {
         const click_day = parseInt($(this).data( "day" ));
         const click_type = $(this).data( "type" );
-        $(this).toggleClass( "active" );
+
+        $("a.days").removeClass("active");
+        // $(".tab").addClass("active"); // instead of this do the below
+        $(this).addClass("active");
         const primary_var = $("input[name='my_options']:checked").val();
         let test_arr =[0,viz.color_range];
         viz.active_day=click_day;
