@@ -145,26 +145,26 @@ $(document).ready(function(){
         $("a.days").removeClass("active");
         // $(".tab").addClass("active"); // instead of this do the below
         $(this).addClass("active");
-        const primary_var = $("input[name='my_options']:checked").val();
+        viz.primary_var = $("input[name='my_options']:checked").val();
         let test_arr =[0,viz.color_range];
         viz.active_day=click_day;
 
         if(click_type=='mobile'){
             viz.mobility_data=true;
-            new Promise(function(fulfill, reject){
-                //do something for 5 second
-                fulfill(get_mobile_data(viz.active_day));
-            }).then(function(result){
-                build_map( primary_var);
-            });
+            gmb()
+                .then(value => {
+                    console.log(value) // 1
+                    setTimeout(function () {
+                        if (-1 == -1) {
+                            build_map(viz.primary_var);
+                        }
+                    }, 5000);
+                    build_map(viz.primary_var);
+                })
         }
         else{
-            build_map(primary_var);
+            build_map(viz.primary_var);
         }
-
-
-
-
 
     });
 
@@ -464,10 +464,10 @@ function corr_test(the_day){
 
 }
 
-function get_mobile_data(day_num){
+async function get_mobile_data(day_num){
     let new_list =[];
-    d3.csv("mobility_report_US-3-29.csv", function(mobData) {
-        mobData.forEach(function(mobItem) {
+    d3.csv("mobility_report_US-3-29.csv", async function(mobData) {
+        for (const mobItem of mobData) {
             const result = viz.itemList[day_num].filter(mainItem => mainItem.State_Name == mobItem.State  && new RegExp(mainItem.County_Name, 'i').test(mobItem.Region));  //mainItem.County_Name
             if (result[0]){
                 mobItem.Residential= parseFloat(mobItem.Residential);
@@ -477,14 +477,34 @@ function get_mobile_data(day_num){
             else{
                 console.log(mobItem.State + " " + mobItem.Region + " Not Found");
             }
-        });
-        let test_arr =[0,viz.color_range];
+        }
         viz.itemList[day_num] = new_list;
+        return  new_list;
+
 
     });
 
 }
 
+const gmb = async _ => {
+    let new_list =[];
+    d3.csv("mobility_report_US-3-29.csv", async function(mobData) {
+        for (const mobItem of mobData) {
+            const result = viz.itemList[viz.active_day].filter(mainItem => mainItem.State_Name == mobItem.State  && new RegExp(mainItem.County_Name, 'i').test(mobItem.Region));  //mainItem.County_Name
+            if (result[0]){
+                mobItem.Residential= parseFloat(mobItem.Residential);
+                Object.assign(result[0],mobItem);
+                new_list.push(result[0]);
+            }
+            else{
+                console.log(mobItem.State + " " + mobItem.Region + " Not Found");
+            }
+        }
+        viz.itemList[viz.active_day] = new_list;
+        return await new_list;
+
+    });
+}
 
 
 function get_data(day_num){
