@@ -286,8 +286,7 @@ function getAllIndexes(arr) {
             indexes.push(i);
     return indexes;
 }
-
-d3.csv("us-state-fips.csv", function(error, data) {
+d3.csv("us-state-fips.csv").then(function(data) {
     var select = d3.select("#states")
         .append("div")
         .append("select")
@@ -304,7 +303,6 @@ d3.csv("us-state-fips.csv", function(error, data) {
         .attr("value", function (d) { return d.st; })
         .text(function (d) { return d.stname; });
 });
-
 
 function paddy(num, padlen, padchar) {
     var pad_char = typeof padchar !== 'undefined' ? padchar : '0';
@@ -464,9 +462,9 @@ function corr_test(the_day){
 
 }
 
-async function get_mobile_data(day_num){
+function get_mobile_data(day_num){
     let new_list =[];
-    d3.csv("mobility_report_US-3-29.csv", async function(mobData) {
+    d3.csv("us-state-fips.csv").then(function(data) {
         for (const mobItem of mobData) {
             const result = viz.itemList[day_num].filter(mainItem => mainItem.State_Name == mobItem.State  && new RegExp(mainItem.County_Name, 'i').test(mobItem.Region));  //mainItem.County_Name
             if (result[0]){
@@ -480,15 +478,13 @@ async function get_mobile_data(day_num){
         }
         viz.itemList[day_num] = new_list;
         return  new_list;
-
-
     });
 
 }
 
 const gmb = async _ => {
     let new_list =[];
-    d3.csv("mobility_report_US-3-29.csv", async function(mobData) {
+        d3.csv("mobility_report_US-3-29.csv").then(function(data) {
         for (const mobItem of mobData) {
             const result = viz.itemList[viz.active_day].filter(mainItem => mainItem.State_Name == mobItem.State  && new RegExp(mainItem.County_Name, 'i').test(mobItem.Region));  //mainItem.County_Name
             if (result[0]){
@@ -501,7 +497,7 @@ const gmb = async _ => {
             }
         }
         viz.itemList[viz.active_day] = new_list;
-        return await new_list;
+        return new_list;
 
     });
 }
@@ -510,7 +506,7 @@ const gmb = async _ => {
 function get_data(day_num){
     viz.itemList[day_num] = [];
     //curr_day
-    d3.csv("county_fips_revised.csv", function(fipsData) {
+    d3.csv("county_fips_revised.csv").then(function(fipsData) {
         let the_day = parseInt(viz.start_day)+day_num;
         let formattedDay = null;
         let formattedMonth = null;
@@ -524,7 +520,7 @@ function get_data(day_num){
             formattedDay = ("0" + the_day).slice(-2);
             formattedMonth = ("0" + viz.start_month).slice(-2);
         }
-        d3.csv("https://raw.githubusercontent.com/tomquisel/covid19-data/master/data/csv/" + "2020-" + formattedMonth + "-" + formattedDay + ".csv" , function(cvData) {
+        d3.csv("https://raw.githubusercontent.com/tomquisel/covid19-data/master/data/csv/" + "2020-" + formattedMonth + "-" + formattedDay + ".csv" ).then(function(cvData) {
             cvData.forEach(function(cvItem) {    ///new RegExp('/contact\\b', 'g').test(href)
                 //const regexp = new RegExp(cvItem.county_name, 'i');
                 const result = fipsData.filter(fipsItem => fipsItem.State== cvItem.State_Name  && new RegExp(cvItem.County_Name, 'i').test(fipsItem.County));
