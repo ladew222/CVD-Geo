@@ -125,7 +125,7 @@ function build_map(primary_var){
 
 ///////////////////////////////////////////////
 /////////////// Jquery Section ////////////////
-///////////////////////////////////////////////
+///////////////////////////////////////////////https://www.d3-graph-gallery.com/graph/basic_datamanipulation.html
 
 $(document).ready(function(){
     map
@@ -159,7 +159,8 @@ $(document).ready(function(){
                             build_map(viz.primary_var);
                         }
                     }, 5000);
-                    build_map(viz.primary_var);
+
+
                 })
         }
         else{
@@ -488,7 +489,7 @@ const gmb = async _ => {
         for (const mobItem of mobData) {
             const result = viz.itemList[viz.active_day].filter(mainItem => mainItem.State_Name == mobItem.State  && new RegExp(mainItem.County_Name, 'i').test(mobItem.Region));  //mainItem.County_Name
             if(result[0]){
-                mobItem.Residential= parseFloat(mobItem.Residential);
+                mobItem.Residential = parseFloat(mobItem.Residential);
                 Object.assign(result[0],mobItem);
                 new_list.push(result[0]);
             }
