@@ -14,8 +14,8 @@ const config_new = {
 var viz = {
     itemList:[],
     start_day: "3",
-    start_month: "14",
-    number_days:0,
+    start_month: "4",
+    number_days:7,
     primary_var:"Confirmed",
     active_day: 0,
     active_state:0,
@@ -128,6 +128,16 @@ function build_map(primary_var){
 ///////////////////////////////////////////////https://www.d3-graph-gallery.com/graph/basic_datamanipulation.html
 
 $(document).ready(function(){
+    const start_date = new Date(new Date().getTime() - (240 * 60 * 60 * 1000));
+    const end_date= new Date(new Date().getTime() - (48 * 60 * 60 * 1000));
+    const start_month = start_date.getUTCMonth() + 1; //months from 1-12
+    const start_day = start_date.getUTCDate(); + 1; //months from 1-12
+    viz.start_day = start_day;
+    viz. start_month= start_month;
+    viz.days_in_month = getDaysInMonth(start_month,2020);
+    viz.start_day=start_day;
+    viz.start_month=start_month;
+
     map
         .select('#viz')
         .render();
@@ -187,7 +197,7 @@ $(document).ready(function(){
         min: new Date('2020.03.14').getTime() / 1000,
         max: new Date().getTime() / 1000,
         step: 86400,
-        values: [ new Date('2020.03.14').getTime() / 1000, new Date('2020.03.14').getTime() / 1000 ],
+        values: [ new Date(new Date().getTime() - (240 * 60 * 60 * 1000)).getTime() / 1000, new Date(new Date().getTime() - (48 * 60 * 60 * 1000)).getTime() / 1000 ],
         slide: function( event, ui ) {
             const start_date = new Date(ui.values[ 0 ] *1000);
             const end_date= new Date(ui.values[ 1 ] *1000);
