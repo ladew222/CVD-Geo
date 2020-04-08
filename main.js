@@ -484,10 +484,10 @@ function get_mobile_data(day_num){
 
 const gmb = async _ => {
     let new_list =[];
-        d3.csv("mobility_report_US-3-29.csv").then(function(data) {
+        d3.csv("mobility_report_US-3-29.csv").then(function(mobData) {
         for (const mobItem of mobData) {
             const result = viz.itemList[viz.active_day].filter(mainItem => mainItem.State_Name == mobItem.State  && new RegExp(mainItem.County_Name, 'i').test(mobItem.Region));  //mainItem.County_Name
-            if (result[0]){
+            if(result[0]){
                 mobItem.Residential= parseFloat(mobItem.Residential);
                 Object.assign(result[0],mobItem);
                 new_list.push(result[0]);
@@ -505,7 +505,7 @@ const gmb = async _ => {
 
 function get_data(day_num){
     viz.itemList[day_num] = [];
-    //curr_day
+    //curr_day http://learnjsdata.com/combine_data.html
     d3.csv("county_fips_revised.csv").then(function(fipsData) {
         let the_day = parseInt(viz.start_day)+day_num;
         let formattedDay = null;
