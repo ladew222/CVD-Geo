@@ -1,0 +1,2794 @@
+"state","county","Grocery & pharmacy","Parks","Residential","Retail & recreation","Transit stations","Workplace"
+"Alabama","Autauga",3.053,NA,NA,-0.172,NA,4.733
+"Alabama","Baldwin",19.775,91.787,-2.034,16.858,18.658,4.32
+"Alabama","Barbour",-8.594,NA,NA,3.272,NA,4.543
+"Alabama","Bibb",-1.868,NA,NA,-4.796,NA,-1.666
+"Alabama","Blount",5.528,NA,NA,3.571,NA,1.307
+"Alabama","Bullock",-10.415,NA,NA,NA,NA,NA
+"Alabama","Butler",3.261,NA,NA,15.493,NA,-2.001
+"Alabama","Calhoun",0.705,-17.071,-0.31,2.963,NA,3.227
+"Alabama","Chambers",7.143,NA,NA,13.626,NA,-1.903
+"Alabama","Cherokee",3.151,NA,NA,-4.675,NA,1.434
+"Alabama","Chilton",-0.435,NA,NA,-3.163,9.999,5.263
+"Alabama","Choctaw",-3.227,NA,NA,NA,NA,NA
+"Alabama","Clarke",-30.553,NA,NA,1.213,NA,-5.884
+"Alabama","Clay",2.036,NA,NA,NA,NA,NA
+"Alabama","Cleburne",3.278,NA,NA,NA,-6.816,NA
+"Alabama","Coffee",-1.108,NA,NA,7.669,NA,-0.773
+"Alabama","Colbert",6.981,NA,NA,-1.305,-4.057,4.165
+"Alabama","Conecuh",-2.047,NA,NA,47.363,43.409,NA
+"Alabama","Coosa",NA,NA,NA,NA,NA,NA
+"Alabama","Covington",-5.24,NA,NA,0.002,NA,1.919
+"Alabama","Crenshaw",1.664,NA,NA,11.323,NA,NA
+"Alabama","Cullman",4.286,3.229,0.018,3.465,8.885,1.88
+"Alabama","Dale",29.409,NA,NA,-1.716,-10.869,0.599
+"Alabama","Dallas",NA,NA,NA,-6.245,1.051,-7.6
+"Alabama","DeKalb",2.085,7.551,NA,0.003,NA,6.664
+"Alabama","Elmore",-3.852,5.661,-0.43,1.579,NA,0.873
+"Alabama","Escambia",14.291,NA,NA,8.336,NA,1.979
+"Alabama","Etowah",3.255,NA,0.869,1.821,3.64,0.904
+"Alabama","Fayette",NA,NA,NA,-9.782,NA,NA
+"Alabama","Franklin",10.945,NA,NA,3.182,NA,-1.464
+"Alabama","Geneva",6.516,NA,NA,3.307,NA,-1.221
+"Alabama","Greene",-1.821,NA,NA,NA,19.532,NA
+"Alabama","Hale",-26.028,NA,NA,NA,NA,NA
+"Alabama","Henry",0.002,NA,NA,5.965,NA,-8.896
+"Alabama","Houston",-0.581,NA,-1.17,2.026,3.391,0.839
+"Alabama","Jackson",7.281,NA,NA,7.457,NA,0.739
+"Alabama","Jefferson",-1.872,-0.735,-0.062,-2.415,5.282,-1.134
+"Alabama","Lamar",0.002,NA,NA,NA,NA,NA
+"Alabama","Lauderdale",-0.536,-8.7,-0.007,1.037,NA,5.112
+"Alabama","Lawrence",-3.224,NA,NA,0.809,NA,3.412
+"Alabama","Lee",-1.547,-9.09,-1.074,0.431,NA,1.633
+"Alabama","Limestone",-1.986,6.345,-0.355,2.87,NA,3.746
+"Alabama","Lowndes",NA,NA,NA,NA,35.375,NA
+"Alabama","Macon",-8.234,NA,NA,13.848,1.097,-8.463
+"Alabama","Madison",-0.13,10.34,-2.363,0.03,3.342,0.39
+"Alabama","Marengo",NA,NA,NA,9.816,-0.017,0.815
+"Alabama","Marion",-4.366,NA,NA,-3.899,NA,-2.875
+"Alabama","Marshall",2.123,-4.249,0.49,1.148,NA,-0.825
+"Alabama","Mobile",15.367,62.653,4.842,23.001,1.451,-3.307
+"Alabama","Monroe",NA,NA,NA,0.042,NA,160.476
+"Alabama","Montgomery",3.174,0.005,-0.767,1.61,-16.306,-0.327
+"Alabama","Morgan",3.497,-13.71,-0.154,1.777,5.12,4.869
+"Alabama","Perry",-4.535,NA,NA,NA,NA,NA
+"Alabama","Pickens",-4.33,NA,NA,1.113,NA,NA
+"Alabama","Pike",-13.295,NA,NA,-0.608,NA,-1.142
+"Alabama","Randolph",-1.08,NA,NA,-1.048,NA,-0.024
+"Alabama","Russell",2.303,NA,0.154,2.695,NA,-0.959
+"Alabama","Shelby",-1.734,-13.914,-0.034,0.602,NA,2.091
+"Alabama","St. Clair",-4.858,NA,0.188,8.594,4.438,2.47
+"Alabama","Sumter",NA,NA,NA,NA,NA,NA
+"Alabama","Talladega",-5.035,-11.641,0.342,-2.515,10.152,-0.447
+"Alabama","Tallapoosa",7.964,NA,NA,6.239,NA,4.796
+"Alabama","Tuscaloosa",-1.247,-2.996,0.03,-0.182,10.052,3.18
+"Alabama","Walker",0.269,NA,NA,-2.715,8.556,5.297
+"Alabama","Washington",0.054,NA,NA,NA,NA,NA
+"Alabama","Wilcox",NA,NA,NA,NA,NA,NA
+"Alabama","Winston",1.802,NA,NA,-10.734,NA,1.906
+"Alaska","Anchorage",4.5,30.973,-0.799,12.14,1.678,4.028
+"Alaska","Bethel",NA,NA,NA,NA,NA,NA
+"Alaska","Fairbanks North Star",11.25,NA,-0.658,17.812,-4,2.381
+"Alaska","Juneau",-7.36,NA,NA,-11.665,-6.816,0
+"Alaska","Kenai Peninsula Borough",5.407,NA,NA,17.232,NA,-0.869
+"Alaska","Ketchikan Gateway",NA,NA,NA,-0.001,NA,NA
+"Alaska","Kodiak Island",NA,NA,NA,3.704,NA,NA
+"Alaska","Matanuska-Susitna",1.782,NA,-0.728,6.362,NA,1.819
+"Alaska","North Slope",NA,NA,NA,NA,NA,NA
+"Alaska","Sitka",NA,NA,NA,NA,NA,NA
+"Alaska","Southeast Fairbanks",NA,NA,NA,NA,NA,NA
+"Alaska","Valdez-Cordova",NA,NA,NA,NA,NA,NA
+"Arizona","Apache",-4.545,-16.901,NA,-8.679,3.264,-1.288
+"Arizona","Cochise",2.462,3.253,0.402,3.561,6.373,1.338
+"Arizona","Coconino",-0.118,-6.517,0.32,-2.82,-2.405,2.612
+"Arizona","Gila",11.504,-3.229,NA,7.133,NA,-1.596
+"Arizona","Graham",11.18,NA,NA,17.5,NA,0.947
+"Arizona","Greenlee",-8.195,NA,NA,NA,NA,NA
+"Arizona","La Paz",-7.009,-19.467,NA,-10.186,-3.154,-5.408
+"Arizona","Maricopa",0.713,6.357,-0.515,6.676,7.924,1.635
+"Arizona","Mohave",4.687,20.098,-0.263,6.802,4.886,-0.711
+"Arizona","Navajo",3.427,-8.62,2.534,-3.487,2.715,-2.786
+"Arizona","Pima",3.387,11.016,-0.552,0.977,-0.767,-0.734
+"Arizona","Pinal",-5.703,-4.097,-0.284,23.423,15.967,-1.092
+"Arizona","Santa Cruz",-9.996,5.055,NA,0.74,14.754,1.47
+"Arizona","Yavapai",6.217,-9.184,1.063,-0.816,-1.985,0.595
+"Arizona","Yuma",2.339,12.86,-0.548,4.865,10.091,-2.81
+"Arkansas","Arkansas",-1.694,NA,NA,-9.677,NA,NA
+"Arkansas","Ashley",-10.589,NA,NA,-2.308,NA,-4.165
+"Arkansas","Baxter",-5.882,NA,NA,5,NA,-7.756
+"Arkansas","Benton",0.474,-57.416,1.008,2.438,-3.868,0.14
+"Arkansas","Boone",-6.383,NA,NA,-0.419,NA,0.892
+"Arkansas","Bradley",-11.111,NA,NA,NA,NA,NA
+"Arkansas","Carroll",-1.695,NA,NA,1.424,NA,2.535
+"Arkansas","Chicot",NA,NA,NA,NA,NA,NA
+"Arkansas","Clark",-7.843,NA,NA,2.206,-0.909,-1.695
+"Arkansas","Clay",NA,NA,NA,1.219,NA,NA
+"Arkansas","Cleburne",14.474,NA,NA,-2.604,NA,-4.615
+"Arkansas","Cleveland",NA,NA,NA,NA,NA,NA
+"Arkansas","Columbia",-25,NA,NA,5.747,NA,-5.884
+"Arkansas","Conway",-14.819,NA,NA,3.861,-3.278,3.57
+"Arkansas","Craighead",4.875,NA,0.478,0.355,NA,1.719
+"Arkansas","Crawford",-8.563,NA,NA,-1.525,NA,2.806
+"Arkansas","Crittenden",-4.329,NA,NA,8.412,7.007,-4.699
+"Arkansas","Cross",8.928,NA,NA,-3.032,NA,NA
+"Arkansas","Dallas",NA,NA,NA,-6.665,NA,NA
+"Arkansas","Desha",-7.551,NA,NA,-11.845,NA,NA
+"Arkansas","Drew",6.173,NA,NA,-4.637,NA,NA
+"Arkansas","Faulkner",-5.473,-45.238,1.009,0.264,NA,1.863
+"Arkansas","Franklin",1.471,NA,NA,-1.014,-1.583,-2.219
+"Arkansas","Fulton",NA,NA,NA,NA,NA,NA
+"Arkansas","Garland",-7.249,-29.573,0.934,3.127,NA,2.115
+"Arkansas","Grant",NA,NA,NA,-1.608,NA,NA
+"Arkansas","Greene",-8.47,NA,NA,2.404,NA,3.252
+"Arkansas","Hempstead",-1.066,NA,NA,-0.906,NA,0.003
+"Arkansas","Hot Spring",-3.702,NA,NA,5.335,-57.499,3.066
+"Arkansas","Howard",0.003,NA,NA,-8.195,NA,NA
+"Arkansas","Independence",3.246,NA,NA,3.215,NA,-3.157
+"Arkansas","Izard",NA,NA,NA,NA,NA,NA
+"Arkansas","Jackson",-6.818,NA,NA,4.347,NA,NA
+"Arkansas","Jefferson",5.617,NA,NA,-0.433,6.991,-1.611
+"Arkansas","Johnson",3.296,-27.504,NA,-5.795,NA,-2.739
+"Arkansas","Lawrence",-8.041,NA,NA,-9.649,NA,NA
+"Arkansas","Lincoln",NA,NA,NA,NA,NA,NA
+"Arkansas","Little River",-7.013,NA,NA,-1.15,NA,NA
+"Arkansas","Logan",-6.672,NA,NA,-0.585,NA,0.001
+"Arkansas","Lonoke",0.942,NA,NA,1.824,NA,1.589
+"Arkansas","Madison",-7.893,NA,NA,1.903,NA,NA
+"Arkansas","Marion",3.389,NA,NA,-3.614,NA,NA
+"Arkansas","Miller",-7.481,NA,NA,0.987,5.346,-0.732
+"Arkansas","Mississippi",1.706,NA,NA,5.431,5.628,-2.016
+"Arkansas","Monroe",-1.94,NA,NA,NA,NA,NA
+"Arkansas","Montgomery",NA,NA,NA,NA,NA,NA
+"Arkansas","Nevada",NA,NA,NA,NA,-9.684,NA
+"Arkansas","Newton",NA,NA,NA,NA,NA,NA
+"Arkansas","Ouachita",-26.2,NA,NA,7.547,NA,3.583
+"Arkansas","Perry",NA,NA,NA,NA,NA,NA
+"Arkansas","Phillips",-1.979,NA,NA,1.556,NA,NA
+"Arkansas","Pike",1.341,NA,NA,14.27,NA,NA
+"Arkansas","Poinsett",-13.979,NA,NA,-1.139,NA,-5.557
+"Arkansas","Polk",-8.067,NA,NA,4.38,NA,3.854
+"Arkansas","Pope",0.014,NA,NA,0.426,-5.171,0
+"Arkansas","Prairie",NA,NA,NA,NA,NA,NA
+"Arkansas","Pulaski",-1.132,-1.641,-4.289,-4.918,-0.372,1.117
+"Arkansas","Randolph",NA,NA,NA,22.865,0.001,-40.971
+"Arkansas","Saline",-9.459,-17.018,1.253,5.332,-4.022,-1.765
+"Arkansas","Scott",NA,NA,NA,NA,NA,NA
+"Arkansas","Searcy",NA,NA,NA,NA,NA,NA
+"Arkansas","Sebastian",-4.705,-47.317,0.425,-0.523,NA,-0.257
+"Arkansas","Sevier",-4.688,NA,NA,-5.934,NA,NA
+"Arkansas","Sharp",-9.206,NA,NA,-1.201,NA,-4.347
+"Arkansas","St. Francis",9.719,NA,NA,-8.464,-1.326,-0.028
+"Arkansas","Stone",NA,NA,NA,-7.609,NA,NA
+"Arkansas","Union",-2.317,NA,NA,0.296,NA,2.105
+"Arkansas","Van Buren",NA,NA,NA,-5.648,NA,NA
+"Arkansas","Washington",-0.336,-11.745,2.033,1.105,1.437,0.96
+"Arkansas","White",-55.56,-46.963,0.695,-2.265,14.726,0.499
+"Arkansas","Yell",4.287,-19.848,NA,-8.891,NA,3.712
+"California","Alameda",4.093,26.234,-0.709,4.425,15.427,3.076
+"California","Amador",2.081,NA,NA,11.142,NA,0.003
+"California","Butte",6.031,49.078,-1.079,9.559,-9.431,2.238
+"California","Calaveras",19.164,NA,NA,18.266,NA,5.457
+"California","Colusa",-1.219,NA,NA,18.889,10.99,0.001
+"California","Contra Costa",5.911,39.387,-0.746,3.496,8.136,4.035
+"California","Del Norte",1.681,NA,NA,7.047,NA,4.496
+"California","El Dorado",-12.218,31.432,-1.094,8.658,NA,0.414
+"California","Fresno",1.961,48.382,-1.252,9.937,3.269,0.544
+"California","Glenn",-1.37,NA,NA,15.131,23.176,6.67
+"California","Humboldt",0.378,20.541,0.234,4.607,-18.309,-0.27
+"California","Imperial",-4.581,-1.512,-0.241,4.364,15.387,-0.846
+"California","Inyo",7.565,59.649,NA,17.761,NA,-5.088
+"California","Kern",-0.107,44.685,-0.978,6.476,9.367,-0.664
+"California","Kings",-1.367,56.923,-0.794,9.947,18.294,1.821
+"California","Lake",10.481,33.778,-0.419,10.606,NA,-0.482
+"California","Lassen",19.566,NA,NA,14.977,NA,10.292
+"California","Los Angeles",0.518,13.354,-0.357,3.661,0.421,1.59
+"California","Madera",10.222,-10.14,-0.265,18.182,67.079,11.536
+"California","Marin",7.047,-0.818,-1.483,-1.401,17.319,1.938
+"California","Mariposa",47.884,NA,11.559,57.303,4.257,NA
+"California","Mendocino",42.525,95.969,-0.867,5.586,NA,-1.874
+"California","Merced",5.841,64.634,-0.633,9.829,12.018,0.832
+"California","Modoc",NA,NA,NA,NA,NA,NA
+"California","Mono",7.45,NA,NA,6.165,NA,-7.694
+"California","Monterey",4.433,14.756,-0.239,7.267,0.732,-3.411
+"California","Napa",8.284,44.568,-0.734,10.718,NA,1.673
+"California","Nevada",-2.694,44.712,-0.992,4.255,-22.73,-2.327
+"California","Orange",-0.837,10.334,-0.299,4.661,-0.253,1.486
+"California","Placer",21.806,49.015,-1.117,8.719,1.799,2.704
+"California","Plumas",7.69,NA,NA,5.742,NA,NA
+"California","Riverside",0.273,-7.605,-0.108,6.049,3.723,0.217
+"California","Sacramento",1.836,52.82,-0.79,7.635,4.013,1.363
+"California","San Benito",-1.277,12.852,NA,4.013,NA,-3.341
+"California","San Bernardino",-2.75,-3.976,0.125,3.3,1.624,0.161
+"California","San Diego",-1.684,6.041,-0.28,3.33,1.088,1.72
+"California","San Francisco",0.779,15.553,-0.076,2.156,1.499,4.472
+"California","San Joaquin",5.142,53.596,-1.257,8.304,10.119,3.677
+"California","San Mateo",5.197,25.859,-0.889,9.49,7.094,1.692
+"California","Santa Barbara",7.53,14.69,-0.642,3.872,0.695,0.808
+"California","Santa Clara",0.237,15.784,-0.836,2.955,3.968,2.261
+"California","Santa Cruz",0.835,27.243,-1.136,1.297,-4.09,4.272
+"California","Shasta",8.808,27.29,-0.902,15.385,7.899,2.763
+"California","Siskiyou",0.658,25.113,-1.361,8.882,2.957,2.957
+"California","Solano",2.238,21.906,NA,6.781,4.57,2.447
+"California","Sonoma",2.984,45.987,-1.282,8.708,10.868,1.347
+"California","Stanislaus",7.275,33.612,-0.904,5.854,6.174,4.242
+"California","Sutter",0.354,60.746,-1.338,9.763,12.434,1.515
+"California","Tehama",2.376,NA,-0.747,11.881,NA,-1.299
+"California","Trinity",7.425,NA,NA,3.876,9.46,-5.671
+"California","Tulare",22.242,NA,NA,-8.652,NA,NA
+"California","Tuolumne",3.597,38.784,-0.974,5.326,11.574,0.578
+"California","Ventura",13.187,25.02,NA,8.152,NA,7.086
+"California","Yolo",1.123,14.784,-0.981,3.191,4.726,-0.377
+"California","Yuba",13.527,63.934,-0.476,12.898,27.035,3.486
+"Colorado","Adams",7.172,-32.787,1.584,-4.584,-10.951,-1.178
+"Colorado","Alamosa",10,NA,NA,-1.522,NA,3.776
+"Colorado","Arapahoe",-12.434,-42.261,2.378,-6.076,-6.45,-1.886
+"Colorado","Archuleta",3.49,NA,NA,-19.34,NA,2.085
+"Colorado","Boulder",-0.955,-40.293,1.6,-3.577,-5.782,3.018
+"Colorado","Broomfield",-3.798,-33.827,NA,-1.757,NA,1.232
+"Colorado","Chaffee",-6.93,-31.579,NA,-6.038,NA,-3.123
+"Colorado","Clear Creek",14.548,-55.997,NA,-8.145,NA,NA
+"Colorado","Conejos",NA,NA,NA,NA,NA,NA
+"Colorado","Delta",-1.131,NA,NA,0.377,NA,3.848
+"Colorado","Denver",-2.307,-36.394,2.248,-6.523,2.036,-0.619
+"Colorado","Douglas",-17.017,-51.844,3.697,-15.773,NA,-3.673
+"Colorado","Eagle",4.896,-11.696,1.17,-2.134,-4.689,1.296
+"Colorado","El Paso",-9.419,-58.509,3.773,-12.356,-15.549,-6.617
+"Colorado","Elbert",-27.45,NA,NA,-19.706,NA,-11.107
+"Colorado","Fremont",-2.482,-65.454,NA,-13.041,NA,0.669
+"Colorado","Garfield",-0.912,-12.279,NA,1.403,3.771,4.647
+"Colorado","Gilpin",NA,NA,NA,NA,NA,NA
+"Colorado","Grand",-1.1,-3.999,NA,4.361,NA,1.135
+"Colorado","Gunnison",8.858,16.666,NA,7.602,NA,1.886
+"Colorado","Huerfano",5.172,NA,NA,NA,NA,NA
+"Colorado","Jefferson",-9.989,-44.511,2.146,-4.108,-10.888,-0.746
+"Colorado","Kit Carson",-4.345,NA,NA,5.357,-6.154,NA
+"Colorado","La Plata",11.46,-10.414,NA,0.001,NA,2.795
+"Colorado","Lake",-8.619,NA,NA,-13.728,NA,NA
+"Colorado","Larimer",1.303,-36.764,0.965,0.969,2.565,2.228
+"Colorado","Las Animas",-3.259,NA,NA,-10.046,NA,3.851
+"Colorado","Lincoln",NA,NA,NA,-13.112,1.528,NA
+"Colorado","Logan",-0.001,NA,NA,2.003,NA,-1.471
+"Colorado","Mesa",7.086,-12.43,0.177,12.68,-12.343,-0.048
+"Colorado","Moffat",-6.458,NA,NA,2.875,NA,-2.225
+"Colorado","Montezuma",9.731,NA,NA,3.32,NA,-1.471
+"Colorado","Montrose",-4.64,NA,NA,0.996,NA,-2.459
+"Colorado","Morgan",-10.603,-19.997,NA,1.82,-9.115,1.076
+"Colorado","Otero",-0.869,NA,NA,0.228,NA,-1.64
+"Colorado","Ouray",NA,NA,NA,NA,NA,NA
+"Colorado","Park",-4.92,-52.782,NA,-17.909,NA,-14.281
+"Colorado","Pitkin",3.392,NA,NA,9.523,2.197,4.879
+"Colorado","Prowers",2.933,NA,NA,-3.012,-4.348,NA
+"Colorado","Pueblo",-1.269,-11.886,0.892,2.123,-8.266,2.385
+"Colorado","Rio Blanco",NA,NA,NA,NA,NA,NA
+"Colorado","Rio Grande",2.839,NA,NA,4.696,NA,NA
+"Colorado","Routt",0.623,-18.968,NA,0.506,NA,-3.045
+"Colorado","Saguache",NA,NA,NA,NA,NA,NA
+"Colorado","San Miguel",NA,NA,NA,7.148,NA,NA
+"Colorado","Summit",-7.246,-36.479,NA,-7.665,NA,-6.268
+"Colorado","Teller",-23.512,NA,NA,-25.417,NA,-3.647
+"Colorado","Weld",2.298,-16.315,0.692,1.322,-11.389,0.486
+"Colorado","Yuma",-11.101,NA,NA,-2.081,NA,NA
+"Connecticut","Fairfield",-0.32,71.537,-0.783,3.876,17.88,1.52
+"Connecticut","Hartford",-1.401,81.462,-1.172,8.07,11.405,2.957
+"Connecticut","Litchfield",-0.669,72.222,-1.184,13.091,NA,-0.88
+"Connecticut","Middlesex",0.917,86.488,-0.739,12.259,NA,4.322
+"Connecticut","New Haven",2.119,57.547,-1.107,7.422,14.985,2.674
+"Connecticut","New London",4.888,41.308,-0.996,11.754,13.769,-0.691
+"Connecticut","Tolland",6.904,80,-1.295,16.961,31.704,3.659
+"Connecticut","Windham",-3.81,41.899,-1.057,8.579,NA,3.057
+"Delaware","Kent",5.457,63.077,-0.943,5.69,NA,0.371
+"Delaware","New Castle",5.049,83.335,-1.268,5.364,12.008,1.319
+"Delaware","Sussex",9.856,1.686,-0.886,57.542,13.846,3.6
+"Florida","Alachua",-0.133,19.925,-0.048,0.603,-4.324,0.916
+"Florida","Baker",-0.643,NA,NA,6.361,NA,-4.106
+"Florida","Bay",4.461,40.805,-0.924,13.524,10.435,4.634
+"Florida","Bradford",6.313,NA,NA,9.694,NA,-1.15
+"Florida","Brevard",0.807,26.308,-0.572,6.272,17.1,1.194
+"Florida","Broward",2.143,22.485,-0.173,2.973,3.024,-0.026
+"Florida","Calhoun",8.333,NA,NA,19.444,NA,NA
+"Florida","Charlotte",6.822,20.4,-0.105,13.296,-1.282,-0.421
+"Florida","Citrus",5.228,10.98,0.185,8.09,NA,1.896
+"Florida","Clay",-5.407,10.975,-0.344,4.448,NA,0.614
+"Florida","Collier",2.236,17.757,-0.052,6.419,2.001,-1.559
+"Florida","Columbia",-0.396,18.517,-0.216,10.25,17.844,1.235
+"Florida","DeSoto",-0.357,16.924,NA,18.515,NA,-4.132
+"Florida","Dixie",-3.752,NA,NA,-1.142,NA,10.419
+"Florida","Duval",1.233,28.24,-0.417,4.305,3.007,2.327
+"Florida","Escambia",-0.316,43.816,-0.539,7.976,15.565,3.747
+"Florida","Flagler",4.957,78.95,-0.441,7.663,NA,-0.855
+"Florida","Franklin",5.151,NA,NA,25.969,NA,-9.09
+"Florida","Gadsden",-3.776,NA,NA,9.244,16.249,0.814
+"Florida","Gilchrist",1.281,NA,NA,2.002,NA,NA
+"Florida","Glades",NA,-35.9,NA,NA,NA,NA
+"Florida","Gulf",3.389,NA,NA,24.641,NA,NA
+"Florida","Hamilton",-7.246,NA,NA,NA,17.078,NA
+"Florida","Hardee",-9.588,63.771,NA,9.33,NA,6.406
+"Florida","Hendry",13.653,NA,NA,7.566,NA,-1.696
+"Florida","Hernando",8.092,18.276,0.035,6.071,NA,0.592
+"Florida","Highlands",-0.849,-5.452,0.781,4.257,NA,-4.292
+"Florida","Hillsborough",2.421,20.322,-0.562,4.287,3.817,0.495
+"Florida","Holmes",16.666,NA,NA,4.169,NA,4.003
+"Florida","Indian River",4.115,19.33,0.267,1.434,-1.553,-1.283
+"Florida","Jackson",-1.622,NA,NA,2.652,12.087,1.429
+"Florida","Jefferson",-6.25,NA,NA,NA,NA,NA
+"Florida","Lafayette",NA,NA,NA,NA,NA,NA
+"Florida","Lake",-4.789,38.981,-0.479,7.285,-8.572,-0.932
+"Florida","Lee",3.064,10.644,-0.343,7.408,8.769,-1.063
+"Florida","Leon",-1.375,30.829,-0.238,1.737,-2.535,3.473
+"Florida","Levy",1.127,18.752,NA,9.945,NA,2.501
+"Florida","Liberty",NA,NA,NA,NA,NA,NA
+"Florida","Madison",-3.535,NA,NA,15.382,11.303,-2.042
+"Florida","Manatee",5.671,34.978,-0.428,5.699,3.107,-0.537
+"Florida","Marion",-4.408,39.798,-0.461,5.899,15.538,2.095
+"Florida","Martin",1.749,21.752,-0.29,9.037,5.015,0.792
+"Florida","Miami-Dade",0.842,11.749,-0.156,2.838,-2.436,0.768
+"Florida","Monroe",11.043,22.259,-0.341,9.347,-3.412,-1.394
+"Florida","Nassau",8.228,30.685,-0.39,9.926,5.89,2.424
+"Florida","Okaloosa",1.66,45.811,-0.696,8.579,6.952,4.342
+"Florida","Okeechobee",3.005,26.657,NA,7.103,14.941,-3.37
+"Florida","Orange",1.824,18.685,-0.409,-0.362,0.508,1.098
+"Florida","Osceola",4.096,13.028,-0.885,3.807,-0.548,-1.361
+"Florida","Palm Beach",3.226,20.995,-0.4,5.619,4.833,1.313
+"Florida","Pasco",-1.863,19.105,-0.351,7.069,8.75,-0.069
+"Florida","Pinellas",4.681,59.469,-0.547,8.793,7.263,2.132
+"Florida","Polk",4.525,9.278,-0.214,4.073,17.551,-0.799
+"Florida","Putnam",-11.135,14.76,0.582,10.791,NA,-0.047
+"Florida","Santa Rosa",-1.332,27.05,-0.868,7.391,NA,1.456
+"Florida","Sarasota",10.025,28.766,-0.558,10.318,49.708,0.554
+"Florida","Seminole",3.029,35.304,-0.599,1.705,8.948,1.008
+"Florida","St. Johns",11.198,21.477,-0.803,11.047,8.26,2.033
+"Florida","St. Lucie",6.116,22.094,-0.237,5.833,7.642,1.7
+"Florida","Sumter",0.478,-10.349,-0.547,7.32,8.223,-0.314
+"Florida","Suwannee",-1.715,NA,NA,2.391,15.382,2.164
+"Florida","Taylor",-3.644,NA,NA,13.74,NA,6.543
+"Florida","Union",3.953,NA,NA,NA,NA,NA
+"Florida","Volusia",1.322,25.656,-0.435,8.678,1.165,0.012
+"Florida","Wakulla",-5.356,48.226,NA,9.627,NA,1.235
+"Florida","Walton",1.787,54.591,-0.583,24.194,18.078,7.901
+"Florida","Washington",11.159,NA,NA,2.627,NA,6.763
+"Georgia","Appling",-2.325,NA,NA,0.445,NA,NA
+"Georgia","Atkinson",15.686,NA,NA,NA,NA,NA
+"Georgia","Bacon",-2.74,NA,NA,NA,NA,NA
+"Georgia","Baldwin",-5.885,NA,NA,7.168,NA,1.654
+"Georgia","Banks",NA,NA,NA,7.504,NA,1.855
+"Georgia","Barrow",-1.973,NA,-1.141,4.619,NA,2.42
+"Georgia","Bartow",7.575,-1.074,-2.369,2.531,4.807,0.085
+"Georgia","Ben Hill",NA,NA,NA,7.897,2.129,29.67
+"Georgia","Berrien",9.524,NA,NA,4.225,NA,NA
+"Georgia","Bibb",1.733,4.921,0.227,0.095,7.231,2.822
+"Georgia","Bleckley",11.538,NA,NA,0,NA,NA
+"Georgia","Brantley",1.886,NA,NA,NA,NA,1.76
+"Georgia","Brooks",3.448,NA,NA,NA,NA,NA
+"Georgia","Bryan",1.403,NA,NA,7.899,3.434,0.004
+"Georgia","Bulloch",5.399,NA,-1.473,0.57,NA,1.442
+"Georgia","Burke",4.959,NA,NA,5.388,NA,4.55
+"Georgia","Butts",-0.69,NA,NA,20.465,10.792,2.776
+"Georgia","Camden",8.568,12.498,NA,-1.041,9.71,-2.044
+"Georgia","Candler",-6.173,NA,NA,9.434,NA,NA
+"Georgia","Carroll",4.015,31.375,-1.089,5.551,7.84,0.58
+"Georgia","Catoosa",3.767,-11.704,-0.146,2.982,NA,3.258
+"Georgia","Charlton",18.424,NA,NA,-4.476,NA,NA
+"Georgia","Chatham",0.427,26.286,-0.578,6.43,2.554,0.812
+"Georgia","Chattahoochee",-5.182,NA,NA,21.051,NA,NA
+"Georgia","Chattooga",8.76,NA,NA,9.315,NA,6.154
+"Georgia","Cherokee",0.14,15.91,-1.087,1.444,NA,1.133
+"Georgia","Clarke",-1.653,14.668,-0.377,-1.095,-10.873,1.371
+"Georgia","Clayton",-3.896,29.669,-0.765,2.541,-0.659,1.905
+"Georgia","Clinch",NA,NA,NA,NA,NA,NA
+"Georgia","Cobb",1.337,33.33,-0.917,-0.394,10,1.199
+"Georgia","Coffee",-1.167,NA,NA,4.036,NA,-2.804
+"Georgia","Colquitt",-5.657,NA,NA,7.592,NA,5.452
+"Georgia","Columbia",4.705,21.299,-0.634,4.945,17.805,1.096
+"Georgia","Cook",7.818,NA,NA,14.737,8.331,NA
+"Georgia","Coweta",3.187,NA,-1.205,1.951,7.86,1.888
+"Georgia","Crawford",NA,NA,NA,NA,NA,NA
+"Georgia","Crisp",1.788,NA,NA,7.35,9.835,-0.003
+"Georgia","Dade",-5.833,NA,NA,2.912,6.9,12.767
+"Georgia","Dawson",-2.713,1.922,NA,4.574,NA,1.538
+"Georgia","Decatur",4.656,NA,NA,5.299,NA,-0.003
+"Georgia","DeKalb",-2.147,0.006,-0.82,-0.748,6.132,0.443
+"Georgia","Dodge",-3.633,NA,NA,2.809,NA,6.522
+"Georgia","Dooly",-7.036,NA,NA,NA,12.713,NA
+"Georgia","Dougherty",2.369,NA,-0.936,-0.687,11.938,3.699
+"Georgia","Douglas",-6.404,18.683,-0.8,3.645,4.109,-2.59
+"Georgia","Early",-6.667,NA,NA,-8.342,NA,NA
+"Georgia","Effingham",2.169,NA,NA,3.575,NA,2.637
+"Georgia","Elbert",1.403,NA,NA,5.836,NA,14.587
+"Georgia","Emanuel",12.12,NA,NA,2.926,NA,0.001
+"Georgia","Evans",-0.003,NA,NA,13.844,NA,NA
+"Georgia","Fannin",-2.345,5.881,NA,2.879,NA,5.634
+"Georgia","Fayette",8.957,29.344,-0.688,0.433,NA,1.429
+"Georgia","Floyd",-1.071,-3.702,0.112,-1.16,NA,4.348
+"Georgia","Forsyth",-5.773,26.382,0.106,2.656,NA,1.759
+"Georgia","Franklin",-7.491,NA,NA,9.457,1.605,8.337
+"Georgia","Fulton",-2.243,2.299,-0.514,5.39,7.23,0.75
+"Georgia","Gilmer",-5.089,NA,NA,2.402,NA,1.137
+"Georgia","Glynn",4.878,19.264,0.302,10.338,7.607,-0.726
+"Georgia","Gordon",2.288,NA,NA,8.696,1.725,-1.232
+"Georgia","Grady",-1.979,NA,NA,2.259,NA,4.563
+"Georgia","Greene",-5.942,NA,NA,4.344,NA,2.223
+"Georgia","Gwinnett",-1.681,38.646,-0.335,1.98,-8.702,1.558
+"Georgia","Habersham",-2.754,NA,NA,0.326,NA,5.266
+"Georgia","Hall",1.748,5.261,-0.654,2.535,NA,0.194
+"Georgia","Hancock",NA,NA,NA,NA,NA,NA
+"Georgia","Haralson",-1.695,4.08,NA,8.332,-2.697,1.105
+"Georgia","Harris",0.769,NA,NA,8.697,NA,-3.844
+"Georgia","Hart",2.146,NA,NA,8.957,NA,13.334
+"Georgia","Heard",-5.637,NA,NA,NA,NA,NA
+"Georgia","Henry",1.27,39.516,-1.089,2.839,NA,-1.724
+"Georgia","Houston",1.194,2.866,-0.673,2.233,NA,2.178
+"Georgia","Irwin",-2.015,NA,NA,NA,NA,NA
+"Georgia","Jackson",-13.128,NA,-0.048,22.765,-3.586,1.941
+"Georgia","Jasper",7.1,NA,NA,NA,NA,NA
+"Georgia","Jeff Davis",3.862,NA,NA,8.385,NA,NA
+"Georgia","Jefferson",11.41,NA,NA,24.239,NA,NA
+"Georgia","Jenkins",NA,NA,NA,21.198,NA,NA
+"Georgia","Johnson",5.401,NA,NA,NA,NA,NA
+"Georgia","Jones",5.76,NA,NA,3.42,NA,-5.443
+"Georgia","Lamar",2.4,NA,NA,5.033,NA,-1.898
+"Georgia","Lanier",NA,NA,NA,NA,NA,NA
+"Georgia","Laurens",-1.671,NA,NA,1.359,19.027,4.84
+"Georgia","Lee",13.028,NA,NA,2.628,NA,1.347
+"Georgia","Liberty",-6.82,6.544,0.386,-2.003,NA,-2.204
+"Georgia","Lincoln",NA,NA,NA,NA,NA,NA
+"Georgia","Long",NA,NA,NA,NA,NA,0.011
+"Georgia","Lowndes",6.374,38.132,-0.956,5.684,4.907,-0.369
+"Georgia","Lumpkin",17.193,NA,NA,3.555,NA,6.45
+"Georgia","Macon",-4.402,NA,NA,-1.826,NA,NA
+"Georgia","Madison",-1.088,NA,NA,NA,NA,2.643
+"Georgia","Marion",-6.62,NA,NA,NA,NA,NA
+"Georgia","McDuffie",21.202,NA,NA,8.99,9.347,10.605
+"Georgia","McIntosh",3.084,NA,NA,6.362,NA,NA
+"Georgia","Meriwether",5.304,NA,NA,-6.064,NA,8.067
+"Georgia","Miller",NA,NA,NA,NA,NA,NA
+"Georgia","Mitchell",-10.915,NA,NA,8.583,NA,3.82
+"Georgia","Monroe",10.725,NA,NA,3.07,9.824,1.237
+"Georgia","Montgomery",NA,NA,NA,NA,NA,NA
+"Georgia","Morgan",2.204,NA,NA,3.56,10.183,8.491
+"Georgia","Murray",-0.46,NA,NA,7.121,NA,-0.004
+"Georgia","Muscogee",6.228,11.407,-0.213,1.908,1.898,2.759
+"Georgia","Newton",1.018,NA,-0.272,2.679,NA,-1.847
+"Georgia","Oconee",NA,NA,NA,2.326,NA,3.291
+"Georgia","Oglethorpe",NA,NA,NA,NA,NA,NA
+"Georgia","Paulding",-8.903,17.247,-1.211,4.418,NA,-2.121
+"Georgia","Peach",10.735,NA,NA,8.659,6.921,6.005
+"Georgia","Pickens",3.914,NA,NA,6.45,NA,1.194
+"Georgia","Pierce",-0.053,NA,NA,-19.716,NA,1.881
+"Georgia","Pike",9.853,NA,NA,NA,NA,-8.924
+"Georgia","Polk",-5.376,NA,NA,3.241,NA,0.751
+"Georgia","Pulaski",-12.824,NA,NA,NA,NA,NA
+"Georgia","Putnam",-1.21,NA,NA,1.656,NA,6.557
+"Georgia","Rabun",-9.269,-7.392,NA,3.802,NA,-0.036
+"Georgia","Randolph",NA,NA,NA,NA,NA,NA
+"Georgia","Richmond",7.813,21.928,-0.637,0.919,8.574,-0.625
+"Georgia","Rockdale",-1.813,-3.964,-0.77,1.83,NA,3.778
+"Georgia","Schley",NA,NA,NA,NA,NA,NA
+"Georgia","Screven",1.327,NA,NA,5.606,NA,NA
+"Georgia","Seminole",1.46,NA,NA,NA,NA,NA
+"Georgia","Spalding",4.24,NA,-0.928,3.512,NA,-2.282
+"Georgia","Stephens",12.102,NA,NA,5.708,NA,3.821
+"Georgia","Sumter",-3.181,NA,NA,12.187,NA,5.149
+"Georgia","Talbot",NA,NA,NA,NA,NA,NA
+"Georgia","Tattnall",3.469,NA,NA,1.393,NA,7.711
+"Georgia","Taylor",4.324,NA,NA,NA,NA,NA
+"Georgia","Telfair",6.164,NA,NA,11.665,NA,NA
+"Georgia","Terrell",-3.801,NA,NA,-19.286,NA,NA
+"Georgia","Thomas",6.465,NA,NA,5.448,NA,0.819
+"Georgia","Tift",7.723,NA,NA,13.442,4.621,6.622
+"Georgia","Toombs",4.365,NA,NA,-2.671,NA,7.194
+"Georgia","Towns",3.291,NA,NA,19.796,NA,NA
+"Georgia","Treutlen",NA,NA,NA,NA,NA,NA
+"Georgia","Troup",1.107,NA,-0.065,6.782,5.621,-0.452
+"Georgia","Turner",NA,NA,NA,9.79,NA,NA
+"Georgia","Twiggs",NA,NA,NA,NA,NA,NA
+"Georgia","Union",10.889,-10.21,NA,6.461,NA,-0.052
+"Georgia","Upson",5.46,NA,NA,-4.701,NA,2.305
+"Georgia","Walker",-1.258,29.115,0.089,5.256,NA,0.972
+"Georgia","Walton",7.722,NA,-0.932,0.439,NA,3.985
+"Georgia","Ware",10.707,NA,NA,4.044,NA,5.405
+"Georgia","Warren",NA,NA,NA,NA,NA,NA
+"Georgia","Washington",-25.229,NA,NA,26.678,NA,9.63
+"Georgia","Wayne",-3.713,NA,NA,2.607,NA,-7.525
+"Georgia","White",4.206,-1.339,NA,1.036,NA,10.31
+"Georgia","Whitfield",-1.613,4.185,-0.86,3.459,3.225,3.964
+"Georgia","Wilcox",NA,NA,NA,NA,NA,NA
+"Georgia","Wilkes",-1.456,NA,NA,7.854,NA,NA
+"Georgia","Wilkinson",-9.82,NA,NA,NA,NA,NA
+"Georgia","Worth",5.328,NA,NA,0.793,NA,3.803
+"Hawaii","Hawaii",-3.693,12.839,-0.577,1.64,5.578,-0.216
+"Hawaii","Honolulu",0.745,19.571,-0.089,1.676,1.929,2.064
+"Hawaii","Kauai",8.146,13.354,NA,4.279,17.503,-3.008
+"Hawaii","Maui",-0.157,11.174,-1.156,3.469,0.664,-0.765
+"Idaho","Ada",9.151,2.848,28.077,11.151,3.346,-1.27
+"Idaho","Bannock",83.729,43.546,-1.039,0.701,17.397,3.943
+"Idaho","Bear Lake",NA,NA,NA,NA,NA,NA
+"Idaho","Benewah",4,NA,NA,NA,NA,NA
+"Idaho","Bingham",0.961,NA,NA,20.435,NA,4.169
+"Idaho","Blaine",-8.693,NA,NA,8.376,NA,-1.512
+"Idaho","Boise",NA,NA,NA,NA,NA,NA
+"Idaho","Bonner",-18.087,NA,NA,10.139,NA,-0.736
+"Idaho","Bonneville",14.13,16.219,-0.55,11.791,11.476,1.707
+"Idaho","Boundary",6.378,NA,NA,NA,NA,NA
+"Idaho","Canyon",7.368,21.178,NA,10.718,0.943,-1.026
+"Idaho","Caribou",NA,NA,NA,NA,NA,83.335
+"Idaho","Cassia",17.242,NA,NA,21.875,NA,-2.567
+"Idaho","Clearwater",NA,NA,NA,NA,NA,NA
+"Idaho","Elmore",15.155,NA,NA,14.843,22.504,1.266
+"Idaho","Franklin",25.486,NA,NA,NA,NA,NA
+"Idaho","Fremont",NA,NA,NA,NA,NA,NA
+"Idaho","Gem",14.28,NA,NA,23.212,NA,8.619
+"Idaho","Gooding",8.337,NA,NA,NA,NA,0.001
+"Idaho","Idaho",-0.003,NA,NA,NA,NA,NA
+"Idaho","Jefferson",15.378,NA,NA,NA,NA,-3.126
+"Idaho","Jerome",-10.974,NA,NA,37.591,20.2,-1.142
+"Idaho","Kootenai",3.592,4.425,3.576,9.675,3.559,-0.157
+"Idaho","Latah",NA,NA,NA,-6.579,8.121,-7.088
+"Idaho","Lemhi",NA,NA,NA,NA,NA,NA
+"Idaho","Lincoln",NA,NA,NA,NA,NA,NA
+"Idaho","Madison",NA,NA,NA,2.993,NA,-4.13
+"Idaho","Minidoka",65.702,NA,NA,8.588,10.732,-2.872
+"Idaho","Nez Perce",0.952,NA,NA,1.508,NA,3.381
+"Idaho","Oneida",NA,NA,NA,NA,NA,NA
+"Idaho","Owyhee",15.853,NA,NA,NA,NA,NA
+"Idaho","Payette",-1.722,NA,NA,21.732,NA,5.881
+"Idaho","Power",NA,NA,NA,NA,NA,NA
+"Idaho","Shoshone",-10.357,NA,NA,-0.828,NA,NA
+"Idaho","Teton",NA,NA,NA,NA,NA,NA
+"Idaho","Twin Falls",18.355,NA,-2.068,17.275,NA,1.247
+"Idaho","Valley",-4.321,NA,NA,-19.408,NA,NA
+"Idaho","Washington",8.372,NA,NA,10.588,NA,NA
+"Illinois","Adams",8.955,NA,NA,17.391,NA,9.36
+"Illinois","Alexander",NA,NA,NA,NA,NA,NA
+"Illinois","Bond",NA,NA,NA,29.87,9.377,NA
+"Illinois","Boone",14.286,NA,NA,14.103,25.006,3.602
+"Illinois","Bureau",NA,NA,NA,17.84,NA,1.205
+"Illinois","Carroll",NA,NA,NA,34.482,NA,NA
+"Illinois","Cass",NA,NA,NA,21.101,NA,NA
+"Illinois","Champaign",11.248,128.396,-1.569,14.194,1.326,12.912
+"Illinois","Christian",12.644,NA,NA,12.709,NA,1.19
+"Illinois","Clark",NA,NA,NA,14.285,-6.661,4.004
+"Illinois","Clay",NA,NA,NA,10.811,NA,NA
+"Illinois","Clinton",11.234,NA,NA,15.512,NA,0.001
+"Illinois","Coles",1.775,NA,NA,9.843,NA,12.318
+"Illinois","Cook",8.72,118.066,-2.046,11.082,6.276,3.266
+"Illinois","Crawford",NA,NA,NA,6.41,NA,9.803
+"Illinois","Cumberland",NA,NA,NA,NA,5.954,NA
+"Illinois","De Witt",-2.895,NA,NA,31.712,NA,NA
+"Illinois","DeKalb",18.424,NA,-1.983,19.698,NA,7.925
+"Illinois","Douglas",33.784,NA,NA,31.115,NA,7.996
+"Illinois","DuPage",12.247,112.582,-1.928,14.251,13.094,3.973
+"Illinois","Edgar",NA,NA,NA,8.061,NA,1.886
+"Illinois","Edwards",NA,NA,NA,NA,NA,NA
+"Illinois","Effingham",8.595,NA,NA,11.777,-0.322,4.943
+"Illinois","Fayette",10.128,NA,NA,7.05,NA,-5.264
+"Illinois","Ford",-6.816,NA,NA,12.703,NA,NA
+"Illinois","Franklin",14.291,NA,NA,11.532,-6.819,-1.626
+"Illinois","Fulton",3.889,NA,NA,16.606,NA,4
+"Illinois","Greene",-1.923,NA,NA,NA,NA,NA
+"Illinois","Grundy",8.767,NA,NA,27.577,-12.5,1.458
+"Illinois","Hamilton",NA,NA,NA,NA,NA,NA
+"Illinois","Hancock",NA,NA,NA,NA,NA,0.005
+"Illinois","Henderson",NA,NA,NA,NA,NA,NA
+"Illinois","Henry",17.519,NA,NA,16.269,-25.401,6.612
+"Illinois","Iroquois",9.804,NA,NA,15.887,-0.001,7.354
+"Illinois","Jackson",-0.472,44.828,NA,8.144,NA,2.81
+"Illinois","Jasper",NA,NA,NA,NA,NA,NA
+"Illinois","Jefferson",3.608,NA,NA,10.019,6.967,2.419
+"Illinois","Jersey",NA,NA,NA,22.05,NA,1.898
+"Illinois","Jo Daviess",28.844,NA,NA,27.222,NA,7.814
+"Illinois","Johnson",NA,0.002,NA,NA,NA,NA
+"Illinois","Kane",11.955,13.64,13.949,16.679,3.864,-1.995
+"Illinois","Kankakee",135.743,NA,-2.737,11.002,-0.003,3.343
+"Illinois","Kendall",9.407,NA,-2.083,8.994,NA,2.519
+"Illinois","Knox",38.063,NA,NA,10.215,15.952,3.121
+"Illinois","Lake",11.383,11.798,-1.722,-2.129,14.487,3.691
+"Illinois","LaSalle",23.207,85.49,4.832,12.45,NA,9.328
+"Illinois","Lawrence",NA,NA,NA,11.108,NA,NA
+"Illinois","Lee",47.289,NA,NA,20.179,NA,9.632
+"Illinois","Livingston",29.169,NA,NA,21.5,NA,5.438
+"Illinois","Logan",4.578,NA,NA,24.902,NA,2.609
+"Illinois","Macon",8.859,NA,-2.026,8.975,NA,3.702
+"Illinois","Macoupin",19.076,NA,NA,17.365,NA,3.246
+"Illinois","Madison",6.354,7.994,1.149,10.158,5.538,-1.213
+"Illinois","Marion",NA,NA,NA,6.61,3.102,106.779
+"Illinois","Marshall",NA,NA,NA,NA,NA,NA
+"Illinois","Mason",38.882,NA,NA,24.783,NA,NA
+"Illinois","Massac",-10.421,NA,NA,13.263,NA,3.36
+"Illinois","McDonough",15.841,NA,NA,18.471,NA,0.015
+"Illinois","McHenry",11.353,14.625,-1.871,92.134,7.102,4.091
+"Illinois","McLean",5.528,103.029,-1.64,17.114,4.764,6.012
+"Illinois","Menard",NA,NA,NA,NA,NA,NA
+"Illinois","Mercer",NA,NA,NA,21.132,NA,NA
+"Illinois","Monroe",7.435,NA,NA,7.248,NA,9.492
+"Illinois","Montgomery",4.926,NA,NA,21.52,NA,8.307
+"Illinois","Morgan",15.242,NA,NA,16.406,NA,4.391
+"Illinois","Moultrie",NA,NA,NA,NA,NA,NA
+"Illinois","Ogle",9.828,NA,NA,20.781,NA,11.785
+"Illinois","Peoria",11.09,109.913,-1.697,12.94,1.186,5.242
+"Illinois","Perry",7.275,NA,NA,14.27,NA,10.888
+"Illinois","Piatt",NA,NA,NA,NA,NA,NA
+"Illinois","Pike",8.533,NA,NA,13.315,NA,NA
+"Illinois","Pulaski",NA,NA,NA,NA,NA,NA
+"Illinois","Putnam",NA,NA,NA,NA,NA,NA
+"Illinois","Randolph",6.376,NA,NA,7.621,NA,2.29
+"Illinois","Richland",NA,NA,NA,2.462,NA,NA
+"Illinois","Rock Island",19.67,45.508,-1.875,10.696,7.877,7.533
+"Illinois","Saline",-6.065,NA,NA,2.386,NA,-4.218
+"Illinois","Sangamon",7.244,135.952,-1.412,13.307,10.382,4.67
+"Illinois","Schuyler",NA,NA,NA,NA,NA,NA
+"Illinois","Shelby",NA,NA,NA,19.357,NA,1.852
+"Illinois","St. Clair",5.468,9.239,NA,9.28,4.913,-1.302
+"Illinois","Stark",NA,NA,NA,NA,NA,92.629
+"Illinois","Stephenson",12.033,NA,NA,10.089,NA,1.45
+"Illinois","Tazewell",21.273,NA,-1.546,16.18,NA,3.581
+"Illinois","Union",3.852,NA,NA,8.088,NA,2.083
+"Illinois","Vermilion",3.029,NA,-1.404,7.149,-3.539,4.905
+"Illinois","Wabash",-1.876,NA,NA,13.819,NA,NA
+"Illinois","Warren",14.3,NA,NA,39.997,NA,NA
+"Illinois","Washington",3.898,NA,NA,21.143,NA,NA
+"Illinois","Wayne",NA,NA,NA,7.041,NA,NA
+"Illinois","White",NA,NA,NA,-0.931,NA,NA
+"Illinois","Whiteside",12.744,NA,NA,13.955,NA,4.848
+"Illinois","Will",9.194,11.336,9.207,12.565,4.663,-1.815
+"Illinois","Williamson",NA,1.608,-0.817,-5.4,-0.46,136.69
+"Illinois","Winnebago",6.051,3.83,42.255,17.372,1.276,-1.943
+"Illinois","Woodford",NA,NA,NA,4.518,3.488,66.011
+"Indiana","Adams",NA,NA,NA,14.793,NA,0.003
+"Indiana","Allen",7.272,147.061,-1.512,8.894,3.678,3.136
+"Indiana","Bartholomew",2.094,NA,-1.406,10.105,26.313,3.722
+"Indiana","Benton",NA,NA,NA,NA,NA,NA
+"Indiana","Blackford",18.84,NA,NA,8.511,NA,NA
+"Indiana","Boone",7.166,NA,NA,13.264,11.056,3.88
+"Indiana","Brown",NA,NA,NA,8,NA,NA
+"Indiana","Carroll",NA,NA,NA,8.771,-1.923,71.831
+"Indiana","Cass",3.921,NA,NA,12.107,NA,5.457
+"Indiana","Clark",13.531,42.551,-0.941,3.033,6.434,4.427
+"Indiana","Clay",-6.742,NA,NA,9.051,21.908,2.598
+"Indiana","Clinton",5.066,NA,NA,7.878,NA,1.077
+"Indiana","Crawford",NA,NA,NA,NA,-2.085,NA
+"Indiana","Daviess",7.293,NA,NA,5.692,NA,1.373
+"Indiana","Dearborn",12.079,NA,NA,8.903,NA,2.346
+"Indiana","Decatur",19.197,NA,NA,11.378,6.185,5.062
+"Indiana","DeKalb",6.67,NA,NA,6.806,NA,5.744
+"Indiana","Delaware",0.152,NA,-1.872,7.584,8.731,5.033
+"Indiana","Dubois",3.727,NA,NA,8.286,NA,5.26
+"Indiana","Elkhart",2.64,NA,-2.33,19.26,31.251,4.238
+"Indiana","Fayette",12.22,NA,NA,4.098,NA,4.654
+"Indiana","Floyd",4.792,NA,-0.78,8.044,NA,4.401
+"Indiana","Fountain",1.371,NA,NA,3.334,NA,NA
+"Indiana","Franklin",0.002,NA,NA,26.4,NA,7.545
+"Indiana","Fulton",19.231,NA,NA,15.925,NA,8.331
+"Indiana","Gibson",6.331,NA,NA,8.494,12.501,4.999
+"Indiana","Grant",9.066,NA,-1.537,7.974,18.682,6.913
+"Indiana","Greene",6.378,NA,NA,11.3,NA,4.76
+"Indiana","Hamilton",7.568,NA,10.937,6.152,2.367,-1.391
+"Indiana","Hancock",NA,2.176,NA,47.383,4.998,156.965
+"Indiana","Harrison",9.092,NA,NA,5.908,NA,0.963
+"Indiana","Hendricks",2.332,NA,-1.441,6.773,3.493,3.948
+"Indiana","Henry",13.612,NA,NA,12.423,-4.728,7.096
+"Indiana","Howard",3.801,NA,-0.976,5.881,NA,3.07
+"Indiana","Huntington",21.347,NA,NA,18.912,NA,1.892
+"Indiana","Jackson",3.187,NA,NA,8.03,NA,-1.763
+"Indiana","Jasper",8.748,NA,NA,16.713,9.321,10.991
+"Indiana","Jay",6.059,NA,NA,10.717,NA,7.245
+"Indiana","Jefferson",-0.004,NA,NA,2.343,NA,-4
+"Indiana","Jennings",-7.142,NA,NA,11.839,NA,7.37
+"Indiana","Johnson",13.782,NA,-0.937,10.887,5.053,3.667
+"Indiana","Knox",8.798,NA,NA,10.503,NA,-2.193
+"Indiana","Kosciusko",10.548,NA,-1.663,14.798,NA,7.922
+"Indiana","LaGrange",9.857,NA,NA,36.046,17.558,-5.51
+"Indiana","Lake",7.5,58.202,-1.963,11.663,7.03,3.4
+"Indiana","LaPorte",15.495,78.688,-1.991,19.516,2.505,3.137
+"Indiana","Lawrence",3.971,NA,NA,6.205,NA,3.735
+"Indiana","Madison",-5.894,NA,-1.079,17.173,2.346,1.34
+"Indiana","Marion",1.78,1.51,15.174,9.062,1.979,-1.479
+"Indiana","Marshall",NA,11.519,NA,17.517,9.84,82.523
+"Indiana","Martin",2.083,NA,NA,NA,NA,NA
+"Indiana","Miami",1.887,NA,NA,13.058,NA,0.976
+"Indiana","Monroe",7.237,40.302,-1.484,7.338,6.028,5.444
+"Indiana","Montgomery",8.466,NA,NA,9.322,NA,0.896
+"Indiana","Morgan",17.712,NA,-1.119,11.161,NA,1.04
+"Indiana","Newton",NA,NA,NA,16.46,NA,NA
+"Indiana","Noble",17.18,NA,NA,17.676,NA,2.502
+"Indiana","Ohio",NA,NA,NA,NA,NA,NA
+"Indiana","Orange",16.054,NA,NA,16.762,NA,-0.013
+"Indiana","Owen",11.035,NA,NA,19.719,NA,2.083
+"Indiana","Parke",9.647,NA,NA,NA,NA,NA
+"Indiana","Perry",NA,NA,NA,0.437,NA,4.232
+"Indiana","Pike",NA,NA,NA,NA,NA,NA
+"Indiana","Porter",7.446,NA,-1.707,18.502,13.499,4.526
+"Indiana","Posey",NA,NA,NA,7.41,NA,3.28
+"Indiana","Pulaski",NA,NA,NA,29.193,NA,NA
+"Indiana","Putnam",5.65,NA,NA,8.384,NA,-2.391
+"Indiana","Randolph",15.055,NA,NA,15.59,NA,16.012
+"Indiana","Ripley",13.886,NA,NA,12.721,NA,-0.018
+"Indiana","Rush",10.9,NA,NA,21.338,NA,5.449
+"Indiana","Scott",10.32,NA,NA,12.3,NA,5.482
+"Indiana","Shelby",5.079,NA,NA,2.469,8.813,1.388
+"Indiana","Spencer",13.61,NA,NA,21.927,NA,8.67
+"Indiana","St. Joseph",7.084,161.398,-2.396,13.184,16.019,7.958
+"Indiana","Starke",13.469,NA,NA,23.345,NA,6.556
+"Indiana","Steuben",6.368,NA,NA,18.614,7.224,-3.09
+"Indiana","Sullivan",-2.409,NA,NA,8.958,NA,3.909
+"Indiana","Switzerland",NA,NA,NA,NA,NA,NA
+"Indiana","Tippecanoe",7.719,NA,-1.796,8.642,17.733,10.344
+"Indiana","Tipton",11.972,NA,NA,5.376,NA,NA
+"Indiana","Union",NA,NA,NA,NA,NA,NA
+"Indiana","Vanderburgh",5.862,41.798,-0.662,11.331,NA,3.751
+"Indiana","Vermillion",6.132,NA,NA,7.049,NA,NA
+"Indiana","Vigo",6.955,NA,-1.623,8.346,13.978,2.709
+"Indiana","Wabash",11.206,NA,NA,19.254,NA,8.962
+"Indiana","Warren",NA,NA,NA,NA,NA,NA
+"Indiana","Warrick",-4.544,NA,NA,4.435,NA,8.079
+"Indiana","Washington",4.43,NA,NA,6.141,NA,13.149
+"Indiana","Wayne",-8.366,NA,-0.876,5.612,5.102,-0.455
+"Indiana","Wells",10.249,NA,NA,15.764,NA,1.289
+"Indiana","White",19.997,NA,NA,18.757,NA,5.993
+"Indiana","Whitley",12.617,NA,NA,15.06,NA,6.454
+"Iowa","Adair",9.524,NA,NA,10,NA,NA
+"Iowa","Allamakee",-1.697,NA,NA,NA,NA,NA
+"Iowa","Appanoose",NA,NA,NA,10.37,NA,NA
+"Iowa","Audubon",NA,NA,NA,NA,NA,NA
+"Iowa","Benton",19.047,NA,NA,17.143,NA,0.003
+"Iowa","Black Hawk",7.596,NA,-1.693,11.764,4.125,5.293
+"Iowa","Boone",7.368,NA,NA,27.084,NA,5.557
+"Iowa","Bremer",6.797,NA,NA,9.616,NA,8.622
+"Iowa","Buchanan",12.5,NA,NA,22.727,NA,NA
+"Iowa","Buena Vista",6.154,NA,NA,9.913,NA,3.637
+"Iowa","Butler",NA,NA,NA,NA,NA,NA
+"Iowa","Calhoun",NA,NA,NA,NA,NA,NA
+"Iowa","Carroll",NA,NA,NA,13.537,NA,NA
+"Iowa","Cass",NA,NA,NA,5.637,NA,NA
+"Iowa","Cedar",15,NA,NA,22.619,NA,NA
+"Iowa","Cerro Gordo",27.27,NA,NA,11.551,NA,5.43
+"Iowa","Cherokee",NA,NA,NA,-34.934,NA,NA
+"Iowa","Chickasaw",5.261,NA,NA,NA,NA,NA
+"Iowa","Clarke",NA,NA,NA,4.84,NA,NA
+"Iowa","Clay",9.21,NA,NA,24.905,NA,4.254
+"Iowa","Clayton",7.895,NA,NA,NA,NA,NA
+"Iowa","Clinton",63.024,NA,NA,18.887,NA,-0.003
+"Iowa","Crawford",NA,NA,NA,-1.171,NA,NA
+"Iowa","Dallas",-6.611,NA,NA,14.227,NA,4.598
+"Iowa","Davis",NA,NA,NA,NA,NA,NA
+"Iowa","Decatur",NA,NA,NA,NA,NA,NA
+"Iowa","Delaware",NA,NA,NA,21.538,NA,NA
+"Iowa","Des Moines",18.842,NA,NA,17.883,NA,5.738
+"Iowa","Dickinson",13.794,NA,NA,13.839,NA,2.224
+"Iowa","Dubuque",46.001,44.639,-3.257,12.785,-48.72,7.556
+"Iowa","Emmet",NA,NA,NA,NA,NA,NA
+"Iowa","Fayette",5.479,NA,NA,10.593,NA,5.551
+"Iowa","Floyd",8.083,NA,NA,-10.226,NA,NA
+"Iowa","Franklin",NA,NA,NA,NA,NA,NA
+"Iowa","Fremont",NA,NA,NA,NA,15.623,NA
+"Iowa","Greene",NA,NA,NA,NA,NA,NA
+"Iowa","Grundy",NA,NA,NA,NA,NA,NA
+"Iowa","Guthrie",NA,NA,NA,NA,NA,NA
+"Iowa","Hamilton",24.357,NA,NA,44.64,-5.432,NA
+"Iowa","Hancock",9.255,NA,NA,NA,NA,NA
+"Iowa","Hardin",NA,NA,NA,-16.558,NA,NA
+"Iowa","Harrison",17.233,NA,NA,31.069,NA,NA
+"Iowa","Henry",25.42,NA,NA,30.642,NA,5.265
+"Iowa","Howard",NA,NA,NA,NA,NA,NA
+"Iowa","Humboldt",NA,NA,NA,NA,NA,NA
+"Iowa","Ida",NA,NA,NA,NA,NA,NA
+"Iowa","Iowa",5.661,NA,NA,31.997,NA,NA
+"Iowa","Jackson",19.478,NA,NA,31.088,NA,-0.043
+"Iowa","Jasper",NA,25.001,-1.949,0.311,-3.88,NA
+"Iowa","Jefferson",NA,NA,NA,NA,NA,125.997
+"Iowa","Johnson",8.768,27.273,32.586,20.715,8.503,-2.67
+"Iowa","Jones",NA,NA,NA,NA,7.409,122.533
+"Iowa","Keokuk",NA,NA,NA,NA,NA,NA
+"Iowa","Kossuth",NA,NA,NA,-31.481,NA,NA
+"Iowa","Lee",1.205,NA,NA,17.887,NA,2.637
+"Iowa","Linn",40.645,104.614,-2.502,5.149,4.267,3.438
+"Iowa","Louisa",NA,NA,NA,NA,NA,NA
+"Iowa","Lucas",NA,NA,NA,NA,NA,NA
+"Iowa","Lyon",NA,NA,NA,NA,NA,NA
+"Iowa","Madison",NA,NA,NA,-19.703,NA,NA
+"Iowa","Mahaska",NA,NA,NA,22.957,NA,3.666
+"Iowa","Marion",NA,NA,NA,11.5,NA,-0.006
+"Iowa","Marshall",17.965,NA,NA,10.608,NA,0.948
+"Iowa","Mills",NA,NA,NA,10.002,NA,NA
+"Iowa","Mitchell",NA,NA,NA,NA,NA,NA
+"Iowa","Monona",NA,NA,NA,NA,NA,NA
+"Iowa","Monroe",NA,NA,NA,NA,NA,NA
+"Iowa","Montgomery",15.834,NA,NA,NA,NA,NA
+"Iowa","Muscatine",71.251,NA,NA,11.707,NA,6.334
+"Iowa","O'Brien",5.827,NA,NA,15.567,NA,NA
+"Iowa","Osceola",NA,NA,NA,NA,NA,NA
+"Iowa","Page",NA,NA,NA,-9.195,NA,-0.005
+"Iowa","Palo Alto",NA,NA,NA,NA,NA,NA
+"Iowa","Plymouth",14.717,NA,NA,2.563,NA,4.25
+"Iowa","Pocahontas",NA,NA,NA,NA,NA,NA
+"Iowa","Polk",24.74,153.906,-2.226,14.308,2.703,3.273
+"Iowa","Pottawattamie",17.538,90.046,-1.825,13.717,4.95,0.898
+"Iowa","Poweshiek",8.221,NA,NA,14.78,4.71,6.38
+"Iowa","Sac",NA,NA,NA,NA,NA,NA
+"Iowa","Scott",9.243,143.964,-1.739,16.362,-36.897,-0.207
+"Iowa","Shelby",NA,NA,NA,NA,NA,NA
+"Iowa","Sioux",16.957,NA,NA,15.961,NA,4.061
+"Iowa","Story",15.706,NA,-2.595,17.937,NA,8.554
+"Iowa","Tama",NA,NA,NA,NA,NA,4.232
+"Iowa","Taylor",NA,NA,NA,NA,NA,NA
+"Iowa","Union",NA,NA,NA,13.389,NA,NA
+"Iowa","Van Buren",NA,NA,NA,NA,NA,NA
+"Iowa","Wapello",39.472,NA,NA,15.831,NA,12.23
+"Iowa","Warren",15.606,NA,NA,19.128,NA,10.899
+"Iowa","Washington",13.741,NA,NA,16.562,NA,9.531
+"Iowa","Wayne",NA,NA,NA,NA,NA,NA
+"Iowa","Webster",74.456,NA,NA,12.915,NA,0.04
+"Iowa","Winnebago",3.554,NA,NA,NA,NA,NA
+"Iowa","Winneshiek",6.062,NA,NA,6.875,NA,NA
+"Iowa","Woodbury",12.319,NA,-1.314,17.048,3.491,4.878
+"Iowa","Worth",NA,NA,NA,NA,NA,NA
+"Iowa","Wright",10.186,NA,NA,NA,NA,NA
+"Kansas","Allen",3.509,NA,NA,22.148,NA,NA
+"Kansas","Anderson",NA,NA,NA,NA,NA,NA
+"Kansas","Atchison",NA,NA,NA,17.007,NA,NA
+"Kansas","Barton",-9.7,NA,NA,3.077,NA,-4.41
+"Kansas","Bourbon",3.846,NA,NA,28.485,NA,NA
+"Kansas","Brown",NA,NA,NA,21.797,NA,NA
+"Kansas","Butler",-7.407,-45.714,NA,3.221,NA,6.473
+"Kansas","Cherokee",1.235,NA,NA,1.315,NA,-9.091
+"Kansas","Clay",NA,NA,NA,NA,NA,NA
+"Kansas","Cloud",NA,NA,NA,16.101,NA,NA
+"Kansas","Coffey",NA,NA,NA,NA,8.619,NA
+"Kansas","Cowley",-7.002,NA,NA,2.48,NA,2.311
+"Kansas","Crawford",-10.809,NA,NA,15.86,NA,1.83
+"Kansas","Dickinson",9.594,NA,NA,23.774,-11.631,5.882
+"Kansas","Doniphan",NA,NA,NA,NA,NA,NA
+"Kansas","Douglas",15.644,59.089,-0.647,9.073,NA,7.918
+"Kansas","Ellis",4.315,NA,NA,2.135,NA,16.07
+"Kansas","Ellsworth",NA,NA,NA,NA,NA,NA
+"Kansas","Finney",0.897,NA,NA,7.05,NA,-0.003
+"Kansas","Ford",-1.315,NA,NA,7.81,17.464,3.799
+"Kansas","Franklin",7.933,NA,NA,13.653,-11.268,7.144
+"Kansas","Geary",3.292,NA,NA,4.449,NA,4.761
+"Kansas","Grant",NA,NA,NA,NA,NA,NA
+"Kansas","Greenwood",NA,NA,NA,NA,NA,NA
+"Kansas","Harper",NA,NA,NA,NA,NA,NA
+"Kansas","Harvey",-2.859,NA,NA,7.78,NA,-0.894
+"Kansas","Jackson",NA,NA,NA,-0.938,NA,NA
+"Kansas","Jefferson",10.908,NA,NA,NA,NA,NA
+"Kansas","Johnson",10.005,-6.819,NA,20.929,6.81,-1.026
+"Kansas","Kingman",NA,NA,NA,NA,NA,209.177
+"Kansas","Labette",-2.151,NA,NA,-6.594,NA,-11.538
+"Kansas","Leavenworth",10.847,NA,-1.3,12.003,-13.336,6.63
+"Kansas","Linn",NA,NA,NA,NA,NA,NA
+"Kansas","Lyon",9.773,NA,NA,13.942,-1.884,0.873
+"Kansas","Marion",NA,NA,NA,NA,NA,NA
+"Kansas","Marshall",NA,NA,NA,17.647,NA,NA
+"Kansas","McPherson",-4.427,NA,NA,4.886,1.755,0.003
+"Kansas","Miami",-4.894,NA,NA,9.303,NA,11.109
+"Kansas","Mitchell",NA,NA,NA,NA,NA,NA
+"Kansas","Montgomery",-3.571,NA,NA,8.531,NA,1.019
+"Kansas","Morris",NA,NA,NA,NA,NA,NA
+"Kansas","Nemaha",NA,NA,NA,NA,NA,NA
+"Kansas","Neosho",1.883,NA,NA,6.83,NA,-2.224
+"Kansas","Osage",8.693,NA,NA,NA,NA,NA
+"Kansas","Ottawa",NA,NA,NA,NA,NA,NA
+"Kansas","Pawnee",-16.665,NA,NA,NA,NA,NA
+"Kansas","Pottawatomie",2.172,NA,NA,16.151,NA,9.576
+"Kansas","Pratt",-4.348,NA,NA,10.416,NA,NA
+"Kansas","Reno",-1.792,NA,0.845,6.787,-0.042,0.423
+"Kansas","Rice",NA,NA,NA,NA,NA,NA
+"Kansas","Riley",14.883,NA,NA,6.526,NA,10.643
+"Kansas","Russell",-0.015,NA,NA,NA,NA,NA
+"Kansas","Saline",-2.319,-9.269,0.331,16.279,0.758,-3.756
+"Kansas","Scott",NA,NA,NA,NA,NA,NA
+"Kansas","Sedgwick",0.524,-38.065,0.859,9.703,-4.664,0.619
+"Kansas","Seward",2.878,NA,NA,11.333,3.703,-2.888
+"Kansas","Shawnee",6.576,9.951,-11.226,16.13,4.702,-1.152
+"Kansas","Sherman",NA,NA,NA,NA,NA,56.152
+"Kansas","Stevens",NA,NA,NA,NA,NA,NA
+"Kansas","Sumner",NA,NA,NA,9.889,NA,2.731
+"Kansas","Thomas",NA,NA,NA,-5.649,NA,NA
+"Kansas","Trego",NA,NA,NA,NA,NA,NA
+"Kansas","Wabaunsee",NA,NA,NA,NA,NA,NA
+"Kansas","Washington",NA,NA,NA,NA,NA,NA
+"Kansas","Wilson",-6.653,NA,NA,NA,NA,NA
+"Kansas","Wyandotte",1.911,NA,-1.857,17.891,8.364,5.417
+"Kentucky","Adair",NA,NA,NA,4.878,NA,NA
+"Kentucky","Allen",-0.002,NA,NA,5.618,NA,0.003
+"Kentucky","Anderson",-1.076,NA,NA,7.451,NA,-1.669
+"Kentucky","Ballard",NA,NA,NA,NA,NA,NA
+"Kentucky","Barren",-2.959,NA,NA,5.823,NA,0.956
+"Kentucky","Bath",NA,NA,NA,NA,NA,NA
+"Kentucky","Bell",3.597,NA,NA,5.448,NA,1.886
+"Kentucky","Boone",1.863,41.508,-0.861,3.506,3.499,2.204
+"Kentucky","Bourbon",-16.394,NA,NA,7.895,NA,0
+"Kentucky","Boyd",-2.101,NA,NA,5.586,NA,6.253
+"Kentucky","Boyle",0.671,NA,NA,10.666,NA,2.742
+"Kentucky","Bracken",NA,NA,NA,NA,NA,NA
+"Kentucky","Breathitt",NA,NA,NA,13.637,NA,NA
+"Kentucky","Breckinridge",5.88,NA,NA,14.666,NA,NA
+"Kentucky","Bullitt",3.868,NA,-1.12,10.734,2.593,6.114
+"Kentucky","Butler",NA,NA,NA,NA,NA,NA
+"Kentucky","Caldwell",10.422,NA,NA,-1.829,NA,NA
+"Kentucky","Calloway",-11.335,NA,NA,1.37,NA,0.971
+"Kentucky","Campbell",12.629,NA,-0.179,8.718,NA,3.234
+"Kentucky","Carroll",5.124,NA,NA,11.854,NA,NA
+"Kentucky","Carter",2.355,NA,NA,5.127,NA,8.7
+"Kentucky","Casey",3.637,NA,NA,NA,NA,NA
+"Kentucky","Christian",-2.924,NA,NA,6.646,3.45,-4.52
+"Kentucky","Clark",7.146,NA,NA,5.68,NA,2.06
+"Kentucky","Clay",-14.283,NA,NA,12.505,NA,NA
+"Kentucky","Clinton",NA,NA,NA,NA,NA,NA
+"Kentucky","Crittenden",NA,NA,NA,NA,NA,NA
+"Kentucky","Daviess",-1.782,61.014,-0.641,5.671,NA,5.242
+"Kentucky","Edmonson",NA,NA,NA,NA,NA,NA
+"Kentucky","Estill",13.213,NA,NA,NA,NA,NA
+"Kentucky","Fayette",9.021,3.802,NA,4.623,-0.232,-0.797
+"Kentucky","Fleming",NA,NA,NA,NA,NA,41.956
+"Kentucky","Floyd",0.001,NA,NA,17.174,NA,NA
+"Kentucky","Franklin",17.242,NA,NA,5.525,NA,3.571
+"Kentucky","Fulton",NA,NA,NA,12.503,NA,NA
+"Kentucky","Gallatin",-0.004,NA,NA,NA,6.144,NA
+"Kentucky","Garrard",NA,NA,NA,6.12,NA,NA
+"Kentucky","Grant",20.658,NA,NA,16.584,NA,-1.201
+"Kentucky","Graves",5.858,NA,NA,7.969,NA,3.193
+"Kentucky","Grayson",6.664,NA,NA,8.772,NA,-4.959
+"Kentucky","Green",NA,NA,NA,NA,NA,NA
+"Kentucky","Greenup",10.375,NA,NA,8.365,NA,-0.045
+"Kentucky","Hancock",NA,NA,NA,NA,NA,NA
+"Kentucky","Hardin",0,NA,-1.094,2.385,9.396,1.116
+"Kentucky","Harlan",4.165,NA,NA,-0.875,NA,NA
+"Kentucky","Harrison",-51.035,NA,NA,NA,NA,2.016
+"Kentucky","Hart",10.522,NA,NA,NA,9.745,NA
+"Kentucky","Henderson",20.365,NA,NA,5.822,NA,5.342
+"Kentucky","Henry",10.467,NA,NA,NA,3.778,-4.166
+"Kentucky","Hopkins",-2.906,NA,NA,6.341,-0.058,3.725
+"Kentucky","Jackson",NA,NA,NA,NA,NA,NA
+"Kentucky","Jefferson",10.033,73.765,-0.891,2.735,1.296,1.462
+"Kentucky","Jessamine",30.797,NA,NA,-6.06,NA,2.041
+"Kentucky","Johnson",NA,NA,NA,6.718,NA,NA
+"Kentucky","Kenton",8.476,47.224,-0.657,5.627,16.004,4.203
+"Kentucky","Knott",NA,NA,NA,NA,NA,NA
+"Kentucky","Knox",5.458,NA,NA,2.923,NA,10.451
+"Kentucky","Larue",6.692,NA,NA,NA,NA,NA
+"Kentucky","Laurel",6.056,31.166,NA,3.881,17.061,6.663
+"Kentucky","Lawrence",NA,NA,NA,0.025,NA,NA
+"Kentucky","Letcher",-7.377,NA,NA,-7.254,NA,NA
+"Kentucky","Lewis",NA,NA,NA,NA,NA,NA
+"Kentucky","Lincoln",17.135,NA,NA,6.237,NA,-5.897
+"Kentucky","Livingston",NA,NA,NA,NA,NA,NA
+"Kentucky","Logan",-21.618,NA,NA,8.245,NA,9.592
+"Kentucky","Lyon",NA,NA,NA,2.228,NA,NA
+"Kentucky","Madison",-0.479,NA,-1.523,5.533,2.349,3.259
+"Kentucky","Marion",11.378,NA,NA,7.044,NA,NA
+"Kentucky","Marshall",8.379,NA,NA,8.85,-0.045,-1.031
+"Kentucky","Mason",NA,NA,NA,4.838,NA,2.222
+"Kentucky","McCracken",2.1,NA,0.642,3.668,3.437,6.339
+"Kentucky","McCreary",6.454,NA,NA,NA,NA,NA
+"Kentucky","McLean",NA,NA,NA,NA,NA,NA
+"Kentucky","Meade",-2.941,NA,NA,5.698,NA,-7.886
+"Kentucky","Menifee",NA,NA,NA,NA,NA,NA
+"Kentucky","Mercer",1.42,NA,NA,11.5,NA,7.546
+"Kentucky","Metcalfe",NA,NA,NA,NA,NA,NA
+"Kentucky","Monroe",NA,NA,NA,12.263,NA,NA
+"Kentucky","Montgomery",8.669,NA,NA,5,1.923,7.039
+"Kentucky","Morgan",NA,NA,NA,NA,NA,NA
+"Kentucky","Muhlenberg",5.669,NA,NA,-0.325,NA,2.552
+"Kentucky","Nelson",3.32,NA,NA,6.212,NA,-0.807
+"Kentucky","Nicholas",NA,NA,NA,NA,NA,NA
+"Kentucky","Ohio",19.35,NA,NA,6.046,NA,5.014
+"Kentucky","Oldham",49.963,NA,NA,0.458,NA,3.575
+"Kentucky","Owen",NA,NA,NA,NA,NA,NA
+"Kentucky","Pendleton",NA,NA,NA,NA,NA,NA
+"Kentucky","Perry",0.006,NA,NA,2.1,NA,NA
+"Kentucky","Pike",-2.822,NA,NA,-1.871,NA,2.646
+"Kentucky","Powell",6.453,NA,NA,23.872,NA,NA
+"Kentucky","Pulaski",-1.595,NA,NA,4.92,NA,-0.55
+"Kentucky","Rockcastle",-1.831,NA,NA,14.977,NA,NA
+"Kentucky","Rowan",9.474,NA,NA,6.073,NA,6.557
+"Kentucky","Russell",18.187,NA,NA,9.785,NA,NA
+"Kentucky","Scott",3.585,NA,NA,5.435,7.854,5.896
+"Kentucky","Shelby",9.419,NA,NA,7.027,-3.783,3.361
+"Kentucky","Simpson",-0.009,NA,NA,16.544,2.337,3.157
+"Kentucky","Spencer",-8.713,NA,NA,NA,NA,-6.385
+"Kentucky","Taylor",19.295,NA,NA,10.01,NA,-1.984
+"Kentucky","Todd",4.838,NA,NA,NA,NA,NA
+"Kentucky","Trigg",-8.891,NA,NA,-1.062,NA,NA
+"Kentucky","Trimble",NA,NA,NA,NA,NA,NA
+"Kentucky","Union",-4.168,NA,NA,9.063,NA,NA
+"Kentucky","Warren",-1.974,45.603,-0.833,5.055,NA,3.431
+"Kentucky","Washington",NA,NA,NA,2.082,NA,NA
+"Kentucky","Wayne",-1.864,NA,NA,7.495,NA,NA
+"Kentucky","Webster",1.614,NA,NA,NA,NA,NA
+"Kentucky","Whitley",6.456,NA,NA,-1.499,20.038,-2.471
+"Kentucky","Woodford",4.328,NA,NA,15.999,NA,6.25
+"Louisiana","Acadia Parish",34.65,NA,NA,25.771,11.523,-2.222
+"Louisiana","Allen Parish",7.205,NA,NA,1.744,NA,4.763
+"Louisiana","Ascension Parish",4.894,NA,-2.325,10.869,NA,2.05
+"Louisiana","Assumption Parish",12.822,NA,NA,NA,NA,NA
+"Louisiana","Avoyelles Parish",4.624,NA,NA,5.172,NA,-4.208
+"Louisiana","Beauregard Parish",-2.479,NA,NA,-0.66,NA,2.15
+"Louisiana","Bienville Parish",7.692,NA,NA,NA,NA,NA
+"Louisiana","Bossier Parish",-2.818,-35.295,0.392,3.742,7.148,-3.721
+"Louisiana","Caddo Parish",4.728,26.363,0.002,3.693,6.649,-1.835
+"Louisiana","Calcasieu Parish",1.063,40.142,-2.207,17.959,11.452,2.619
+"Louisiana","Caldwell Parish",NA,NA,NA,13.207,NA,NA
+"Louisiana","Cameron Parish",-11.997,NA,NA,NA,NA,NA
+"Louisiana","Catahoula Parish",-4.081,NA,NA,NA,NA,NA
+"Louisiana","Claiborne Parish",NA,NA,NA,NA,NA,NA
+"Louisiana","Concordia Parish",-1.85,NA,NA,-3.227,NA,NA
+"Louisiana","De Soto Parish",-5.8,NA,NA,1.849,23.074,-12.069
+"Louisiana","East Feliciana Parish",0.955,17.836,-1.857,-1.095,4.224,0.903
+"Louisiana","Evangeline Parish",1.516,NA,NA,NA,NA,NA
+"Louisiana","Franklin Parish",7.936,NA,NA,10.286,NA,-1.373
+"Louisiana","Grant Parish",-3.334,NA,NA,3.843,NA,NA
+"Louisiana","Iberia Parish",NA,NA,NA,NA,NA,-8.16
+"Louisiana","Iberville Parish",-0.873,NA,NA,6.942,NA,1.235
+"Louisiana","Jackson Parish",24.998,NA,NA,58.618,17.339,0
+"Louisiana","Jefferson Davis Parish",-3.124,NA,NA,1.787,NA,NA
+"Louisiana","Jefferson Parish",0.689,NA,NA,-2.242,NA,0
+"Louisiana","La Salle Parish",7.096,33.499,-4.398,24.609,16.39,3.837
+"Louisiana","Lafayette Parish",-7.141,NA,NA,-9.458,NA,NA
+"Louisiana","Lafourche Parish",2.576,34.481,-1.747,11.465,13.673,-0.178
+"Louisiana","Lincoln Parish",24.089,NA,-3.866,27.033,-0.001,2.35
+"Louisiana","Livingston Parish",-3.715,NA,NA,-4.412,NA,-4.723
+"Louisiana","Madison Parish",1.183,NA,-1.339,1.463,-5.797,6.249
+"Louisiana","Morehouse Parish",NA,NA,NA,27.688,-29.707,NA
+"Louisiana","Natchitoches Parish",4.098,NA,NA,6.935,NA,2.899
+"Louisiana","Orleans Parish",23.28,NA,NA,0.57,NA,-4.108
+"Louisiana","Ouachita Parish",69.268,3.357,-4,61.278,-4.84,0.359
+"Louisiana","Plaquemines Parish",181.045,6.52,-0.513,72.404,-10.349,4.6
+"Louisiana","Pointe Coupee Parish",14.156,NA,NA,48.482,NA,7.02
+"Louisiana","Rapides Parish",-4.345,NA,NA,12.633,NA,NA
+"Louisiana","Red River Parish",-0.934,10.412,-1.182,14.67,-11.338,-1.731
+"Louisiana","Richland Parish",NA,NA,NA,NA,NA,NA
+"Louisiana","Sabine Parish",-2.818,NA,NA,2.921,-0.002,NA
+"Louisiana","St. Bernard Parish",2.348,NA,NA,-0.826,NA,7.677
+"Louisiana","St. Charles Parish",15.811,NA,NA,14.552,NA,7.405
+"Louisiana","St. Helena Parish",4.844,NA,NA,23.542,NA,-0.056
+"Louisiana","St. James Parish",NA,NA,NA,NA,NA,NA
+"Louisiana","St. Landry Parish",-2.409,NA,NA,NA,NA,NA
+"Louisiana","St. Martin Parish",36.648,NA,NA,66.265,NA,7.325
+"Louisiana","St. Mary Parish",0.289,NA,NA,16.163,17.672,-0.009
+"Louisiana","St. Tammany Parish",-9.024,NA,NA,18.119,6.577,6.051
+"Louisiana","Tangipahoa Parish",18.382,NA,NA,31.341,NA,3.823
+"Louisiana","Terrebonne Parish",5.548,22.242,-2.879,7.743,34.582,-0.015
+"Louisiana","Union Parish",2.838,NA,-2.162,5.932,-1.832,-1.881
+"Louisiana","Vermilion Parish",11.962,NA,-4.191,32.218,18.742,4.054
+"Louisiana","Vernon Parish",5.061,NA,NA,3.299,NA,-2.05
+"Louisiana","Washington Parish",6.807,NA,NA,5.162,NA,2.339
+"Louisiana","Webster Parish",-4.641,NA,NA,-3.26,NA,2.319
+"Louisiana","West Carroll Parish",22.147,NA,NA,13.769,NA,5.22
+"Louisiana","West Feliciana Parish",1.251,NA,NA,1.418,-4.211,-4.643
+"Louisiana","Winn Parish",30.83,NA,NA,50.19,9.12,5.086
+"Maine","Androscoggin",5.508,NA,-1.72,9.722,NA,6.646
+"Maine","Aroostook",29.332,NA,NA,36.184,NA,13.943
+"Maine","Cumberland",10.591,44.059,-1.969,12.523,12.806,6.1
+"Maine","Franklin",22.56,NA,NA,20.423,NA,11.842
+"Maine","Hancock",32.886,NA,NA,12.468,NA,8.039
+"Maine","Kennebec",13.253,NA,-1.823,13.927,NA,2.685
+"Maine","Knox",1.773,NA,NA,19.27,NA,18.183
+"Maine","Lincoln",9.458,NA,NA,14.701,NA,2.819
+"Maine","Oxford",16.965,NA,NA,11.174,NA,1.163
+"Maine","Penobscot",16.298,45.672,-2.543,24.655,63.291,4.427
+"Maine","Piscataquis",15.79,NA,NA,20,NA,NA
+"Maine","Sagadahoc",13.919,NA,NA,12.724,NA,13.514
+"Maine","Somerset",17.602,NA,NA,23.811,NA,9.231
+"Maine","Waldo",6.109,NA,NA,26.08,NA,8.431
+"Maine","Washington",13.222,NA,NA,20.133,NA,9.091
+"Maine","York",5.429,72.575,-2.091,15.927,48.277,5.45
+"Maryland","Allegany",13.235,75.41,NA,8.147,14.446,5.175
+"Maryland","Anne Arundel",0.876,70.039,-1.132,5.028,2.079,1.29
+"Maryland","Baltimore",7.354,4.686,1.0205,53.9735,31.4355,5.109
+"Maryland","Calvert",-7.624,56.25,NA,7.505,NA,3.211
+"Maryland","Caroline",-3.211,NA,NA,6.504,NA,4.656
+"Maryland","Carroll",16.433,93.507,-1.459,8.558,NA,6.212
+"Maryland","Cecil",5.836,NA,-1.153,7.906,22.846,2.071
+"Maryland","Charles",4.935,NA,-0.499,6.417,NA,2.57
+"Maryland","Dorchester",10.443,NA,NA,8.828,NA,3.332
+"Maryland","Frederick",5.234,76.256,-1.361,6.611,7.354,2.312
+"Maryland","Garrett",14.603,NA,NA,20.595,NA,-0.003
+"Maryland","Harford",8.275,-0.474,-1.252,138.638,32.842,3.654
+"Maryland","Howard",4.984,88.787,-0.945,3.882,24.779,1.486
+"Maryland","Kent",-2.059,NA,NA,-1.121,NA,NA
+"Maryland","Montgomery",-3.44,67.827,-0.501,3.874,6.644,2.423
+"Maryland","Prince George's",-0.909,79.348,-0.979,3.957,1.663,2.146
+"Maryland","Queen Anne's",12.4,NA,NA,17.906,NA,6.294
+"Maryland","Somerset",5.768,NA,NA,5.086,NA,-5.356
+"Maryland","St. Mary's",8.764,37.676,-1.198,3.221,NA,5.241
+"Maryland","Talbot",0.905,NA,NA,11.215,NA,6.248
+"Maryland","Washington",7.6,81.004,-1.108,11.424,5.189,3.775
+"Maryland","Wicomico",1.033,NA,-0.847,6.046,NA,0.726
+"Maryland","Worcester",20.077,86.351,NA,22.131,NA,6.848
+"Massachusetts","Barnstable",9.726,55.336,-1.978,8.214,2.062,2.642
+"Massachusetts","Berkshire",-1.039,47.759,-1.002,14.216,22.223,2.909
+"Massachusetts","Bristol",0.214,60.853,-1.288,7.656,11.347,4.066
+"Massachusetts","Dukes",-7.896,NA,NA,-1.785,NA,NA
+"Massachusetts","Essex",-1.655,23.078,13.021,11.12,1.385,-0.973
+"Massachusetts","Franklin",NA,NA,NA,-0.693,5.231,94.153
+"Massachusetts","Hampden",0.349,15.786,10.934,7.761,1.467,-1.319
+"Massachusetts","Hampshire",90.402,95.097,-1.443,4.848,NA,5.882
+"Massachusetts","Middlesex",0.041,54.745,-1.061,5.385,0.928,3.099
+"Massachusetts","Nantucket",-10.422,NA,NA,NA,NA,NA
+"Massachusetts","Norfolk",104.898,6.262,4.504,76.568,1.727,6.438
+"Massachusetts","Plymouth",8.231,1.713,-1.172,-1.289,7.563,2.512
+"Massachusetts","Suffolk",8.965,1.678,5.373,49.8,60.879,4.344
+"Massachusetts","Worcester",7.138,-0.398,-1.135,-1.03,14.656,0.718
+"Michigan","Alcona",NA,NA,NA,NA,NA,NA
+"Michigan","Alger",NA,NA,NA,NA,NA,NA
+"Michigan","Allegan",11.09,NA,-2.247,18.972,NA,8.92
+"Michigan","Alpena",9.401,NA,NA,13.926,NA,2.506
+"Michigan","Antrim",20.482,NA,NA,12.5,NA,9.999
+"Michigan","Arenac",12.502,NA,NA,27.59,NA,NA
+"Michigan","Baraga",NA,NA,NA,NA,NA,NA
+"Michigan","Barry",17.372,NA,NA,15.885,NA,1.12
+"Michigan","Bay",10.562,NA,-2.728,17.039,NA,7.758
+"Michigan","Benzie",22.385,NA,NA,47.543,NA,NA
+"Michigan","Berrien",14.48,22.077,14.728,14.617,7.448,-2.077
+"Michigan","Branch",NA,NA,NA,11.599,0.005,150
+"Michigan","Calhoun",9.123,45.162,-1.471,12.364,13.614,3.798
+"Michigan","Cass",4.11,NA,NA,18.579,NA,9.375
+"Michigan","Charlevoix",-4.95,NA,NA,27.727,NA,1.431
+"Michigan","Cheboygan",15.487,NA,NA,29.289,NA,2.742
+"Michigan","Chippewa",-14.081,NA,NA,12.503,NA,1.095
+"Michigan","Clare",13.185,NA,NA,25.873,NA,9.091
+"Michigan","Clinton",9.072,NA,NA,15.904,13.158,6.284
+"Michigan","Crawford",6.449,NA,NA,21.09,NA,NA
+"Michigan","Delta",7.315,NA,NA,15.722,NA,1.166
+"Michigan","Dickinson",15.946,NA,NA,17.181,NA,-0.001
+"Michigan","Eaton",9.221,NA,-2.558,13.056,NA,7.191
+"Michigan","Emmet",16.204,NA,NA,28.275,NA,1.107
+"Michigan","Genesee",8.38,15.841,24.472,10.13,-0.002,-1.633
+"Michigan","Gladwin",NA,NA,NA,7.925,7.248,86.842
+"Michigan","Gogebic",NA,NA,NA,14.085,NA,NA
+"Michigan","Grand Traverse",8.98,57.688,-3.094,18.537,NA,10.165
+"Michigan","Gratiot",2.376,NA,NA,6.482,NA,-1.592
+"Michigan","Hillsdale",7.483,NA,NA,19.807,NA,11.031
+"Michigan","Houghton",14.739,5.377,NA,10.964,NA,4.447
+"Michigan","Huron",17.464,NA,NA,25.285,NA,5.878
+"Michigan","Ingham",7.286,7.086,19.993,11.629,5.058,-1.327
+"Michigan","Ionia",NA,NA,NA,6.419,4.755,113.977
+"Michigan","Iosco",17.421,NA,NA,9.735,NA,9.334
+"Michigan","Iron",NA,NA,NA,23.377,NA,NA
+"Michigan","Isabella",12.785,NA,-2.077,17.774,NA,5.557
+"Michigan","Jackson",8.331,NA,-1.342,10.012,NA,6.485
+"Michigan","Kalamazoo",6.74,11.114,7.604,12.574,5.295,-2.026
+"Michigan","Kalkaska",NA,NA,NA,10.841,6.627,140.906
+"Michigan","Kent",5.794,11.86,NA,14.877,4.636,-2.439
+"Michigan","Lake",NA,NA,NA,NA,NA,82.276
+"Michigan","Lapeer",8.97,34.616,-3.166,22.802,NA,4.603
+"Michigan","Leelanau",NA,NA,NA,NA,NA,NA
+"Michigan","Lenawee",7.898,NA,-2.365,13.226,NA,6.062
+"Michigan","Livingston",4.164,57.23,-2.64,13.094,NA,7.451
+"Michigan","Luce",NA,NA,NA,NA,NA,NA
+"Michigan","Mackinac",NA,NA,NA,22.64,NA,NA
+"Michigan","Macomb",7.923,25.459,27.775,11.107,5.946,-2.036
+"Michigan","Manistee",NA,NA,NA,14.478,2.733,197.686
+"Michigan","Marquette",6.129,70.941,NA,19.002,NA,7.132
+"Michigan","Mason",18.849,NA,NA,10.828,NA,3.56
+"Michigan","Mecosta",14.107,NA,NA,17.498,NA,7.583
+"Michigan","Menominee",-3.902,NA,NA,8.753,NA,-5.642
+"Michigan","Midland",11.442,NA,-2.672,14.509,NA,5.565
+"Michigan","Missaukee",NA,NA,NA,NA,NA,NA
+"Michigan","Monroe",6.48,11.832,12.984,13.024,5.057,-2.537
+"Michigan","Montcalm",NA,NA,NA,11.66,13.446,84.358
+"Michigan","Montmorency",NA,NA,NA,8.455,NA,NA
+"Michigan","Muskegon",5.342,96.282,-1.853,8.967,NA,4.929
+"Michigan","Newaygo",15.629,41.913,NA,8.872,NA,5.332
+"Michigan","Oakland",5.635,111.893,-2.042,12.258,7.349,3.754
+"Michigan","Oceana",17.377,13.171,NA,-0.009,NA,4.164
+"Michigan","Ogemaw",6.884,NA,NA,26.089,NA,-0.001
+"Michigan","Ontonagon",NA,NA,NA,NA,NA,NA
+"Michigan","Osceola",43.68,NA,NA,-3.228,NA,7.678
+"Michigan","Oscoda",NA,NA,NA,NA,NA,NA
+"Michigan","Otsego",6.161,NA,NA,19.326,NA,4.971
+"Michigan","Ottawa",3.886,NA,NA,14.347,8.26,-2.408
+"Michigan","Presque Isle",NA,NA,NA,NA,NA,98.216
+"Michigan","Roscommon",21.762,NA,NA,13.238,NA,7.791
+"Michigan","Saginaw",8.335,NA,-2.2,19.143,-10.174,6.426
+"Michigan","Sanilac",17.654,NA,NA,24.502,NA,2.903
+"Michigan","Schoolcraft",NA,NA,NA,NA,NA,NA
+"Michigan","Shiawassee",12.093,NA,-2.618,19.675,NA,7.048
+"Michigan","St. Clair",-3.332,59.23,-1.679,20.041,28.175,6.83
+"Michigan","St. Joseph",11.646,NA,NA,19.193,NA,7.273
+"Michigan","Tuscola",10.509,NA,NA,14.374,NA,2.468
+"Michigan","Van Buren",11.295,NA,-2.115,18.382,NA,15.162
+"Michigan","Washtenaw",-10.077,121.781,-2.01,15.23,21.044,4.792
+"Michigan","Wayne",6.902,22.565,16.677,12.863,4.813,-1.603
+"Michigan","Wexford",NA,NA,NA,10.056,10.207,115.16
+"Minnesota","Aitkin",12.5,NA,NA,23.958,NA,NA
+"Minnesota","Anoka",14.163,60.155,-1.929,9.435,7.145,4.363
+"Minnesota","Becker",19.231,NA,NA,19.2,NA,6.1
+"Minnesota","Beltrami",-4.654,5.66,NA,7.999,NA,0.857
+"Minnesota","Benton",19.719,NA,NA,9.467,NA,-0.001
+"Minnesota","Big Stone",NA,NA,NA,NA,NA,NA
+"Minnesota","Blue Earth",5.008,NA,-1.399,17.081,NA,4.617
+"Minnesota","Brown",-3.491,NA,NA,30.74,NA,7.465
+"Minnesota","Carlton",7.573,NA,NA,13.804,NA,7.794
+"Minnesota","Carver",1.726,43.208,NA,7.033,NA,2.749
+"Minnesota","Cass",8.871,NA,NA,12.195,NA,-1.176
+"Minnesota","Chippewa",NA,NA,NA,10.173,NA,NA
+"Minnesota","Chisago",6.25,NA,NA,13.487,NA,3.897
+"Minnesota","Clay",21.921,NA,NA,27.594,NA,3.614
+"Minnesota","Clearwater",NA,NA,NA,NA,NA,NA
+"Minnesota","Cook",NA,NA,NA,NA,NA,NA
+"Minnesota","Cottonwood",NA,NA,NA,0.71,NA,NA
+"Minnesota","Crow Wing",5.681,NA,NA,15.749,NA,3.786
+"Minnesota","Dakota",7.084,33.117,-1.847,11.274,-3.409,4.522
+"Minnesota","Dodge",-1.223,NA,NA,-4.169,NA,6
+"Minnesota","Douglas",7.005,NA,NA,16.312,NA,-0.912
+"Minnesota","Faribault",3.925,NA,NA,NA,NA,NA
+"Minnesota","Fillmore",6.58,NA,NA,40.738,NA,-6.978
+"Minnesota","Freeborn",6.711,NA,NA,10.03,9.799,1.022
+"Minnesota","Goodhue",6.112,NA,NA,25.456,NA,-1.517
+"Minnesota","Grant",NA,NA,NA,NA,NA,NA
+"Minnesota","Hennepin",6.156,8.064,NA,10.141,3.954,-1.901
+"Minnesota","Houston",NA,NA,NA,5.155,NA,51.448
+"Minnesota","Hubbard",5.635,NA,NA,12.001,NA,-12.284
+"Minnesota","Isanti",7.536,NA,NA,12.518,NA,5.984
+"Minnesota","Itasca",4.419,NA,NA,13.203,NA,4.171
+"Minnesota","Jackson",NA,NA,NA,NA,NA,NA
+"Minnesota","Kanabec",4.805,NA,NA,17.499,NA,1.886
+"Minnesota","Kandiyohi",10.824,NA,NA,14.973,NA,-1.008
+"Minnesota","Koochiching",-9.231,NA,NA,16.666,NA,NA
+"Minnesota","Lake",NA,NA,NA,NA,NA,NA
+"Minnesota","Le Sueur",14.283,NA,NA,NA,NA,NA
+"Minnesota","Lincoln",NA,NA,NA,NA,NA,NA
+"Minnesota","Lyon",10.524,NA,NA,103.612,NA,10.447
+"Minnesota","Mahnomen",NA,NA,NA,NA,NA,NA
+"Minnesota","Marshall",4.708,NA,NA,11.952,NA,5.455
+"Minnesota","Martin",NA,NA,NA,NA,NA,NA
+"Minnesota","McLeod",NA,NA,NA,NA,NA,NA
+"Minnesota","Meeker",18.182,NA,NA,10.639,NA,-3.449
+"Minnesota","Mille Lacs",2.925,NA,NA,17.734,NA,0
+"Minnesota","Morrison",NA,NA,NA,15.975,NA,4.776
+"Minnesota","Mower",4.687,NA,NA,23.237,NA,-0.001
+"Minnesota","Murray",23.907,NA,NA,7.43,NA,3.67
+"Minnesota","Nicollet",9.644,NA,NA,13.44,NA,0.003
+"Minnesota","Nobles",NA,NA,NA,NA,NA,NA
+"Minnesota","Norman",16.003,NA,NA,6.535,NA,4.821
+"Minnesota","Olmsted",23.314,NA,NA,6.598,NA,-5.999
+"Minnesota","Otter Tail",NA,NA,NA,NA,NA,NA
+"Minnesota","Pennington",18.809,64.672,-1.353,3.897,1.225,2.281
+"Minnesota","Pine",9.141,NA,NA,16.222,NA,3.435
+"Minnesota","Pipestone",4.959,NA,NA,8.929,NA,NA
+"Minnesota","Polk",11.6,NA,NA,25.179,NA,8.079
+"Minnesota","Pope",NA,NA,NA,NA,NA,NA
+"Minnesota","Ramsey",-7.171,NA,NA,13.726,NA,2.642
+"Minnesota","Redwood",NA,NA,NA,NA,NA,NA
+"Minnesota","Renville",8.639,4.708,-12.563,12.777,2.875,-1.945
+"Minnesota","Rice",NA,NA,NA,NA,NA,61.613
+"Minnesota","Rock",NA,NA,NA,NA,NA,NA
+"Minnesota","Roseau",11.279,NA,NA,12.609,4.744,11.154
+"Minnesota","Scott",NA,NA,NA,3.921,NA,NA
+"Minnesota","Sherburne",2.243,NA,NA,11.805,NA,NA
+"Minnesota","Sibley",5.116,39.18,-1.695,26.879,NA,6.611
+"Minnesota","St. Louis",11.318,NA,-1.84,14.786,NA,0.444
+"Minnesota","Stearns",NA,NA,NA,NA,NA,NA
+"Minnesota","Steele",8.958,38.305,-1.419,15.217,10.928,4.177
+"Minnesota","Stevens",8.027,-32.043,-1.812,16.433,6.29,4.558
+"Minnesota","Swift",13.434,NA,NA,18.449,-33.333,7.444
+"Minnesota","Todd",NA,NA,NA,NA,NA,NA
+"Minnesota","Wabasha",NA,NA,NA,NA,NA,NA
+"Minnesota","Wadena",2.476,NA,NA,6.516,NA,3.425
+"Minnesota","Waseca",7.833,NA,NA,21.067,NA,3.773
+"Minnesota","Washington",-1.957,NA,NA,9.816,NA,NA
+"Minnesota","Watonwan",NA,NA,NA,8.893,NA,0.017
+"Minnesota","Wilkin",10.231,NA,NA,13.883,3.685,-1.748
+"Minnesota","Winona",NA,NA,NA,NA,NA,43.215
+"Minnesota","Wright",NA,NA,NA,NA,NA,NA
+"Minnesota","Yellow Medicine",4.787,NA,NA,9.321,NA,7.795
+"Mississippi","Adams",-7.741,NA,NA,4.591,NA,1.538
+"Mississippi","Alcorn",-10.575,NA,NA,7.598,NA,1.272
+"Mississippi","Amite",NA,NA,NA,NA,NA,NA
+"Mississippi","Attala",0.003,NA,NA,1.819,NA,NA
+"Mississippi","Benton",NA,NA,NA,NA,NA,NA
+"Mississippi","Bolivar",-9.795,NA,NA,0.469,NA,-1.389
+"Mississippi","Calhoun",-1.852,NA,NA,NA,NA,NA
+"Mississippi","Carroll",NA,NA,NA,NA,NA,NA
+"Mississippi","Chickasaw",-2.198,NA,NA,2.353,NA,NA
+"Mississippi","Claiborne",NA,NA,NA,NA,NA,NA
+"Mississippi","Clarke",-5.085,NA,NA,NA,NA,NA
+"Mississippi","Clay",1.369,NA,NA,2.384,NA,0.001
+"Mississippi","Coahoma",-9.231,NA,NA,-8.939,NA,-1.639
+"Mississippi","Copiah",2.855,NA,NA,9.943,NA,5.56
+"Mississippi","Covington",3.737,NA,NA,6.667,NA,NA
+"Mississippi","DeSoto",5.775,-25.003,0.494,2.091,-1.958,0.811
+"Mississippi","Forrest",23.3,NA,NA,1.097,NA,5.848
+"Mississippi","George",19.292,NA,NA,9.23,NA,2
+"Mississippi","Greene",-1.998,NA,NA,NA,NA,NA
+"Mississippi","Grenada",-5.515,NA,NA,7.597,NA,8.699
+"Mississippi","Hancock",13.004,NA,NA,17.404,NA,-1.388
+"Mississippi","Harrison",10.085,102.058,-2.555,17.659,21.476,-1.035
+"Mississippi","Hinds",0.001,2.083,-0.4,0.979,7.105,-0.96
+"Mississippi","Holmes",-12.767,NA,NA,NA,NA,NA
+"Mississippi","Humphreys",NA,NA,NA,NA,NA,NA
+"Mississippi","Itawamba",12.001,NA,NA,-6.704,NA,-6.524
+"Mississippi","Jackson",4.604,7.97,-1.584,18.44,21.564,-1.552
+"Mississippi","Jasper",6.777,NA,NA,NA,NA,NA
+"Mississippi","Jefferson Davis",-17.772,NA,NA,NA,NA,NA
+"Mississippi","Jones",4.359,NA,NA,1.932,NA,-4.052
+"Mississippi","Kemper",NA,NA,NA,NA,NA,NA
+"Mississippi","Lafayette",-1.393,NA,NA,3.821,NA,0.005
+"Mississippi","Lamar",-0.843,NA,NA,6.528,5.636,3.279
+"Mississippi","Lauderdale",2.419,3.524,NA,4.069,11.748,1.05
+"Mississippi","Lawrence",-17.858,NA,NA,NA,NA,NA
+"Mississippi","Leake",-4.615,NA,NA,-31.143,NA,NA
+"Mississippi","Lee",11.02,NA,NA,5.845,9.473,-1.066
+"Mississippi","Leflore",-8.771,NA,NA,2.972,NA,-1.612
+"Mississippi","Lincoln",-3.886,NA,NA,10.564,NA,-2.982
+"Mississippi","Lowndes",1.175,NA,NA,-0.873,NA,-1.531
+"Mississippi","Madison",-6.963,NA,NA,-0.576,-19.606,1.899
+"Mississippi","Marion",-0.936,NA,NA,2.773,NA,4.168
+"Mississippi","Marshall",0,NA,NA,11.376,NA,5.068
+"Mississippi","Monroe",-2.754,NA,NA,-4.079,NA,3.949
+"Mississippi","Montgomery",-9.675,NA,NA,NA,NA,NA
+"Mississippi","Neshoba",7.773,NA,NA,-1.458,NA,8.892
+"Mississippi","Newton",-8.699,NA,NA,-3.033,NA,NA
+"Mississippi","Noxubee",-2.043,NA,NA,NA,NA,NA
+"Mississippi","Oktibbeha",1.809,NA,NA,3.442,NA,6.387
+"Mississippi","Panola",-4.351,NA,NA,2.406,-5.001,4.047
+"Mississippi","Pearl River",2.251,NA,NA,3.513,27.83,0.643
+"Mississippi","Perry",-0.06,NA,NA,NA,NA,NA
+"Mississippi","Pike",-12.9,NA,NA,8.75,35.34,13.061
+"Mississippi","Pontotoc",3.334,NA,NA,3.945,NA,-3.399
+"Mississippi","Prentiss",1.02,NA,NA,0.973,NA,-0.001
+"Mississippi","Quitman",NA,NA,NA,NA,NA,NA
+"Mississippi","Rankin",2.063,33.329,0.5,2.217,7.046,-2.781
+"Mississippi","Scott",-3.61,NA,NA,-0.962,-20.576,15.105
+"Mississippi","Simpson",2.235,NA,NA,0.461,4.235,-1.966
+"Mississippi","Smith",2.198,NA,NA,NA,NA,NA
+"Mississippi","Stone",14.757,NA,NA,11.491,NA,NA
+"Mississippi","Sunflower",1.271,NA,NA,1.447,NA,4.163
+"Mississippi","Tallahatchie",NA,NA,NA,NA,NA,NA
+"Mississippi","Tate",-2.155,NA,NA,-2.257,NA,-4.635
+"Mississippi","Tippah",NA,NA,1.998,-4.562,NA,NA
+"Mississippi","Tishomingo",NA,NA,NA,-3.229,NA,4.033
+"Mississippi","Tunica",-2.005,NA,NA,-14.765,NA,NA
+"Mississippi","Union",-8.874,NA,NA,2.332,6.146,4.015
+"Mississippi","Walthall",6.577,NA,NA,NA,NA,NA
+"Mississippi","Warren",2.644,NA,NA,7.795,NA,6.163
+"Mississippi","Washington",-6.292,NA,NA,-6.33,NA,-0.775
+"Mississippi","Wayne",-9.226,NA,NA,-9.195,NA,NA
+"Mississippi","Webster",NA,NA,NA,NA,NA,NA
+"Mississippi","Wilkinson",NA,NA,NA,NA,NA,NA
+"Mississippi","Winston",-13.211,NA,NA,6.348,NA,NA
+"Mississippi","Yalobusha",-4.047,NA,NA,NA,NA,NA
+"Mississippi","Yazoo",1.575,NA,NA,8.837,NA,2.149
+"Missouri","Adair",NA,NA,NA,12.766,21.051,NA
+"Missouri","Andrew",NA,NA,NA,NA,NA,NA
+"Missouri","Audrain",9.346,NA,NA,3.913,NA,11.432
+"Missouri","Barry",1.072,NA,NA,-3.006,NA,0.913
+"Missouri","Barton",NA,NA,NA,1.6,NA,NA
+"Missouri","Bates",NA,NA,NA,3.815,NA,-2.037
+"Missouri","Benton",NA,NA,NA,13.637,3.178,NA
+"Missouri","Bollinger",NA,NA,NA,NA,NA,12.245
+"Missouri","Boone",13.23,-3.846,19.039,16.869,9.261,-1.939
+"Missouri","Buchanan",92.708,NA,-1.217,36.724,6.611,6.12
+"Missouri","Butler",-3.793,NA,NA,6.046,NA,-3.909
+"Missouri","Caldwell",NA,NA,NA,NA,NA,NA
+"Missouri","Callaway",8.387,NA,NA,18.689,NA,4.099
+"Missouri","Camden",6.06,NA,NA,16.707,NA,8.597
+"Missouri","Cape Girardeau",5.958,-20,0.054,4.444,NA,-0.887
+"Missouri","Carroll",NA,NA,NA,NA,NA,NA
+"Missouri","Cass",5.033,NA,-1.259,23.029,-22.877,-0.647
+"Missouri","Cedar",-0.005,NA,NA,NA,NA,-2.177
+"Missouri","Chariton",NA,NA,NA,NA,NA,NA
+"Missouri","Christian",3.573,-36.836,0.245,9.907,NA,5.416
+"Missouri","Clark",16.327,NA,NA,NA,NA,NA
+"Missouri","Clay",21.896,227.004,-1.328,18.588,2.9,7.638
+"Missouri","Clinton",10.38,NA,NA,NA,NA,11.866
+"Missouri","Cole",15.977,NA,NA,12.756,NA,11.899
+"Missouri","Cooper",0.002,NA,NA,6.595,-1.275,6.12
+"Missouri","Crawford",9.19,NA,NA,19.599,NA,9.998
+"Missouri","Dade",NA,NA,NA,NA,NA,NA
+"Missouri","Dallas",11.495,NA,NA,-4.066,NA,NA
+"Missouri","Daviess",NA,NA,NA,NA,NA,NA
+"Missouri","DeKalb",13.846,NA,NA,25.549,NA,NA
+"Missouri","Dent",NA,NA,NA,10.434,NA,NA
+"Missouri","Douglas",NA,NA,NA,-2.723,NA,NA
+"Missouri","Dunklin",3.483,NA,NA,1.719,NA,-1.373
+"Missouri","Franklin",9.345,74.652,-1.647,8.806,8.67,14.285
+"Missouri","Gasconade",NA,NA,NA,23.534,NA,NA
+"Missouri","Gentry",NA,NA,NA,NA,NA,NA
+"Missouri","Greene",-0.433,-31.966,0.57,9.983,-2.507,3.669
+"Missouri","Grundy",NA,NA,NA,NA,NA,NA
+"Missouri","Harrison",NA,NA,NA,26.187,6.666,NA
+"Missouri","Henry",15.885,NA,NA,20.603,NA,-6.668
+"Missouri","Hickory",NA,NA,NA,NA,NA,NA
+"Missouri","Howard",NA,NA,NA,NA,NA,NA
+"Missouri","Howell",8.825,NA,NA,-3.55,-6.518,1.838
+"Missouri","Iron",NA,15.486,NA,-30.945,NA,NA
+"Missouri","Jackson",10.001,45.614,-1.213,10.297,7.422,3.424
+"Missouri","Jasper",2.199,-13.254,-0.047,7.375,14.855,0.43
+"Missouri","Jefferson",7.264,NA,17.77,9.078,5.217,-1.061
+"Missouri","Johnson",NA,NA,NA,9.849,12.415,73.074
+"Missouri","Laclede",3.982,NA,NA,11.946,NA,2.779
+"Missouri","Lafayette",8.545,NA,NA,19.901,-0.757,1.791
+"Missouri","Lawrence",-2.897,NA,NA,3.524,-1.692,4.004
+"Missouri","Lewis",NA,NA,NA,NA,NA,NA
+"Missouri","Lincoln",7.014,NA,NA,10.98,NA,8.591
+"Missouri","Linn",NA,NA,NA,25.97,NA,NA
+"Missouri","Livingston",22.64,NA,NA,33.334,NA,NA
+"Missouri","Macon",26.56,NA,NA,21.427,7.96,NA
+"Missouri","Madison",NA,NA,NA,7.761,NA,NA
+"Missouri","Maries",NA,NA,NA,NA,NA,NA
+"Missouri","Marion",15.451,NA,NA,13.267,NA,6.452
+"Missouri","McDonald",9.552,NA,NA,1.749,NA,-1.322
+"Missouri","Miller",11.549,NA,NA,30.507,NA,10.236
+"Missouri","Mississippi",NA,NA,NA,20.232,11.286,NA
+"Missouri","Moniteau",NA,NA,NA,10.135,NA,NA
+"Missouri","Monroe",NA,NA,NA,NA,NA,NA
+"Missouri","Montgomery",0.001,NA,NA,NA,NA,NA
+"Missouri","Morgan",12.538,NA,NA,0.602,NA,-6.966
+"Missouri","New Madrid",NA,-3.48,15.474,9.627,NA,NA
+"Missouri","Newton",-3.699,-4.048,NA,-0.553,5.301,16.308
+"Missouri","Nodaway",15.7,NA,NA,22.57,NA,NA
+"Missouri","Oregon",0.019,NA,NA,-13.85,NA,NA
+"Missouri","Osage",-2.272,NA,NA,NA,NA,NA
+"Missouri","Ozark",NA,NA,NA,NA,NA,NA
+"Missouri","Pemiscot",7.918,NA,NA,NA,1.654,NA
+"Missouri","Perry",1.501,NA,NA,1.828,NA,-6.94
+"Missouri","Pettis",17.397,NA,NA,19.236,NA,3.047
+"Missouri","Phelps",6.899,NA,NA,8.974,9.206,12.997
+"Missouri","Pike",1.654,NA,NA,7.526,NA,2.168
+"Missouri","Platte",48.294,NA,-1.083,15.633,4.182,5.415
+"Missouri","Polk",7.961,NA,NA,3.176,NA,1.075
+"Missouri","Pulaski",8.589,NA,NA,9.811,-26.184,8.595
+"Missouri","Putnam",NA,NA,NA,NA,NA,NA
+"Missouri","Ralls",NA,NA,NA,NA,NA,NA
+"Missouri","Randolph",26.87,NA,NA,13.041,NA,11.663
+"Missouri","Ray",22.977,NA,NA,18.319,NA,10.464
+"Missouri","Ripley",NA,NA,NA,-13.877,NA,NA
+"Missouri","Saline",15.626,NA,NA,15.564,NA,11.142
+"Missouri","Scott",9.951,NA,NA,16.637,NA,-0.907
+"Missouri","Shannon",NA,NA,NA,NA,NA,NA
+"Missouri","Shelby",NA,NA,NA,NA,NA,NA
+"Missouri","St. Charles",6.61,72.661,-1.388,9.488,3.755,7.677
+"Missouri","St. Clair",NA,NA,NA,NA,NA,NA
+"Missouri","St. Francois",11.585,NA,NA,7.477,NA,6.877
+"Missouri","St. Louis",50.218,20.4645,2.003,36.73,5.746,10.1395
+"Missouri","Ste. Genevieve",NA,NA,NA,12.327,26.718,-2.129
+"Missouri","Stoddard",-9.212,NA,NA,6.285,NA,1.389
+"Missouri","Stone",4.188,NA,NA,0.469,NA,-0.011
+"Missouri","Sullivan",NA,NA,NA,NA,NA,NA
+"Missouri","Taney",1.057,-19.253,0.821,11.172,NA,3.508
+"Missouri","Texas",2.941,NA,NA,2.842,NA,6.153
+"Missouri","Vernon",7.526,NA,NA,3.044,NA,9.548
+"Missouri","Warren",9.001,NA,NA,9.237,-0.001,0.022
+"Missouri","Washington",NA,NA,NA,3.31,NA,4.786
+"Missouri","Wayne",-1.915,NA,NA,NA,NA,NA
+"Missouri","Webster",14.296,NA,NA,5.947,NA,1.965
+"Missouri","Wright",13.744,NA,NA,7.472,NA,2.082
+"Montana","Beaverhead",11.111,NA,NA,-0.952,NA,NA
+"Montana","Big Horn",NA,NA,NA,NA,1.594,NA
+"Montana","Blaine",NA,NA,NA,NA,NA,NA
+"Montana","Broadwater",6.249,NA,NA,NA,NA,NA
+"Montana","Carbon",NA,NA,NA,6.522,NA,NA
+"Montana","Cascade",0.226,NA,-0.56,3.147,NA,4.939
+"Montana","Custer",NA,NA,NA,7.182,NA,NA
+"Montana","Dawson",NA,NA,NA,NA,NA,NA
+"Montana","Deer Lodge",NA,NA,NA,NA,NA,NA
+"Montana","Fergus",-4.449,NA,NA,NA,NA,NA
+"Montana","Flathead",3.366,-37.141,-0.765,14.788,0.872,1.667
+"Montana","Gallatin",3.599,21.949,-0.639,5.224,5.262,3.254
+"Montana","Glacier",-8.328,NA,NA,NA,NA,NA
+"Montana","Hill",-1.473,NA,NA,22.899,NA,6.518
+"Montana","Jefferson",NA,NA,NA,NA,NA,NA
+"Montana","Lake",-0.001,NA,NA,11.171,NA,10.45
+"Montana","Lincoln",6.566,NA,NA,11.782,NA,-0.004
+"Montana","Madison",-1.538,NA,NA,11.109,NA,-2.128
+"Montana","Mineral",NA,NA,NA,17.421,NA,NA
+"Montana","Missoula",NA,NA,NA,NA,NA,NA
+"Montana","Park",6.892,4.294,-0.197,11.643,11.852,5.071
+"Montana","Pondera",2.995,NA,NA,3.359,NA,5.499
+"Montana","Powell",NA,NA,NA,NA,NA,NA
+"Montana","Ravalli",NA,NA,NA,NA,NA,NA
+"Montana","Richland",-3.485,NA,NA,9.303,NA,-3.671
+"Montana","Roosevelt",11.248,NA,NA,15.993,NA,NA
+"Montana","Rosebud",NA,NA,NA,NA,NA,NA
+"Montana","Sanders",NA,NA,NA,NA,NA,NA
+"Montana","Silver Bow",NA,NA,NA,NA,NA,NA
+"Montana","Stillwater",0.884,NA,NA,14.61,13.066,-0.033
+"Montana","Teton",NA,NA,NA,NA,NA,NA
+"Montana","Valley",NA,NA,NA,NA,NA,NA
+"Montana","Yellowstone",NA,NA,NA,NA,NA,NA
+"Nebraska","Adams",3.425,NA,NA,12.644,NA,8.046
+"Nebraska","Box Butte",8.474,NA,NA,0,NA,NA
+"Nebraska","Buffalo",5.634,NA,NA,24.251,9.198,4.138
+"Nebraska","Burt",NA,NA,NA,NA,NA,NA
+"Nebraska","Butler",NA,NA,NA,NA,NA,NA
+"Nebraska","Cass",NA,NA,NA,-15.605,NA,0
+"Nebraska","Cedar",NA,NA,NA,NA,NA,NA
+"Nebraska","Cherry",NA,NA,NA,NA,NA,NA
+"Nebraska","Cheyenne",NA,NA,NA,-5.224,3.059,NA
+"Nebraska","Clay",NA,NA,NA,NA,NA,NA
+"Nebraska","Colfax",-6,NA,NA,NA,NA,NA
+"Nebraska","Cuming",NA,NA,NA,NA,NA,NA
+"Nebraska","Custer",-4.541,NA,NA,-6.974,NA,NA
+"Nebraska","Dakota",16.248,NA,NA,8.68,NA,10.525
+"Nebraska","Dawes",NA,NA,NA,3.092,NA,NA
+"Nebraska","Dawson",-1.516,NA,NA,-1.121,NA,-2.983
+"Nebraska","Deuel",NA,NA,NA,NA,2.599,NA
+"Nebraska","Dixon",NA,NA,NA,NA,NA,NA
+"Nebraska","Dodge",16.775,NA,NA,7.209,NA,1.924
+"Nebraska","Douglas",11.759,65.933,-1.727,15.695,8.494,4.097
+"Nebraska","Fillmore",NA,NA,NA,NA,NA,NA
+"Nebraska","Gage",-1.538,NA,NA,7.563,NA,4.838
+"Nebraska","Hall",-2.887,NA,NA,9.823,9.094,3.175
+"Nebraska","Hamilton",NA,NA,NA,NA,15.493,NA
+"Nebraska","Holt",2.13,NA,NA,NA,NA,NA
+"Nebraska","Howard",NA,NA,NA,NA,NA,NA
+"Nebraska","Jefferson",NA,NA,NA,7.6,NA,NA
+"Nebraska","Kearney",NA,NA,NA,NA,NA,NA
+"Nebraska","Keith",NA,NA,NA,3.147,-12.501,NA
+"Nebraska","Kimball",NA,NA,NA,NA,NA,NA
+"Nebraska","Knox",NA,NA,NA,NA,NA,NA
+"Nebraska","Lancaster",2.897,32.955,-1.423,10.993,2.055,6.677
+"Nebraska","Lincoln",1.832,NA,NA,3.278,3.592,0.742
+"Nebraska","Madison",-1.385,NA,NA,7.281,NA,4.425
+"Nebraska","Merrick",NA,NA,NA,NA,NA,NA
+"Nebraska","Morrill",NA,NA,NA,NA,NA,NA
+"Nebraska","Nemaha",NA,NA,NA,NA,NA,NA
+"Nebraska","Otoe",NA,NA,NA,24.839,NA,NA
+"Nebraska","Phelps",NA,NA,NA,NA,NA,NA
+"Nebraska","Pierce",NA,NA,NA,NA,NA,NA
+"Nebraska","Platte",15.302,NA,NA,14.402,NA,9.643
+"Nebraska","Polk",NA,NA,NA,NA,NA,NA
+"Nebraska","Red Willow",NA,NA,NA,-2.412,NA,NA
+"Nebraska","Richardson",NA,NA,NA,NA,NA,NA
+"Nebraska","Saline",NA,NA,NA,1.517,NA,NA
+"Nebraska","Sarpy",1.225,106.702,-1.789,11.204,9.914,5.853
+"Nebraska","Saunders",14.002,NA,NA,17.351,NA,NA
+"Nebraska","Scotts Bluff",12.096,NA,NA,9.946,NA,2.532
+"Nebraska","Seward",NA,NA,NA,33.951,NA,NA
+"Nebraska","Stanton",NA,NA,NA,NA,NA,NA
+"Nebraska","Thayer",NA,NA,NA,NA,NA,NA
+"Nebraska","Thurston",NA,NA,NA,NA,NA,NA
+"Nebraska","Washington",NA,NA,NA,8.904,NA,-6.842
+"Nebraska","Wayne",NA,NA,NA,NA,NA,NA
+"Nebraska","York",NA,NA,NA,7.623,-7.612,5.913
+"Nevada","Carson City",10,NA,NA,5.622,NA,0.589
+"Nevada","Churchill",10.433,NA,NA,24.061,NA,3.337
+"Nevada","Clark",1.784,18.634,-0.495,4.72,3.645,-0.513
+"Nevada","Douglas",11.043,23.657,NA,9.929,NA,-3.149
+"Nevada","Elko",30,NA,NA,10.019,20.41,2.647
+"Nevada","Humboldt",38.753,NA,NA,6.122,13.34,3.338
+"Nevada","Lander",NA,NA,NA,NA,NA,NA
+"Nevada","Lyon",13.696,NA,NA,9.122,16.865,4.712
+"Nevada","Mineral",NA,NA,NA,NA,NA,NA
+"Nevada","Nye",5.557,NA,-1.345,13.383,NA,-2.009
+"Nevada","Pershing",NA,NA,NA,NA,NA,NA
+"Nevada","Storey",NA,NA,NA,NA,NA,NA
+"Nevada","Washoe",10.322,46.43,-0.937,4.491,2.766,-0.666
+"Nevada","White Pine",-1.892,NA,NA,NA,8.512,NA
+"New Hampshire","Belknap",6.594,NA,NA,13.12,NA,4.324
+"New Hampshire","Carroll",13.753,73.527,NA,23.886,NA,3.451
+"New Hampshire","Cheshire",-5.104,NA,NA,5.217,NA,6.988
+"New Hampshire","Coos",27.141,NA,NA,27.333,NA,6.668
+"New Hampshire","Grafton",10.226,50.392,5.828,12.593,40.774,NA
+"New Hampshire","Hillsborough",2.217,-6.094,-1.481,-1.922,NA,2.302
+"New Hampshire","Merrimack",2.073,-1.294,1.121,85.164,25.21,29.028
+"New Hampshire","Rockingham",5.174,-2.422,-1.794,-1.66,24.444,4.763
+"New Hampshire","Strafford",-3.027,42.109,-2.42,8.511,NA,2.787
+"New Hampshire","Sullivan",3.197,NA,NA,0.201,NA,0.967
+"New Jersey","Atlantic",5.254,6.594,2.012,119.575,79.13,10.345
+"New Jersey","Bergen",3.191,2.907,-1.018,-0.609,9.547,2.634
+"New Jersey","Burlington",83.332,5.282,3.136,104.412,9.915,19.569
+"New Jersey","Camden",8.885,5.523,-1.171,-1.086,3.168,3.676
+"New Jersey","Cape May",18.59,NA,8.069,28.736,6.064,-1.404
+"New Jersey","Cumberland",126.506,NA,-0.753,0.426,0.001,5.145
+"New Jersey","Essex",109.477,6.076,1.823,101.834,0.353,2.029
+"New Jersey","Gloucester",4.097,2.657,-1.012,-0.994,21.311,2.93
+"New Jersey","Hudson",0.025,71.948,-0.801,7.772,19.35,2.162
+"New Jersey","Hunterdon",9.629,NA,-0.81,11.261,15.648,5.499
+"New Jersey","Mercer",3.397,3.899,1.887,151.395,38.754,5.215
+"New Jersey","Middlesex",1.795,-0.079,-0.748,-0.732,6.844,2.853
+"New Jersey","Monmouth",11.261,-3.192,-0.885,123.029,14.857,3.31
+"New Jersey","Morris",-0.472,92.931,-1.203,6.311,3.636,1.317
+"New Jersey","Ocean",7.304,3.756,3.775,109.225,80.977,15.47
+"New Jersey","Passaic",6.243,-1.558,-0.748,-0.799,13.212,1.385
+"New Jersey","Salem",-1.297,NA,135.131,7.867,17.279,0.556
+"New Jersey","Somerset",2.365,0.897,-1.033,NA,20.695,1.097
+"New Jersey","Sussex",0.994,126.924,3.278,11.26,119.513,NA
+"New Jersey","Union",7.475,-1.149,-1.053,-1.223,8.085,4.313
+"New Jersey","Warren",5.057,NA,-1.342,10.361,20.214,2.938
+"New Mexico","Bernalillo",1.452,-32.297,0.951,2.999,-4.818,0.269
+"New Mexico","Chaves",0.21,NA,0.239,4.967,NA,-0.9
+"New Mexico","Cibola",-32.222,NA,NA,10.32,8.436,3.794
+"New Mexico","Colfax",-4.257,NA,NA,-0.96,24.079,NA
+"New Mexico","Curry",2.115,-12.766,NA,5.299,4.255,3.393
+"New Mexico","Doña Ana",-1.2,-34.349,0.591,8.365,5.163,0.751
+"New Mexico","Eddy",-5.033,-16.822,0.376,10.691,NA,5.433
+"New Mexico","Grant",-9.925,NA,NA,-2.984,NA,1.271
+"New Mexico","Guadalupe",6.523,NA,NA,NA,9.307,NA
+"New Mexico","Hidalgo",NA,NA,NA,NA,-0.004,NA
+"New Mexico","Lea",-2.347,-8.421,1.067,-4.609,5.685,-3.775
+"New Mexico","Lincoln",-24.002,-69.318,NA,-12.08,NA,-2.324
+"New Mexico","Los Alamos",-1.883,NA,NA,-2.75,NA,NA
+"New Mexico","Luna",-9.208,NA,NA,3.364,16.083,-7.79
+"New Mexico","McKinley",11.308,NA,NA,-1.511,6.966,4.551
+"New Mexico","Otero",-5.9,-12.873,0.206,-0.534,NA,-3.792
+"New Mexico","Quay",5.637,NA,NA,-10.169,3.306,NA
+"New Mexico","Rio Arriba",1.932,NA,NA,6.989,NA,0.001
+"New Mexico","Roosevelt",-0.956,NA,NA,9.262,NA,1.489
+"New Mexico","San Juan",11.401,-16.278,0.321,7.987,-19.233,0.544
+"New Mexico","San Miguel",-6.949,NA,NA,5.487,-7.956,-0.001
+"New Mexico","Sandoval",7.986,-32.275,0.54,5.281,14.045,1.773
+"New Mexico","Santa Fe",-0.528,-15.738,1.569,-5.107,-0.005,-2.453
+"New Mexico","Sierra",-14.896,NA,NA,1.131,NA,-2.016
+"New Mexico","Socorro",-5.557,NA,NA,2.183,NA,10.348
+"New Mexico","Taos",10.399,NA,NA,12.855,NA,1.865
+"New Mexico","Torrance",-7.022,NA,NA,-22.415,-6.749,-3.848
+"New Mexico","Union",NA,NA,NA,NA,-0.025,NA
+"New Mexico","Valencia",4.404,-9.859,1.148,0.275,8.642,-0.392
+"New York","Albany",0.351,6.541,43.317,8.52,4.271,-1.569
+"New York","Allegany",NA,NA,NA,16.154,-0.873,121.296
+"New York","Bronx",7.272,0.187,0.425,103.571,37.391,5.009
+"New York","Broome",17.356,5.912,-1.281,-1.004,6.668,9.597
+"New York","Cattaraugus",14.243,NA,-1.665,25.905,NA,5.69
+"New York","Cayuga",4.054,NA,NA,10.81,22.037,2.13
+"New York","Chautauqua",14.695,NA,-1.981,23.11,NA,8.456
+"New York","Chemung",6.417,NA,-1.237,15.46,NA,0.425
+"New York","Chenango",19.444,NA,NA,11.782,NA,4.065
+"New York","Clinton",8.302,NA,NA,15.733,-4.343,2.889
+"New York","Columbia",-4.717,NA,NA,19.901,23.731,5.785
+"New York","Cortland",24.441,NA,NA,11.191,NA,0.909
+"New York","Delaware",4.112,NA,NA,11.342,NA,10.751
+"New York","Dutchess",-3.312,119.321,-0.988,11.035,12.048,4.955
+"New York","Erie",5.605,11.869,30.732,13.039,6.004,-2.124
+"New York","Essex",44.438,NA,NA,15.593,-2.044,91.612
+"New York","Franklin",19.483,NA,NA,20.139,NA,4.098
+"New York","Fulton",-1.758,NA,NA,8.893,NA,0.001
+"New York","Genesee",-1.472,NA,NA,15.157,24.071,4.541
+"New York","Greene",5.775,NA,NA,13.211,NA,5.22
+"New York","Herkimer",11.213,NA,NA,20.345,23.852,3.406
+"New York","Jefferson",6.296,NA,-2.016,14.548,NA,-1.802
+"New York","Kings",0.865,52.215,-1.192,8.726,4.199,1.646
+"New York","Lewis",28.305,NA,NA,11.907,NA,-0.003
+"New York","Livingston",12.813,NA,NA,20.344,NA,2.739
+"New York","Madison",7.3,NA,NA,18.531,NA,8.556
+"New York","Monroe",3.532,5.186,10.687,12.855,5.523,-2.068
+"New York","Montgomery",NA,NA,NA,5.216,3.935,89.321
+"New York","Nassau",-0.883,53.344,-0.811,3.061,-12.081,2.84
+"New York","New York",1.941,17.855,-1.029,0.197,1.36,1.872
+"New York","Niagara",9.398,21.109,11.588,15.111,2.861,-1.626
+"New York","Oneida",80.682,43.928,-1.796,4.977,7.992,5.362
+"New York","Onondaga",0.943,7.291,9.624,17.115,6.428,-1.899
+"New York","Ontario",112.57,NA,-2.64,4.315,27.436,5.323
+"New York","Orange",-2.273,14.519,14.589,9.762,3.209,-1.045
+"New York","Orleans",NA,NA,NA,5.227,6.361,114.998
+"New York","Oswego",9.522,NA,-1.912,13.504,NA,5.175
+"New York","Otsego",9.998,NA,NA,20.043,NA,1.474
+"New York","Putnam",-1.755,NA,NA,5.581,NA,6.823
+"New York","Queens",-1.188,68.728,-1.007,4.658,-1.605,1.337
+"New York","Rensselaer",0.856,24.269,-2.101,10.82,6.427,4.829
+"New York","Richmond",-0.233,53.553,-0.924,4.669,6.61,2.328
+"New York","Rockland",48.846,5.023,2.592,100.468,-4.87,23.078
+"New York","Saratoga",7.793,2.852,-1.81,-0.786,10.662,3.527
+"New York","Schenectady",-0.538,NA,-1.348,10.674,13.739,1.505
+"New York","Schoharie",3.92,NA,NA,24.786,NA,7.47
+"New York","Schuyler",NA,NA,NA,37.482,NA,-9.634
+"New York","Seneca",1.268,NA,NA,24.617,NA,6.161
+"New York","St. Lawrence",7.009,NA,-2.237,18.469,NA,10.97
+"New York","Steuben",8.69,NA,-1.951,22.658,25.388,4.771
+"New York","Suffolk",0.436,3.398,10.492,2.88,2.412,-0.936
+"New York","Sullivan",NA,86.911,-1.491,5.734,NA,7.983
+"New York","Tioga",9.405,NA,NA,25.566,NA,5.471
+"New York","Tompkins",2.402,69.282,NA,8.13,16.66,7.03
+"New York","Ulster",2.579,29.275,21.01,10.72,3.228,-0.938
+"New York","Warren",NA,NA,NA,3.383,3.029,121.336
+"New York","Washington",1.229,NA,NA,7.053,NA,2.685
+"New York","Wayne",6.556,NA,-1.73,12.987,NA,3.512
+"New York","Westchester",-4.029,82.295,-1.386,6.725,3.306,-0.528
+"New York","Wyoming",7.611,NA,NA,18.469,NA,8.102
+"New York","Yates",10.994,NA,NA,31.047,NA,-3.694
+"North Carolina","Alamance",0.29,33.708,-0.863,3.561,2.481,1.997
+"North Carolina","Alexander",0.904,NA,NA,0.718,NA,5.319
+"North Carolina","Alleghany",NA,NA,NA,NA,NA,NA
+"North Carolina","Anson",-4.043,NA,NA,1.325,NA,3.227
+"North Carolina","Ashe",5.682,NA,NA,7.735,NA,1.819
+"North Carolina","Avery",5.661,NA,NA,7.516,NA,-2.124
+"North Carolina","Beaufort",-9.927,1.818,NA,-2.23,NA,3.306
+"North Carolina","Bertie",-4.543,NA,NA,8.509,NA,2.042
+"North Carolina","Bladen",-3.665,NA,NA,0,NA,1.121
+"North Carolina","Brunswick",-9.376,31.035,-0.329,3.42,NA,0.497
+"North Carolina","Buncombe",-2.131,27.272,-0.395,7.963,5.209,2.856
+"North Carolina","Burke",-1.424,33.33,0.148,4.187,NA,2.725
+"North Carolina","Cabarrus",-7.082,33.654,-0.539,5.404,5.38,3.815
+"North Carolina","Caldwell",-2.219,18.368,-0.294,3.403,NA,1.141
+"North Carolina","Camden",NA,NA,NA,NA,NA,NA
+"North Carolina","Carteret",-6.897,17.244,0.112,9.288,NA,8.548
+"North Carolina","Caswell",12.249,NA,NA,0.004,NA,-6.351
+"North Carolina","Catawba",0.359,27.772,-0.492,0.534,0.871,2.898
+"North Carolina","Chatham",-11.476,NA,NA,8.286,NA,7.047
+"North Carolina","Cherokee",5.133,NA,NA,11.775,NA,5.321
+"North Carolina","Chowan",NA,NA,NA,4.443,NA,NA
+"North Carolina","Clay",-7.994,NA,NA,NA,NA,NA
+"North Carolina","Cleveland",-1.821,45.334,-0.593,7.053,NA,1.263
+"North Carolina","Columbus",-1.724,NA,NA,5.227,NA,4.546
+"North Carolina","Craven",-7.371,20.62,0.092,2.236,NA,0.61
+"North Carolina","Cumberland",-6.548,47.541,-0.263,3.667,8.714,-1.91
+"North Carolina","Currituck",-5.295,NA,NA,14.375,NA,5.331
+"North Carolina","Dare",-1.51,30.609,NA,11.784,NA,5.784
+"North Carolina","Davidson",-0.619,36.513,-0.431,2.952,12.241,0.386
+"North Carolina","Davie",1.539,NA,NA,13.224,1.588,-3.538
+"North Carolina","Duplin",-4.93,NA,NA,-6.97,NA,0.72
+"North Carolina","Durham",-2.519,17.876,-0.695,0.335,6.355,1.446
+"North Carolina","Edgecombe",-0.881,NA,NA,1.364,NA,2.381
+"North Carolina","Forsyth",-1.377,43.641,-0.515,3.492,-3.479,3.264
+"North Carolina","Franklin",-3.681,NA,NA,3.877,NA,4.467
+"North Carolina","Gaston",-11.489,30.868,-0.224,6.58,NA,-0.544
+"North Carolina","Gates",NA,NA,NA,NA,NA,NA
+"North Carolina","Graham",NA,NA,NA,NA,NA,NA
+"North Carolina","Granville",-6.576,NA,NA,7.264,NA,2.72
+"North Carolina","Greene",-5.376,NA,NA,8.159,NA,NA
+"North Carolina","Guilford",-9.322,47.016,-0.345,5.596,3.414,3.915
+"North Carolina","Halifax",-14.751,NA,NA,8.931,NA,-1.256
+"North Carolina","Harnett",-1.958,30.767,0.051,6.273,6.253,2.331
+"North Carolina","Haywood",-0.244,10.604,-0.803,4.555,4.663,2.132
+"North Carolina","Henderson",-0.659,8.701,-4.779,6.173,5.219,-0.586
+"North Carolina","Hertford",NA,NA,NA,-22.464,1.747,31.431
+"North Carolina","Hoke",4.504,NA,NA,4.652,NA,-2.562
+"North Carolina","Iredell",-1.14,31.445,-0.529,4.285,15.351,3.457
+"North Carolina","Jackson",-1.714,-1.854,NA,8.937,NA,-1.313
+"North Carolina","Johnston",-0.674,21.049,-0.189,3.535,10.897,1.122
+"North Carolina","Jones",12.243,NA,NA,NA,NA,NA
+"North Carolina","Lee",-5.854,NA,NA,4.153,NA,5.234
+"North Carolina","Lenoir",-5.532,NA,NA,-4.555,NA,-4.138
+"North Carolina","Lincoln",-2.586,NA,-0.733,6.188,NA,3.334
+"North Carolina","Macon",-2.904,-9.257,NA,2.778,NA,0.919
+"North Carolina","Madison",-1.981,NA,NA,NA,NA,-0.029
+"North Carolina","Martin",0.011,NA,NA,-4.899,NA,1.431
+"North Carolina","McDowell",0.004,8.537,NA,5.223,-5.327,3.831
+"North Carolina","Mecklenburg",-1.736,23.669,-0.683,1.607,2.953,2.287
+"North Carolina","Mitchell",4.789,NA,NA,3.27,NA,NA
+"North Carolina","Montgomery",5.916,4.366,NA,-2.403,4.164,3.117
+"North Carolina","Moore",-4.473,32.659,0.358,1.378,NA,3.753
+"North Carolina","Nash",-3.539,NA,0.222,-0.737,NA,2.637
+"North Carolina","New Hanover",-2.517,25.876,-0.762,4.104,4.705,5.648
+"North Carolina","Northampton",2.494,NA,NA,NA,NA,3.923
+"North Carolina","Onslow",-3,10.722,-0.067,1.2,-9.114,3.86
+"North Carolina","Orange",-3.458,19.99,-0.242,4.15,-5.185,5.27
+"North Carolina","Pamlico",-17.019,NA,NA,7.409,NA,NA
+"North Carolina","Pasquotank",-2.992,NA,NA,2.123,NA,4.201
+"North Carolina","Pender",-0.546,NA,NA,11.017,NA,3.648
+"North Carolina","Perquimans",-1.701,NA,NA,NA,NA,NA
+"North Carolina","Person",10.286,NA,NA,-3.949,NA,6.397
+"North Carolina","Pitt",-5.362,29.757,0.112,-2.509,NA,5.45
+"North Carolina","Polk",-13.471,NA,NA,21.838,NA,-0.011
+"North Carolina","Randolph",-0.212,8.251,-0.502,1.647,NA,4.475
+"North Carolina","Richmond",-0.771,NA,NA,5.861,NA,4.254
+"North Carolina","Robeson",-1.993,NA,-0.376,3.539,NA,-1.11
+"North Carolina","Rockingham",-5.222,NA,-0.267,4.308,7.716,3.463
+"North Carolina","Rowan",0.548,35.367,-0.545,5.263,-6.504,4.247
+"North Carolina","Rutherford",-2.218,3.805,-0.43,4.574,NA,6.259
+"North Carolina","Sampson",-0.567,NA,NA,5.151,NA,1.165
+"North Carolina","Scotland",-5.59,NA,NA,3.211,NA,4.662
+"North Carolina","Stanly",-10.429,NA,NA,10.171,NA,-0.023
+"North Carolina","Stokes",1.973,NA,NA,-0.04,NA,1.739
+"North Carolina","Surry",2.15,20.694,NA,4.73,-11.379,1.067
+"North Carolina","Swain",14.004,0.993,NA,35.953,NA,6.65
+"North Carolina","Transylvania",-8.194,-8.467,NA,3.363,NA,2.192
+"North Carolina","Union",-8.316,38.838,-0.523,3.387,NA,0.155
+"North Carolina","Vance",2.352,NA,NA,-2.603,NA,0.739
+"North Carolina","Wake",-4.825,33.513,-0.365,0.693,4.148,3.302
+"North Carolina","Warren",-6.162,NA,NA,NA,NA,2
+"North Carolina","Washington",-3.836,NA,NA,10.157,NA,NA
+"North Carolina","Watauga",-9.312,21.207,NA,5.984,NA,12.873
+"North Carolina","Wayne",-3.751,18.011,0.055,-1.785,NA,2.623
+"North Carolina","Wilkes",1.983,NA,NA,5.557,NA,3.101
+"North Carolina","Wilson",0.316,NA,-0.021,2.017,NA,1.693
+"North Carolina","Yadkin",6.665,NA,NA,9.849,NA,6.73
+"North Carolina","Yancey",-4.118,NA,NA,-1.425,NA,3.965
+"North Dakota","Barnes",NA,NA,NA,22,NA,NA
+"North Dakota","Bottineau",NA,NA,NA,NA,NA,NA
+"North Dakota","Burleigh",13.461,0,-2.22,14.91,10.31,4.822
+"North Dakota","Cass",0.954,20.002,-1.404,12.904,18.775,5.378
+"North Dakota","Dunn",NA,NA,NA,NA,NA,NA
+"North Dakota","Grand Forks",7.545,NA,-1.302,12.508,21.237,2.404
+"North Dakota","McKenzie",8.977,NA,NA,10.279,-0.004,-6.253
+"North Dakota","McLean",NA,NA,NA,NA,NA,NA
+"North Dakota","Mercer",NA,NA,NA,NA,NA,NA
+"North Dakota","Morton",17.182,NA,NA,9.961,NA,3.447
+"North Dakota","Mountrail",5.267,NA,NA,6.523,NA,NA
+"North Dakota","Pembina",NA,NA,NA,NA,NA,NA
+"North Dakota","Ramsey",NA,NA,NA,10.611,NA,NA
+"North Dakota","Ransom",NA,NA,NA,NA,NA,NA
+"North Dakota","Richland",-4.447,NA,NA,0.64,NA,-5.768
+"North Dakota","Rolette",NA,NA,NA,NA,NA,NA
+"North Dakota","Stark",7.575,NA,NA,7.983,NA,4.937
+"North Dakota","Stutsman",16.363,NA,NA,31.712,NA,3.344
+"North Dakota","Traill",NA,NA,NA,NA,NA,NA
+"North Dakota","Walsh",NA,NA,NA,NA,NA,NA
+"North Dakota","Ward",10.737,NA,NA,14.059,17.33,3.26
+"North Dakota","Williams",1.929,NA,NA,11.475,-10.158,1.871
+"Ohio","Adams",0.971,NA,NA,0.455,NA,-4.109
+"Ohio","Allen",0.495,NA,-1.076,8.834,4.813,3.309
+"Ohio","Ashland",3.319,NA,NA,17.986,NA,4.728
+"Ohio","Ashtabula",8.496,NA,-1.62,19.798,10.814,4.319
+"Ohio","Athens",3.846,NA,NA,7.471,NA,2.634
+"Ohio","Auglaize",5.313,NA,NA,8.593,NA,9.923
+"Ohio","Belmont",5.221,NA,NA,4.98,10.144,4.839
+"Ohio","Brown",-2.427,NA,NA,8.212,NA,7.088
+"Ohio","Butler",1.614,18.748,17.541,8.347,3.489,-1.021
+"Ohio","Carroll",NA,NA,NA,15.03,0,73.387
+"Ohio","Champaign",6.04,NA,NA,7.692,NA,4.761
+"Ohio","Clark",-1.391,NA,-0.813,8.62,3.752,2.93
+"Ohio","Clermont",2.024,NA,8.047,6.208,-0.17,-0.927
+"Ohio","Clinton",NA,NA,NA,-2.856,6.527,60
+"Ohio","Columbiana",6.652,NA,-1.802,14.646,NA,0.001
+"Ohio","Coshocton",5.422,NA,NA,5.211,NA,6.248
+"Ohio","Crawford",0.697,NA,NA,14.882,NA,-1.299
+"Ohio","Cuyahoga",1.176,125.739,-1.768,9.133,5.717,3.142
+"Ohio","Darke",17.88,NA,NA,15.369,NA,10.527
+"Ohio","Defiance",13.849,NA,NA,15.282,NA,4.582
+"Ohio","Delaware",3.919,8.871,14.685,7.434,4.82,-1.357
+"Ohio","Erie",NA,73.491,-1.247,8.338,NA,0.744
+"Ohio","Fairfield",3.751,49.331,-1.086,7.08,NA,6.65
+"Ohio","Fayette",1.03,NA,NA,15.678,7.143,5.553
+"Ohio","Franklin",0.767,0.917,11.989,4.833,2.596,-1.262
+"Ohio","Fulton",NA,NA,NA,10.934,1.681,59.418
+"Ohio","Gallia",-4.588,NA,NA,10.363,3.278,4.615
+"Ohio","Geauga",5.805,NA,NA,10.263,NA,11.037
+"Ohio","Greene",5.542,NA,14.816,8.036,4.328,-1.114
+"Ohio","Guernsey",NA,4.348,NA,5.989,10.171,67.678
+"Ohio","Hamilton",1.562,0.926,14.876,5.719,1.768,-0.632
+"Ohio","Hancock",52.797,NA,-2.682,6.509,18.868,8.87
+"Ohio","Hardin",14.286,NA,NA,10.843,NA,4.04
+"Ohio","Harrison",-0.003,NA,NA,NA,NA,NA
+"Ohio","Henry",6.45,NA,NA,13.557,17.246,-5.321
+"Ohio","Highland",-3.982,NA,NA,6.938,NA,1.533
+"Ohio","Hocking",7.281,NA,NA,21.789,NA,0.003
+"Ohio","Holmes",-3.277,NA,NA,12.952,NA,9.093
+"Ohio","Huron",4.599,NA,-1.786,12.497,NA,4.877
+"Ohio","Jackson",6.61,NA,NA,6.666,NA,10.557
+"Ohio","Jefferson",-2.994,NA,-1.034,6.808,-17.393,4.128
+"Ohio","Knox",5.643,NA,NA,13.297,NA,2.239
+"Ohio","Lake",8.249,20.001,3.778,10.977,3.4,-1.626
+"Ohio","Lawrence",NA,NA,NA,3.107,0.672,141.177
+"Ohio","Licking",0.003,47.872,-1.4,7.313,-1.53,3.548
+"Ohio","Logan",22.595,NA,NA,7.389,NA,4.679
+"Ohio","Lorain",169.157,8.341,1.827,169.89,12.024,11.7
+"Ohio","Lucas",10.54,3.528,-2.024,-1.776,15.599,5.759
+"Ohio","Madison",4.908,NA,NA,2.165,6.849,2.728
+"Ohio","Mahoning",3.569,NA,-1.56,9.284,2.388,0.839
+"Ohio","Marion",1.374,NA,-1.137,5.886,NA,3.852
+"Ohio","Medina",7.784,NA,-1.478,11.25,11.864,7.231
+"Ohio","Meigs",NA,NA,NA,16.989,NA,3.98
+"Ohio","Mercer",11.14,NA,NA,10.739,NA,10.177
+"Ohio","Miami",9.139,46.27,-0.958,8.308,NA,3.281
+"Ohio","Monroe",NA,NA,NA,NA,NA,NA
+"Ohio","Montgomery",2.759,-0.188,NA,6.711,3.687,-1.04
+"Ohio","Morgan",NA,NA,NA,NA,NA,55.812
+"Ohio","Morrow",4.47,NA,NA,37.263,29.42,2.864
+"Ohio","Muskingum",5.633,NA,-0.607,8.447,3.823,1.198
+"Ohio","Noble",NA,NA,NA,NA,NA,NA
+"Ohio","Ottawa",16.401,NA,NA,30.109,NA,10.076
+"Ohio","Paulding",6.595,NA,NA,NA,NA,5.6
+"Ohio","Perry",10.438,NA,NA,35.249,NA,1.14
+"Ohio","Pickaway",19.33,NA,NA,9.942,NA,-1.47
+"Ohio","Pike",3.228,NA,NA,13.791,NA,-1.612
+"Ohio","Portage",8.591,NA,-1.474,8.208,13.161,0.888
+"Ohio","Preble",-10.403,NA,NA,5.616,-3.764,13.114
+"Ohio","Putnam",15.108,NA,NA,2.516,NA,-3.53
+"Ohio","Richland",0.95,NA,-1.308,8.551,43.31,7.323
+"Ohio","Ross",-2.092,NA,-0.485,7.352,-0.033,6.869
+"Ohio","Sandusky",12.23,NA,-2.115,16.224,28.22,7.844
+"Ohio","Scioto",-0.217,NA,NA,-0.341,NA,3.627
+"Ohio","Seneca",9.056,NA,NA,16.614,NA,2.814
+"Ohio","Shelby",4.842,NA,65.085,15.999,-0.017,6.665
+"Ohio","Stark",5.022,5.135,-1.121,NA,1.173,1.473
+"Ohio","Summit",54.875,12.68,2.898,76.918,3.293,2.054
+"Ohio","Trumbull",5.382,4.883,-1.347,-1.124,4.701,3.15
+"Ohio","Tuscarawas",1.994,NA,-0.702,8.296,NA,4.099
+"Ohio","Union",1.744,NA,NA,12.613,NA,5.911
+"Ohio","Van Wert",15.815,NA,NA,13.961,NA,4.33
+"Ohio","Vinton",-6.385,NA,NA,NA,NA,NA
+"Ohio","Warren",3.659,10.366,9.506,8.123,3.495,-1.213
+"Ohio","Washington",NA,NA,NA,1.022,3.861,70.564
+"Ohio","Wayne",6.813,NA,-1.2,6.747,NA,8.054
+"Ohio","Williams",16.657,NA,NA,24.743,16.987,2.538
+"Ohio","Wood",2.72,NA,-2.937,13.76,14.023,6.072
+"Ohio","Wyandot",24.672,NA,NA,16.895,7.877,-0.017
+"Oklahoma","Adair",-21.666,NA,NA,1.429,NA,0
+"Oklahoma","Atoka",8.863,NA,NA,2.417,12.601,NA
+"Oklahoma","Beckham",-6.93,NA,NA,-7.234,-0.507,1.665
+"Oklahoma","Blaine",-1.223,NA,NA,NA,NA,NA
+"Oklahoma","Bryan",0,NA,NA,3.19,5.262,-3.379
+"Oklahoma","Caddo",-7.074,NA,NA,-3.791,3.371,-4.165
+"Oklahoma","Canadian",-11.955,-38.889,0.875,2.967,-4.333,-2.808
+"Oklahoma","Carter",2.183,NA,NA,5.909,6.038,-4.906
+"Oklahoma","Cherokee",-1.714,-37.838,NA,-0.203,NA,0.795
+"Oklahoma","Choctaw",-5.813,NA,NA,1.377,NA,NA
+"Oklahoma","Cleveland",-3.483,-49.099,0.613,0.165,NA,2.174
+"Oklahoma","Coal",NA,NA,NA,NA,NA,NA
+"Oklahoma","Comanche",-1.898,-25.315,1.127,-1.454,-15.876,-4.171
+"Oklahoma","Cotton",-6.98,NA,NA,NA,-10.64,NA
+"Oklahoma","Craig",1.407,NA,NA,-2.054,34.526,NA
+"Oklahoma","Creek",-7.4,-38.634,1.837,-2.62,NA,-4.11
+"Oklahoma","Custer",-3.446,NA,NA,6.102,1.493,1.409
+"Oklahoma","Delaware",3.943,NA,NA,-3.851,NA,0.001
+"Oklahoma","Garfield",-2.926,-13.789,NA,6.437,NA,-2.844
+"Oklahoma","Garvin",10.713,NA,NA,-1.782,1.725,2.271
+"Oklahoma","Grady",-6.621,NA,NA,-6.954,NA,-1.864
+"Oklahoma","Greer",NA,NA,NA,NA,NA,NA
+"Oklahoma","Haskell",NA,NA,NA,3.571,NA,NA
+"Oklahoma","Hughes",-11.535,NA,NA,-4.997,NA,NA
+"Oklahoma","Jackson",-2.039,NA,NA,-3.334,NA,2.465
+"Oklahoma","Jefferson",NA,NA,NA,NA,NA,NA
+"Oklahoma","Johnston",-3.635,NA,NA,NA,NA,NA
+"Oklahoma","Kay",5.539,NA,NA,-4.635,11.266,3.312
+"Oklahoma","Kingfisher",NA,NA,NA,4.462,NA,NA
+"Oklahoma","Kiowa",-8.331,NA,NA,NA,NA,NA
+"Oklahoma","Latimer",3.278,NA,NA,NA,NA,NA
+"Oklahoma","Le Flore",-4.384,NA,NA,-0.002,NA,-6.208
+"Oklahoma","Lincoln",-0.001,NA,NA,-2.779,NA,-0.971
+"Oklahoma","Logan",-2.398,NA,NA,-0.797,22.333,0.81
+"Oklahoma","Love",8.696,NA,NA,-1.614,NA,NA
+"Oklahoma","Major",NA,NA,NA,NA,NA,NA
+"Oklahoma","Marshall",-8.821,NA,NA,4.019,NA,NA
+"Oklahoma","Mayes",-5.014,NA,NA,-1.714,NA,5.187
+"Oklahoma","McClain",0.758,NA,NA,-1.422,5.691,1.012
+"Oklahoma","McCurtain",3.569,-32.555,NA,2.907,NA,-1.941
+"Oklahoma","McIntosh",7.997,NA,NA,-9.162,14.286,-5.083
+"Oklahoma","Murray",-13.112,-39.994,NA,-4.735,NA,NA
+"Oklahoma","Muskogee",-7.816,-24.493,1.92,0.67,0.001,-4.347
+"Oklahoma","Noble",NA,NA,NA,-5.77,NA,NA
+"Oklahoma","Nowata",-3.829,NA,NA,NA,NA,NA
+"Oklahoma","Okfuskee",-13.321,NA,NA,NA,-17.769,NA
+"Oklahoma","Oklahoma",-2.241,-34.101,1.148,2.018,-5.925,-1.181
+"Oklahoma","Okmulgee",-4.074,NA,NA,-0.943,NA,-0.754
+"Oklahoma","Osage",1.675,-37.817,NA,-8.38,NA,-2.685
+"Oklahoma","Ottawa",-4.59,NA,NA,12.181,NA,0.837
+"Oklahoma","Pawnee",-21.869,NA,NA,5.414,NA,-6.982
+"Oklahoma","Payne",-3.675,-21.486,0.146,-1.124,NA,2.236
+"Oklahoma","Pittsburg",-4.767,NA,NA,4.268,2.182,-3.975
+"Oklahoma","Pontotoc",-3.713,NA,NA,-0.387,NA,-2.575
+"Oklahoma","Pottawatomie",-2.402,-53.632,1.218,-1.896,NA,0.011
+"Oklahoma","Pushmataha",-3.553,NA,NA,NA,NA,NA
+"Oklahoma","Rogers",-1.104,-51.99,0.682,3.506,NA,-0.047
+"Oklahoma","Seminole",-2.66,NA,NA,2.55,NA,-2.563
+"Oklahoma","Sequoyah",-9.261,NA,NA,-5.228,9.462,-1.694
+"Oklahoma","Stephens",-3.771,NA,NA,-1.003,NA,-5.675
+"Oklahoma","Texas",3.029,NA,NA,6.128,4.958,2.01
+"Oklahoma","Tillman",NA,NA,NA,NA,NA,NA
+"Oklahoma","Tulsa",-0.148,-53.976,1.23,-0.356,0.824,-0.615
+"Oklahoma","Wagoner",-7.639,NA,1.631,2.795,NA,-3.314
+"Oklahoma","Washington",-11.469,NA,NA,1.075,NA,-0.612
+"Oklahoma","Washita",NA,NA,NA,NA,NA,NA
+"Oklahoma","Woods",NA,-26.608,NA,-2.683,NA,NA
+"Oklahoma","Woodward",5.717,NA,NA,11.993,NA,-0.004
+"Oregon","Baker",8.738,NA,NA,19.643,1.96,-3.7
+"Oregon","Benton",-0.494,-29.168,0.646,2.341,NA,0.006
+"Oregon","Clackamas",1.25,-18.458,-0.111,5.752,-4.487,-0.175
+"Oregon","Clatsop",5.343,NA,NA,32.65,4.817,-3.923
+"Oregon","Columbia",2.965,-4.839,NA,7.317,NA,-0.002
+"Oregon","Coos",-2.734,-5,1.493,6.409,NA,-5.172
+"Oregon","Crook",6.838,NA,NA,20.465,NA,9.334
+"Oregon","Curry",-6.565,10.296,NA,10.902,NA,2.501
+"Oregon","Deschutes",2.262,-0.827,-0.833,11.649,-9.756,2.773
+"Oregon","Douglas",1.95,3.52,0.763,6.023,2.117,-0.26
+"Oregon","Grant",NA,NA,NA,NA,NA,NA
+"Oregon","Harney",-6.382,NA,NA,NA,NA,NA
+"Oregon","Hood River",NA,NA,NA,10.911,1.755,0.945
+"Oregon","Jackson",3.131,51.769,-1.291,10.859,-25.106,2.257
+"Oregon","Jefferson",-5.038,NA,NA,12.366,NA,-2.595
+"Oregon","Josephine",2.104,28.299,-0.341,10.335,NA,1.107
+"Oregon","Klamath",6.744,51.789,-0.38,6.834,19.229,2.017
+"Oregon","Lake",NA,NA,NA,NA,NA,NA
+"Oregon","Lane",-1.193,-27.141,0.163,2.447,-0.315,0.486
+"Oregon","Lincoln",-0.937,NA,0.541,26.288,5.026,4.179
+"Oregon","Linn",1.582,-12.062,-0.06,11.074,8.332,0.431
+"Oregon","Malheur",2.436,NA,NA,10.784,15.079,2.119
+"Oregon","Marion",4.255,2.589,NA,10.089,0.092,-0.131
+"Oregon","Morrow",NA,21.254,NA,NA,NA,-26.985
+"Oregon","Multnomah",0.279,-6.28,-0.419,13.108,3.388,3.133
+"Oregon","Polk",5.353,-26.781,-0.22,8.187,NA,-0.441
+"Oregon","Sherman",NA,NA,NA,NA,8.163,NA
+"Oregon","Tillamook",8.543,NA,NA,21.369,1,-2.519
+"Oregon","Umatilla",-1.49,-19.737,-0.814,3.689,8.227,0.002
+"Oregon","Union",-18.64,NA,NA,12.502,13.167,2.729
+"Oregon","Wallowa",NA,NA,NA,NA,NA,NA
+"Oregon","Wasco",5.02,7.406,NA,11.653,NA,-3.158
+"Oregon","Washington",1.243,-9.529,-0.231,3.887,3.33,1.055
+"Oregon","Yamhill",-1.488,-6.032,-0.453,13.342,NA,-0.033
+"Pennsylvania","Adams",7.025,90.278,-1.516,15.049,NA,4.747
+"Pennsylvania","Allegheny",5.08,104.602,-1.622,7.28,8.13,6.365
+"Pennsylvania","Armstrong",-1.807,NA,NA,10.554,NA,4.877
+"Pennsylvania","Beaver",4.014,50.001,-1.637,12.256,NA,3.569
+"Pennsylvania","Bedford",7.801,NA,125.945,40.878,-39.515,0.813
+"Pennsylvania","Berks",11.172,4.814,-1.307,NA,4.127,3.059
+"Pennsylvania","Blair",11.53,NA,-2.281,12.451,NA,6.508
+"Pennsylvania","Bradford",12.876,NA,NA,13.386,NA,9.399
+"Pennsylvania","Bucks",5.098,7.878,6.567,8.765,5.213,-1.012
+"Pennsylvania","Butler",192.889,NA,-1.766,8.702,15.385,2.986
+"Pennsylvania","Cambria",6.455,NA,-2.177,19.292,NA,2.631
+"Pennsylvania","Carbon",3.865,NA,NA,7.054,NA,3.848
+"Pennsylvania","Centre",18.755,NA,-1.804,3.521,14.607,6.231
+"Pennsylvania","Chester",6.176,93.766,-1.249,5.751,8.661,4.511
+"Pennsylvania","Clarion",8.04,NA,NA,19.856,NA,5.44
+"Pennsylvania","Clearfield",3.874,NA,-1.922,16.312,5.17,5.354
+"Pennsylvania","Clinton",21.742,NA,NA,14.722,10.425,8.255
+"Pennsylvania","Columbia",3.673,NA,NA,14.716,13.685,5.56
+"Pennsylvania","Crawford",16.62,NA,-1.563,18.234,NA,2.191
+"Pennsylvania","Cumberland",4.445,127.116,-1.675,9.387,8.279,5.395
+"Pennsylvania","Dauphin",110.22,8.262,4.636,128.974,4.187,1.813
+"Pennsylvania","Delaware",6.376,5.659,-0.708,-0.946,3.595,2.742
+"Pennsylvania","Elk",10.835,NA,NA,15.298,NA,1.193
+"Pennsylvania","Erie",24.226,123.005,-1.723,15.672,15.497,4.722
+"Pennsylvania","Fayette",10.362,NA,-1.388,7.062,NA,0.564
+"Pennsylvania","Franklin",5.121,NA,-1.025,9.569,-11.905,2.103
+"Pennsylvania","Fulton",-4.683,NA,NA,NA,15.472,NA
+"Pennsylvania","Greene",4.519,NA,NA,2.377,NA,5.814
+"Pennsylvania","Huntingdon",9.766,NA,NA,25.599,NA,3.423
+"Pennsylvania","Indiana",8.203,NA,-2.037,17.81,NA,1.382
+"Pennsylvania","Jefferson",7.545,NA,NA,20.508,12.964,7.694
+"Pennsylvania","Juniata",-8.62,NA,NA,32.868,NA,-0.031
+"Pennsylvania","Lackawanna",1.037,140.256,4.816,10.786,155.253,20.894
+"Pennsylvania","Lancaster",11.36,-1.799,-1.032,-1.563,2.865,4.449
+"Pennsylvania","Lawrence",-3.353,NA,-1.345,13.879,NA,5.989
+"Pennsylvania","Lebanon",3.828,NA,-1.203,10.512,17.72,0.738
+"Pennsylvania","Lehigh",108.557,11.191,2.124,144.149,-0.044,0.814
+"Pennsylvania","Luzerne",22.192,5.164,-1.499,-1.22,8.182,5.09
+"Pennsylvania","Lycoming",5.669,59.149,-2.2,11.557,NA,3.49
+"Pennsylvania","McKean",5.128,NA,NA,18.287,NA,3.39
+"Pennsylvania","Mercer",-7.829,NA,-1.702,22.796,NA,5.842
+"Pennsylvania","Mifflin",24.286,NA,NA,9.107,NA,1.521
+"Pennsylvania","Monroe",16.578,6.184,4.211,162.131,36.649,20.76
+"Pennsylvania","Montgomery",4.073,4.553,-1.198,-1.876,6.399,2.474
+"Pennsylvania","Montour",0.034,NA,NA,35.169,NA,3.898
+"Pennsylvania","Northampton",4.12,157.778,-1.284,12.407,11.432,2.772
+"Pennsylvania","Northumberland",12.932,NA,-1.577,12.025,NA,5.944
+"Pennsylvania","Perry",6.745,NA,NA,15.902,NA,7.09
+"Pennsylvania","Philadelphia",3.325,54.601,-0.894,5.286,2.754,3.061
+"Pennsylvania","Pike",7.083,NA,NA,18.411,NA,10.28
+"Pennsylvania","Potter",15.694,NA,NA,NA,NA,NA
+"Pennsylvania","Schuylkill",9.596,NA,-1.487,12.358,NA,1.431
+"Pennsylvania","Snyder",5.42,NA,NA,9.374,NA,0.956
+"Pennsylvania","Somerset",4.364,NA,NA,14.916,9.372,2.63
+"Pennsylvania","Sullivan",NA,NA,NA,NA,NA,NA
+"Pennsylvania","Susquehanna",4.49,NA,NA,16.007,8.774,1.015
+"Pennsylvania","Tioga",8.416,NA,NA,20.451,NA,10.762
+"Pennsylvania","Union",9.415,NA,NA,14.821,NA,1.13
+"Pennsylvania","Venango",5.325,NA,NA,24.515,-52.231,4.893
+"Pennsylvania","Warren",2.289,NA,NA,12.114,NA,2.853
+"Pennsylvania","Washington",4.645,65.511,-1.546,11.366,0,2.899
+"Pennsylvania","Wayne",7.167,NA,NA,23.798,NA,-0.021
+"Pennsylvania","Westmoreland",-1.644,9.566,13.801,12.807,3.665,-1.761
+"Pennsylvania","Wyoming",NA,NA,NA,11.988,11.709,91.071
+"Pennsylvania","York",9.929,3.824,-1.271,112.807,1.811,5.268
+"Rhode Island","Bristol",-13.69,NA,NA,23.344,NA,9.758
+"Rhode Island","Kent",-8.911,103.03,-1.733,6.987,4.363,3.807
+"Rhode Island","Newport",7.762,67.911,98.021,25.086,NA,4.445
+"Rhode Island","Providence",10.617,-0.087,-1.169,NA,8.857,3.36
+"Rhode Island","Washington",1.786,79.676,-1.835,13.207,NA,3.317
+"South Carolina","Abbeville",6.505,NA,NA,NA,NA,-4.347
+"South Carolina","Aiken",3.317,34.865,-0.633,5.28,NA,1.792
+"South Carolina","Allendale",NA,NA,NA,NA,NA,NA
+"South Carolina","Anderson",3.15,9.875,-0.692,1.148,3.395,2.449
+"South Carolina","Bamberg",4.819,NA,NA,7.246,NA,NA
+"South Carolina","Barnwell",0.003,NA,NA,-2.367,NA,-3.699
+"South Carolina","Beaufort",3.077,28.708,-0.265,11.884,NA,2.315
+"South Carolina","Berkeley",2.822,15.119,-0.509,5.166,5.311,5.402
+"South Carolina","Calhoun",NA,NA,NA,NA,15.585,NA
+"South Carolina","Charleston",0.317,12.344,-0.882,7.584,1.551,4.052
+"South Carolina","Cherokee",-1.079,4.346,NA,3.525,-3.013,5.815
+"South Carolina","Chester",-2.585,NA,NA,9.184,NA,11.317
+"South Carolina","Chesterfield",12.715,NA,NA,6.836,NA,5.124
+"South Carolina","Clarendon",-5.481,NA,NA,10.254,NA,5.555
+"South Carolina","Colleton",0.693,NA,NA,8.047,6.179,0.814
+"South Carolina","Darlington",-0.743,NA,NA,6.887,NA,7.527
+"South Carolina","Dillon",-1.863,NA,NA,2.594,6.871,0
+"South Carolina","Dorchester",0.394,10.953,-0.894,2.979,8.668,-0.205
+"South Carolina","Edgefield",7.692,NA,NA,NA,NA,-3.077
+"South Carolina","Fairfield",1.957,NA,NA,17.387,8.062,1.67
+"South Carolina","Florence",-0.002,NA,0.315,5.236,12.698,4.523
+"South Carolina","Georgetown",-4.863,40.003,NA,12.182,NA,0.001
+"South Carolina","Greenville",-0.889,5.078,-0.575,3.483,2.222,4.074
+"South Carolina","Greenwood",0.57,NA,-0.694,4.451,NA,7.831
+"South Carolina","Hampton",-1.833,NA,NA,-7.221,15.588,6.383
+"South Carolina","Horry",4.014,19.135,-0.646,12.901,14.268,6.176
+"South Carolina","Jasper",-4.047,33.746,NA,5.567,18.037,-5.603
+"South Carolina","Kershaw",8.694,NA,-0.701,1.368,-8.38,2.535
+"South Carolina","Lancaster",-4.564,NA,-0.527,2.96,NA,1.291
+"South Carolina","Laurens",-1.38,NA,-0.503,5.886,5.868,6.436
+"South Carolina","Lee",2.561,NA,NA,1.882,-0.003,2.174
+"South Carolina","Lexington",0.144,20.83,-0.423,4.433,19.006,1.327
+"South Carolina","Marion",6.698,NA,NA,-3.559,NA,-5.431
+"South Carolina","Marlboro",-0.781,NA,NA,5.622,NA,2.851
+"South Carolina","McCormick",-9.302,NA,NA,NA,NA,NA
+"South Carolina","Newberry",-5.742,NA,NA,3.093,13.343,13.205
+"South Carolina","Oconee",-7.985,12.124,-0.509,13.995,NA,-0.428
+"South Carolina","Orangeburg",4.386,NA,0.049,5.94,21.686,2.321
+"South Carolina","Pickens",2.295,9.594,-0.587,2.624,NA,3.601
+"South Carolina","Richland",-0.007,19.451,-0.7,3.809,4.615,1.26
+"South Carolina","Saluda",1.989,NA,NA,6.004,NA,1.832
+"South Carolina","Spartanburg",-3.15,9.47,-0.513,4.011,6.305,5.934
+"South Carolina","Sumter",2.041,NA,-0.729,4.444,NA,-1.613
+"South Carolina","Union",3.646,NA,NA,3.541,NA,3.623
+"South Carolina","Williamsburg",-2.37,NA,NA,13.165,NA,11.18
+"South Carolina","York",-1.437,35.881,-0.99,4.606,11.46,0.132
+"South Dakota","Beadle",8.163,NA,NA,3.379,NA,2
+"South Dakota","Bon Homme",NA,NA,NA,NA,NA,NA
+"South Dakota","Brookings",3.093,NA,NA,19.512,NA,5.938
+"South Dakota","Brown",12.618,NA,NA,8.832,NA,9.186
+"South Dakota","Brule",NA,NA,NA,NA,NA,NA
+"South Dakota","Butte",NA,NA,NA,-0.001,NA,NA
+"South Dakota","Charles Mix",NA,NA,NA,NA,NA,NA
+"South Dakota","Clay",NA,NA,NA,-4.24,NA,NA
+"South Dakota","Codington",27.91,NA,NA,21.991,NA,5.638
+"South Dakota","Custer",NA,NA,NA,NA,NA,NA
+"South Dakota","Davison",NA,NA,NA,21.59,NA,6.899
+"South Dakota","Dewey",NA,NA,NA,NA,NA,NA
+"South Dakota","Fall River",NA,NA,NA,NA,NA,NA
+"South Dakota","Grant",NA,NA,NA,NA,NA,NA
+"South Dakota","Hamlin",NA,NA,NA,NA,NA,NA
+"South Dakota","Hughes",4.255,NA,NA,11.115,NA,NA
+"South Dakota","Hutchinson",NA,NA,NA,NA,NA,NA
+"South Dakota","Kingsbury",NA,NA,NA,NA,NA,NA
+"South Dakota","Lake",0.003,NA,NA,5.339,NA,NA
+"South Dakota","Lawrence",11.492,NA,NA,18.444,NA,9.523
+"South Dakota","Lincoln",22.997,NA,NA,20.219,NA,7.694
+"South Dakota","McCook",NA,NA,NA,NA,NA,NA
+"South Dakota","Meade",9.433,NA,NA,21.997,NA,2.628
+"South Dakota","Minnehaha",19.36,40.643,-1.783,17.079,4.991,4.315
+"South Dakota","Moody",NA,NA,NA,NA,NA,NA
+"South Dakota","Pennington",14.752,42.345,-1.441,-0.261,5.64,4.531
+"South Dakota","Roberts",NA,NA,NA,NA,NA,NA
+"South Dakota","Shannon",NA,NA,NA,NA,NA,NA
+"South Dakota","Spink",NA,NA,NA,NA,NA,NA
+"South Dakota","Todd",NA,NA,NA,NA,NA,NA
+"South Dakota","Tripp",NA,NA,NA,NA,NA,NA
+"South Dakota","Turner",NA,NA,NA,NA,NA,NA
+"South Dakota","Union",NA,NA,NA,7.397,NA,NA
+"South Dakota","Walworth",NA,NA,NA,NA,NA,NA
+"South Dakota","Yankton",8.918,NA,NA,21.747,NA,10.348
+"Tennessee","Anderson",4.167,8.334,-0.241,5.141,NA,4.76
+"Tennessee","Bedford",6.369,NA,NA,6.383,NA,0.002
+"Tennessee","Benton",0,NA,NA,6.22,3.616,5.264
+"Tennessee","Bledsoe",NA,NA,NA,NA,NA,NA
+"Tennessee","Blount",-2.55,-5.209,0.079,-0.198,3.181,0.677
+"Tennessee","Bradley",0.001,NA,0.576,5.919,3.927,-1.402
+"Tennessee","Campbell",3.448,4.939,NA,3.421,21.684,-0.964
+"Tennessee","Cannon",3.332,NA,NA,42.374,NA,NA
+"Tennessee","Carroll",0,NA,NA,-1.86,NA,4.999
+"Tennessee","Carter",1.027,21.43,NA,7.194,NA,4.284
+"Tennessee","Cheatham",45.81,NA,NA,9.524,NA,6.38
+"Tennessee","Chester",1.427,NA,NA,10.665,NA,NA
+"Tennessee","Claiborne",36.585,NA,NA,0.966,NA,-1.538
+"Tennessee","Clay",NA,NA,NA,NA,NA,NA
+"Tennessee","Cocke",-1.864,11.867,NA,3.954,NA,-2.094
+"Tennessee","Coffee",1.481,NA,NA,1.745,5.557,1.598
+"Tennessee","Crockett",-7.788,NA,NA,-6.817,NA,NA
+"Tennessee","Cumberland",-14.936,NA,NA,16.112,-7.689,4.864
+"Tennessee","Davidson",-0.402,13.339,-0.531,5.19,7.069,1.592
+"Tennessee","Decatur",NA,NA,NA,26.269,NA,NA
+"Tennessee","DeKalb",1.251,NA,NA,2.574,NA,3.571
+"Tennessee","Dickson",-7.262,NA,NA,2.349,3.61,-1.876
+"Tennessee","Dyer",-9.391,NA,NA,3.254,2.13,2.781
+"Tennessee","Fayette",57.321,NA,NA,-1.501,1.317,2.327
+"Tennessee","Fentress",-4.166,NA,NA,-1.639,NA,NA
+"Tennessee","Franklin",-0.542,NA,NA,4.753,NA,3.39
+"Tennessee","Gibson",-4.418,NA,NA,0,NA,2.818
+"Tennessee","Giles",-5.381,NA,NA,4.646,14.548,1.223
+"Tennessee","Grainger",-3.504,NA,NA,NA,NA,-0.003
+"Tennessee","Greene",-0.822,NA,-0.889,4.587,11.819,4.089
+"Tennessee","Grundy",5.884,NA,NA,NA,NA,NA
+"Tennessee","Hamblen",-2.669,NA,-1.261,2.859,NA,3.367
+"Tennessee","Hamilton",-2.056,2.808,-0.071,0.705,-0.002,2.789
+"Tennessee","Hancock",NA,NA,NA,NA,NA,NA
+"Tennessee","Hardeman",0,NA,NA,3.73,NA,-1.997
+"Tennessee","Hardin",1.722,NA,NA,0.336,NA,-0.022
+"Tennessee","Hawkins",-2.372,NA,NA,8.195,NA,1.118
+"Tennessee","Haywood",-10.446,NA,NA,3.704,NA,-4.391
+"Tennessee","Henderson",12.693,NA,NA,1.587,NA,6.668
+"Tennessee","Henry",3.085,NA,NA,1.198,NA,-1.015
+"Tennessee","Hickman",-0.003,NA,NA,26.668,NA,3.034
+"Tennessee","Houston",4.164,NA,NA,NA,NA,NA
+"Tennessee","Humphreys",8.771,NA,NA,3.613,NA,1.725
+"Tennessee","Jackson",NA,NA,NA,NA,NA,NA
+"Tennessee","Jefferson",0.778,NA,-1.033,2.292,6.384,4.458
+"Tennessee","Johnson",0.003,NA,NA,5.128,NA,NA
+"Tennessee","Knox",-1.139,12.359,-0.37,4.649,1.005,2.194
+"Tennessee","Lauderdale",1.389,NA,NA,3.547,NA,3.266
+"Tennessee","Lawrence",2.324,NA,NA,9.136,NA,1.804
+"Tennessee","Lewis",NA,NA,NA,3.027,NA,NA
+"Tennessee","Lincoln",4.201,NA,NA,3.661,NA,3.274
+"Tennessee","Loudon",1.825,NA,NA,3.141,3.493,4.282
+"Tennessee","Macon",-8.388,NA,NA,2.226,NA,1.473
+"Tennessee","Madison",-7.265,-23.888,0.468,2.309,8.701,-0.673
+"Tennessee","Marion",-17.037,-1.337,NA,5.038,3.79,0.035
+"Tennessee","Marshall",2.724,NA,NA,4.565,NA,-6.007
+"Tennessee","Maury",-8.14,NA,-0.186,3.62,19.412,1.05
+"Tennessee","McMinn",-6.365,NA,NA,5.56,NA,-0.568
+"Tennessee","McNairy",-2.354,NA,NA,5.544,NA,0
+"Tennessee","Meigs",-5.068,NA,NA,NA,NA,NA
+"Tennessee","Monroe",-7.369,NA,NA,7.747,NA,1.388
+"Tennessee","Montgomery",2.431,21.94,-0.228,4.28,1.638,1.343
+"Tennessee","Moore",NA,NA,NA,NA,NA,NA
+"Tennessee","Morgan",-1.522,NA,NA,NA,NA,NA
+"Tennessee","Obion",-1.049,NA,NA,-5.278,NA,-6.079
+"Tennessee","Overton",10.515,NA,NA,14.784,NA,1.887
+"Tennessee","Perry",NA,NA,NA,NA,NA,NA
+"Tennessee","Polk",0.874,NA,NA,-7.451,NA,14.579
+"Tennessee","Putnam",5.446,NA,-0.572,5.726,5.167,6.939
+"Tennessee","Rhea",5.68,NA,NA,8.346,NA,1.033
+"Tennessee","Roane",-0.303,NA,NA,4.055,NA,7.291
+"Tennessee","Robertson",4.191,NA,-0.252,0.601,3.356,7.762
+"Tennessee","Rutherford",1.503,7.436,2.419,4.352,2.847,-0.214
+"Tennessee","Scott",NA,NA,NA,5.085,-5.984,11.252
+"Tennessee","Sequatchie",18.228,NA,NA,-3.49,NA,NA
+"Tennessee","Sevier",3.699,20.951,-0.359,17.463,NA,4.416
+"Tennessee","Shelby",1.11,5.056,0.658,-1.647,-2.909,0.07
+"Tennessee","Smith",15.242,NA,NA,7.189,2.808,-0.023
+"Tennessee","Stewart",NA,NA,NA,NA,NA,NA
+"Tennessee","Sullivan",1.68,65.297,-0.809,7.704,-2.955,3.762
+"Tennessee","Sumner",8.993,NA,0.394,5.639,4.887,-1.254
+"Tennessee","Tipton",NA,NA,NA,-4.395,4.034,31.554
+"Tennessee","Trousdale",-3.675,NA,NA,NA,NA,NA
+"Tennessee","Unicoi",1.305,NA,NA,9.646,NA,0.008
+"Tennessee","Union",-14.312,NA,NA,29.055,NA,NA
+"Tennessee","Van Buren",NA,NA,NA,NA,NA,NA
+"Tennessee","Warren",11.306,NA,NA,8.848,NA,3.772
+"Tennessee","Washington",1.805,NA,-1.392,6.053,NA,2.462
+"Tennessee","Wayne",0.001,NA,NA,4.075,NA,NA
+"Tennessee","Weakley",3.46,NA,NA,5.893,NA,3.898
+"Tennessee","White",19.96,NA,NA,0.353,NA,8.838
+"Tennessee","Williamson",0.332,8.322,-0.539,3.967,10.276,2.169
+"Tennessee","Wilson",7.645,23.223,-0.483,5.814,-8.428,4.421
+"Texas","Anderson",3.461,NA,NA,-4.182,NA,0.732
+"Texas","Andrews",-8.781,NA,NA,-1.842,NA,-11.764
+"Texas","Angelina",-2.041,NA,0.686,1.633,-0.664,3.914
+"Texas","Aransas",1.268,NA,NA,10.254,-5.404,24.139
+"Texas","Archer",NA,NA,NA,NA,NA,NA
+"Texas","Atascosa",-1.221,NA,NA,5.178,-9.261,0.001
+"Texas","Austin",0,NA,NA,11.175,NA,-1.41
+"Texas","Bailey",-5.063,NA,NA,NA,NA,NA
+"Texas","Bandera",1.02,NA,NA,3.546,NA,4.167
+"Texas","Bastrop",5.459,8.928,0.126,4.694,NA,0.368
+"Texas","Bee",-4.74,NA,NA,3.774,NA,-2.382
+"Texas","Bell",-2.337,-29.184,0.749,1.581,16.554,-4.193
+"Texas","Bexar",3.833,3.833,-0.202,4.509,-1.911,1.004
+"Texas","Blanco",-1.428,NA,NA,7.27,NA,NA
+"Texas","Bosque",-0.926,NA,NA,1.123,NA,0.001
+"Texas","Bowie",1.819,-39.626,1.253,2.868,4.31,-1.102
+"Texas","Brazoria",3.203,6.468,-0.808,7.287,12.003,5.049
+"Texas","Brazos",-6.851,-14.162,-0.333,-1.793,NA,4.298
+"Texas","Brewster",4.651,NA,NA,12.381,NA,NA
+"Texas","Brooks",8.773,NA,NA,10.961,20.75,NA
+"Texas","Brown",0.236,NA,NA,2.632,NA,-1.575
+"Texas","Burleson",-0.001,NA,NA,-3.309,NA,-4.344
+"Texas","Burnet",5.67,-10.169,NA,7.113,NA,2.798
+"Texas","Caldwell",13.079,NA,NA,2.707,13.543,-3.42
+"Texas","Calhoun",25.537,NA,NA,7.536,NA,17.106
+"Texas","Callahan",-6.325,NA,NA,15.071,14.038,NA
+"Texas","Cameron",0.701,3.387,-0.625,11.078,7.566,0.861
+"Texas","Camp",-4.496,NA,NA,NA,NA,NA
+"Texas","Carson",NA,NA,NA,NA,-4.003,NA
+"Texas","Cass",2.042,NA,NA,-3.556,1.669,-3.334
+"Texas","Castro",NA,NA,NA,NA,NA,NA
+"Texas","Chambers",0.003,NA,NA,9.964,-2.032,-2.273
+"Texas","Cherokee",-5.394,NA,NA,5.676,NA,-4.198
+"Texas","Childress",-13.725,NA,NA,-2.48,-3.706,NA
+"Texas","Clay",NA,NA,NA,NA,14.579,NA
+"Texas","Coke",NA,NA,NA,NA,NA,NA
+"Texas","Coleman",-2.983,NA,NA,NA,NA,NA
+"Texas","Collin",-1.444,-9.076,0.562,-0.03,6.351,0.961
+"Texas","Colorado",7.377,NA,4.058,15.814,1.901,1.995
+"Texas","Comal",7.352,7.076,-0.069,NA,17.678,2.201
+"Texas","Comanche",-6.895,NA,NA,12.386,NA,NA
+"Texas","Cooke",-4.168,NA,NA,6.722,NA,2.728
+"Texas","Coryell",1.134,-2.501,1.184,3.434,NA,-7.238
+"Texas","Crane",-2.041,NA,NA,NA,NA,NA
+"Texas","Crockett",NA,NA,NA,NA,NA,NA
+"Texas","Crosby",-10.866,NA,NA,NA,NA,NA
+"Texas","Culberson",NA,NA,NA,7.895,7.108,NA
+"Texas","Dallam",9.414,NA,NA,-17.648,NA,NA
+"Texas","Dallas",-1.827,-19.497,0.519,3.235,-1.718,0.086
+"Texas","Dawson",6.823,NA,NA,1.658,NA,NA
+"Texas","Deaf Smith",4.76,NA,NA,-1.631,NA,-5.877
+"Texas","Delta",NA,NA,NA,NA,NA,NA
+"Texas","Denton",-1.262,-32.268,0.332,-1.198,2.335,0.527
+"Texas","DeWitt",-5.551,NA,NA,0.003,NA,-5.772
+"Texas","Dimmit",2.04,NA,NA,0.918,NA,NA
+"Texas","Donley",NA,NA,NA,NA,-17.432,NA
+"Texas","Duval",6.665,NA,NA,NA,NA,NA
+"Texas","Eastland",6.105,NA,NA,3.923,16.11,9.419
+"Texas","Ector",1.056,NA,-1.167,5.272,4.447,0.342
+"Texas","El Paso",-1.615,-26.622,0.39,5.032,18.677,-1.888
+"Texas","Ellis",-4.425,-4.034,8.213,4.601,-2.264,0.707
+"Texas","Erath",NA,NA,NA,-11.541,2.863,-22.548
+"Texas","Falls",1.782,NA,NA,-2.021,NA,NA
+"Texas","Fannin",4.578,NA,NA,6.974,NA,4.334
+"Texas","Fayette",0.003,NA,NA,10.222,15.519,0.005
+"Texas","Floyd",NA,NA,NA,NA,NA,NA
+"Texas","Fort Bend",-1.094,8.193,0.022,3.006,-10.889,1.045
+"Texas","Franklin",4.076,NA,NA,9.8,1.355,NA
+"Texas","Freestone",-0.001,NA,NA,17.243,15.217,0
+"Texas","Frio",2.966,NA,NA,13.33,NA,8.271
+"Texas","Gaines",-9.231,NA,NA,5.119,NA,-14.284
+"Texas","Galveston",6.332,10.645,-0.468,10.266,1.744,1.124
+"Texas","Garza",0,NA,NA,NA,NA,NA
+"Texas","Gillespie",0.693,-21.522,NA,23.476,NA,7.473
+"Texas","Goliad",NA,NA,NA,NA,NA,NA
+"Texas","Gonzales",-9.272,NA,NA,-3.481,NA,-1.69
+"Texas","Gray",5.634,NA,NA,2.488,NA,-1.516
+"Texas","Grayson",1.558,-32.821,0.718,3.755,NA,2.171
+"Texas","Gregg",-3.898,-39.585,0.653,1.719,NA,-2.722
+"Texas","Grimes",-6.108,NA,NA,15.661,NA,4.406
+"Texas","Guadalupe",1.93,23.835,7.793,6.694,0.68,-0.214
+"Texas","Hale",NA,NA,NA,3.86,-2.041,18.608
+"Texas","Hall",NA,NA,NA,NA,-4.3,NA
+"Texas","Hamilton",2.928,NA,NA,-0.032,NA,NA
+"Texas","Hardeman",-13.983,NA,NA,NA,7.347,NA
+"Texas","Hardin",1.15,NA,NA,3.08,NA,6.247
+"Texas","Harris",-0.514,-1.853,-0.405,4.75,0.138,1.473
+"Texas","Harrison",-1.867,6.261,NA,6.805,NA,-0.019
+"Texas","Hartley",-12.786,NA,NA,NA,NA,NA
+"Texas","Haskell",1.701,NA,NA,-5.716,NA,NA
+"Texas","Hays",3.969,2.205,-0.368,9.683,NA,4.933
+"Texas","Henderson",0.485,NA,0.43,1.769,NA,0.335
+"Texas","Hidalgo",-0.449,12.233,-0.817,8.239,-2.733,0.774
+"Texas","Hill",-2.143,NA,NA,8.026,12.261,1.736
+"Texas","Hockley",-6.487,NA,NA,-8.047,NA,0.003
+"Texas","Hood",-2.812,-25.477,NA,3.222,NA,-3.834
+"Texas","Hopkins",7.661,NA,NA,-0.328,5.245,2.459
+"Texas","Houston",7.946,NA,NA,-4.652,NA,1.757
+"Texas","Howard",-5.792,NA,NA,4.233,8.374,4.833
+"Texas","Hunt",-1.939,NA,0.009,-0.015,-0.009,-0.039
+"Texas","Hutchinson",8.608,NA,NA,10.153,NA,-7.701
+"Texas","Jack",NA,NA,NA,NA,NA,NA
+"Texas","Jackson",-0.993,NA,NA,-6.7,-2.621,NA
+"Texas","Jasper",0.048,NA,NA,3.119,NA,9.674
+"Texas","Jefferson",-1.013,-16.915,-0.752,7.558,6.172,2.92
+"Texas","Jim Hogg",13.733,NA,NA,NA,NA,NA
+"Texas","Jim Wells",-2.326,NA,NA,11.011,NA,-0.062
+"Texas","Johnson",-1.337,-23.535,0.177,4.035,NA,2.154
+"Texas","Jones",1.38,NA,NA,NA,NA,NA
+"Texas","Karnes",2.125,NA,NA,10.576,NA,NA
+"Texas","Kaufman",8.024,NA,0.153,-3.793,6.076,0.52
+"Texas","Kendall",-2.138,NA,NA,-2.84,0.806,2.227
+"Texas","Kerr",-9.498,-15.702,NA,7.071,NA,3.046
+"Texas","Kimble",NA,NA,NA,31.328,10.833,NA
+"Texas","Kleberg",1.589,8.754,NA,6.242,5.043,-1.935
+"Texas","La Salle",2.129,NA,NA,-0.042,8.681,NA
+"Texas","Lamar",-3.138,NA,NA,8.03,NA,9.488
+"Texas","Lamb",-6.825,NA,NA,6.25,NA,-4.415
+"Texas","Lampasas",5.264,NA,NA,-3.288,NA,-6.162
+"Texas","Lavaca",NA,NA,NA,5.584,NA,-0.028
+"Texas","Lee",2.865,NA,NA,3.705,NA,NA
+"Texas","Leon",15.708,NA,NA,9.98,24.586,NA
+"Texas","Liberty",19.842,NA,-0.235,7.587,16.627,7.238
+"Texas","Limestone",-6.215,NA,NA,-1.266,NA,-4.25
+"Texas","Live Oak",3.226,NA,NA,21.981,12.494,NA
+"Texas","Llano",-4.596,-6.147,NA,0.02,NA,-1.313
+"Texas","Loving",NA,NA,NA,NA,NA,NA
+"Texas","Lubbock",-2.883,-16.843,0.025,5.522,-11.551,1.832
+"Texas","Lynn",NA,NA,NA,NA,NA,NA
+"Texas","Madison",15.62,NA,NA,11.714,NA,NA
+"Texas","Marion",NA,NA,NA,10.349,NA,NA
+"Texas","Martin",NA,NA,NA,11.625,NA,41.486
+"Texas","Matagorda",-4.948,NA,NA,2.594,NA,0.848
+"Texas","Maverick",-0.739,8.487,NA,7.317,4.908,4.567
+"Texas","McCulloch",9.533,NA,NA,2.418,NA,NA
+"Texas","McLennan",3.039,-24.515,0.31,4.264,9.358,0.85
+"Texas","McMullen",NA,NA,NA,NA,NA,NA
+"Texas","Medina",7.914,NA,NA,9.075,6.321,0.741
+"Texas","Midland",-1.29,-0.03,-0.298,3.934,7.76,-2.67
+"Texas","Milam",-1.967,NA,NA,7.252,NA,2.826
+"Texas","Mitchell",5.712,-40.965,NA,NA,NA,NA
+"Texas","Montague",-4.551,NA,NA,2.994,NA,1.693
+"Texas","Montgomery",3.608,-12.678,0.05,5.593,7.503,-0.418
+"Texas","Moore",-1.271,NA,NA,5.777,NA,1.4
+"Texas","Morris",6.566,NA,NA,-7.049,NA,NA
+"Texas","Nacogdoches",-5.609,-27.449,NA,-5.955,0.024,5.783
+"Texas","Navarro",0.953,-26.247,NA,4.511,15.416,-0.612
+"Texas","Newton",12.74,NA,NA,NA,NA,NA
+"Texas","Nolan",5.859,NA,NA,-3.657,10.727,-10.517
+"Texas","Nueces",2.921,11.465,-0.926,12.451,-1.307,-0.935
+"Texas","Ochiltree",-0.036,NA,NA,-3.686,NA,NA
+"Texas","Oldham",NA,NA,NA,NA,-2.437,NA
+"Texas","Orange",1.005,15.366,-0.345,5.259,0.026,6.826
+"Texas","Palo Pinto",5.785,NA,NA,-2.763,NA,2.041
+"Texas","Panola",-10.115,NA,NA,-4.032,-8.643,-7.322
+"Texas","Parker",-1.664,-39.835,0.279,3.19,-6.008,0.319
+"Texas","Parmer",-0.042,NA,NA,NA,NA,NA
+"Texas","Pecos",3.687,NA,NA,5.875,5.802,10.018
+"Texas","Polk",4.573,NA,NA,6.949,NA,3.473
+"Texas","Potter",4.632,16.476,-0.977,14.318,6.07,0.458
+"Texas","Presidio",4.229,NA,NA,NA,NA,NA
+"Texas","Rains",9.346,NA,NA,5.482,NA,NA
+"Texas","Randall",2.332,NA,-1.1,9.358,NA,0.265
+"Texas","Reagan",-7.385,NA,NA,NA,NA,NA
+"Texas","Red River",0.015,NA,NA,NA,NA,NA
+"Texas","Reeves",1.636,NA,NA,-6.664,16.855,-1.153
+"Texas","Refugio",2.263,NA,NA,10,13.116,NA
+"Texas","Robertson",-1.892,NA,NA,21.446,13.358,NA
+"Texas","Rockwall",-3.466,NA,0.155,2.671,3.471,4.558
+"Texas","Runnels",9.353,NA,NA,11.711,NA,NA
+"Texas","Rusk",-2.622,NA,NA,0.222,NA,-5.384
+"Texas","Sabine",1.886,NA,NA,NA,NA,NA
+"Texas","San Augustine",NA,NA,NA,NA,NA,NA
+"Texas","San Jacinto",-3.312,NA,NA,NA,NA,3.238
+"Texas","San Patricio",-3.357,29.124,-0.333,8.734,21.088,4.109
+"Texas","San Saba",NA,NA,NA,NA,NA,NA
+"Texas","Scurry",9.233,NA,NA,3.025,NA,NA
+"Texas","Shelby",4.341,NA,NA,3.884,NA,-0.001
+"Texas","Sherman",NA,NA,NA,NA,12.897,NA
+"Texas","Smith",-3.744,-33.633,0.973,-1.6,-1.366,-0.505
+"Texas","Somervell",-6.097,NA,NA,-19.997,NA,NA
+"Texas","Starr",-10.759,18.438,NA,4.513,NA,1.24
+"Texas","Stephens",NA,NA,NA,1.008,NA,NA
+"Texas","Sutton",0.04,NA,NA,NA,NA,NA
+"Texas","Swisher",NA,NA,NA,NA,NA,NA
+"Texas","Tarrant",-0.752,-25.167,0.302,2.492,-1.133,1.683
+"Texas","Taylor",0.402,NA,0.605,6.757,27.392,1.388
+"Texas","Terry",7.535,NA,NA,13.17,NA,NA
+"Texas","Titus",-3.307,NA,NA,-2.325,NA,2.162
+"Texas","Tom Green",2.614,NA,-0.952,5.556,NA,2.538
+"Texas","Travis",-0.873,12.691,0.214,5.579,0.321,2.669
+"Texas","Trinity",5.595,NA,NA,-4.167,NA,NA
+"Texas","Tyler",16.086,NA,NA,-1.116,NA,-0.052
+"Texas","Upshur",-2.341,NA,NA,-3.781,NA,-0.034
+"Texas","Upton",5.352,NA,NA,NA,NA,NA
+"Texas","Uvalde",-1.644,NA,NA,1.861,NA,-0.027
+"Texas","Val Verde",-2.515,37.859,NA,3.787,NA,-4.813
+"Texas","Van Zandt",-0.31,-19.963,NA,6.144,15.091,-3.483
+"Texas","Victoria",2.819,NA,-0.685,10.512,6.766,-1.404
+"Texas","Walker",3.756,-1.109,NA,0.923,6.769,2.231
+"Texas","Waller",11.989,NA,NA,8.026,37.238,3.323
+"Texas","Ward",3.955,NA,NA,3.334,36.489,-4.677
+"Texas","Washington",1.932,NA,NA,8.271,NA,2.576
+"Texas","Webb",1.251,15.858,-1.771,11.06,1.155,-0.999
+"Texas","Wharton",4.883,NA,NA,7.539,-0.018,-1.896
+"Texas","Wheeler",NA,NA,NA,NA,NA,NA
+"Texas","Wichita",2.959,13.617,0.616,4.66,-3.058,0.414
+"Texas","Wilbarger",1.114,NA,NA,-1.184,NA,-7.001
+"Texas","Willacy",11.52,NA,NA,0.753,NA,-5.415
+"Texas","Williamson",1.685,-13.927,0.319,6.466,-3.199,1.337
+"Texas","Wilson",3.478,NA,NA,7.585,NA,-0.813
+"Texas","Winkler",-0.582,NA,NA,5.387,NA,NA
+"Texas","Wise",-3.26,NA,NA,4.113,7.428,4.38
+"Texas","Wood",0.792,NA,NA,-3.371,NA,-0.798
+"Texas","Yoakum",-2.739,NA,NA,NA,NA,NA
+"Texas","Young",-2.384,NA,NA,-4.542,NA,3.963
+"Texas","Zapata",12.341,NA,NA,38.088,NA,NA
+"Texas","Zavala",0.06,NA,NA,NA,NA,NA
+"Utah","Beaver",NA,NA,NA,NA,13.698,NA
+"Utah","Box Elder",13.265,NA,NA,13.991,6.398,4.969
+"Utah","Cache",23.825,NA,13.428,11.174,4.744,-0.927
+"Utah","Carbon",NA,NA,NA,NA,10.001,9.859
+"Utah","Davis",29.356,7.958,NA,9.374,1.81,-1.139
+"Utah","Duchesne",NA,NA,NA,15.944,NA,56.705
+"Utah","Emery",NA,NA,NA,NA,NA,NA
+"Utah","Garfield",NA,NA,NA,NA,NA,NA
+"Utah","Grand",NA,NA,8.41,NA,NA,3.029
+"Utah","Iron",10.157,-0.003,NA,NA,49.465,42.682
+"Utah","Juab",NA,NA,NA,NA,NA,NA
+"Utah","Kane",NA,NA,NA,NA,NA,NA
+"Utah","Millard",NA,NA,NA,NA,NA,NA
+"Utah","Morgan",NA,NA,NA,NA,NA,NA
+"Utah","Salt Lake",10.874,51.58,-1.169,13.963,2.964,2.49
+"Utah","San Juan",NA,-3.573,NA,NA,NA,NA
+"Utah","Sanpete",0.002,NA,NA,1.056,NA,3.391
+"Utah","Sevier",NA,NA,NA,8.276,8.823,-8.334
+"Utah","Summit",5.381,9.915,NA,9.856,-11.956,0
+"Utah","Tooele",8.369,NA,-1.457,13.882,14.793,-0.492
+"Utah","Uintah",14.402,NA,NA,24.541,NA,-4.224
+"Utah","Utah",10.899,52.327,-0.841,7.01,7.642,0.915
+"Utah","Wasatch",-0.001,NA,NA,19.441,NA,-0.982
+"Utah","Washington",23.428,25.682,-0.72,12.945,15.355,1.429
+"Utah","Weber",11.193,7.341,-0.977,68.222,8.807,2.548
+"Vermont","Addison",8.248,NA,NA,20.588,NA,3.334
+"Vermont","Bennington",13.181,-40.544,NA,23.41,NA,1.117
+"Vermont","Caledonia",0.613,NA,NA,10.811,NA,0
+"Vermont","Chittenden",13.554,47.118,-2.349,7.02,-3.086,7.102
+"Vermont","Essex",NA,NA,NA,NA,NA,NA
+"Vermont","Franklin",13.069,NA,NA,10.87,NA,2.151
+"Vermont","Grand Isle",NA,NA,NA,NA,NA,NA
+"Vermont","Lamoille",2.861,NA,NA,12.341,NA,1.562
+"Vermont","Orange",7.409,NA,NA,21.427,NA,16.672
+"Vermont","Orleans",26.847,NA,NA,25.123,NA,2.94
+"Vermont","Rutland",10.089,NA,NA,11.133,4.711,0.005
+"Vermont","Washington",3.599,NA,NA,14.371,NA,-1.753
+"Vermont","Windham",-3.169,NA,NA,25.735,NA,4.348
+"Vermont","Windsor",10.404,NA,NA,12.341,NA,1.653
+"Virginia","Accomack",5.909,NA,NA,14.803,NA,1.139
+"Virginia","Albemarle",-3.367,14.928,-0.059,2.353,4.003,0.894
+"Virginia","Alexandria",1.82,67.442,-0.468,2.394,2.536,1.646
+"Virginia","Alleghany",NA,NA,NA,22.219,2.043,-2.128
+"Virginia","Amelia",-3.278,NA,NA,25,NA,NA
+"Virginia","Amherst",8.509,NA,NA,11.143,NA,8.646
+"Virginia","Appomattox",NA,NA,NA,0.866,NA,NA
+"Virginia","Arlington",0.143,60.82,-0.365,3.437,2.012,1.608
+"Virginia","Augusta",4.365,NA,-0.691,17.692,87.503,4.913
+"Virginia","Bath",NA,NA,NA,NA,NA,NA
+"Virginia","Bedford",3.78,NA,-1.113,5.282,NA,1.43
+"Virginia","Bland",NA,NA,NA,NA,27.397,NA
+"Virginia","Botetourt",1.183,NA,NA,7.18,-3.917,5.954
+"Virginia","Bristol",3.954,NA,NA,8.578,NA,7.252
+"Virginia","Brunswick",NA,NA,NA,-5.77,20.455,NA
+"Virginia","Buchanan",NA,NA,NA,0.001,NA,NA
+"Virginia","Buckingham",-7.576,NA,NA,NA,NA,NA
+"Virginia","Buena Vista",NA,NA,NA,NA,NA,NA
+"Virginia","Campbell",4.949,NA,NA,7.174,NA,1.962
+"Virginia","Caroline",-8.337,NA,NA,28.48,14.892,6.45
+"Virginia","Carroll",1.626,NA,NA,9.792,16.001,8.645
+"Virginia","Charles City",NA,NA,NA,NA,NA,NA
+"Virginia","Charlotte",8.331,NA,NA,NA,NA,NA
+"Virginia","Charlottesville",-2.46,20.292,NA,1.419,NA,0.863
+"Virginia","Chesapeake",-6.844,43.182,-0.69,5.078,10.2,1.88
+"Virginia","Chesterfield",1.783,36.818,-0.622,4.693,8.975,1.035
+"Virginia","Clarke",3.887,NA,NA,NA,NA,NA
+"Virginia","Colonial Heights",2.863,NA,NA,4.797,NA,3.278
+"Virginia","Covington",NA,NA,NA,7.34,NA,NA
+"Virginia","Craig",NA,NA,NA,NA,NA,NA
+"Virginia","Culpeper",9.741,NA,NA,5.491,NA,2.344
+"Virginia","Cumberland",NA,NA,NA,NA,NA,NA
+"Virginia","Danville",5.691,NA,NA,0.756,NA,-2.015
+"Virginia","Dickenson",NA,NA,NA,NA,NA,NA
+"Virginia","Dinwiddie",-29.03,NA,NA,61.252,NA,6.977
+"Virginia","Emporia",-0.003,NA,NA,3.581,NA,NA
+"Virginia","Essex",14.754,NA,NA,15.059,NA,NA
+"Virginia","Fairfax",-7.465,NA,NA,4.687,NA,9.5845
+"Virginia","Falls Church",-2.188,NA,NA,-2.005,NA,NA
+"Virginia","Fauquier",-13.465,NA,NA,16.256,NA,6.212
+"Virginia","Floyd",2.983,NA,NA,NA,NA,NA
+"Virginia","Fluvanna",3.844,NA,NA,NA,NA,5.173
+"Virginia","Franklin",10.9985,NA,NA,7.9025,NA,NA
+"Virginia","Frederick",-0.452,NA,-1.777,6.1,2.019,4.848
+"Virginia","Fredericksburg",11.292,NA,NA,10.631,NA,0
+"Virginia","Galax",5.951,NA,NA,3.494,NA,NA
+"Virginia","Giles",11.685,NA,NA,10.257,NA,NA
+"Virginia","Gloucester",9.026,NA,NA,1.91,NA,1.803
+"Virginia","Goochland",-4.03,NA,NA,12.498,NA,NA
+"Virginia","Grayson",NA,NA,NA,NA,NA,NA
+"Virginia","Greene",7.073,NA,NA,6.523,NA,0.003
+"Virginia","Greensville",NA,NA,NA,NA,18.393,NA
+"Virginia","Halifax",5.966,NA,NA,0.292,NA,1.076
+"Virginia","Hampton",6.035,30.089,-0.005,1.472,2.048,0.626
+"Virginia","Hanover",2.69,NA,-0.831,5.396,9.835,3.018
+"Virginia","Harrisonburg",3.803,NA,NA,7.856,NA,7.815
+"Virginia","Henrico",2.48,27.206,-0.361,2.355,6.822,0.982
+"Virginia","Henry",1.212,NA,NA,4.313,NA,5.911
+"Virginia","Hopewell",-1.764,NA,NA,11.451,NA,-0.001
+"Virginia","James City",-4.498,NA,NA,4.926,NA,6.487
+"Virginia","King George",5.998,23.509,-0.802,13.732,NA,5.585
+"Virginia","King William",13.666,NA,NA,7.82,NA,0.001
+"Virginia","Lancaster",13.588,NA,NA,7.225,NA,NA
+"Virginia","Lee",NA,NA,NA,NA,NA,NA
+"Virginia","Lexington",4.838,NA,NA,6.534,NA,NA
+"Virginia","Loudoun",1.613,NA,NA,2.541,NA,-0.042
+"Virginia","Louisa",6.919,NA,NA,13.728,NA,NA
+"Virginia","Lunenburg",15.141,28.312,-0.5,5.375,0.936,1.509
+"Virginia","Lynchburg",4.739,NA,NA,9.539,NA,6.117
+"Virginia","Madison",-13.941,NA,NA,NA,NA,NA
+"Virginia","Manassas",0.615,NA,-1.003,3.632,NA,-0.038
+"Virginia","Manassas Park",6.782,NA,NA,NA,NA,NA
+"Virginia","Martinsville",4.556,NA,NA,3.063,NA,-0.053
+"Virginia","Mathews",17.242,NA,NA,NA,NA,1.898
+"Virginia","Mecklenburg",-3.807,NA,NA,6.29,NA,-2.212
+"Virginia","Middlesex",NA,NA,NA,NA,NA,NA
+"Virginia","Montgomery",1.255,-1.869,NA,6.226,21.295,6.1
+"Virginia","Nelson",1.551,NA,NA,NA,NA,NA
+"Virginia","New Kent",9.499,NA,-1.589,8.885,8.575,12.41
+"Virginia","Newport News",-1.433,NA,NA,8.503,NA,NA
+"Virginia","Norfolk",2.217,NA,NA,22.813,4.944,7.845
+"Virginia","Northampton",3.444,23.274,-0.469,4.579,-0.025,4.547
+"Virginia","Northumberland",0.354,20.227,-0.34,2.24,6.759,4.089
+"Virginia","Norton",2.734,NA,NA,9.666,NA,NA
+"Virginia","Nottoway",6.681,NA,NA,NA,NA,NA
+"Virginia","Orange",NA,NA,NA,-0.99,NA,NA
+"Virginia","Page",18.215,NA,NA,-3.104,NA,NA
+"Virginia","Patrick",9.512,NA,NA,9.951,NA,6.027
+"Virginia","Petersburg",-3.029,NA,NA,9.638,NA,-6.941
+"Virginia","Pittsylvania",15.07,NA,NA,11.452,NA,NA
+"Virginia","Poquoson",-0.725,NA,NA,7.52,NA,-2.552
+"Virginia","Portsmouth",0.89,NA,NA,6.056,NA,5.377
+"Virginia","Powhatan",-7.091,NA,NA,13.842,NA,NA
+"Virginia","Prince Edward",-3.158,20.336,0.252,3.213,0.005,-1.042
+"Virginia","Prince George",-2.024,NA,NA,4.202,NA,6.784
+"Virginia","Prince William",1.634,NA,NA,9.743,NA,1.705
+"Virginia","Pulaski",3.951,NA,NA,10.612,10.166,-3.246
+"Virginia","Radford",2.927,44.543,-0.701,3.123,24.985,3.374
+"Virginia","Rappahannock",7.955,NA,NA,8.486,NA,1.875
+"Virginia","Richmond",NA,NA,NA,NA,NA,NA
+"Virginia","Roanoke",6.0735,NA,NA,NA,NA,NA
+"Virginia","Rockbridge",5.947,44.66,-1.039,10.645,4.989,0.271
+"Virginia","Rockingham",-2.074,NA,-1.313,6.844,NA,3.3
+"Virginia","Russell",NA,NA,NA,-1.271,-7.258,-6.315
+"Virginia","Salem",3.97,77.133,-0.774,6.703,2.082,6.354
+"Virginia","Scott",0.015,NA,NA,17.515,NA,1.706
+"Virginia","Shenandoah",5.985,NA,NA,6.406,NA,1.469
+"Virginia","Smyth",0.847,NA,NA,10.486,NA,-10.303
+"Virginia","Southampton",4.563,NA,NA,7.677,-3.796,1.468
+"Virginia","Spotsylvania",2.612,NA,NA,7.779,NA,1.255
+"Virginia","Stafford",2.779,NA,NA,-2.101,NA,-3.883
+"Virginia","Staunton",4.643,NA,-0.775,6.038,NA,1.402
+"Virginia","Suffolk",3.637,63.152,-1.374,7.696,NA,1.401
+"Virginia","Surry",0.024,NA,NA,6.296,NA,4.392
+"Virginia","Sussex",1.839,NA,-0.212,-0.077,NA,-1.159
+"Virginia","Tazewell",NA,NA,NA,NA,NA,NA
+"Virginia","Virginia Beach",-1.426,NA,NA,20.789,-10.248,NA
+"Virginia","Warren",9.344,NA,NA,6.853,NA,6.121
+"Virginia","Washington",1.85,28.311,-0.607,3.557,22.393,2.498
+"Virginia","Waynesboro",18.544,NA,NA,15.049,NA,4.367
+"Virginia","Westmoreland",4.084,NA,NA,7.492,0.873,0.711
+"Virginia","Williamsburg",-4.411,NA,NA,6.489,NA,8.559
+"Virginia","Winchester",0.964,NA,NA,NA,NA,5.894
+"Virginia","Wise",8.962,NA,NA,16.971,NA,8.713
+"Virginia","Wythe",4.446,NA,NA,3.911,NA,3.138
+"Virginia","York",9.4,NA,NA,17.281,NA,6.571
+"Washington","Adams",-28.846,NA,NA,1.093,28.172,-8.333
+"Washington","Asotin",NA,NA,NA,7.296,NA,-1.25
+"Washington","Benton",8.283,0.43,-0.72,-18.064,2.478,-1.547
+"Washington","Chelan",1.949,-23.076,-0.292,10.834,-11.111,-0.453
+"Washington","Clallam",1.681,-7.778,2.843,10.6,-0.003,NA
+"Washington","Clark",10.859,-2.261,-0.17,-0.181,-6.76,-0.491
+"Washington","Cowlitz",3.226,15.001,17.56,11.111,-0.264,0.146
+"Washington","Douglas",NA,NA,NA,4.295,1.853,-22.222
+"Washington","Ferry",NA,NA,NA,NA,NA,NA
+"Washington","Franklin",5.772,NA,-0.754,12.812,8.336,-3.013
+"Washington","Grant",6.617,3.391,-1.021,6.163,NA,-1.194
+"Washington","Grays Harbor",-0.001,9.278,0.089,17.037,NA,1.923
+"Washington","Island",1.78,28.12,17.71,14.019,1.901,0.033
+"Washington","Jefferson",22.58,NA,NA,-1.821,5.882,17.971
+"Washington","King",-2.376,0.337,0.304,7.449,2.488,0.84
+"Washington","Kitsap",4.011,31.94,-0.562,12.347,26.073,1.926
+"Washington","Kittitas",-0.916,-15.625,NA,13.324,15.644,6.013
+"Washington","Klickitat",3.124,NA,NA,1.311,NA,1.821
+"Washington","Lewis",4.162,-1.957,-0.106,12.883,7.689,-1.045
+"Washington","Lincoln",NA,NA,NA,NA,NA,NA
+"Washington","Mason",3.227,NA,5.46,1.836,-2.35,0.298
+"Washington","Okanogan",NA,NA,NA,9.699,2.799,-8.977
+"Washington","Pacific",7.44,NA,NA,36.986,0,NA
+"Washington","Pend Oreille",NA,NA,NA,5.971,NA,14.081
+"Washington","Pierce",-1.802,-31.931,0.423,6.089,5.504,-0.579
+"Washington","San Juan",-4.35,NA,NA,8.445,NA,NA
+"Washington","Skagit",4.953,-2.797,-0.524,17.493,10.208,-0.52
+"Washington","Skamania",NA,-50.589,NA,NA,NA,NA
+"Washington","Snohomish",-1.59,-0.124,0.03,13.759,6.458,0.437
+"Washington","Spokane",1.552,-1.225,-0.206,9.186,-1.901,3.34
+"Washington","Stevens",3.468,NA,NA,7.023,NA,0.852
+"Washington","Thurston",1.537,-24.929,0.495,10.36,3.552,-0.009
+"Washington","Walla Walla",0.049,NA,-4.007,15.972,NA,2.445
+"Washington","Whatcom",10.746,0.11,-0.137,NA,21.022,1.353
+"Washington","Whitman",8.477,NA,NA,11.352,NA,6.544
+"Washington","Yakima",3.93,6.053,-0.363,8.172,12.374,-3.253
+"West Virginia","Barbour",8.537,NA,NA,NA,NA,NA
+"West Virginia","Berkeley",2.222,NA,-1.361,5.639,NA,2.517
+"West Virginia","Boone",-1.887,NA,NA,NA,NA,NA
+"West Virginia","Braxton",NA,NA,NA,9.227,NA,NA
+"West Virginia","Brooke",12.102,NA,NA,18.507,NA,3.172
+"West Virginia","Cabell",2.142,NA,0.087,10.92,NA,3.689
+"West Virginia","Fayette",-3.448,NA,NA,18.824,NA,7.618
+"West Virginia","Grant",NA,NA,NA,NA,NA,NA
+"West Virginia","Greenbrier",-13.793,NA,NA,20.139,NA,-0.003
+"West Virginia","Hampshire",4.806,NA,NA,20,NA,9.264
+"West Virginia","Hancock",13.89,NA,NA,22.471,NA,1.091
+"West Virginia","Hardy",6.815,NA,NA,6.891,NA,NA
+"West Virginia","Harrison",-1.65,NA,NA,11.044,NA,5
+"West Virginia","Jackson",-4.064,NA,NA,10.747,NA,-2.666
+"West Virginia","Jefferson",-14.756,NA,NA,8.543,NA,8.001
+"West Virginia","Kanawha",1.926,42.06,-0.286,1.147,6.589,4.07
+"West Virginia","Lewis",18.334,NA,NA,15.56,NA,NA
+"West Virginia","Lincoln",NA,NA,NA,NA,NA,NA
+"West Virginia","Logan",8.749,NA,NA,-0.619,NA,-0.005
+"West Virginia","Marion",0.926,NA,NA,10.165,NA,4.226
+"West Virginia","Marshall",-13.156,NA,NA,10.943,NA,-2.195
+"West Virginia","Mason",-5.676,NA,NA,10.527,NA,5.264
+"West Virginia","McDowell",NA,NA,NA,NA,NA,NA
+"West Virginia","Mercer",1.047,NA,NA,9.078,NA,-0.609
+"West Virginia","Mineral",14.527,NA,NA,9.522,NA,4.165
+"West Virginia","Mingo",NA,NA,NA,NA,NA,NA
+"West Virginia","Monongalia",20.087,32.308,-1.313,9.536,-0.001,6.722
+"West Virginia","Monroe",NA,NA,NA,NA,NA,NA
+"West Virginia","Morgan",9.89,NA,NA,22.224,NA,-9.997
+"West Virginia","Nicholas",7.694,NA,NA,12.614,NA,12.958
+"West Virginia","Ohio",23.238,15.093,NA,-1.651,-0.003,4.132
+"West Virginia","Pleasants",NA,NA,NA,NA,NA,NA
+"West Virginia","Pocahontas",NA,NA,NA,-10.42,NA,NA
+"West Virginia","Preston",4.598,NA,NA,12.355,NA,11.559
+"West Virginia","Putnam",2.214,NA,NA,4.394,-0.001,1.724
+"West Virginia","Raleigh",-4.008,NA,-0.28,3.132,8.102,1.494
+"West Virginia","Randolph",16.159,NA,NA,19.46,NA,8.476
+"West Virginia","Ritchie",NA,NA,NA,NA,NA,NA
+"West Virginia","Roane",NA,NA,NA,5.251,NA,NA
+"West Virginia","Summers",NA,NA,NA,20.015,NA,NA
+"West Virginia","Taylor",NA,NA,NA,9.628,NA,NA
+"West Virginia","Tucker",NA,NA,NA,NA,NA,NA
+"West Virginia","Tyler",NA,NA,NA,NA,NA,NA
+"West Virginia","Upshur",-4.103,NA,NA,14.018,NA,12.256
+"West Virginia","Wayne",0.032,NA,NA,14.275,NA,6.684
+"West Virginia","Webster",NA,NA,NA,NA,NA,NA
+"West Virginia","Wetzel",0.007,NA,NA,1.069,NA,NA
+"West Virginia","Wood",4.4,NA,-0.68,5.272,NA,4.838
+"West Virginia","Wyoming",NA,NA,NA,NA,NA,NA
+"Wisconsin","Adams",12.857,NA,NA,6.316,NA,4.288
+"Wisconsin","Ashland",13.639,NA,NA,26.206,NA,NA
+"Wisconsin","Barron",8.946,NA,NA,13.899,NA,3.225
+"Wisconsin","Bayfield",NA,NA,NA,NA,NA,NA
+"Wisconsin","Brown",6.631,28.926,-1.725,16.439,-0.002,4.857
+"Wisconsin","Buffalo",NA,NA,NA,38.892,NA,NA
+"Wisconsin","Burnett",24.39,NA,NA,40.708,NA,NA
+"Wisconsin","Calumet",2.564,NA,NA,-19.14,NA,3.08
+"Wisconsin","Chippewa",12.57,NA,NA,14.495,NA,2.482
+"Wisconsin","Clark",15.127,NA,NA,32.786,NA,7.901
+"Wisconsin","Columbia",15.385,NA,NA,17.594,1.547,5.845
+"Wisconsin","Crawford",11.292,NA,NA,10.695,NA,NA
+"Wisconsin","Dane",7.841,18.067,16.959,11.758,6.669,-2.097
+"Wisconsin","Dodge",NA,54.944,-2.816,13.772,NA,5.266
+"Wisconsin","Door",4.35,NA,NA,15.969,NA,3.036
+"Wisconsin","Douglas",18.947,NA,NA,18.178,NA,8.061
+"Wisconsin","Dunn",23.321,NA,NA,17.79,2.773,8.462
+"Wisconsin","Eau Claire",7.845,NA,-2.792,21.382,NA,3.641
+"Wisconsin","Florence",NA,NA,NA,NA,NA,NA
+"Wisconsin","Forest",7.868,40.629,-2.169,13.289,NA,3.28
+"Wisconsin","Grant",NA,NA,NA,NA,NA,NA
+"Wisconsin","Green",11.897,NA,NA,15.229,NA,13.381
+"Wisconsin","Green Lake",3.079,NA,NA,6.682,NA,5.053
+"Wisconsin","Iowa",27.396,NA,NA,26.848,NA,-0.001
+"Wisconsin","Iron",14.708,NA,NA,7.578,NA,-1.926
+"Wisconsin","Jackson",NA,NA,NA,NA,NA,NA
+"Wisconsin","Jefferson",12.77,NA,NA,8.297,26.313,8.196
+"Wisconsin","Juneau",7.706,NA,-2.013,16.748,12.163,4.091
+"Wisconsin","Kenosha",6.293,NA,NA,16.78,10.668,4.548
+"Wisconsin","Kewaunee",7.494,58.164,-2.499,20.621,-17.513,4.611
+"Wisconsin","La Crosse",-0.001,NA,NA,NA,NA,4.166
+"Wisconsin","Lafayette",17.429,77.128,-2.159,11.855,NA,6.156
+"Wisconsin","Langlade",NA,NA,NA,NA,NA,NA
+"Wisconsin","Lincoln",5.744,NA,NA,8.468,NA,13.692
+"Wisconsin","Manitowoc",0.001,NA,NA,15.714,NA,6.666
+"Wisconsin","Marathon",3.896,NA,-1.445,12.347,NA,2.249
+"Wisconsin","Marinette",10.57,14.15,-1.792,20.742,NA,3.94
+"Wisconsin","Marquette",-0.606,NA,NA,11.829,NA,4.083
+"Wisconsin","Milwaukee",15.625,NA,NA,17.522,NA,-2.036
+"Wisconsin","Monroe",8.388,74.72,-1.819,16.609,5.026,4.957
+"Wisconsin","Oconto",12.868,NA,NA,7.87,16.923,6.303
+"Wisconsin","Oneida",3.174,NA,NA,23.157,NA,1.298
+"Wisconsin","Outagamie",12.066,NA,NA,7.703,NA,0.002
+"Wisconsin","Ozaukee",6.667,18.178,-2.093,16.007,15.336,5.025
+"Wisconsin","Pepin",7.367,60.292,NA,12.314,NA,3.463
+"Wisconsin","Pierce",NA,NA,NA,NA,NA,NA
+"Wisconsin","Polk",11.792,NA,NA,25.864,NA,14.943
+"Wisconsin","Portage",12.769,NA,NA,23.504,NA,4.024
+"Wisconsin","Price",11.615,NA,-2.463,21.07,NA,9.193
+"Wisconsin","Racine",16.933,NA,NA,NA,NA,NA
+"Wisconsin","Richland",5.877,73.993,-1.734,15.003,1.771,1.84
+"Wisconsin","Rock",NA,NA,NA,23.98,NA,-3.829
+"Wisconsin","Rusk",7.24,42.251,-2.102,15.404,9.087,1.882
+"Wisconsin","Sauk",16.91,NA,NA,10.918,NA,NA
+"Wisconsin","Sawyer",15.685,NA,16.977,25.697,4.021,-2.741
+"Wisconsin","Shawano",NA,NA,NA,28.979,-4.277,45.15
+"Wisconsin","Sheboygan",4.377,NA,NA,18.245,NA,0.897
+"Wisconsin","St. Croix",11.887,39.243,-2.192,9.155,9.675,8.876
+"Wisconsin","Taylor",12.101,NA,-2.287,13.02,5.888,5.745
+"Wisconsin","Trempealeau",18.522,NA,NA,15.444,NA,NA
+"Wisconsin","Vernon",11.896,NA,NA,20.289,NA,2.632
+"Wisconsin","Vilas",16.9,NA,NA,8.213,NA,-1.531
+"Wisconsin","Walworth",-1.074,NA,NA,1.851,NA,-2.933
+"Wisconsin","Washburn",7.413,70.999,-2.852,17.595,NA,5.359
+"Wisconsin","Washington",10.622,NA,NA,35.957,NA,NA
+"Wisconsin","Waukesha",13.22,38.95,-1.966,13.408,NA,4.769
+"Wisconsin","Waupaca",7.659,8.019,20.72,11.387,3.017,-1.882
+"Wisconsin","Waushara",NA,NA,NA,4.373,3.569,49.094
+"Wisconsin","Winnebago",6.803,NA,NA,10.347,NA,4.328
+"Wisconsin","Wood",7.752,61.43,-1.204,19.635,NA,2.513
+"Wyoming","Albany",-4.225,-15.555,NA,11.522,0,6.063
+"Wyoming","Big Horn",NA,NA,NA,NA,NA,NA
+"Wyoming","Campbell",26.605,NA,NA,8.957,NA,4.136
+"Wyoming","Carbon",4.686,NA,NA,7.572,1.165,-1.955
+"Wyoming","Converse",13.83,NA,NA,-9,NA,-10.205
+"Wyoming","Crook",NA,NA,NA,NA,NA,NA
+"Wyoming","Fremont",-2.114,NA,NA,14.816,NA,5.938
+"Wyoming","Goshen",6.249,NA,NA,24.278,NA,NA
+"Wyoming","Hot Springs",NA,NA,NA,NA,NA,NA
+"Wyoming","Johnson",NA,NA,NA,NA,NA,NA
+"Wyoming","Laramie",1.295,-7.498,0.864,6.313,-5.899,4.576
+"Wyoming","Lincoln",17.537,NA,NA,NA,NA,NA
+"Wyoming","Natrona",9.672,20.899,-0.943,9.027,0.97,3.629
+"Wyoming","Park",15.463,NA,NA,2.892,NA,2.6
+"Wyoming","Platte",5.262,NA,NA,12.282,NA,NA
+"Wyoming","Sheridan",32.726,NA,NA,11.36,NA,6.82
+"Wyoming","Sublette",NA,NA,NA,NA,NA,NA
+"Wyoming","Sweetwater",9.543,NA,NA,4.642,-2.158,7.651
+"Wyoming","Teton",12.885,38.462,NA,25.548,22.73,-1.235
+"Wyoming","Uinta",15.466,NA,NA,-0.875,-9.586,4.426
+"Wyoming","Washakie",NA,NA,NA,NA,NA,NA
+"Wyoming","Weston",NA,NA,NA,NA,NA,NA
