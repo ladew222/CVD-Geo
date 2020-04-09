@@ -566,13 +566,14 @@ function get_data(day_num){
                 result[0].bachelor_degreeM_per10k = parseFloat(result[0].bachelor_degreeM_per10k);
                 result[0].UrbanPer10k = parseFloat(result[0].UrbanPer10k);
                 ///add ga data
-                const result2 = result[0].filter(function(mItem) {
-                    return mItem.fips_short == result[0].fips_short
+                const result2 = files[2].filter(function(mItem) {
+                    return mItem.fips == result[0].fips_short
                 });
-                result2[0].Residential = (result2[0] !== undefined) ? result2[0].Residential : null;
-                result2[0]['Grocery & pharmacy'] = (result2[0] !== undefined) ? result2[0]['Grocery & pharmacy'] : null;
-                result2[0]['Retail & recreation'] = (result2[0] !== undefined) ? result2[0]['Retail & recreation'] : null;
+                result2[0].Residential = (result2[0] !== undefined) ? result[0].Residential : null;
+                result2[0]['Grocery & pharmacy'] = (result2[0] !== undefined) ? result[0]['Grocery & pharmacy'] : null;
+                result2[0]['Retail & recreation'] = (result2[0] !== undefined) ? result[0]['Retail & recreation'] : null;
                 result2[0].Workplace = (result2[0] !== undefined) ? result[0].Workplace: null;
+
                 viz.itemList[day_num].push(result2[0]);
             }
             else{
