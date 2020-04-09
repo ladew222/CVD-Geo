@@ -555,7 +555,6 @@ function get_data(day_num){
                 result[0].ConfirmedPer10K=((result[0].TotalPop/10000)/cvItem.Confirmed);
                 //result[0].ConfirmedPer10K=Number(((((result[0].Confirmed/result[0].TotalPop)*10000) * 100) / 100).toFixed(3));
                 Object.assign(result[0],cvItem);
-                result[0].fips_short = result[0].fips;
                 result[0].TotalPop = parseFloat(result[0].TotalPop);
                 result[0].IncomeIneq = parseFloat(result[0].IncomeIneq);
                 result[0].med_age = parseFloat(result[0].med_age);
@@ -567,12 +566,20 @@ function get_data(day_num){
                 result[0].UrbanPer10k = parseFloat(result[0].UrbanPer10k);
                 ///add ga data
                 const result2 = files[2].filter(function(mItem) {
-                    return mItem.fips == result[0].fips_short
+                    return mItem.fips == result[0].fips
                 });
-                result2[0].Residential = (result2[0] !== undefined) ? result[0].Residential : null;
-                result2[0]['Grocery & pharmacy'] = (result2[0] !== undefined) ? result[0]['Grocery & pharmacy'] : null;
-                result2[0]['Retail & recreation'] = (result2[0] !== undefined) ? result[0]['Retail & recreation'] : null;
-                result2[0].Workplace = (result2[0] !== undefined) ? result[0].Workplace: null;
+                if(result2[0]){
+                    result2[0].Residential = (result2[0] !== undefined) ? result[0].Residential : null;
+                    result2[0]['Grocery & pharmacy'] = (result2[0] !== undefined) ? result[0]['Grocery & pharmacy'] : null;
+                    result2[0]['Retail & recreation'] = (result2[0] !== undefined) ? result[0]['Retail & recreation'] : null;
+                    result2[0].Workplace = (result2[0] !== undefined) ? result[0].Workplace: null;
+                }
+                else{
+                    result[0]['Grocery & pharmacy']=null;
+                    result[0]['Retail & recreation']=null;
+                    result[0].Workplace =null;
+                    result[0].Residential=null;
+                }
 
                 viz.itemList[day_num].push(result2[0]);
             }
@@ -580,16 +587,6 @@ function get_data(day_num){
                 console.log(cvItem.County_Name + " " + cvItem.State_Name + " Not Found");
             }
             console.log("done");
-            files[2].forEach(function(gItem) {
-                var result = viz.itemList[day_num].filter(function(mItem) {
-                    return mItem.fips_short == gItem.fips;
-                });
-                //delete article.brand_id;Workplace
-                viz.itemList[day_num].Residential = (result[0] !== undefined) ? result[0].Residential : null;
-                viz.itemList[day_num]['Grocery & pharmacy'] = (result[0] !== undefined) ? result[0]['Grocery & pharmacy'] : null;
-                viz.itemList[day_num]['Retail & recreation'] = (result[0] !== undefined) ? result[0]['Retail & recreation'] : null;
-                viz.itemList[day_num].Workplace = (result[0] !== undefined) ? result[0].Workplace: null;
-            });
 
         });
 
