@@ -2,7 +2,7 @@
 const config_new = {
     groupBy: "id",
     label: function(d) {
-        var text = "<b class='p-head'>"+ d.County + "</b><span class='p-other'></br>Confirmed: " + d.Confirmed + "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death +  "<BR/>Fatality Rate: " + d.Fatality_Rate +  "<BR/>Population: "+ d.TotalPop + "</br>Gini Index: " + d.IncomeIneq + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>No Insur 35-64 10k: " + d.insured35to64_per10k + "</span>" ;
+        var text = "<b class='p-head'>"+ d.County + "</b><span class='p-other'></br>Confirmed: " + d.Confirmed + "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death +  "<BR/>Fatality Rate: " + d.Fatality_Rate +  "<BR/>Population: "+ d.TotalPop + "</br>Gini Index: " + d.IncomeIneq + "</BR>Grocery Mobility: " + d['Grocery & pharmacy'] +  "</BR>Residential Mobility: " + d['Grocery & pharmacy'] + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>No Insur 35-64 10k: " + d.insured35to64_per10k + "</span>" ;
         return "" + text;
     },
     ocean: "transparent",
@@ -514,58 +514,83 @@ const gmb = async _ => {
 }
 
 
+
+
+
 function get_data(day_num){
     viz.itemList[day_num] = [];
-    //curr_day http://learnjsdata.com/combine_data.html
-    d3.csv("county_fips_revised.csv").then(function(fipsData) {
-        let the_day = parseInt(viz.start_day)+day_num;
-        let formattedDay = null;
-        let formattedMonth = null;
-        //const days_left_in_month = viz.days_in_month-viz.start_day;
-        if (the_day>viz.days_in_month){
-            formattedMonth = ("0" + (parseInt(viz.start_month)+1)).slice(-2);
-            the_day = (the_day-parseInt(viz.days_in_month));
-            formattedDay = ("0" + the_day).slice(-2);
-        }
-        else{
-            formattedDay = ("0" + the_day).slice(-2);
-            formattedMonth = ("0" + viz.start_month).slice(-2);
-        }
-        d3.csv("https://raw.githubusercontent.com/tomquisel/covid19-data/master/data/csv/" + "2020-" + formattedMonth + "-" + formattedDay + ".csv" ).then(function(cvData) {
-            cvData.forEach(function(cvItem) {    ///new RegExp('/contact\\b', 'g').test(href)
-                //const regexp = new RegExp(cvItem.county_name, 'i');
-                const result = fipsData.filter(fipsItem => fipsItem.State== cvItem.State_Name  && new RegExp(cvItem.County_Name, 'i').test(fipsItem.County));
-                if (result[0]){
-                    //lets pad here move to input file in future
-                    const county_pad = paddy(result[0].county, 3);
-                    const state_pad =  paddy(result[0].state, 2);
-                    result[0].id = "05000US"+ state_pad+county_pad;
-                    //AsiaPop10k <- ((acs_Data$JWOE047/acs_Data$JWAE001)*10000)
-                    cvItem.Confirmed = parseFloat(cvItem.Confirmed);
-                    cvItem.Death = parseFloat(cvItem.Death);
-                    cvItem.Fatality_Rate = parseFloat(cvItem.Fatality_Rate);
-                    result[0].TotalPop = parseFloat(result[0].TotalPop);
-                    result[0].ConfirmedPer10K=((result[0].TotalPop/10000)/cvItem.Confirmed);
-                    //result[0].ConfirmedPer10K=Number(((((result[0].Confirmed/result[0].TotalPop)*10000) * 100) / 100).toFixed(3));
-                    Object.assign(result[0],cvItem);
-                    result[0].TotalPop = parseFloat(result[0].TotalPop);
-                    result[0].IncomeIneq = parseFloat(result[0].IncomeIneq);
-                    result[0].med_age = parseFloat(result[0].med_age);
-                    result[0].AsiaPop10k = parseFloat(result[0].AsiaPop10k);
-                    result[0].white10k = parseFloat(result[0].white10k);
-                    result[0].EuropePop10k = parseFloat(result[0].EuropePop10k);
-                    result[0].perCapitaIncome = parseFloat(result[0].perCapitaIncome);
-                    result[0].bachelor_degreeM_per10k = parseFloat(result[0].bachelor_degreeM_per10k);
-                    result[0].UrbanPer10k = parseFloat(result[0].UrbanPer10k);
-                    viz.itemList[day_num].push(result[0]);
-                }
-                else{
-                    console.log(cvItem.County_Name + " " + cvItem.State_Name + " Not Found");
-                }
-                console.log("done");
-
+    let the_day = parseInt(viz.start_day)+day_num;
+    let formattedDay = null;
+    let formattedMonth = null;
+    //const days_left_in_month = viz.days_in_month-viz.start_day;
+    if (the_day>viz.days_in_month){
+        formattedMonth = ("0" + (parseInt(viz.start_month)+1)).slice(-2);
+        the_day = (the_day-parseInt(viz.days_in_month));
+        formattedDay = ("0" + the_day).slice(-2);
+    }
+    else{
+        formattedDay = ("0" + the_day).slice(-2);
+        formattedMonth = ("0" + viz.start_month).slice(-2);
+    }
+    Promise.all([
+        d3.csv("county_fips_revised.csv"),
+        d3.csv("https://raw.githubusercontent.com/tomquisel/covid19-data/master/data/csv/" + "2020-" + formattedMonth + "-" + formattedDay + ".csv"),
+        d3.csv("/google-data/" + "2020-" + formattedMonth + "-" + formattedDay + ".csv"),
+    ]).then(function(files) {
+        // files[0] will contain file1.csv
+        // files[1] will contain file2.c
+        files[1].forEach(function(cvItem) {    ///new RegExp('/contact\\b', 'g').test(href)
+            //const regexp = new RegExp(cvItem.county_name, 'i');
+            const result = files[0].filter(fipsItem => fipsItem.State== cvItem.State_Name  && new RegExp(cvItem.County_Name, 'i').test(fipsItem.County));
+            if (result[0]){
+                //lets pad here move to input file in future
+                const county_pad = paddy(result[0].county, 3);
+                const state_pad =  paddy(result[0].state, 2);
+                result[0].id = "05000US"+ state_pad+county_pad;
+                //AsiaPop10k <- ((acs_Data$JWOE047/acs_Data$JWAE001)*10000)
+                cvItem.Confirmed = parseFloat(cvItem.Confirmed);
+                cvItem.Death = parseFloat(cvItem.Death);
+                cvItem.Fatality_Rate = parseFloat(cvItem.Fatality_Rate);
+                result[0].TotalPop = parseFloat(result[0].TotalPop);
+                result[0].ConfirmedPer10K=((result[0].TotalPop/10000)/cvItem.Confirmed);
+                //result[0].ConfirmedPer10K=Number(((((result[0].Confirmed/result[0].TotalPop)*10000) * 100) / 100).toFixed(3));
+                Object.assign(result[0],cvItem);
+                result[0].fips_short = result[0].fips;
+                result[0].TotalPop = parseFloat(result[0].TotalPop);
+                result[0].IncomeIneq = parseFloat(result[0].IncomeIneq);
+                result[0].med_age = parseFloat(result[0].med_age);
+                result[0].AsiaPop10k = parseFloat(result[0].AsiaPop10k);
+                result[0].white10k = parseFloat(result[0].white10k);
+                result[0].EuropePop10k = parseFloat(result[0].EuropePop10k);
+                result[0].perCapitaIncome = parseFloat(result[0].perCapitaIncome);
+                result[0].bachelor_degreeM_per10k = parseFloat(result[0].bachelor_degreeM_per10k);
+                result[0].UrbanPer10k = parseFloat(result[0].UrbanPer10k);
+                ///add ga data
+                const result2 = result[0].filter(function(mItem) {
+                    return mItem.fips_short == result[0].fips_short
+                });
+                result2[0].Residential = (result2[0] !== undefined) ? result2[0].Residential : null;
+                result2[0]['Grocery & pharmacy'] = (result2[0] !== undefined) ? result2[0]['Grocery & pharmacy'] : null;
+                result2[0]['Retail & recreation'] = (result2[0] !== undefined) ? result2[0]['Retail & recreation'] : null;
+                result2[0].Workplace = (result2[0] !== undefined) ? result[0].Workplace: null;
+                viz.itemList[day_num].push(result2[0]);
+            }
+            else{
+                console.log(cvItem.County_Name + " " + cvItem.State_Name + " Not Found");
+            }
+            console.log("done");
+            files[2].forEach(function(gItem) {
+                var result = viz.itemList[day_num].filter(function(mItem) {
+                    return mItem.fips_short == gItem.fips;
+                });
+                //delete article.brand_id;Workplace
+                viz.itemList[day_num].Residential = (result[0] !== undefined) ? result[0].Residential : null;
+                viz.itemList[day_num]['Grocery & pharmacy'] = (result[0] !== undefined) ? result[0]['Grocery & pharmacy'] : null;
+                viz.itemList[day_num]['Retail & recreation'] = (result[0] !== undefined) ? result[0]['Retail & recreation'] : null;
+                viz.itemList[day_num].Workplace = (result[0] !== undefined) ? result[0].Workplace: null;
             });
-            //alert("done"+ + "2020-" + formattedMonth + "-" + formattedDay + ".csv")
+
         });
+
     });
 }
