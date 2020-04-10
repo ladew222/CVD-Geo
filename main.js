@@ -309,7 +309,7 @@ d3.csv("us-state-fips.csv").then(function(data) {
 
     select
         .on("change", function(d) {
-            selected_state = d3.select(this).property("value");
+            viz.selected_state = d3.select(this).property("value");
         });
 
     select.selectAll("option")
@@ -410,7 +410,7 @@ function corr_test(the_day){
         let Confirmed= null;
         let val1 = null
         let Filtered = null;
-        if (viz.active_state !=0){
+        if (parseInt(viz.selected_state) !=0){
             Filtered = itemList[viz.active_day].filter(function (el) {
                 return el.state == parseInt(selected_state);
             });
