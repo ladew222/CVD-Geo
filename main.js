@@ -273,10 +273,10 @@ $(document).ready(function(){
             $("#slider").slider('option',{ min:0,max: 1200,step: 5});
         }
         if( viz.primary_var=="Workplace") {
-            $("#slider").slider('option',{ min:-40,max: 100,step: 1});
+            $("#slider").slider('option',{ min:-60,max: 100,step: 1});
         }
         if( viz.primary_var=="Retail & recreation") {
-            $("#slider").slider('option',{ min:-40,max: 100,step: 1});
+            $("#slider").slider('option',{ min:-60,max: 100,step: 1});
         }
 
     });
