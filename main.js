@@ -1,8 +1,8 @@
 
 const config_new = {
-    groupBy: "id",
+
     label: function(d) {
-        var text = "<b class='p-head'>"+ d.County + "</b><span class='p-other'></br>Confirmed: " + d.Confirmed + "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death +  "<BR/>Fatality Rate: " + d.Fatality_Rate +  "<BR/>Population: "+ d.TotalPop + "</br>Gini Index: " + d.IncomeIneq + "</BR>Grocery Mobility: " + d['Grocery & pharmacy'] +  "</BR>Residential Mobility: " + d['Grocery & pharmacy'] + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>No Insur 35-64 10k: " + d.insured35to64_per10k + "</span>" ;
+        var text = "<b class='p-head'>"+ d.County + "</b><span class='p-other'></br>Confirmed: " + d.Confirmed + "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death +  "<BR/>Fatality Rate: " + d.Fatality_Rate +  "<BR/>Population: "+ d.TotalPop + "</br>Gini Index: " + d.IncomeIneq + "</BR>Grocery Mobility: " + d['Grocery & pharmacy'] +  "</BR>Retail and Recreation: " + d['Retail & recreation'] + "</BR>Residential Mobility: " + d.Residential +  "</BR>Workplace Mobility: " + d.Workplace + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>No Insur 35-64 10k: " + d.insured35to64_per10k + "</span>" ;
         return "" + text;
     },
     ocean: "transparent",
@@ -33,20 +33,6 @@ const map = new d3plus.Geomap()
 
 function build_map(primary_var){
 
-
-    if(viz.mobility_data==true){
-        map.label(function(d) {
-            var text =  "<b class='p-head'>"+ d.County + "</b><span class='p-other'>" + "</br>Confirmed: "+ d.Confirmed + "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death + "<BR/>Fatality Rate: " + d.Fatality_Rate +  "<BR/>Population: "+ d.TotalPop + "</br>Residential Mobility: " + d.Residential + "<BR/>Workplace Mobility: "+ d.Workplaces + "<BR/>Retail & recreation mobility:" + d["Retail & recreation"] +"</br>Gini Index: " + d.IncomeIneq + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>UnInsured 35to64 10k: " + d.insured35to64_per10k + "</span>" ;
-            return text;
-        })
-    }
-    else{
-        map.label(function(d) {
-            var text =  "<b class='p-head'>"+ d.County + "</b><span class='p-other'>" + "</br>Confirmed: "+  d.Confirmed + "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death + "<BR/>Fatality Rate: " + d.Fatality_Rate +  "<BR/>Population: "+ d.TotalPop  +"</br>Gini Index: " + d.IncomeIneq + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>UnInsured 35to64 10k: " + d.insured35to64_per10k + "</span>" ;
-            return text;
-        })
-
-    }
     let test_arr =[0,viz.color_range];
     if(primary_var=='Percent_Change'){
         new Promise(function(fulfill, reject){
@@ -55,21 +41,16 @@ function build_map(primary_var){
         }).then(function(result){
 
             if (viz.color_range==0){
-
                 map
                     .data(viz.itemList[viz.active_day])
-                    .label(function(d) {
-                        var text =  "<b class='p-head'>"+ d.County + "</b><span class='p-other'>" + "</br>% Change: "+ d.Percent_Change +"</br>Confirmed: "+ "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death + "<BR/>Fatality Rate: " + d.Fatality_Rate +  "<BR/>Population: "+ d.TotalPop + mobility+ "</br>Gini Index: " + d.IncomeIneq + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>UnInsured 35to64 10k: " + d.insured35to64_per10k + "</span>" ;
-                        return text;
-                    })
                     .fitFilter(function(d) {
-                        const state = parseInt(d.id.split('US')[1].substring(0, 2));
+                      /*  const state = parseInt(d.id.split('US')[1].substring(0, 2));
                         if( viz.active_state!=0  ){
                             return [ viz.active_state].indexOf(state)<0;
                         }
                         else{
                             return true;
-                        }
+                        }*/
                     })
                     .colorScale(primary_var)
                     .render();
@@ -82,13 +63,13 @@ function build_map(primary_var){
                         return text;
                     })
                     .fitFilter(function(d) {
-                        const state = parseInt(d.id.split('US')[1].substring(0, 2));
+                      /*  const state = parseInt(d.id.split('US')[1].substring(0, 2));
                         if( viz.active_state!=0  ){
                             return [ viz.active_state].indexOf(state)<0;
                         }
                         else{
                             return true;
-                        }
+                        }*/
                     })
                     .colorScale(primary_var)
                     .colorScaleConfig({axisConfig: {
@@ -105,13 +86,13 @@ function build_map(primary_var){
         map
             .data(viz.itemList[viz.active_day])
             .fitFilter(function(d) {
-                const state = parseInt(d.id.split('US')[1].substring(0, 2));
+              /*  const state = parseInt(d.id.split('US')[1].substring(0, 2));
                 if( viz.active_state!=0  ){
                     return [ viz.active_state].indexOf(state)<0;
                 }
                 else{
                     return true;
-                }
+                }*/
             })
             .colorScale(primary_var)
             .colorScaleConfig({axisConfig: {
@@ -249,11 +230,10 @@ $(document).ready(function(){
             }
             else{
                 month_now = viz.start_month;
-               day_now = parseInt(viz.start_day)+i;
+                day_now = parseInt(viz.start_day)+i;
             }
             //if need switch month
-            $("#days .c1").append("<a class='days' data-type='std' data-day='" + i +  "'  href='#'>View map for "+  month_now  + "/" + day_now +  "</a></br>");
-            $("#days .c2").append("<a class='days' data-type='mobile' data-day='" + i +  "'  href='#'>with Mobility Data </a></br>");
+            //$("#days .c1").append("<a class='days' data-type='std' data-day='" + i +  "'  href='#'>View map for "+  month_now  + "/" + day_now +  "</a></br>");
         }
 
     });
@@ -371,7 +351,7 @@ function delta(){
         if( isFinite(d['Percent_Change'])==false){
             d['Percent_Change']=1000;
         }
-    });
+    })
 
     console.log(merged);
 
@@ -473,50 +453,6 @@ function corr_test(the_day){
 
 }
 
-function get_mobile_data(day_num){
-    let new_list =[];
-    d3.csv("us-state-fips.csv").then(function(data) {
-        for (const mobItem of mobData) {
-            const result = viz.itemList[day_num].filter(mainItem => mainItem.State_Name == mobItem.State  && new RegExp(mainItem.County_Name, 'i').test(mobItem.Region));  //mainItem.County_Name
-            if (result[0]){
-                mobItem.Residential= parseFloat(mobItem.Residential);
-                Object.assign(result[0],mobItem);
-                new_list.push(result[0]);
-            }
-            else{
-                console.log(mobItem.State + " " + mobItem.Region + " Not Found");
-            }
-        }
-        viz.itemList[day_num] = new_list;
-        return  new_list;
-    });
-
-}
-
-const gmb = async _ => {
-    let new_list =[];
-        d3.csv("mobility_report_US-3-29.csv").then(function(mobData) {
-        for (const mobItem of mobData) {
-            const result = viz.itemList[viz.active_day].filter(mainItem => mainItem.State_Name == mobItem.State  && new RegExp(mainItem.County_Name, 'i').test(mobItem.Region));  //mainItem.County_Name
-            if(result[0]){
-                mobItem.Residential = parseFloat(mobItem.Residential);
-                Object.assign(result[0],mobItem);
-                new_list.push(result[0]);
-            }
-            else{
-                console.log(mobItem.State + " " + mobItem.Region + " Not Found");
-            }
-        }
-        viz.itemList[viz.active_day] = new_list;
-        return new_list;
-
-    });
-}
-
-
-
-
-
 function get_data(day_num){
     viz.itemList[day_num] = [];
     let the_day = parseInt(viz.start_day)+day_num;
@@ -532,10 +468,17 @@ function get_data(day_num){
         formattedDay = ("0" + the_day).slice(-2);
         formattedMonth = ("0" + viz.start_month).slice(-2);
     }
+    let goog_str="";
+    if(parseInt(formattedMonth)>3 ||  parseInt(formattedDay)>29){
+        goog_str="/google-data/" + "2020-03-29.csv";
+    }
+    else{
+        goog_str="/google-data/" + "2020-" + formattedMonth + "-" + formattedDay + ".csv";
+    }
     Promise.all([
         d3.csv("county_fips_revised.csv"),
         d3.csv("https://raw.githubusercontent.com/tomquisel/covid19-data/master/data/csv/" + "2020-" + formattedMonth + "-" + formattedDay + ".csv"),
-        d3.csv("/google-data/" + "2020-" + formattedMonth + "-" + formattedDay + ".csv"),
+        d3.csv(goog_str),
     ]).then(function(files) {
         // files[0] will contain file1.csv
         // files[1] will contain file2.c
@@ -554,7 +497,6 @@ function get_data(day_num){
                 result[0].TotalPop = parseFloat(result[0].TotalPop);
                 result[0].ConfirmedPer10K=((result[0].TotalPop/10000)/cvItem.Confirmed);
                 //result[0].ConfirmedPer10K=Number(((((result[0].Confirmed/result[0].TotalPop)*10000) * 100) / 100).toFixed(3));
-                Object.assign(result[0],cvItem);
                 result[0].TotalPop = parseFloat(result[0].TotalPop);
                 result[0].IncomeIneq = parseFloat(result[0].IncomeIneq);
                 result[0].med_age = parseFloat(result[0].med_age);
@@ -569,10 +511,10 @@ function get_data(day_num){
                     return mItem.fips == result[0].fips
                 });
                 if(result2[0]){
-                    result2[0].Residential = (result2[0] !== undefined) ? result[0].Residential : null;
-                    result2[0]['Grocery & pharmacy'] = (result2[0] !== undefined) ? result[0]['Grocery & pharmacy'] : null;
-                    result2[0]['Retail & recreation'] = (result2[0] !== undefined) ? result[0]['Retail & recreation'] : null;
-                    result2[0].Workplace = (result2[0] !== undefined) ? result[0].Workplace: null;
+                    result[0].Residential = (result2[0] !== undefined) ? result2[0].Residential : null;
+                    result[0]['Grocery & pharmacy'] = (result2[0] !== undefined) ? result2[0]['Grocery & pharmacy'] : null;
+                    result[0]['Retail & recreation'] = (result2[0] !== undefined) ? result2[0]['Retail & recreation'] : null;
+                    result[0].Workplace = (result2[0] !== undefined) ? result2[0].Workplace: null;
                 }
                 else{
                     result[0]['Grocery & pharmacy']=null;
@@ -580,8 +522,8 @@ function get_data(day_num){
                     result[0].Workplace =null;
                     result[0].Residential=null;
                 }
-
-                viz.itemList[day_num].push(result2[0]);
+                Object.assign(result[0],cvItem);
+                viz.itemList[day_num].push(result[0]);
             }
             else{
                 console.log(cvItem.County_Name + " " + cvItem.State_Name + " Not Found");
@@ -589,6 +531,20 @@ function get_data(day_num){
             console.log("done");
 
         });
+        return(day_num)
 
+    }).then(function (day_num) {
+        let day_now=null;
+        let month_now=null;
+        if (viz.start_day+day_num > viz.days_in_month){
+            month_now = viz.start_month+1;
+            day_now = (parseInt(viz.start_day)+day_num) - viz.days_in_month;
+        }
+        else{
+            month_now = viz.start_month;
+            day_now = parseInt(viz.start_day)+i;
+        }
+
+        $("#days .c1").append("<a class='days' data-type='std' data-day='" + day_num +  "'  href='#'>View map for "+  month_now + "/" + day_now +  "</a></br>");
     });
 }
