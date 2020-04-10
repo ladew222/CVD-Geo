@@ -410,7 +410,7 @@ function corr_test(the_day){
         let Confirmed= null;
         let val1 = null
         let Filtered = null;
-        if (parseInt(viz.selected_state) !=0){
+        if (viz.selected_state !=0){
             Filtered = itemList[viz.active_day].filter(function (el) {
                 return el.state == parseInt(selected_state);
             });
