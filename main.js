@@ -542,7 +542,7 @@ function get_data(day_num){
         }
         else{
             month_now = viz.start_month;
-            day_now = parseInt(viz.start_day)+i;
+            day_now = parseInt(viz.start_day)+day_num;
         }
 
         $("#days .c1").append("<a class='days' data-type='std' data-day='" + day_num +  "'  href='#'>View map for "+  month_now + "/" + day_now +  "</a></br>");
