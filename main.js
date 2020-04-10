@@ -2,7 +2,7 @@
 const config_new = {
 
     label: function(d) {
-        var text = "<b class='p-head'>"+ d.County + "</b><span class='p-other'></br>Confirmed: " + d.Confirmed + "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death +  "<BR/>Fatality Rate: " + d.Fatality_Rate +  "<BR/>Population: "+ d.TotalPop + "</br>Gini Index: " + d.IncomeIneq + "</BR>Grocery Mobility: " + d['Grocery & pharmacy'] +  "</BR>Retail and Recreation: " + d['Retail & recreation'] + "</BR>Residential Mobility: " + d.Residential +  "</BR>Workplace Mobility: " + d.Workplace + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>No Insur 35-64 10k: " + d.insured35to64_per10k + "</span>" ;
+        var text = "<b class='p-head'>"+ d.County + "</b><span class='p-other'></br>Confirmed: " + d.Confirmed + "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death +  "<BR/>Fatality Rate: " + d.Fatality_Rate +  "<BR/>Population: "+ d.TotalPop + "</br>Gini Index: " + d.IncomeIneq + "</BR>Grocery Mobility: " + d['Grocery & pharmacy'] +  "</BR>Retail and Recreation: " + d['Retail & recreation'] + "</BR>Residential Mobility: " + d.Residential +  "</BR>Workplace Mobility: " + d.Workplace_map + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>No Insur 35-64 10k: " + d.insured35to64_per10k + "</span>" ;
         return "" + text;
     },
     ocean: "transparent",
@@ -83,22 +83,40 @@ function build_map(primary_var){
         });
     }
     else{
-        map
-            .data(viz.itemList[viz.active_day])
-            .fitFilter(function(d) {
-              /*  const state = parseInt(d.id.split('US')[1].substring(0, 2));
-                if( viz.active_state!=0  ){
-                    return [ viz.active_state].indexOf(state)<0;
-                }
-                else{
-                    return true;
-                }*/
-            })
-            .colorScale(primary_var)
-            .colorScaleConfig({axisConfig: {
-                    domain: test_arr
-                }})
-            .render();
+        if (viz.color_range==0){
+            map
+                .data(viz.itemList[viz.active_day])
+                .fitFilter(function(d) {
+                    /*  const state = parseInt(d.id.split('US')[1].substring(0, 2));
+                      if( viz.active_state!=0  ){
+                          return [ viz.active_state].indexOf(state)<0;
+                      }
+                      else{
+                          return true;
+                      }*/
+                })
+                .colorScale(primary_var)
+                .render();
+        }
+        else{
+            map
+                .data(viz.itemList[viz.active_day])
+                .fitFilter(function(d) {
+                    /*  const state = parseInt(d.id.split('US')[1].substring(0, 2));
+                      if( viz.active_state!=0  ){
+                          return [ viz.active_state].indexOf(state)<0;
+                      }
+                      else{
+                          return true;
+                      }*/
+                })
+                .colorScale(primary_var)
+                .colorScaleConfig({axisConfig: {
+                        domain: test_arr
+                    }})
+                .render();
+        }
+
     }
 
 
@@ -233,7 +251,8 @@ $(document).ready(function(){
                 day_now = parseInt(viz.start_day)+i;
             }
             //if need switch month
-            //$("#days .c1").append("<a class='days' data-type='std' data-day='" + i +  "'  href='#'>View map for "+  month_now  + "/" + day_now +  "</a></br>");
+
+            $("#days .c1").append("<a class='days dn-"+ i + "' data-type='std' data-day='" + i +  "'  href='#'>View map for "+  month_now  + "/" + day_now +  "</a></br>");
         }
 
     });
@@ -252,6 +271,12 @@ $(document).ready(function(){
         }
         if( viz.primary_var=="Percent_Change") {
             $("#slider").slider('option',{ min:0,max: 1200,step: 5});
+        }
+        if( viz.primary_var=="Workplace") {
+            $("#slider").slider('option',{ min:-20,max: 100,step: 1});
+        }
+        if( viz.primary_var=="Retail & recreation") {
+            $("#slider").slider('option',{ min:-20,max: 100,step: 1});
         }
 
     });
@@ -377,7 +402,7 @@ function create_bar(strength,factor)
 function corr_test(the_day){
     let testArr=["IncomeIneq","EuropePop10k","AsiaPop10k","insured35to64_per10k","white10k","med_age","perCapitaIncome","bachelor_degreeM_per10k","perCapitaIncome","UrbanPer10k","Grocery & pharmacy","Retail & recreation"];
     if(viz.mobility_data==true){
-        testArr.push("Residential","Workplaces");
+        testArr.push("Residential","Workplace");
     }
     let out_str="<div class='corr-rs'>";
     testArr.forEach(function(number, i) {
@@ -511,15 +536,17 @@ function get_data(day_num){
                     return mItem.fips == result[0].fips
                 });
                 if(result2[0]){
-                    result[0].Residential = (result2[0] !== undefined) ? result2[0].Residential : null;
-                    result[0]['Grocery & pharmacy'] = (result2[0] !== undefined) ? result2[0]['Grocery & pharmacy'] : null;
-                    result[0]['Retail & recreation'] = (result2[0] !== undefined) ? result2[0]['Retail & recreation'] : null;
-                    result[0].Workplace = (result2[0] !== undefined) ? result2[0].Workplace: null;
+                    result[0].Residential = (result2[0] !== undefined) ? parseFloat(result2[0].Residential) : null;
+                    result[0]['Grocery & pharmacy'] = (result2[0] !== undefined) ? parseFloat(result2[0]['Grocery & pharmacy']) : null;
+                    result[0]['Retail & recreation'] = (result2[0] !== undefined) ? parseFloat(result2[0]['Retail & recreation']) : null;
+                    result[0].Workplace = (result2[0] !== undefined) ? parseFloat(result2[0].Workplace): null;
+                    result[0].Workplace_map = (result2[0] !== undefined) ? parseFloat(result2[0].Workplace)+100: 0;
                 }
                 else{
                     result[0]['Grocery & pharmacy']=null;
                     result[0]['Retail & recreation']=null;
                     result[0].Workplace =null;
+                    result[0].Workplace_map = 0;
                     result[0].Residential=null;
                 }
                 Object.assign(result[0],cvItem);
@@ -544,7 +571,7 @@ function get_data(day_num){
             month_now = viz.start_month;
             day_now = parseInt(viz.start_day)+day_num;
         }
-
-        $("#days .c1").append("<a class='days' data-type='std' data-day='" + day_num +  "'  href='#'>View map for "+  month_now + "/" + day_now +  "</a></br>");
+        $("#days .dn-"+day_num).fadeIn();
+       // $("#days .c1").append("<a class='days' data-type='std' data-day='" + day_num +  "'  href='#'>View map for "+  month_now + "/" + day_now +  "</a></br>");
     });
 }
