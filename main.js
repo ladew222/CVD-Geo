@@ -309,7 +309,7 @@ d3.csv("us-state-fips.csv").then(function(data) {
 
     select
         .on("change", function(d) {
-            viz.selected_state = d3.select(this).property("value");
+            viz.active_state = d3.select(this).property("value");
         });
 
     select.selectAll("option")
@@ -400,19 +400,19 @@ function create_bar(strength,factor)
     return l1+ l2+l3;
 }
 function corr_test(the_day){
-    let testArr=["IncomeIneq","EuropePop10k","AsiaPop10k","insured35to64_per10k","white10k","med_age","perCapitaIncome","bachelor_degreeM_per10k","perCapitaIncome","UrbanPer10k","Grocery & pharmacy","Retail & recreation"];
-    if(viz.mobility_data==true){
+    let testArr=["IncomeIneq","EuropePop10k","AsiaPop10k","insured35to64_per10k","white10k","med_age","perCapitaIncome","bachelor_degreeM_per10k","perCapitaIncome","UrbanPer10k","Grocery & pharmacy","Retail & recreation","Residential","Workplace"];
+    /*if(viz.mobility_data==true){
         testArr.push("Residential","Workplace");
-    }
+    }*/
     let out_str="<div class='corr-rs'>";
     testArr.forEach(function(number, i) {
         let val = testArr[i];
         let Confirmed= null;
         let val1 = null
         let Filtered = null;
-        if (viz.selected_state !=0){
-            Filtered = itemList[viz.active_day].filter(function (el) {
-                return el.state == parseInt(selected_state);
+        if (parseInt(viz.active_state) !=0){
+            Filtered = viz.itemList[viz.active_day].filter(function (el) {
+                return el.state == parseInt(viz.active_state);
             });
         }
         else{
