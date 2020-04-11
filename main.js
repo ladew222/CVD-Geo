@@ -386,14 +386,14 @@ function delta(){
 
 function create_bar(strength,factor)
 {
-    const l1 = "<svg class='bar' width=\""+ strength*factor +"\" height=\"10\">"
+    const l1 = "<svg class='bar' width=\""+ strength*factor +"\" height=\"18\">"
     let l2 = null;
     if (Math.sign(strength)==1){
-        l2 ="<rect x=\"0\" y=\"0\" width=\""+ strength*(factor-5) + "\" height=\"10\" fill=\"green\" />";
+        l2 ="<rect x=\"0\" y=\"0\" width=\""+ strength*(factor-5) + "\" height=\"18\" fill=\"green\" />";
     }
     else{
         strength= Math.abs(strength);
-        l2 ="<rect x=\"0\" y=\"0\" width=\""+ strength*(factor-5) + "\" height=\"10\" fill=\"red\" />";
+        l2 ="<rect x=\"0\" y=\"0\" width=\""+ strength*(factor-5) + "\" height=\"18\" fill=\"red\" />";
     }
 
     const l3 ="</svg>";
@@ -432,48 +432,61 @@ function corr_test(the_day){
         const result =r.correlationCoefficient.toFixed(2);
         const bar = create_bar(result,140);
         let title="";
+        let short="";
         switch (val) {
+            case 'Grocery & Pharmacy Mobility':
+                short = "Grocery and Pharmacy Mobility";
+                title ='Mobility trends for grocery and pharmacies. The data is relative to the baseline which is the median value, for the corresponding day of the week, during the 5-week period Jan 3–Feb 6, 2020.';
+                break;
             case 'IncomeIneq':
+                short = "Gini Index";
                 title ='Gini Index of Income equality 0 is perfect equality 1 is perfect inequality relative to confirmed cases';
                 break;
             case 'EuropePop10k':
+                short = "European Population per 10k";
                 title ='Number of people born in Europe per 10k people relative to confirmed cases';
                 break;
             case 'AsiaPop10k':
                 title ='Number of people born in Asia per 10k relative to confirmed cases';
+                short = "Asian Population (10k)";
                 break;
             case 'insured35to64_per10k':
-                title ='Number of people insured(35 to 64) per 10k relative to confirmed cases';
-                break;
-            case 'insured35to64_per10k':
+                short = "Insured 35-64 year olds(10K)";
                 title ='Number of people insured(35 to 64) per 10k relative to confirmed cases';
                 break;
             case 'white10k':
                 title ='Number of white people per 10k relative to confirmed cases';
+                short = "'White' people(10k)";
                 break;
             case 'med_age':
                 title ='The median age of the all counties relative to confirmed cases';
+                short = "Median age";
                 break;
             case 'bachelor_degreeM_per10k':
-                title ="Men with bachelor's degrees per-10k";
+                title ="Men with bachelor's degrees per-10k relative to confirmed case";
+                short = "Men with a bachelor's(10k)";
                 break;
             case 'UrbanPer10k':
-                title ="Urban per 10k";
+                title ="People who live in urban areas as defined by the U.S. census per 10k relative to confirmed case";
+                short = "Urbanites(10k)";
             case 'Residential':
+                short = "Residential Mobility";
                 title ="Mobility trends for places of residence.The data is relative to the baseline which is the median value, for the corresponding day of the week, during the 5-week period Jan 3–Feb 6, 2020.";
                 break;
-            case 'Workplaces':
+            case 'Workplace':
+                short = "Workplace Mobility";
                 title ="Mobility trends for places of workplaces. The data is relative to the baseline which is the median value, for the corresponding day of the week, during the 5-week period Jan 3–Feb 6, 2020.";
                 break;
+            case 'perCapitaIncome':
+                short = "Per Capita Income";
+                title="Per Capita Income ";
+                break;
             case 'Retail & recreation':
+                short = "Retail & recreational Mobility";
                 title="Mobility trends for places like restaurants cafes, shopping centers, theme parks,museums, libraries, and movie theaters. The data is relative to the baseline which is the median value, for the corresponding day of the week, during the 5-week period Jan 3–Feb 6, 2020.";
                 break;
-            case 'Residential':
-                title="Mobility trends for places like restaurants cafes, shopping centers, theme parks,museums, libraries, and movie theaters. The data is relative to the baseline which is the median value, for the corresponding day of the week, during the 5-week period Jan 3–Feb 6, 2020.";
-                break;
-
         }
-        out_str+= "<div class='corr' title ='" + title + "'><div class='cor-val'>" +  val + ": " + result +  "</div>" + bar + "</div>";
+        out_str+= "<div class='corr' title ='" + title + "'><div class='cor-val'>" +  short+ val+ "</div><span class='res-val'>" + result + "</span>" + bar + "</div>";
     });
     out_str+="</div>";
 
