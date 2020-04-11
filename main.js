@@ -434,7 +434,7 @@ function corr_test(the_day){
         let title="";
         let short="";
         switch (val) {
-            case 'Grocery & Pharmacy Mobility':
+            case 'Grocery & pharmacy':
                 short = "Grocery and Pharmacy Mobility";
                 title ='Mobility trends for grocery and pharmacies. The data is relative to the baseline which is the median value, for the corresponding day of the week, during the 5-week period Jan 3–Feb 6, 2020.';
                 break;
@@ -486,7 +486,7 @@ function corr_test(the_day){
                 title="Mobility trends for places like restaurants cafes, shopping centers, theme parks,museums, libraries, and movie theaters. The data is relative to the baseline which is the median value, for the corresponding day of the week, during the 5-week period Jan 3–Feb 6, 2020.";
                 break;
         }
-        out_str+= "<div class='corr' title ='" + title + "'><div class='cor-val'>" +  short+ val+ "</div><span class='res-val'>" + result + "</span>" + bar + "</div>";
+        out_str+= "<div class='corr' title ='" + title + "'><div class='cor-val'>" +  short+ "</div><span class='res-val'>" + result + "</span>" + bar + "</div>";
     });
     out_str+="</div>";
 
