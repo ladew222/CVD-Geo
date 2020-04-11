@@ -434,10 +434,10 @@ function corr_test(the_day){
         let title="";
         let short="";
         switch (val) {
-        /*    case 'Grocery & pharmacy':
+            case 'Grocery & pharmacy':
                 short = "Grocery and Pharmacy Mobility";
                 title ='Mobility trends for grocery and pharmacies. The data is relative to the baseline which is the median value, for the corresponding day of the week, during the 5-week period Jan 3–Feb 6, 2020.';
-                break;*/
+                break;
             case 'IncomeIneq':
                 short = "Gini Index";
                 title ='Gini Index of Income equality 0 is perfect equality 1 is perfect inequality relative to confirmed cases';
@@ -469,22 +469,22 @@ function corr_test(the_day){
             case 'UrbanPer10k':
                 title ="People who live in urban areas as defined by the U.S. census per 10k relative to confirmed case";
                 short = "Urbanites(10k)";
-    /*        case 'Residential':
+            case 'Residential':
                 short = "Residential Mobility";
                 title ="Mobility trends for places of residence.The data is relative to the baseline which is the median value, for the corresponding day of the week, during the 5-week period Jan 3–Feb 6, 2020.";
-                break;*/
-     /*       case 'Workplace':
+                break;
+            case 'Workplace':
                 short = "Workplace Mobility";
                 title ="Mobility trends for places of workplaces. The data is relative to the baseline which is the median value, for the corresponding day of the week, during the 5-week period Jan 3–Feb 6, 2020.";
-                break;*/
+                break;
             case 'perCapitaIncome':
                 short = "Per Capita Income";
                 title="Per Capita Income ";
                 break;
-      /*      case 'Retail & recreation':
+            case 'Retail & recreation':
                 short = "Retail & recreational Mobility";
                 title="Mobility trends for places like restaurants cafes, shopping centers, theme parks,museums, libraries, and movie theaters. The data is relative to the baseline which is the median value, for the corresponding day of the week, during the 5-week period Jan 3–Feb 6, 2020.";
-                break;*/
+                break;
         }
         out_str+= "<div class='corr' title ='" + title + "'><div class='cor-val'>" +  short+ "</div><span class='res-val'>" + result + "</span>" + bar + "</div>";
     });
