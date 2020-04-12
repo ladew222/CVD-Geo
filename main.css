@@ -259,3 +259,14 @@ border-radius: 0px;
   position: relative;
   top: 6px;
 }
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
+
+#start{
+  z-index: 1000;
+  position: absolute;
+}
