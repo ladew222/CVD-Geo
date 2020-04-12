@@ -74,7 +74,7 @@ a.days{
   font-weight: 400;
 }
 
-#color-choose{
+#color-choose,.color-choose{
   background: white;
   padding: 12px;
   border: 1px solid #f6931f;
@@ -240,10 +240,10 @@ border-radius: 0px;
   justify-content: space-between;
 }
 
-.c1{
+.c1,.d1{
   width: 50%;
 }
-.c2{
+.c2,.d2{
   width: 50%;
 }
 .days{
@@ -269,4 +269,13 @@ border-radius: 0px;
 #start{
   z-index: 1000;
   position: absolute;
+  display: none;
+}
+.plot-select{
+  padding-left: 8px;
+  width:auto;
+  display: inline;
+}
+.plot-toggle{
+  display: none;
 }

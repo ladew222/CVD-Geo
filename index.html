@@ -13,6 +13,8 @@
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
         <script src="pearson-correlation.js"></script>
+        <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+        <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
       <script src="statistics.min.js" type="text/javascript"></script>
 
 
@@ -94,7 +96,12 @@
     </br>
         <div class="two-col">
             <div class="c1"><input id = "btnSubmit" title="This will retrive the data for the above date range. You can then choose any of the days below to show on right" type="submit" value="Get Data"/></div>
-            <div class="c2"></div>
+            <div class="c2">
+                <div id="states">
+
+                </div>
+
+            </div>
         </div>
 
       </br>
@@ -106,7 +113,7 @@
         </div>
         </br>
       <div id="color-choose">
-        <B class="gr">Color Variable</B>
+        <B class="gr">Map Color Variable</B>
       <form id="my_radio_box">
         <div class="form-check">
           <input class="form-check-input" title="This looks at Confirmed cases in a particular county" name="my_options" type="radio" name="exampleRadios" id="exampleRadios1" value="Confirmed" checked>
@@ -154,23 +161,53 @@
       </form>
       </div>
 
-      <h5>Scale Max</h5>
+      <h5>Map Scale Max</h5>
       <div id="slider">
         <div id="custom-handle" class="ui-slider-handle"></div>
       </div>
         <BR/>
-        <BR/>
-        <BR/>
+        <div class="color-choose">
+            <B class="gr" title="This section when enabled will overlay a scatter plot of the selected variable over the map.">Plots</B>
+            <BR/>
 
+            <div class="form-group">
+                <input class="plot" title="This will enable and disable a plot of selected values on top of the map"  id="toggle-plot" type="checkbox" data-toggle="toggle">
+                <select title="This will allow you to choose the variable to plot. Log values indicate rate of change, and illustrate how much the growth is slowing or grwoing." class="form-control plot-select" id="plot-type">
+                    <option value="Confirmed_total">Confirmed Cases</option>
+                    <option value="Confirmed_Log">Log (Confirmed)</option>
+                    <option value="Confirmed_death">Fatalities</option>
+                    <option value="Death_Log">Log(Fatalities)</option>
+                    <option value="avgWorkplace">Workplace Mobility</option>
+                </select>
+                <span class="plot-toggle">
+                    <br/>
+                    <br/>
+                    <div class="two-col">
+                        <div class="c1">
+                            <div class="btn-group">
+                                <button type="button" title="Display plot"  id="plot" class="btn btn-primary">Plot</button>
+                                <button type="button" title="Clear plot" id="clear" class="btn btn-primary">Clear</button>
+                            </div>
+                        </div>
+
+                        <div class="c2">
+                            <div id="custom-handle2" class="ui-slider-handle">X Scale</div>
+                             <div id="slider2">
+
+                            </div>
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </div>
+        <BR/>
         <div class="b-container">
             <div class="fixed">
-                <div id="states">
-
-                 </div>
+                <input id = "test" type="submit" title="This will display for the Pearson correlation coefficients for the display variables and Confirmed cases for the state or all for the selected day. Higher numbers indicate stronger relationships. A value of 1 indicates a perfect positive correlation. A value of -1 indicates a perfect negative correlation. In essence, long green bars suggest when increases in that value predict increases in confirmed cases. Large red bars indicate when that variable goes up, Confirmed cases goes down. Note that not all correlations indicate causation. The mobility data, for example, is most likly showing a reaction to confirmed cases rather than the affect of the behavior as it is on the same day. " value=" Show Correlations"/>
             </div>
+
             <div class="flex-item">
-                <input id = "test" type="submit" title="This will display for the Pearson correlation coefficients for the display variables and Confirmed cases for the state or all for the selected day. Higher numbers indicate stronger relationships. A value of 1 indicates a perfect positive correlation. A value of -1 indicates a perfect negative correlation. In essence, long green bars suggest when increases in that value predict increases in confirmed cases. Large red bars indicate when that variable goes up, Confirmed cases goes down. Note that not all correlations indicate causation. The mobility data, for example, is most likly showing a reaction to confirmed cases rather than the affect of the behavior as it is on the same day. " value="Correlate"/>
-                <input id = "plot" type="submit" title="Plot" value="Plot"/>
+
             </div>
         </div>
         <div id="corr-res">

@@ -29,7 +29,10 @@ var viz = {
     days_in_month: 30,
     mobility_data: false,
     start_date: null,
-    end_date:null
+    end_date:null,
+    plot_count:0,
+    plot_type:'Confirmed_total',
+    plot_x:0,
 };
 
 const map = new d3plus.Geomap()
@@ -40,7 +43,15 @@ const map = new d3plus.Geomap()
 
 
 function build_map(primary_var){
-
+    let Filtered = null;
+    if(viz.active_state!=0){
+        Filtered = viz.itemList[viz.active_day].filter(function (el) {
+            return el.state == parseInt(viz.active_state);
+        });
+    }
+    else{
+        Filtered = viz.itemList[viz.active_day];
+    }
     let test_arr =[0,viz.color_range];
     if(primary_var=='Percent_Change'){
         new Promise(function(fulfill, reject){
@@ -50,34 +61,34 @@ function build_map(primary_var){
 
             if (viz.color_range==0){
                 map
-                    .data(viz.itemList[viz.active_day])
+                    .data(Filtered)
                     .fitFilter(function(d) {
-                      /*  const state = parseInt(d.id.split('US')[1].substring(0, 2));
+                      const state = parseInt(d.id.split('US')[1].substring(0, 2));
                         if( viz.active_state!=0  ){
                             return [ viz.active_state].indexOf(state)<0;
                         }
                         else{
                             return true;
-                        }*/
+                        }
                     })
                     .colorScale(primary_var)
                     .render();
             }
             else{
                 map
-                    .data(viz.itemList[viz.active_day])
+                    .data(Filtered)
                     .label(function(d) {
                         var text =  "<b class='p-head'>"+ d.County + "</b><span class='p-other'>" + "</br>% Change: "+ d.Percent_Change +"</br>Confirmed: "  + d.Confirmed +  "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death + "<BR/>Fatality Rate: " + d.Fatality_Rate +  "<BR/>Population: "+ d.TotalPop + mobility + "</br>Gini Index: " + d.IncomeIneq + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>UnInsured 35to64 10k: " + d.insured35to64_per10k + "</span>" ;
                         return text;
                     })
                     .fitFilter(function(d) {
-                      /*  const state = parseInt(d.id.split('US')[1].substring(0, 2));
+                        const state = parseInt(d.id.split('US')[1].substring(0, 2));
                         if( viz.active_state!=0  ){
                             return [ viz.active_state].indexOf(state)<0;
                         }
                         else{
                             return true;
-                        }*/
+                        }
                     })
                     .colorScale(primary_var)
                     .colorScaleConfig({axisConfig: {
@@ -93,30 +104,30 @@ function build_map(primary_var){
     else{
         if (viz.color_range==0){
             map
-                .data(viz.itemList[viz.active_day])
+                .data(Filtered)
                 .fitFilter(function(d) {
-                    /*  const state = parseInt(d.id.split('US')[1].substring(0, 2));
+                      const state = parseInt(d.id.split('US')[1].substring(0, 2));
                       if( viz.active_state!=0  ){
                           return [ viz.active_state].indexOf(state)<0;
                       }
                       else{
                           return true;
-                      }*/
+                      }
                 })
                 .colorScale(primary_var)
                 .render();
         }
         else{
             map
-                .data(viz.itemList[viz.active_day])
+                .data(Filtered)
                 .fitFilter(function(d) {
-                    /*  const state = parseInt(d.id.split('US')[1].substring(0, 2));
+                      const state = parseInt(d.id.split('US')[1].substring(0, 2));
                       if( viz.active_state!=0  ){
                           return [ viz.active_state].indexOf(state)<0;
                       }
                       else{
                           return true;
-                      }*/
+                      }
                 })
                 .colorScale(primary_var)
                 .colorScaleConfig({axisConfig: {
@@ -153,8 +164,20 @@ $(document).ready(function(){
 
     $( document ).tooltip();
 
-    $(".two-col").on("click", "c1", function(event){
+    /*$(".two-col").on("click", "c1", function(event){
         console.log($(this).text());
+    });*/
+
+    $('#toggle-plot').change(function() {
+        //$('#console-event').html('Toggle: ' + $(this).prop('checked'))
+        $( ".plot-toggle" ).toggle();
+        $( "#start" ).toggle();
+
+    })
+
+    $('#plot-type').on('change', function() {
+        //alert( this.value );
+        viz.plot_type=this.value;
     });
 
     $('#days').on('click', 'a.days', function() {
@@ -199,6 +222,17 @@ $(document).ready(function(){
             handle.text( ui.value );
         }
     });
+    var handle2 = $( "#custom-handle2" );
+    $( "#slider2" ).slider({max:1500000,step: 20,
+        create: function() {
+            handle2.text( $( this ).slider( "value" ) );
+        },
+        slide: function( event, ui ) {
+            viz.plot_x=ui.value;
+            handle2.text( ui.value );
+        }
+    });
+
 
 
     $( "#slider-range" ).slider({
@@ -233,9 +267,11 @@ $(document).ready(function(){
         $( "#viz" ).html($( ".hidden" ).html());
 
     });
-    $(".test").click(function(){
 
-        get_mobile_data(0);
+    $("#clear").click(function(){
+
+        clear_plot();
+        viz.plot_count=0;
 
     });
 
@@ -247,8 +283,7 @@ $(document).ready(function(){
     });
     $("#plot").button().click(function(event){
         event.preventDefault();
-
-        plot();
+        plot(viz.plot_type);
 
     });
 
@@ -279,17 +314,13 @@ $(document).ready(function(){
             $("#days .c1").append("<a class='days dn-"+ i + "' data-type='std' data-day='" + i +  "'  href='#'>View map for "+  month_now  + "/" + day_now +  "</a></br>");
 
         }
-        $("#days .c2").append("<a data-type='Confirmed_total' class='plot cc' href='#'>Plot Confirmed Cases</a></br>");
-        $("#days .c2").append("<a data-type='Confirmed_Log' class='plot lcc' href='#'>Plot " +
-            " Confirmed Cases</a></br>");
-        $("#days .c2").append("<a data-type='Confirmed_death' class='plot pc' href='#'>Plot Fatalities</a></br>");
-        $("#days .c2").append("<a data-type='plf' class='plot pc' href='#'>Plot Log Fatalities</a></br>");
+
+
 
     });
 
     $('#my_radio_box').change(function(){
         viz.primary_var = $("input[name='my_options']:checked").val();
-
         if (viz.primary_var=="ConfirmedPer10K"){
             $("#slider").slider('option',{min: 0, max: 5,step: 0.05,});
 
@@ -438,16 +469,28 @@ function plot(type){
 
     let new_day=viz.start_date;
     xvals.push("2/3");
-    viz.itemList.forEach(function(number, i) {
-        const Filtered = viz.itemList[i].filter(function (el) {
-            return el.state == parseInt(viz.active_state);
-        });
+        viz.itemList.forEach(function(number, i) {
+        if(viz.active_state!=0){
+            Filtered = viz.itemList[i].filter(function (el) {
+                return el.state == parseInt(viz.active_state);
+            });
+        }
+        else{
+            Filtered = viz.itemList[i];
+        }
         const Confirmed_total = Filtered.reduce((sum, current) => sum + current.Confirmed, 0);
         const Confirmed_death= Filtered.reduce((sum, current) => sum + current.Death, 0);
+        let Filtered_workplace = Filtered.filter(item => item.Workplace !== null && isFinite(item.Workplace));
+        //var filtered = arr.filter(x => x !== undefined);
+        //clean this up
         const avgConfirmed = Filtered.reduce(function (sum, county) {
             return sum + parseFloat(county.Confirmed);
         }, 0) / Filtered.length;
+        const avgWorkplace=  Filtered_workplace.reduce(function (sum, county) {
+                return sum + parseFloat(county.Workplace);
+            }, 0)/Filtered_workplace.length;
         const Confirmed_Log= Math.log10(Confirmed_total);
+        const Death_Log= Math.log10(Confirmed_death);
         let newval ={date:new_day}
         newval.close = eval(type);
 
@@ -491,33 +534,18 @@ var svg = d3.select("#start").append("svg")
         "translate(" + margin.left + "," + margin.top + ")");
 
 function clear_plot(){
-    svg = d3.select("#start").append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
-        .append("g")
-        .attr("transform",
-            "translate(" + margin.left + "," + margin.top + ")");
-
-    // set the dimensions and margins of the graph
-    margin = {top: 20, right: 20, bottom: 30, left: 50},
-        width = 960 - margin.left - margin.right,
-        height = 500 - margin.top - margin.bottom;
-
-// parse the date / time
-     parseTime = d3.timeParse("%d-%b-%y");
-
+    //d3.select("#start").remove();
+    //d3.select("#start").selectAll("*").remove();
+    svg.selectAll("*").remove();
 // set the ranges
     x = d3.scaleTime().range([0, width]);
     y = d3.scaleLinear().range([height, 0]);
 
-// define the line
-    valueline = d3.line()
-        .x(function(d) { return x(d.date); })
-        .y(function(d) { return y(d.close); });
+
 
 }
 
-function draw_plot(data,set_domain){
+function draw_plot(data){
     // format the data
    /* data.forEach(function(d) {
         d.date = parseTime(d.date.toISOString());
@@ -525,12 +553,18 @@ function draw_plot(data,set_domain){
     });*/
 
     // Scale the range of the data
-    if(set_domain){
-        x.domain(d3.extent(data, function(d) { return d.date; }));
-        y.domain([0, d3.max(data, function(d) { return d.close; })]);
+    if(viz.plot_count==0){
+        if (viz.plot_x==0){
+            x.domain(d3.extent(data, function(d) { return d.date; }));
+            y.domain([0, d3.max(data, function(d) { return d.close; })]);
+        }
+        else{
+            y.domain([0, 9]);
+        }
+        //x.domain(d3.extent(data, function(d) { return d.date; }));
+        //y.domain([0, d3.max(data, function(d) { return d.close; })]);
     }
-
-
+    viz.plot_count++;
     // Add the valueline path.
     svg.append("path")
         .data([data])
@@ -745,5 +779,9 @@ function get_data(day_num){
         }
         $("#days .dn-"+day_num).fadeIn();
        // $("#days .c1").append("<a class='days' data-type='std' data-day='" + day_num +  "'  href='#'>View map for "+  month_now + "/" + day_now +  "</a></br>");
+    })
+        .then(function (day_num) {
+
+
     });
 }
