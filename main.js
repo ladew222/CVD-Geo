@@ -168,6 +168,8 @@ $(document).ready(function(){
         console.log($(this).text());
     });*/
 
+
+
     $('#toggle-plot').change(function() {
         //$('#console-event').html('Toggle: ' + $(this).prop('checked'))
         $( ".plot-toggle" ).toggle();
@@ -342,6 +344,14 @@ $(document).ready(function(){
         }
 
     });
+    var isshow = localStorage.getItem('isshow');
+    if (isshow== null) {
+        localStorage.setItem('isshow', 1);
+
+        jQuery.noConflict();
+        $('#welcome').modal('toggle');
+    }
+
 
 });
 
@@ -784,4 +794,5 @@ function get_data(day_num){
 
 
     });
+
 }

@@ -279,3 +279,12 @@ border-radius: 0px;
 .plot-toggle{
   display: none;
 }
+#baleModalCenterTitle{
+  color: white;
+  padding-top: 10px;
+}
+
+.modal-header{
+  background: #001b00;
+  border: 1px solid white;
+}
