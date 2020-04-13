@@ -710,7 +710,7 @@ function get_data(day_num){
         formattedMonth = ("0" + viz.start_month).slice(-2);
     }
     let goog_str="";
-    if(parseInt(formattedMonth)>3 ||  parseInt(formattedDay)>29){
+    if(parseInt(formattedMonth)>4 ||  parseInt(formattedDay)>5){
         goog_str="/google-data/" + "2020-03-29.csv";
     }
     else{
