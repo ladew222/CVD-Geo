@@ -619,8 +619,10 @@ function draw_plot(data){
     });
     let id = 0;
     statesFound.forEach((element) => {
-        let dd = viz.nested_data.filter(function(d){return d.key == 'Ohio';})
+
         const state= element.key;
+        let State = viz.state_lookup.filter(function(d){return parseInt(d.st) == element.key;});
+        const State_name = State[0].stname;
         let slices2 = element.values.map(function(d){
             return {
                 date: timeConv(d.key),
@@ -630,7 +632,7 @@ function draw_plot(data){
                 avg_recreation:  Math.round(d.value.avg_recreation)
             }
         });
-        slices.push({id:state, values:slices2});
+        slices.push({id:State_name, values:slices2});
     });
 
     const ids = function () {
@@ -773,14 +775,6 @@ function draw_plot(data){
                 + "," + (y(d.value.measurement) + 5 ) + ")"; })
         .attr("x", 5)
         .text(function(d) { return ("Serie ") + d.id; });
-
-
-
-
-
-
-
-
 
 
 
