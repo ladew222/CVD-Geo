@@ -41,7 +41,7 @@ const map = new d3plus.Geomap()
     .data(viz.itemList[0])
     .colorScale("Confirmed");
 
-
+var formatTime = d3.timeFormat("%B %d, %Y");
 const timeConv = d3.timeParse("%m-%d-%Y");
 
 
@@ -492,7 +492,10 @@ function plot(type){
             total_death: d3.sum(v, function(d) { return d.Death; }),
             log_total_death: d3.sum(v, function(d) { return Math.log10(d.Death); }),
             log_total_confirmed: d3.sum(v, function(d) { return Math.log10(d.Confirmed); }),
-            avg_confirmed: d3.mean(v, function(d) { return d.Confirmed; })
+            avg_confirmed: d3.mean(v, function(d) { return d.Confirmed; }),
+            avg_residential: d3.mean(v, function(d) { return d.Residential; }),
+            avg_workplace: d3.mean(v, function(d) { return d.Workplace; }),
+            avg_recreation: d3.mean(v, function(d) { return d['Retail & recreation']; })
         }; })
         .key(function(d) { return d.day; })
         .entries(viz.total);
@@ -547,6 +550,54 @@ function clear_plot(){
 
 }
 
+function hover(svg, path) {
+
+    if ("ontouchstart" in document) svg
+        .style("-webkit-tap-highlight-color", "transparent")
+        .on("touchmove", moved)
+        .on("touchstart", entered)
+        .on("touchend", left)
+    else svg
+        .on("mousemove", moved)
+        .on("mouseenter", entered)
+        .on("mouseleave", left);
+
+    const dot = svg.append("g")
+        .attr("display", "none");
+
+    dot.append("circle")
+        .attr("r", 2.5);
+
+    dot.append("text")
+        .attr("font-family", "sans-serif")
+        .attr("font-size", 10)
+        .attr("text-anchor", "middle")
+        .attr("y", -8);
+
+    function moved() {
+        d3.event.preventDefault();
+        const ym = y.invert(d3.event.layerY);
+        const xm = x.invert(d3.event.layerX);
+        const i1 = d3.bisectLeft(data.dates, xm, 1);
+        const i0 = i1 - 1;
+        const i = xm - data.dates[i0] > data.dates[i1] - xm ? i1 : i0;
+        const s = d3.least(data.series, d => Math.abs(d.values[i] - ym));
+        path.attr("stroke", d => d === s ? null : "#ddd").filter(d => d === s).raise();
+        dot.attr("transform", `translate(${x(data.dates[i])},${y(s.values[i])})`);
+        dot.select("text").text(s.name);
+    }
+
+    function entered() {
+        path.style("mix-blend-mode", null).attr("stroke", "#ddd");
+        dot.attr("display", null);
+    }
+
+    function left() {
+        path.style("mix-blend-mode", "multiply").attr("stroke", null);
+        dot.attr("display", "none");
+    }
+}
+
 function draw_plot(data){
     // format the data
     /* data.forEach(function(d) {
@@ -559,7 +610,10 @@ function draw_plot(data){
     let slices2 = dd[0].values.map(function(d){
         return {
             date: timeConv(d.key),
-            measurement: d.value.total_confirmed
+            measurement: d.value.total_confirmed,
+            avg_residential: Math.round(d.value.avg_residential),
+            avg_workplace: Math.round(d.value.avg_workplace),
+            avg_recreation:  Math.round(d.value.avg_recreation)
         }
     });
     let slices = [];
@@ -675,7 +729,25 @@ function draw_plot(data){
         .enter().append("circle")
         .attr("r", 3)
         .attr("cx", function(d) { return x(d.date); })
-        .attr("cy", function(d) { return y(d.measurement); });
+        .attr("cy", function(d) { return y(d.measurement); })
+        .on("mouseover", function(d) {
+            div.transition()
+                .duration(200)
+                .style("opacity", .9);
+            div	.html(formatTime(d.date) + "<br/>"  + d.measurement+ "<br/>"  + "<br/>Workplace Mobility"+ d.avg_workplace + "<br/>Rec Mobility"+ d.avg_recreation + "<br/>Residential Mobility"+ d.avg_residential )
+                .style("left", (d3.event.pageX) + "px")
+                .style("top", (d3.event.pageY - 28) + "px");
+        })
+        .on("mouseout", function(d) {
+            div.transition()
+                .duration(500)
+                .style("opacity", 0);
+        });
+
+    // Define the div for the tooltip
+    var div = d3.select("body").append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
 
     lines.append("text")
         .attr("class","serie_label")
@@ -688,7 +760,6 @@ function draw_plot(data){
                 + "," + (y(d.value.measurement) + 5 ) + ")"; })
         .attr("x", 5)
         .text(function(d) { return ("Serie ") + d.id; });
-
 
 
 
