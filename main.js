@@ -669,8 +669,8 @@ function draw_plot(data){
                 id: d.id,
                 value: d.values[d.values.length - 1]}; })
         .attr("transform", function(d) {
-            return "translate(" + (xScale(d.value.date) + 10)
-                + "," + (yScale(d.value.measurement) + 5 ) + ")"; })
+            return "translate(" + (x(d.value.date) + 10)
+                + "," + (y(d.value.measurement) + 5 ) + ")"; })
         .attr("x", 5)
         .text(function(d) { return ("Serie ") + d.id; });
 
