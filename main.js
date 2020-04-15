@@ -738,26 +738,32 @@ function draw_plot(data){
         .attr("class", ids)
         .attr("d", function(d) { return line(d.values); });
 
-    // Add the scatterplot
-    svg.selectAll("dot")
-        .data(slices[0].values)
-        .enter().append("circle")
-        .attr("r", 3)
-        .attr("cx", function(d) { return x(d.date); })
-        .attr("cy", function(d) { return y(d.measurement); })
-        .on("mouseover", function(d) {
-            div.transition()
-                .duration(200)
-                .style("opacity", .9);
-            div	.html("<br/>Workplace Mobility:"+ d.avg_workplace + "<br/>Rec Mobility:"+ d.avg_recreation + "<br/>Residential Mobility:"+ d.avg_residential )
-                .style("left", (d3.event.pageX) + "px")
-                .style("top", (d3.event.pageY - 28) + "px");
-        })
-        .on("mouseout", function(d) {
-            div.transition()
-                .duration(500)
-                .style("opacity", 0);
-        });
+    slices.forEach(function(number, i) {
+        // Add the scatterplot
+        svg.selectAll("dot")
+            .data(slices[i].values)
+            .enter().append("circle")
+            .attr("r", 3)
+            .attr("cx", function (d) {
+                return x(d.date);
+            })
+            .attr("cy", function (d) {
+                return y(d.measurement);
+            })
+            .on("mouseover", function (d) {
+                div.transition()
+                    .duration(200)
+                    .style("opacity", .9);
+                div.html("<br/>Workplace Mobility:" + d.avg_workplace + "<br/>Rec Mobility:" + d.avg_recreation + "<br/>Residential Mobility:" + d.avg_residential)
+                    .style("left", (d3.event.pageX) + "px")
+                    .style("top", (d3.event.pageY - 28) + "px");
+            })
+            .on("mouseout", function (d) {
+                div.transition()
+                    .duration(500)
+                    .style("opacity", 0);
+            });
+    });
 
     // Define the div for the tooltip
     var div = d3.select("body").append("div")
