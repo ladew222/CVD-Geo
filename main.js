@@ -593,8 +593,9 @@ function draw_plot(data){
         });
 
     }));*/
-
+    var color = d3.scaleOrdinal().range(d3.schemeCategory10);
     x.domain(d3.extent([viz.start_date,viz.end_date]));
+    color.domain(10);
     y.domain([0, d3.max(slices, function(d) {
         return d3.max(d.values, function(d) {
             return d.measurement + 10; });
@@ -610,24 +611,30 @@ function draw_plot(data){
         .tickFormat(d3.timeFormat('%b %d'))
         .scale(x);
 
-    const line = d3.line()
+   /*const line = d3.line()
+        .curve(d3.curveCardinal)
         .x(function(d) { return x(d.date); })
-        .y(function(d) { return y(d.measurement); });
+        .y(function(d) { return y(d.measurement); });*/
+
+    const line = d3
+        .line()
+        .curve(d3.curveMonotoneX)
+        .x(function(d) {
+            return x(d.date);
+        })
+        .y(function(d) {
+            return y(d.measurement);
+        });
+
 
     viz.plot_count++;
     // Add the valueline path.
-    svg.append("path")
+    /*svg.append("path")
         .data([data])
         .attr("class", "line")
-        .attr("d", valueline);
+        .attr("d", valueline);*/
 
-    // Add the scatterplot
-    svg.selectAll("dot")
-        .data(slices[0].values)
-        .enter().append("circle")
-        .attr("r", 5)
-        .attr("cx", function(d) { return x(d.date); })
-        .attr("cy", function(d) { return y(d.measurement); });
+
 
     // Add the X Axis
     /*svg.append("g")
@@ -661,6 +668,14 @@ function draw_plot(data){
     lines.append("path")
         .attr("class", ids)
         .attr("d", function(d) { return line(d.values); });
+
+    // Add the scatterplot
+    svg.selectAll("dot")
+        .data(slices[0].values)
+        .enter().append("circle")
+        .attr("r", 3)
+        .attr("cx", function(d) { return x(d.date); })
+        .attr("cy", function(d) { return y(d.measurement); });
 
     lines.append("text")
         .attr("class","serie_label")

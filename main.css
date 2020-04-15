@@ -300,7 +300,7 @@ border-radius: 0px;
 /* axis contour */
 .axis path {
   stroke: #706f6f;
-  stroke-width: 0.7;
+  stroke-width: 0.9;
   shape-rendering: crispEdges;
 }
 
@@ -315,12 +315,14 @@ border-radius: 0px;
 path.line-0 {
   fill: none;
   stroke: #ed3700;
+  stroke-width: 1.5px;
 }
 
 path.line-1 {
   fill: none;
   stroke: #2b2929;
   stroke-dasharray: 2;
+
 }
 
 path.line-2 {
