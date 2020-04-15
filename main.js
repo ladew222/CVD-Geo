@@ -16,7 +16,11 @@ Date.prototype.addDays = function(days) {
     date.setDate(date.getDate() + days);
     return date;
 }
-
+Date.prototype.subDays = function(days) {
+    var date = new Date(this.valueOf());
+    date.setDate(date.getDate() - days);
+    return date;
+}
 var viz = {
     itemList:[],
     start_day: "3",
@@ -647,9 +651,9 @@ function draw_plot(data){
         });
 
     }));*/
-    var color = d3.scaleOrdinal().range(d3.schemeCategory10);
-    x.domain(d3.extent([viz.start_date,viz.end_date]));
-    color.domain(10);
+    //var color = d3.scaleOrdinal().range(d3.schemeCategory10);
+    x.domain(d3.extent([viz.start_date.subDays(1),viz.end_date.subDays(1)]));
+   // color.domain(10);
     y.domain([0, d3.max(slices, function(d) {
         return d3.max(d.values, function(d) {
             return d.measurement + 10; });
@@ -734,7 +738,7 @@ function draw_plot(data){
             div.transition()
                 .duration(200)
                 .style("opacity", .9);
-            div	.html("<br/>Workplace Mobility"+ d.avg_workplace + "<br/>Rec Mobility"+ d.avg_recreation + "<br/>Residential Mobility"+ d.avg_residential )
+            div	.html("<br/>Workplace Mobility:"+ d.avg_workplace + "<br/>Rec Mobility:"+ d.avg_recreation + "<br/>Residential Mobility:"+ d.avg_residential )
                 .style("left", (d3.event.pageX) + "px")
                 .style("top", (d3.event.pageY - 28) + "px");
         })
