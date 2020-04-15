@@ -37,7 +37,8 @@ var viz = {
     plot_count:0,
     plot_type:'Confirmed_total',
     plot_x:0,
-    nested_data:null
+    nested_data:null,
+    state_lookup:null
 };
 
 const map = new d3plus.Geomap()
@@ -384,13 +385,20 @@ function getAllIndexes(arr) {
     return indexes;
 }
 d3.csv("us-state-fips.csv").then(function(data) {
+    viz.state_lookup= data;
     var select = d3.select("#states")
         .append("div")
         .append("select")
 
     select
+        .attr('multiple', '')
         .on("change", function(d) {
-            viz.active_state = d3.select(this).property("value");
+            var values = [];
+            selected = d3.select(this) // select the select
+                .selectAll("option:checked")  // select the selected values
+                .each(function() { values.push( parseInt(this.value)) }); // for each of those, get its value
+            console.log(values)
+            viz.active_state = values;
         });
 
     select.selectAll("option")
@@ -487,9 +495,8 @@ function plot(type){
     let Filtered=null;
     //viz.total = d3.merge([viz.itemList[0],viz.itemList[1],viz.itemList[3]]);
     viz.total = d3.merge(viz.itemList);
-
     viz.nested_data = d3.nest()
-        .key(function(d) { return d.State; })
+        .key(function(d) { return d.state; })
         .rollup(function(v) { return {
             count: v.length,
             total_confirmed: d3.sum(v, function(d) { return d.Confirmed; }),
@@ -503,8 +510,6 @@ function plot(type){
         }; })
         .key(function(d) { return d.day; })
         .entries(viz.total);
-
-
     draw_plot(plots);
 
 }
@@ -608,22 +613,26 @@ function draw_plot(data){
          d.date = parseTime(d.date.toISOString());
          d.close = +d.close;
      });*/
-
-    let dd = viz.nested_data.filter(function(d){return d.key == 'Ohio';})
-    const state= dd[0].key;
-    let slices2 = dd[0].values.map(function(d){
-        return {
-            date: timeConv(d.key),
-            measurement: d.value.total_confirmed,
-            avg_residential: Math.round(d.value.avg_residential),
-            avg_workplace: Math.round(d.value.avg_workplace),
-            avg_recreation:  Math.round(d.value.avg_recreation)
-        }
-    });
     let slices = [];
-     slices.push({id:state, values:slices2});
-
+    var statesFound = viz.nested_data.filter(function(state) {
+        return viz.active_state.indexOf(parseInt(state.key)) !=-1
+    });
     let id = 0;
+    statesFound.forEach((element) => {
+        let dd = viz.nested_data.filter(function(d){return d.key == 'Ohio';})
+        const state= element.key;
+        let slices2 = element.values.map(function(d){
+            return {
+                date: timeConv(d.key),
+                measurement: d.value.total_confirmed,
+                avg_residential: Math.round(d.value.avg_residential),
+                avg_workplace: Math.round(d.value.avg_workplace),
+                avg_recreation:  Math.round(d.value.avg_recreation)
+            }
+        });
+        slices.push({id:state, values:slices2});
+    });
+
     const ids = function () {
         return "line-"+id++;
     }
