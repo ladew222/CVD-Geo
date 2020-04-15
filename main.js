@@ -33,6 +33,7 @@ var viz = {
     plot_count:0,
     plot_type:'Confirmed_total',
     plot_x:0,
+    nested_data:null
 };
 
 const map = new d3plus.Geomap()
@@ -40,6 +41,8 @@ const map = new d3plus.Geomap()
     .data(viz.itemList[0])
     .colorScale("Confirmed");
 
+
+const timeConv = d3.timeParse("%m-%d-%Y");
 
 
 function build_map(primary_var){
@@ -140,6 +143,8 @@ function build_map(primary_var){
 
 
 }
+
+make_day = d3.timeFormat('%b %d');
 
 ///////////////////////////////////////////////
 /////////////// Jquery Section ////////////////
@@ -476,46 +481,32 @@ function plot(type){
     let plots = [];
     let xvals = [];
     let Filtered=null;
+    //viz.total = d3.merge([viz.itemList[0],viz.itemList[1],viz.itemList[3]]);
+    viz.total = d3.merge(viz.itemList);
 
-    let new_day=viz.start_date;
-    xvals.push("2/3");
-        viz.itemList.forEach(function(number, i) {
-        if(viz.active_state!=0){
-            Filtered = viz.itemList[i].filter(function (el) {
-                return el.state == parseInt(viz.active_state);
-            });
-        }
-        else{
-            Filtered = viz.itemList[i];
-        }
-        const Confirmed_total = Filtered.reduce((sum, current) => sum + current.Confirmed, 0);
-        const Confirmed_death= Filtered.reduce((sum, current) => sum + current.Death, 0);
-        let Filtered_workplace = Filtered.filter(item => item.Workplace !== null && isFinite(item.Workplace));
-        //var filtered = arr.filter(x => x !== undefined);
-        //clean this up
-        const avgConfirmed = Filtered.reduce(function (sum, county) {
-            return sum + parseFloat(county.Confirmed);
-        }, 0) / Filtered.length;
-        const avgWorkplace=  Filtered_workplace.reduce(function (sum, county) {
-                return sum + parseFloat(county.Workplace);
-            }, 0)/Filtered_workplace.length;
-        const Confirmed_Log= Math.log10(Confirmed_total);
-        const Death_Log= Math.log10(Confirmed_death);
-        let newval ={date:new_day}
-        newval.close = eval(type);
+    viz.nested_data = d3.nest()
+        .key(function(d) { return d.State; })
+        .rollup(function(v) { return {
+            count: v.length,
+            total_confirmed: d3.sum(v, function(d) { return d.Confirmed; }),
+            total_death: d3.sum(v, function(d) { return d.Death; }),
+            log_total_death: d3.sum(v, function(d) { return Math.log10(d.Death); }),
+            log_total_confirmed: d3.sum(v, function(d) { return Math.log10(d.Confirmed); }),
+            avg_confirmed: d3.mean(v, function(d) { return d.Confirmed; })
+        }; })
+        .key(function(d) { return d.day; })
+        .entries(viz.total);
 
-        plots.push(newval);
-        new_day= new_day.addDays(1)
-        xvals.push("2/3");
-    });
-    //$("#viz").empty();
-    //$("#start").empty();
-    //d3.select("#start svg").remove();
+
     draw_plot(plots);
 
 }
 
+// parse the date / time
+var parseTime = d3.timeParse("%d-%b-%y");
 
+
+// we are appending SVG first
 // set the dimensions and margins of the graph
 var margin = {top: 20, right: 20, bottom: 30, left: 50},
     width = 960 - margin.left - margin.right,
@@ -543,6 +534,7 @@ var svg = d3.select("#start").append("svg")
     .attr("transform",
         "translate(" + margin.left + "," + margin.top + ")");
 
+
 function clear_plot(){
     //d3.select("#start").remove();
     //d3.select("#start").selectAll("*").remove();
@@ -557,23 +549,71 @@ function clear_plot(){
 
 function draw_plot(data){
     // format the data
-   /* data.forEach(function(d) {
-        d.date = parseTime(d.date.toISOString());
-        d.close = +d.close;
-    });*/
+    /* data.forEach(function(d) {
+         d.date = parseTime(d.date.toISOString());
+         d.close = +d.close;
+     });*/
+
+    let dd = viz.nested_data.filter(function(d){return d.key == 'Ohio';})
+    const state= dd[0].key;
+    let slices2 = dd[0].values.map(function(d){
+        return {
+            date: timeConv(d.key),
+            measurement: d.value.total_confirmed
+        }
+    });
+    let slices = [];
+     slices.push({id:state, values:slices2});
+
+    let id = 0;
+    const ids = function () {
+        return "line-"+id++;
+    }
+
+
+// returns the sliced dataset
+    console.log("Slices",slices);
+// returns the first slice
+    console.log("First slice",slices[0]);
+// returns the array in the first slice
+    console.log("A array",slices[0].values);
+// returns the date of the first row in the first slice
+    console.log("Date element",slices[0].values[0].date);
+// returns the array's length
+    console.log("Array length",(slices[0].values).length);
 
     // Scale the range of the data
-    if(viz.plot_count==0){
-        if (viz.plot_x==0){
-            x.domain(d3.extent(data, function(d) { return d.date; }));
-            y.domain([0, d3.max(data, function(d) { return d.close; })]);
-        }
-        else{
-            y.domain([0, 9]);
-        }
-        //x.domain(d3.extent(data, function(d) { return d.date; }));
-        //y.domain([0, d3.max(data, function(d) { return d.close; })]);
-    }
+   /* x.domain(d3.extent(slices.values, function(d) {
+        return timeConv(d.date);
+    }));*/
+
+   /* x.domain(d3.extent(slices, function(d) {
+        return d3.extent(d.values, function(e){
+            return e.date
+        });
+
+    }));*/
+
+    x.domain(d3.extent([viz.start_date,viz.end_date]));
+    y.domain([0, d3.max(slices, function(d) {
+        return d3.max(d.values, function(d) {
+            return d.measurement + 10; });
+        })
+    ]);
+
+    const yaxis = d3.axisLeft()
+        .ticks((slices[0].values).length)
+        .scale(y);
+
+    const xaxis = d3.axisBottom()
+        .ticks(d3.timeDay.every(1))
+        .tickFormat(d3.timeFormat('%b %d'))
+        .scale(x);
+
+    const line = d3.line()
+        .x(function(d) { return x(d.date); })
+        .y(function(d) { return y(d.measurement); });
+
     viz.plot_count++;
     // Add the valueline path.
     svg.append("path")
@@ -583,20 +623,68 @@ function draw_plot(data){
 
     // Add the scatterplot
     svg.selectAll("dot")
-        .data(data)
+        .data(slices[0].values)
         .enter().append("circle")
         .attr("r", 5)
         .attr("cx", function(d) { return x(d.date); })
-        .attr("cy", function(d) { return y(d.close); });
+        .attr("cy", function(d) { return y(d.measurement); });
 
     // Add the X Axis
-    svg.append("g")
+    /*svg.append("g")
         .attr("transform", "translate(0," + height + ")")
         .call(d3.axisBottom(x));
 
     // Add the Y Axis
     svg.append("g")
-        .call(d3.axisLeft(y));
+        .call(d3.axisLeft(y));*/
+
+    svg.append("g")
+        .attr("class", "axis")
+        .attr("transform", "translate(0," + height + ")")
+        .call(xaxis);
+
+    svg.append("g")
+        .attr("class", "axis")
+        .call(yaxis)
+        .append("text")
+        .attr("transform", "rotate(-90)")
+        .attr("dy", ".75em")
+        .attr("y", 6)
+        .style("text-anchor", "end")
+        .text("Frequency");
+
+    const lines = svg.selectAll("lines")
+        .data(slices)
+        .enter()
+        .append("g");
+
+    lines.append("path")
+        .attr("class", ids)
+        .attr("d", function(d) { return line(d.values); });
+
+    lines.append("text")
+        .attr("class","serie_label")
+        .datum(function(d) {
+            return {
+                id: d.id,
+                value: d.values[d.values.length - 1]}; })
+        .attr("transform", function(d) {
+            return "translate(" + (xScale(d.value.date) + 10)
+                + "," + (yScale(d.value.measurement) + 5 ) + ")"; })
+        .attr("x", 5)
+        .text(function(d) { return ("Serie ") + d.id; });
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 function corr_test(the_day){
@@ -733,6 +821,10 @@ function get_data(day_num){
                 result[0].id = "05000US"+ state_pad+county_pad;
                 //AsiaPop10k <- ((acs_Data$JWOE047/acs_Data$JWAE001)*10000)
                 cvItem.Confirmed = parseFloat(cvItem.Confirmed);
+                const tParser = d3.timeParse("%m-%d-2020");
+                result[0].daynum= day_num;
+                result[0].date = tParser;
+                result[0].day = formattedMonth + "-" + formattedDay+"-2020";
                 cvItem.Death = parseFloat(cvItem.Death);
                 cvItem.Fatality_Rate = parseFloat(cvItem.Fatality_Rate);
                 result[0].TotalPop = parseFloat(result[0].TotalPop);
