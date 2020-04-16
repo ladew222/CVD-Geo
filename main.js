@@ -60,7 +60,10 @@ function build_map(primary_var){
         });
     }
     else{
-        Filtered = viz.itemList[viz.active_day];
+        Filtered = viz.itemList[viz.active_day].filter(function (el) {
+            return el.state !=360;
+
+        });
     }
     let test_arr =[0,viz.color_range];
     if(primary_var=='Percent_Change'){
@@ -72,7 +75,7 @@ function build_map(primary_var){
             if (viz.color_range==0){
                 map
                     .data(Filtered)
-                    .colorScaleConfig({color: ["green", "orange"]})
+                    .colorScaleConfig({scale: "jenks"})
                     .fitFilter(function(d) {
                       const state = parseInt(d.id.split('US')[1].substring(0, 2));
                         if( viz.active_state!=0  ){
@@ -88,7 +91,7 @@ function build_map(primary_var){
             else{
                 map
                     .data(Filtered)
-                    .colorScaleConfig({color: ["green", "orange"]})
+                    .colorScaleConfig({scale: "jenks"})
                     .label(function(d) {
                         var text =  "<b class='p-head'>"+ d.County + "</b><span class='p-other'>" + "</br>% Change: "+ d.Percent_Change +"</br>Confirmed: "  + d.Confirmed +  "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death + "<BR/>Fatality Rate: " + d.Fatality_Rate +  "<BR/>Population: "+ d.TotalPop + mobility + "</br>Gini Index: " + d.IncomeIneq + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>UnInsured 35to64 10k: " + d.insured35to64_per10k + "</span>" ;
                         return text;
@@ -103,9 +106,7 @@ function build_map(primary_var){
                         }
                     })
                     .colorScale(primary_var)
-                    .colorScaleConfig({axisConfig: {
-                            domain: test_arr
-                        }})
+                    .colorScaleConfig({scale: "jenks"})
                     .render();
 
             }
@@ -117,7 +118,7 @@ function build_map(primary_var){
         if (viz.color_range==0){
             map
                 .data(Filtered)
-                .colorScaleConfig({color: ["green", "orange"]})
+                .colorScaleConfig({scale: "jenks"})
                 .fitFilter(function(d) {
                       const state = parseInt(d.id.split('US')[1].substring(0, 2));
                       if( viz.active_state!=0  ){
@@ -133,7 +134,7 @@ function build_map(primary_var){
         else{
             map
                 .data(Filtered)
-                .colorScaleConfig({color: ["green", "orange"]})
+                .colorScaleConfig({scale: "jenks"})
                 .fitFilter(function(d) {
                       const state = parseInt(d.id.split('US')[1].substring(0, 2));
                       if( viz.active_state!=0  ){
@@ -144,9 +145,7 @@ function build_map(primary_var){
                       }
                 })
                 .colorScale(primary_var)
-                .colorScaleConfig({axisConfig: {
-                        domain: test_arr
-                    }})
+                .colorScaleConfig({scale: "jenks"})
                 .render();
         }
 
@@ -235,7 +234,7 @@ $(document).ready(function(){
 
 
     var handle = $( "#custom-handle" );
-    $( "#slider" ).slider({max:200,
+    $( "#slider" ).slider({max: 10000,
         create: function() {
             handle.text( $( this ).slider( "value" ) );
         },
@@ -345,13 +344,12 @@ $(document).ready(function(){
         viz.primary_var = $("input[name='my_options']:checked").val();
         if (viz.primary_var=="ConfirmedPer10K"){
             $("#slider").slider('option',{min: 0, max: 5,step: 0.05,});
-
         }
         if (viz.primary_var=="Confirmed"){
-            $("#slider").slider('option',{min: 0, max: 1000,step: 10,});
+            $("#slider").slider('option',{min: 0, max: 12000,step: 50});
         }
         if( viz.primary_var=="Fatality_Rate") {
-            $("#slider").slider('option',{min: 0, max: .5,step: 0.005,});
+            $("#slider").slider('option',{min: 0, max: .5,step: 0.005});
         }
         if( viz.primary_var=="Percent_Change") {
             $("#slider").slider('option',{ min:0,max: 1200,step: 5});
@@ -401,7 +399,8 @@ d3.csv("us-state-fips.csv").then(function(data) {
         .append("select")
 
     select
-        .attr('multiple', '')
+        .attr('multiple', 'multiple')
+        .attr('class', 'js-multiple')
         .attr('title', 'This is a filter for map values or charts below. The newer data is not showing color variation correctly when NY is included. We hope to have it resolved soon.')
         .on("change", function(d) {
             var values = [];
@@ -418,6 +417,9 @@ d3.csv("us-state-fips.csv").then(function(data) {
         .append("option")
         .attr("value", function (d) { return d.st; })
         .text(function (d) { return d.stname; });
+}).then(function (day_num) {
+    //$('.js-multiple').select2();
+
 });
 
 function paddy(num, padlen, padchar) {
