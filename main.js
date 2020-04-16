@@ -806,7 +806,7 @@ function draw_plot(data){
             return "translate(" + (x(d.value.date) + 10)
                 + "," + (y(d.value.measurement) + 5 ) + ")"; })
         .attr("x", 5)
-        .text(function(d) { return ("Serie ") + d.id; });
+        .text(function(d) { return (" ") + d.id; });
 
 
 
