@@ -331,6 +331,53 @@ path.line-2 {
   stroke-dasharray: 6;
 }
 
+path.line-3 {
+  fill: none;
+  stroke: #f69320;
+  stroke-width: 1.5px;
+}
+
+path.line-4 {
+   fill: none;
+   stroke: #2b2929;
+   stroke-dasharray: 6;
+
+ }
+
+path.line-5 {
+  fill: none;
+  stroke: #2b2929;
+  stroke-dasharray: 2;
+
+}
+
+path.line-6 {
+   fill: none;
+   stroke: sandybrown;
+   stroke-width: 1.5px;
+ }
+
+path.line-7 {
+  fill: none;
+  stroke: purple;
+  stroke-dasharray: 2;
+}
+
+path.line-8 {
+  fill: none;
+  stroke: navy;
+  stroke-dasharray: 6;
+
+}
+
+path.line-9 {
+  fill: none;
+  stroke: darkred;
+  stroke-width: 1.5px;
+}
+
+
+
 .serie_label {
   fill: #2b2929;
   font-family: Georgia;
