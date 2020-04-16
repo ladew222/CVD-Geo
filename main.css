@@ -447,3 +447,7 @@ div.tooltip {
   border-radius: 8px;
   pointer-events: none;
 }
+
+.toggle.btn {
+  min-width: 100px;
+}
