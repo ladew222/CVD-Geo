@@ -402,7 +402,7 @@ d3.csv("us-state-fips.csv").then(function(data) {
 
     select
         .attr('multiple', '')
-        .attr('title', 'This is a filter for map values or charts below')
+        .attr('title', 'This is a filter for map values or charts below. The newer data is not showing color variation correctly when NY is included. We hope to have it resolved soon.')
         .on("change", function(d) {
             var values = [];
             selected = d3.select(this) // select the select
