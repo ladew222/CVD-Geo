@@ -376,7 +376,58 @@ path.line-9 {
   stroke-width: 1.5px;
 }
 
+path.line-10 {
+  fill: none;
+  stroke: aqua;
+  stroke-dasharray: 2;
+}
 
+path.line-11 {
+  fill: none;
+  stroke: #0902ff;
+  stroke-dasharray: 6;
+}
+
+path.line-12 {
+  fill: none;
+  stroke: #e2a7ff;
+  stroke-width: 1.5px;
+}
+
+path.line-13 {
+   fill: none;
+   stroke: #ffeb4b;
+   stroke-dasharray: 2;
+ }
+
+path.line-15 {
+  fill: none;
+  stroke: #c3ffd2;
+  stroke-dasharray: 6;
+}
+
+path.line-16 {
+  fill: none;
+  stroke: #ffd4cd;
+  stroke-width: 1.5px;
+}
+path.line-17 {
+  fill: none;
+  stroke: #b9ff4e;
+  stroke-dasharray: 2;
+}
+
+path.line-18 {
+  fill: none;
+  stroke: #8273ff;
+  stroke-dasharray: 6;
+}
+
+path.line-19 {
+  fill: none;
+  stroke: #ff8969;
+  stroke-width: 1.5px;
+}
 
 .serie_label {
   fill: #2b2929;

@@ -38,7 +38,8 @@ var viz = {
     plot_type:'total_confirmed',
     plot_x:0,
     nested_data:null,
-    state_lookup:null
+    state_lookup:null,
+    plot_details: false
 };
 
 const map = new d3plus.Geomap()
@@ -185,6 +186,10 @@ $(document).ready(function(){
         $( ".plot-toggle" ).toggle();
         $( "#start" ).toggle();
 
+    })
+    $('#toggle-plot-details').change(function() {
+        //$('#console-event').html('Toggle: ' + $(this).prop('checked'))
+        viz.plot_details=$(this).prop('checked');
     })
 
     $('#plot-type').on('change', function() {
@@ -495,21 +500,41 @@ function plot(type){
     let Filtered=null;
     //viz.total = d3.merge([viz.itemList[0],viz.itemList[1],viz.itemList[3]]);
     viz.total = d3.merge(viz.itemList);
-    viz.nested_data = d3.nest()
-        .key(function(d) { return d.state; })
-        .rollup(function(v) { return {
-            count: v.length,
-            total_confirmed: d3.sum(v, function(d) { return d.Confirmed; }),
-            total_death: d3.sum(v, function(d) { return d.Death; }),
-            log_total_death: d3.sum(v, function(d) { return Math.log10(d.Death); }),
-            log_total_confirmed: d3.sum(v, function(d) { return Math.log10(d.Confirmed); }),
-            avg_confirmed: d3.mean(v, function(d) { return d.Confirmed; }),
-            avg_residential: d3.mean(v, function(d) { return d.Residential; }),
-            avg_workplace: d3.mean(v, function(d) { return d.Workplace; }),
-            avg_recreation: d3.mean(v, function(d) { return d['Retail & recreation']; })
-        }; })
-        .key(function(d) { return d.day; })
-        .entries(viz.total);
+    if (viz.plot_details==false){
+        viz.nested_data = d3.nest()
+            .key(function(d) { return d.state; })
+            .rollup(function(v) { return {
+                count: v.length,
+                total_confirmed: d3.sum(v, function(d) { return d.Confirmed; }),
+                total_death: d3.sum(v, function(d) { return d.Death; }),
+                log_total_death: d3.sum(v, function(d) { return Math.log10(d.Death); }),
+                log_total_confirmed: d3.sum(v, function(d) { return Math.log10(d.Confirmed); }),
+                avg_confirmed: d3.mean(v, function(d) { return d.Confirmed; }),
+                avg_residential: d3.mean(v, function(d) { return d.Residential; }),
+                avg_workplace: d3.mean(v, function(d) { return d.Workplace; }),
+                avg_recreation: d3.mean(v, function(d) { return d['Retail & recreation']; })
+            }; })
+            .key(function(d) { return d.day; })
+            .entries(viz.total);
+    }
+    else{ //get counties
+        viz.nested_data = d3.nest()
+            .key(function(d) { return d.county; })
+            .rollup(function(v) { return {
+                count: v.length,
+                total_confirmed: d3.sum(v, function(d) { return d.Confirmed; }),
+                total_death: d3.sum(v, function(d) { return d.Death; }),
+                log_total_death: d3.sum(v, function(d) { return Math.log10(d.Death); }),
+                log_total_confirmed: d3.sum(v, function(d) { return Math.log10(d.Confirmed); }),
+                avg_confirmed: d3.mean(v, function(d) { return d.Confirmed; }),
+                avg_residential: d3.mean(v, function(d) { return d.Residential; }),
+                avg_workplace: d3.mean(v, function(d) { return d.Workplace; }),
+                avg_recreation: d3.mean(v, function(d) { return d['Retail & recreation']; })
+            }; })
+            .key(function(d) { return d.day; })
+            .entries(viz.total);
+
+    }
     draw_plot(plots);
 
 }
@@ -625,6 +650,7 @@ function draw_plot(data){
         const State_name = State[0].stname;
         let slices2 = element.values.map(function(d){
             return {
+                title: State_name,
                 date: timeConv(d.key),
                 measurement: d.value[viz.plot_type],
                 avg_residential: Math.round(d.value.avg_residential),
@@ -754,7 +780,7 @@ function draw_plot(data){
                 div.transition()
                     .duration(200)
                     .style("opacity", .9);
-                div.html("<br/>Workplace Mobility:" + d.avg_workplace + "<br/>Rec Mobility:" + d.avg_recreation + "<br/>Residential Mobility:" + d.avg_residential)
+                div.html(d.title + ":" + d.measurement +  "<br/>Workplace Mobility:" + d.avg_workplace + "<br/>Rec Mobility:" + d.avg_recreation + "<br/>Residential Mobility:" + d.avg_residential)
                     .style("left", (d3.event.pageX) + "px")
                     .style("top", (d3.event.pageY - 28) + "px");
             })
