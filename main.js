@@ -818,7 +818,7 @@ function draw_plot(data){
                 div.transition()
                     .duration(200)
                     .style("opacity", .9);
-                div.html(d.title + " Pop:" + d.total_pop + "<br/> Value: " + d.measurement +  "<br/>Workplace Mobility:" + d.avg_workplace + "<br/>Rec Mobility:" + d.avg_recreation + "<br/>Residential Mobility:" + d.avg_residential)
+                div.html("<div class='bubble-title'>"+d.title + "</div> Pop:" + d.total_pop + "<br/> Value: " + d.measurement +  "<br/>Workplace Mobility:" + d.avg_workplace + "<br/>Rec Mobility:" + d.avg_recreation + "<br/>Residential Mobility:" + d.avg_residential)
                     .style("left", (d3.event.pageX) + "px")
                     .style("top", (d3.event.pageY - 28) + "px");
             })
