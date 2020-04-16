@@ -55,7 +55,8 @@ function build_map(primary_var){
     let Filtered = null;
     if(viz.active_state!=0){
         Filtered = viz.itemList[viz.active_day].filter(function (el) {
-            return el.state == parseInt(viz.active_state);
+            return viz.active_state.indexOf(parseInt(el.state)) !=-1;
+
         });
     }
     else{
@@ -71,6 +72,7 @@ function build_map(primary_var){
             if (viz.color_range==0){
                 map
                     .data(Filtered)
+                    .colorScaleConfig({color: ["green", "orange"]})
                     .fitFilter(function(d) {
                       const state = parseInt(d.id.split('US')[1].substring(0, 2));
                         if( viz.active_state!=0  ){
@@ -86,6 +88,7 @@ function build_map(primary_var){
             else{
                 map
                     .data(Filtered)
+                    .colorScaleConfig({color: ["green", "orange"]})
                     .label(function(d) {
                         var text =  "<b class='p-head'>"+ d.County + "</b><span class='p-other'>" + "</br>% Change: "+ d.Percent_Change +"</br>Confirmed: "  + d.Confirmed +  "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death + "<BR/>Fatality Rate: " + d.Fatality_Rate +  "<BR/>Population: "+ d.TotalPop + mobility + "</br>Gini Index: " + d.IncomeIneq + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>UnInsured 35to64 10k: " + d.insured35to64_per10k + "</span>" ;
                         return text;
@@ -114,6 +117,7 @@ function build_map(primary_var){
         if (viz.color_range==0){
             map
                 .data(Filtered)
+                .colorScaleConfig({color: ["green", "orange"]})
                 .fitFilter(function(d) {
                       const state = parseInt(d.id.split('US')[1].substring(0, 2));
                       if( viz.active_state!=0  ){
@@ -129,6 +133,7 @@ function build_map(primary_var){
         else{
             map
                 .data(Filtered)
+                .colorScaleConfig({color: ["green", "orange"]})
                 .fitFilter(function(d) {
                       const state = parseInt(d.id.split('US')[1].substring(0, 2));
                       if( viz.active_state!=0  ){
