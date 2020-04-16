@@ -397,6 +397,7 @@ d3.csv("us-state-fips.csv").then(function(data) {
 
     select
         .attr('multiple', '')
+        .attr('title', 'This is a filter for map values or charts below')
         .on("change", function(d) {
             var values = [];
             selected = d3.select(this) // select the select
