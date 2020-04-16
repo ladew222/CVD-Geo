@@ -35,7 +35,7 @@ var viz = {
     start_date: null,
     end_date:null,
     plot_count:0,
-    plot_type:'Confirmed_total',
+    plot_type:'total_confirmed',
     plot_x:0,
     nested_data:null,
     state_lookup:null
@@ -626,7 +626,7 @@ function draw_plot(data){
         let slices2 = element.values.map(function(d){
             return {
                 date: timeConv(d.key),
-                measurement: d.value.total_confirmed,
+                measurement: d.value[viz.plot_type],
                 avg_residential: Math.round(d.value.avg_residential),
                 avg_workplace: Math.round(d.value.avg_workplace),
                 avg_recreation:  Math.round(d.value.avg_recreation)
@@ -727,7 +727,7 @@ function draw_plot(data){
         .attr("dy", ".75em")
         .attr("y", 6)
         .style("text-anchor", "end")
-        .text("Frequency");
+        .text(viz.plot_type);
 
     const lines = svg.selectAll("lines")
         .data(slices)
