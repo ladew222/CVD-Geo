@@ -508,13 +508,12 @@ function plot(type){
                 total_confirmed: d3.sum(v, function(d) { return d.Confirmed; }),
                 total_death: d3.sum(v, function(d) { return d.Death; }),
                 total_pop: d3.sum(v, function(d) { return d.TotalPop; }),
-                total_confirmed_per10k: ((d3.sum(v, function(d) { return d.TotalPop; }))/10000)/d3.sum(v, function(d) { return d.ConfirmedPer10K }),
+                total_confirmed_per10k: (d3.sum(v, function(d) { return d.Confirmed; }) > 0) ? ((d3.sum(v, function(d) { return d.TotalPop; }))/10000)/d3.sum(v, function(d) { return d.Confirmed }):0,
                 log_total_death: d3.sum(v, function(d) { return Math.log10(d.Death); }),
                 log_total_confirmed: d3.sum(v, function(d) { return Math.log10(d.Confirmed); }),
                 avg_confirmed: d3.mean(v, function(d) { return d.Confirmed; }),
                 avg_residential: d3.mean(v, function(d) { return d.Residential; }),
                 avg_workplace: d3.mean(v, function(d) { return d.Workplace; }),
-                total_confirmed_per10k: d3.sum(v, function(d) { return d.ConfirmedPer10K }),
                 avg_recreation: d3.mean(v, function(d) { return d['Retail & recreation']; })
             }; })
             .key(function(d) { return d.day; })
