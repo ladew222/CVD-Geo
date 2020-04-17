@@ -996,7 +996,7 @@ function get_data(day_num){
                 cvItem.Death = parseFloat(cvItem.Death);
                 cvItem.Fatality_Rate = parseFloat(cvItem.Fatality_Rate);
                 result[0].TotalPop = parseFloat(result[0].TotalPop);
-                result[0].ConfirmedPer10K=((result[0].TotalPop/10000)/cvItem.Confirmed);
+                result[0].ConfirmedPer10K= (cvItem.Confirmed>0)?((result[0].TotalPop/10000)/cvItem.Confirmed):0;
                 //result[0].ConfirmedPer10K=Number(((((result[0].Confirmed/result[0].TotalPop)*10000) * 100) / 100).toFixed(3));
                 result[0].TotalPop = parseFloat(result[0].TotalPop);
                 result[0].IncomeIneq = parseFloat(result[0].IncomeIneq);
