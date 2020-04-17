@@ -41,6 +41,16 @@ var viz = {
     state_lookup:null,
     plot_details: false
 };
+["#14BF00", "#3FB800","#6AB100","#95AA00","#AAA600","#D59F00","#EB9C00"]
+
+Color_Scale = {
+    color:(["#357004","#598807","#9fad0d","#b9b910","#d1af15","#dea718","#ea9e1c","#f6931f"]),
+    scale: "jenks",
+    tickSize: 0,
+    titleConfig: {
+        textTransform: "uppercase"
+    }
+}
 
 const map = new d3plus.Geomap()
     .config(config_new)
@@ -75,7 +85,7 @@ function build_map(primary_var){
             if (viz.color_range==0){
                 map
                     .data(Filtered)
-                    .colorScaleConfig({scale: "jenks"})
+                    .colorScaleConfig(Color_Scale)
                     .fitFilter(function(d) {
                       const state = parseInt(d.id.split('US')[1].substring(0, 2));
                         if( viz.active_state!=0  ){
@@ -91,20 +101,7 @@ function build_map(primary_var){
             else{
                 map
                     .data(Filtered)
-                    .colorScaleConfig({scale: "jenks"})
-                    .label(function(d) {
-                        var text =  "<b class='p-head'>"+ d.County + "</b><span class='p-other'>" + "</br>% Change: "+ d.Percent_Change +"</br>Confirmed: "  + d.Confirmed +  "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death + "<BR/>Fatality Rate: " + d.Fatality_Rate +  "<BR/>Population: "+ d.TotalPop + mobility + "</br>Gini Index: " + d.IncomeIneq + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>UnInsured 35to64 10k: " + d.insured35to64_per10k + "</span>" ;
-                        return text;
-                    })
-                    .fitFilter(function(d) {
-                        const state = parseInt(d.id.split('US')[1].substring(0, 2));
-                        if( viz.active_state!=0  ){
-                            return [ viz.active_state].indexOf(state)<0;
-                        }
-                        else{
-                            return true;
-                        }
-                    })
+                    .colorScaleConfig(Color_Scale)
                     .colorScale(primary_var)
                     .colorScaleConfig({scale: "jenks"})
                     .render();
@@ -118,7 +115,7 @@ function build_map(primary_var){
         if (viz.color_range==0){
             map
                 .data(Filtered)
-                .colorScaleConfig({scale: "jenks"})
+                .colorScaleConfig(Color_Scale)
                 .fitFilter(function(d) {
                       const state = parseInt(d.id.split('US')[1].substring(0, 2));
                       if( viz.active_state!=0  ){
@@ -134,7 +131,7 @@ function build_map(primary_var){
         else{
             map
                 .data(Filtered)
-                .colorScaleConfig({scale: "jenks"})
+                .colorScaleConfig(Color_Scale)
                 .fitFilter(function(d) {
                       const state = parseInt(d.id.split('US')[1].substring(0, 2));
                       if( viz.active_state!=0  ){
@@ -145,7 +142,7 @@ function build_map(primary_var){
                       }
                 })
                 .colorScale(primary_var)
-                .colorScaleConfig({scale: "jenks"})
+                .colorScaleConfig(Color_Scale)
                 .render();
         }
 
