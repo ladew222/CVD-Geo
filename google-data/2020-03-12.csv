@@ -1,0 +1,491 @@
+"","country_region_code","country_region","state","county","date","retail_and_recreation_percent_change_from_baseline","grocery_and_pharmacy_percent_change_from_baseline","parks_percent_change_from_baseline","transit_stations_percent_change_from_baseline","workplaces_percent_change_from_baseline","residential_percent_change_from_baseline","fips"
+"67290","US","United States","Alabama","Baldwin","2020-03-12",15,28,65,17,3,-2,1003
+"68142","US","United States","Alabama","Colbert","2020-03-12",11,16,-16,19,3,-2,1033
+"68410","US","United States","Alabama","Cullman","2020-03-12",9,28,33,15,3,-1,1043
+"69264","US","United States","Alabama","Jefferson","2020-03-12",8,26,44,-3,1,-1,1073
+"69719","US","United States","Alabama","Madison","2020-03-12",7,31,27,4,2,0,1089
+"69947","US","United States","Alabama","Mobile","2020-03-12",13,21,41,9,0,-1,1097
+"70061","US","United States","Alabama","Montgomery","2020-03-12",13,22,39,18,2,-1,1101
+"70118","US","United States","Alabama","Morgan","2020-03-12",9,29,62,14,2,-1,1103
+"70730","US","United States","Alabama","Tuscaloosa","2020-03-12",14,24,48,12,1,-1,1125
+"71058","US","United States","Alaska","Anchorage","2020-03-12",10,24,10,-3,-9,3,2020
+"71662","US","United States","Arizona","Apache","2020-03-12",15,29,49,19,-7,1,4001
+"71719","US","United States","Arizona","Cochise","2020-03-12",8,10,-13,-3,-5,1,4003
+"71776","US","United States","Arizona","Coconino","2020-03-12",28,43,66,16,1,-1,4005
+"72060","US","United States","Arizona","Maricopa","2020-03-12",5,15,-22,-9,-14,5,4013
+"72117","US","United States","Arizona","Mohave","2020-03-12",1,8,-34,8,-9,3,4015
+"72174","US","United States","Arizona","Navajo","2020-03-12",17,25,30,10,-3,0,4017
+"72231","US","United States","Arizona","Pima","2020-03-12",5,18,-9,-5,-4,1,4019
+"72288","US","United States","Arizona","Pinal","2020-03-12",13,7,-17,0,-12,3,4021
+"72345","US","United States","Arizona","Santa Cruz","2020-03-12",0,7,0,13,-19,3,4023
+"72402","US","United States","Arizona","Yavapai","2020-03-12",4,19,-5,4,-16,3,4025
+"72459","US","United States","Arizona","Yuma","2020-03-12",9,21,-35,12,-4,4,4027
+"72744","US","United States","Arkansas","Benton","2020-03-12",13,36,182,-14,1,-1,5007
+"75586","US","United States","Arkansas","Pulaski","2020-03-12",11,45,38,-8,1,-1,5119
+"75700","US","United States","Arkansas","Saline","2020-03-12",21,35,16,5,2,-1,5125
+"76237","US","United States","Arkansas","Washington","2020-03-12",15,37,169,9,0,-2,5143
+"76465","US","United States","California","Alameda","2020-03-12",-1,16,26,-25,-16,7,6001
+"76579","US","United States","California","Butte","2020-03-12",6,14,32,-2,0,-1,6007
+"76750","US","United States","California","Contra Costa","2020-03-12",4,20,27,-19,-6,3,6013
+"76921","US","United States","California","Fresno","2020-03-12",7,19,11,2,0,0,6019
+"77035","US","United States","California","Humboldt","2020-03-12",2,11,28,-24,1,0,6023
+"77092","US","United States","California","Imperial","2020-03-12",2,8,-34,-21,-5,5,6025
+"77206","US","United States","California","Kern","2020-03-12",10,22,10,3,1,0,6029
+"77263","US","United States","California","Kings","2020-03-12",9,20,24,-8,-1,0,6031
+"77320","US","United States","California","Lake","2020-03-12",3,17,47,-12,1,0,6033
+"77434","US","United States","California","Los Angeles","2020-03-12",-8,12,-35,-19,-3,4,6037
+"77491","US","United States","California","Madera","2020-03-12",8,4,51,22,-1,0,6039
+"77548","US","United States","California","Marin","2020-03-12",0,21,20,-14,-9,4,6041
+"77719","US","United States","California","Merced","2020-03-12",8,17,65,7,3,-1,6047
+"77873","US","United States","California","Monterey","2020-03-12",9,21,25,6,1,0,6053
+"77987","US","United States","California","Nevada","2020-03-12",5,14,51,-40,-1,1,6057
+"78044","US","United States","California","Orange","2020-03-12",-5,10,-40,-21,-3,5,6059
+"78101","US","United States","California","Placer","2020-03-12",1,22,35,15,-2,1,6061
+"78215","US","United States","California","Riverside","2020-03-12",-6,7,-48,-11,-3,4,6065
+"78272","US","United States","California","Sacramento","2020-03-12",2,18,34,-9,-4,1,6067
+"78386","US","United States","California","San Bernardino","2020-03-12",-6,6,-29,-13,-3,3,6071
+"78443","US","United States","California","San Diego","2020-03-12",-3,8,-31,-19,-4,4,6073
+"78500","US","United States","California","San Francisco","2020-03-12",-17,16,-4,-35,-32,14,6075
+"78557","US","United States","California","San Joaquin","2020-03-12",9,14,27,2,-3,0,6077
+"78614","US","United States","California","San Luis Obispo","2020-03-12",2,16,13,-8,0,1,6079
+"78671","US","United States","California","San Mateo","2020-03-12",-3,20,24,-32,-23,10,6081
+"78728","US","United States","California","Santa Barbara","2020-03-12",2,21,-4,-5,-3,2,6083
+"78785","US","United States","California","Santa Clara","2020-03-12",-4,16,42,-37,-27,11,6085
+"78842","US","United States","California","Santa Cruz","2020-03-12",4,24,34,-11,-8,4,6087
+"78899","US","United States","California","Shasta","2020-03-12",5,21,45,2,0,-1,6089
+"79013","US","United States","California","Solano","2020-03-12",5,22,22,-2,0,1,6095
+"79070","US","United States","California","Sonoma","2020-03-12",3,16,28,-5,-1,0,6097
+"79127","US","United States","California","Stanislaus","2020-03-12",7,17,33,2,0,0,6099
+"79354","US","United States","California","Tulare","2020-03-12",6,29,24,7,0,0,6107
+"79468","US","United States","California","Ventura","2020-03-12",-4,13,-34,-11,-1,3,6111
+"79525","US","United States","California","Yolo","2020-03-12",6,12,37,-3,-4,2,6113
+"79582","US","United States","California","Yuba","2020-03-12",5,16,41,6,0,-1,6115
+"79696","US","United States","Colorado","Adams","2020-03-12",6,31,5,0,0,0,8001
+"79810","US","United States","Colorado","Arapahoe","2020-03-12",7,25,26,4,-1,1,8005
+"79927","US","United States","Colorado","Boulder","2020-03-12",3,28,14,-12,-6,3,8013
+"79984","US","United States","Colorado","Broomfield","2020-03-12",12,23,14,-12,-6,4,8014
+"80249","US","United States","Colorado","Denver","2020-03-12",2,32,31,-18,-4,2,8031
+"80306","US","United States","Colorado","Douglas","2020-03-12",8,35,32,-15,-3,2,8035
+"80363","US","United States","Colorado","Eagle","2020-03-12",2,20,12,-7,-1,2,8037
+"80420","US","United States","Colorado","El Paso","2020-03-12",10,25,50,-1,0,-1,8041
+"80858","US","United States","Colorado","Jefferson","2020-03-12",9,18,14,2,-2,1,8059
+"81087","US","United States","Colorado","Larimer","2020-03-12",6,30,12,-2,0,1,8069
+"81315","US","United States","Colorado","Mesa","2020-03-12",13,26,81,11,-8,0,8077
+"81834","US","United States","Colorado","Pueblo","2020-03-12",9,29,-51,14,1,-1,8101
+"82208","US","United States","Colorado","Weld","2020-03-12",7,35,13,3,0,0,8123
+"82378","US","United States","Connecticut","Fairfield","2020-03-12",1,34,7,-17,-8,4,9001
+"82435","US","United States","Connecticut","Hartford","2020-03-12",6,36,10,-6,0,1,9003
+"82549","US","United States","Connecticut","Middlesex","2020-03-12",10,32,16,-17,-1,1,9007
+"82606","US","United States","Connecticut","New Haven","2020-03-12",8,35,9,-5,-2,1,9009
+"82663","US","United States","Connecticut","New London","2020-03-12",5,26,12,-10,-1,0,9011
+"82777","US","United States","Connecticut","Windham","2020-03-12",17,30,16,-17,3,0,9015
+"82948","US","United States","Delaware","New Castle","2020-03-12",8,20,12,0,-3,1,10003
+"83005","US","United States","Delaware","Sussex","2020-03-12",12,19,23,4,1,0,10005
+"83176","US","United States","Florida","Alachua","2020-03-12",5,13,21,0,-1,1,12001
+"83290","US","United States","Florida","Bay","2020-03-12",15,17,34,12,5,-1,12005
+"83404","US","United States","Florida","Brevard","2020-03-12",8,12,28,24,0,0,12009
+"83461","US","United States","Florida","Broward","2020-03-12",2,24,2,-10,0,1,12011
+"83574","US","United States","Florida","Charlotte","2020-03-12",3,12,30,18,-3,0,12015
+"83745","US","United States","Florida","Collier","2020-03-12",3,14,3,-2,-13,3,12021
+"83973","US","United States","Florida","Duval","2020-03-12",5,9,37,1,-13,1,12031
+"84030","US","United States","Florida","Escambia","2020-03-12",11,13,63,1,2,-1,12033
+"84600","US","United States","Florida","Hernando","2020-03-12",7,17,21,-10,-1,0,12053
+"84714","US","United States","Florida","Hillsborough","2020-03-12",5,15,10,-4,-1,1,12057
+"84828","US","United States","Florida","Indian River","2020-03-12",5,18,25,4,0,0,12061
+"85035","US","United States","Florida","Lake","2020-03-12",11,18,16,3,-1,-1,12069
+"85092","US","United States","Florida","Lee","2020-03-12",5,15,11,1,-1,1,12071
+"85149","US","United States","Florida","Leon","2020-03-12",7,13,20,-11,-1,0,12073
+"85361","US","United States","Florida","Manatee","2020-03-12",6,15,31,4,0,0,12081
+"85418","US","United States","Florida","Marion","2020-03-12",8,14,23,31,2,-1,12083
+"85475","US","United States","Florida","Martin","2020-03-12",3,13,22,4,-2,1,12085
+"85532","US","United States","Florida","Miami-Dade","2020-03-12",1,24,-3,-11,0,1,12086
+"85589","US","United States","Florida","Monroe","2020-03-12",2,16,1,-4,-1,-1,12087
+"85646","US","United States","Florida","Nassau","2020-03-12",12,15,30,5,-2,0,12089
+"85703","US","United States","Florida","Okaloosa","2020-03-12",16,14,64,9,0,-1,12091
+"85760","US","United States","Florida","Okeechobee","2020-03-12",10,10,9,-15,0,0,12093
+"85817","US","United States","Florida","Orange","2020-03-12",3,13,16,-8,-3,0,12095
+"85874","US","United States","Florida","Osceola","2020-03-12",9,20,10,-3,-2,0,12097
+"85931","US","United States","Florida","Palm Beach","2020-03-12",3,19,6,-10,-1,1,12099
+"85988","US","United States","Florida","Pasco","2020-03-12",9,11,10,12,0,0,12101
+"86045","US","United States","Florida","Pinellas","2020-03-12",5,18,33,2,-1,0,12103
+"86102","US","United States","Florida","Polk","2020-03-12",8,15,13,5,1,-1,12105
+"86273","US","United States","Florida","Sarasota","2020-03-12",4,10,25,2,-7,2,12115
+"86330","US","United States","Florida","Seminole","2020-03-12",6,23,24,-1,-2,0,12117
+"86387","US","United States","Florida","St. Johns","2020-03-12",18,26,59,24,-4,0,12109
+"86444","US","United States","Florida","St. Lucie","2020-03-12",7,25,15,5,1,0,12111
+"86501","US","United States","Florida","Sumter","2020-03-12",6,19,-18,13,-8,0,12119
+"86728","US","United States","Florida","Volusia","2020-03-12",27,24,61,19,-4,-1,12127
+"86842","US","United States","Florida","Walton","2020-03-12",28,22,50,20,7,-2,12131
+"87351","US","United States","Georgia","Bartow","2020-03-12",5,41,14,9,1,0,13015
+"87522","US","United States","Georgia","Bibb","2020-03-12",9,14,22,27,1,-1,13021
+"87977","US","United States","Georgia","Camden","2020-03-12",12,18,26,25,0,0,13039
+"88260","US","United States","Georgia","Chatham","2020-03-12",10,19,49,6,0,-1,13051
+"88487","US","United States","Georgia","Clarke","2020-03-12",-2,18,20,-10,-19,2,13059
+"88544","US","United States","Georgia","Clayton","2020-03-12",14,22,13,-17,-1,-1,13063
+"88622","US","United States","Georgia","Cobb","2020-03-12",7,47,19,10,-2,1,13067
+"88793","US","United States","Georgia","Columbia","2020-03-12",9,17,41,8,0,-1,13073
+"89235","US","United States","Georgia","DeKalb","2020-03-12",6,28,14,-6,-3,1,13089
+"89463","US","United States","Georgia","Douglas","2020-03-12",15,38,17,6,-1,0,13097
+"90088","US","United States","Georgia","Fulton","2020-03-12",2,21,8,-6,-6,2,13121
+"90202","US","United States","Georgia","Glynn","2020-03-12",12,45,45,21,-1,-1,13127
+"90430","US","United States","Georgia","Gwinnett","2020-03-12",8,37,34,-9,0,0,13135
+"90648","US","United States","Georgia","Haralson","2020-03-12",24,29,16,5,0,-2,13143
+"91814","US","United States","Georgia","Lowndes","2020-03-12",14,19,35,7,0,-1,13185
+"92569","US","United States","Georgia","Muscogee","2020-03-12",12,20,48,-19,0,-1,13215
+"93328","US","United States","Georgia","Richmond","2020-03-12",10,16,22,3,1,-1,13245
+"94891","US","United States","Georgia","Whitfield","2020-03-12",10,20,-10,5,1,0,13313
+"95221","US","United States","Hawaii","Hawaii","2020-03-12",0,3,12,-6,-3,1,15001
+"95278","US","United States","Hawaii","Honolulu","2020-03-12",-2,5,-19,-12,-1,2,15003
+"95335","US","United States","Hawaii","Kauai","2020-03-12",-1,1,-8,0,-1,0,15007
+"95392","US","United States","Hawaii","Maui","2020-03-12",1,5,-3,-1,-2,1,15009
+"95506","US","United States","Idaho","Ada","2020-03-12",7,26,82,-4,1,-1,16001
+"95911","US","United States","Idaho","Bonneville","2020-03-12",11,41,49,4,1,-2,16019
+"96021","US","United States","Idaho","Canyon","2020-03-12",9,21,56,7,2,-2,16027
+"96669","US","United States","Idaho","Kootenai","2020-03-12",9,20,100,14,2,-1,16055
+"97907","US","United States","Illinois","Champaign","2020-03-12",17,40,8,0,-3,1,17019
+"98249","US","United States","Illinois","Cook","2020-03-12",6,30,18,-8,-2,1,17031
+"98591","US","United States","Illinois","DuPage","2020-03-12",6,41,13,-13,-2,2,17043
+"99724","US","United States","Illinois","Kane","2020-03-12",6,39,34,-5,0,0,17089
+"99952","US","United States","Illinois","Lake","2020-03-12",8,50,22,-7,0,1,17097
+"100408","US","United States","Illinois","Madison","2020-03-12",8,13,3,2,-2,2,17119
+"100737","US","United States","Illinois","McHenry","2020-03-12",10,43,33,-11,0,1,17111
+"100794","US","United States","Illinois","McLean","2020-03-12",4,46,-22,-6,-4,0,17113
+"101228","US","United States","Illinois","Peoria","2020-03-12",10,35,11,5,1,0,17143
+"101618","US","United States","Illinois","Rock Island","2020-03-12",1,24,2,-2,-3,1,17161
+"101732","US","United States","Illinois","Sangamon","2020-03-12",7,41,17,0,0,1,17167
+"101888","US","United States","Illinois","St. Clair","2020-03-12",7,31,0,-7,-1,1,17163
+"102534","US","United States","Illinois","Will","2020-03-12",8,36,36,-5,0,0,17197
+"102648","US","United States","Illinois","Winnebago","2020-03-12",8,26,15,4,1,0,17201
+"102876","US","United States","Indiana","Allen","2020-03-12",5,18,38,3,0,0,18003
+"103315","US","United States","Indiana","Clark","2020-03-12",2,32,19,1,1,2,18019
+"105310","US","United States","Indiana","Lake","2020-03-12",11,24,49,6,1,0,18089
+"105367","US","United States","Indiana","LaPorte","2020-03-12",14,22,46,7,1,-1,18091
+"105538","US","United States","Indiana","Marion","2020-03-12",6,21,13,-5,-2,0,18097
+"106358","US","United States","Indiana","Porter","2020-03-12",11,26,76,6,1,-1,18127
+"106927","US","United States","Indiana","St. Joseph","2020-03-12",10,23,63,5,-1,1,18141
+"108277","US","United States","Iowa","Black Hawk","2020-03-12",8,14,11,6,-1,0,19013
+"109581","US","United States","Iowa","Dubuque","2020-03-12",5,31,-4,-40,-1,1,19061
+"110699","US","United States","Iowa","Johnson","2020-03-12",2,6,25,13,-1,1,19103
+"110967","US","United States","Iowa","Linn","2020-03-12",4,38,22,-3,-1,1,19113
+"111988","US","United States","Iowa","Polk","2020-03-12",2,29,35,0,0,0,19153
+"112199","US","United States","Iowa","Scott","2020-03-12",4,21,32,6,0,0,19163
+"114005","US","United States","Kansas","Douglas","2020-03-12",7,20,33,-6,-17,3,20045
+"114651","US","United States","Kansas","Johnson","2020-03-12",5,30,66,10,-1,1,20091
+"115954","US","United States","Kansas","Sedgwick","2020-03-12",13,19,59,5,1,-2,20173
+"116068","US","United States","Kansas","Shawnee","2020-03-12",10,22,80,39,-16,2,20177
+"116450","US","United States","Kansas","Wyandotte","2020-03-12",9,28,47,11,1,-1,20209
+"116928","US","United States","Kentucky","Boone","2020-03-12",4,27,13,-2,0,1,21015
+"118144","US","United States","Kentucky","Fayette","2020-03-12",-2,23,12,-5,-1,2,21067
+"119267","US","United States","Kentucky","Jefferson","2020-03-12",-2,26,-1,-3,-3,2,21111
+"119437","US","United States","Kentucky","Kenton","2020-03-12",6,23,45,-3,-1,1,21117
+"119621","US","United States","Kentucky","Laurel","2020-03-12",8,19,25,8,-10,3,21125
+"122827","US","United States","Louisiana","Caddo","2020-03-12",13,29,58,4,0,-2,22017
+"122884","US","United States","Louisiana","Calcasieu","2020-03-12",11,18,32,6,1,-1,22019
+"123266","US","United States","Louisiana","East Baton Rouge","2020-03-12",10,24,27,5,1,-1,22033
+"123777","US","United States","Louisiana","Jefferson","2020-03-12",7,33,46,-9,2,0,22051
+"123890","US","United States","Louisiana","Lafayette","2020-03-12",10,20,41,2,1,-1,22055
+"124289","US","United States","Louisiana","Orleans","2020-03-12",10,25,36,6,-2,1,22071
+"125154","US","United States","Louisiana","St. Tammany","2020-03-12",9,32,21,8,1,0,22103
+"126006","US","United States","Maine","Cumberland","2020-03-12",8,32,4,-1,1,0,23005
+"126177","US","United States","Maine","Kennebec","2020-03-12",14,28,13,18,4,0,23011
+"126405","US","United States","Maine","Penobscot","2020-03-12",11,36,25,21,3,0,23019
+"126747","US","United States","Maine","York","2020-03-12",9,31,37,5,1,0,23031
+"126918","US","United States","Maryland","Anne Arundel","2020-03-12",8,19,30,-11,-1,0,24003
+"126975","US","United States","Maryland","Baltimore","2020-03-12",7,12,28,-1,-1,0,24005
+"127032","US","United States","Maryland","Baltimore","2020-03-12",10,22,26,-4,0,0,24005
+"127203","US","United States","Maryland","Carroll","2020-03-12",14,19,45,10,1,0,24013
+"127431","US","United States","Maryland","Frederick","2020-03-12",10,29,65,3,1,0,24021
+"127545","US","United States","Maryland","Harford","2020-03-12",9,18,38,8,0,0,24025
+"127602","US","United States","Maryland","Howard","2020-03-12",6,22,50,3,-3,2,24027
+"127716","US","United States","Maryland","Montgomery","2020-03-12",4,20,36,-14,-4,3,24031
+"127773","US","United States","Maryland","Prince George's","2020-03-12",8,18,32,-9,-1,1,24033
+"128058","US","United States","Maryland","Washington","2020-03-12",13,16,90,1,1,-1,24043
+"128286","US","United States","Massachusetts","Barnstable","2020-03-12",6,25,42,3,0,0,25001
+"128343","US","United States","Massachusetts","Berkshire","2020-03-12",3,23,20,8,-1,2,25003
+"128400","US","United States","Massachusetts","Bristol","2020-03-12",10,30,4,-2,0,1,25005
+"128514","US","United States","Massachusetts","Essex","2020-03-12",11,34,23,-11,-2,1,25009
+"128628","US","United States","Massachusetts","Hampden","2020-03-12",8,28,19,2,1,0,25013
+"128742","US","United States","Massachusetts","Middlesex","2020-03-12",5,39,17,-28,-11,6,25017
+"128856","US","United States","Massachusetts","Norfolk","2020-03-12",8,42,22,-20,-8,4,25021
+"128913","US","United States","Massachusetts","Plymouth","2020-03-12",10,33,38,-15,0,1,25023
+"128970","US","United States","Massachusetts","Suffolk","2020-03-12",-8,28,1,-21,-10,5,25025
+"129027","US","United States","Massachusetts","Worcester","2020-03-12",11,31,4,-2,-2,1,25027
+"129649","US","United States","Michigan","Berrien","2020-03-12",13,30,68,15,0,-1,26021
+"129763","US","United States","Michigan","Calhoun","2020-03-12",9,22,24,8,1,0,26025
+"130447","US","United States","Michigan","Genesee","2020-03-12",8,26,38,11,1,0,26049
+"130618","US","United States","Michigan","Grand Traverse","2020-03-12",11,23,27,-1,4,0,26055
+"130903","US","United States","Michigan","Ingham","2020-03-12",4,21,41,-7,-2,2,26065
+"131244","US","United States","Michigan","Kalamazoo","2020-03-12",12,24,48,-2,-2,1,26077
+"131358","US","United States","Michigan","Kent","2020-03-12",10,31,67,-1,0,0,26081
+"131750","US","United States","Michigan","Macomb","2020-03-12",8,34,51,3,1,1,26099
+"132200","US","United States","Michigan","Monroe","2020-03-12",9,35,23,7,3,0,26115
+"132484","US","United States","Michigan","Oakland","2020-03-12",2,34,24,3,-2,2,26125
+"132819","US","United States","Michigan","Ottawa","2020-03-12",11,27,65,4,-2,0,26139
+"133190","US","United States","Michigan","St. Clair","2020-03-12",7,22,9,10,3,0,26147
+"133418","US","United States","Michigan","Washtenaw","2020-03-12",5,14,28,-12,-8,4,26161
+"133475","US","United States","Michigan","Wayne","2020-03-12",8,31,19,1,-1,0,26163
+"133703","US","United States","Minnesota","Anoka","2020-03-12",5,13,-6,-10,-4,2,27003
+"134574","US","United States","Minnesota","Dakota","2020-03-12",7,15,-5,-8,-2,2,27037
+"135012","US","United States","Minnesota","Hennepin","2020-03-12",3,15,-2,-8,-4,2,27053
+"136373","US","United States","Minnesota","Olmsted","2020-03-12",1,13,0,-15,-2,2,27109
+"136757","US","United States","Minnesota","Ramsey","2020-03-12",-2,11,-16,-9,-10,3,27123
+"137258","US","United States","Minnesota","St. Louis","2020-03-12",5,9,-19,-12,-5,1,27137
+"137315","US","United States","Minnesota","Stearns","2020-03-12",5,19,-49,-31,-3,1,27145
+"137756","US","United States","Minnesota","Washington","2020-03-12",4,9,-14,-5,-14,3,27163
+"138897","US","United States","Mississippi","DeSoto","2020-03-12",14,44,24,4,-14,1,28033
+"139238","US","United States","Mississippi","Harrison","2020-03-12",16,26,40,9,2,-1,28047
+"139502","US","United States","Mississippi","Jackson","2020-03-12",15,27,34,23,-2,-1,28059
+"139874","US","United States","Mississippi","Lauderdale","2020-03-12",8,23,22,19,-16,1,28075
+"142798","US","United States","Missouri","Boone","2020-03-12",5,20,10,-12,0,2,29019
+"143460","US","United States","Missouri","Clay","2020-03-12",8,31,42,4,0,0,29047
+"144105","US","United States","Missouri","Franklin","2020-03-12",10,23,6,4,4,0,29071
+"144222","US","United States","Missouri","Greene","2020-03-12",11,19,50,9,4,-1,29077
+"144638","US","United States","Missouri","Jackson","2020-03-12",8,24,6,-1,0,0,29095
+"144695","US","United States","Missouri","Jasper","2020-03-12",15,25,84,13,1,-2,29097
+"144752","US","United States","Missouri","Jefferson","2020-03-12",9,14,11,30,2,1,29099
+"146433","US","United States","Missouri","Platte","2020-03-12",5,37,33,-7,-3,1,29165
+"146982","US","United States","Missouri","St. Charles","2020-03-12",4,25,-5,18,-4,2,29183
+"147145","US","United States","Missouri","St. Louis","2020-03-12",-2,11,1,-6,-3,2,29189
+"147202","US","United States","Missouri","St. Louis","2020-03-12",1,22,13,-12,-2,2,29189
+"148496","US","United States","Montana","Flathead","2020-03-12",9,10,-5,1,1,0,30029
+"148553","US","United States","Montana","Gallatin","2020-03-12",7,18,13,5,0,-1,30031
+"149011","US","United States","Montana","Missoula","2020-03-12",10,20,26,8,-2,-1,30063
+"149555","US","United States","Montana","Yellowstone","2020-03-12",12,24,42,4,1,-1,30111
+"150612","US","United States","Nebraska","Douglas","2020-03-12",6,24,29,-2,-7,2,31055
+"151173","US","United States","Nebraska","Lancaster","2020-03-12",10,20,30,2,-10,3,31109
+"151828","US","United States","Nebraska","Sarpy","2020-03-12",12,30,66,13,-4,1,31153
+"152472","US","United States","Nevada","Clark","2020-03-12",2,10,-8,-12,-2,1,32003
+"152950","US","United States","Nevada","Washoe","2020-03-12",6,23,38,-1,0,0,32031
+"153349","US","United States","New Hampshire","Grafton","2020-03-12",4,21,-11,0,0,1,33009
+"153406","US","United States","New Hampshire","Hillsborough","2020-03-12",8,31,28,-7,1,1,33011
+"153463","US","United States","New Hampshire","Merrimack","2020-03-12",6,26,-2,2,1,1,33013
+"153520","US","United States","New Hampshire","Rockingham","2020-03-12",10,47,35,3,0,1,33015
+"153748","US","United States","New Jersey","Atlantic","2020-03-12",9,21,21,-1,0,0,34001
+"153805","US","United States","New Jersey","Bergen","2020-03-12",1,39,22,-13,-8,5,34003
+"153862","US","United States","New Jersey","Burlington","2020-03-12",8,20,21,-4,-2,1,34005
+"153919","US","United States","New Jersey","Camden","2020-03-12",7,14,25,-3,-2,1,34007
+"153976","US","United States","New Jersey","Cape May","2020-03-12",13,15,16,2,2,0,34009
+"154090","US","United States","New Jersey","Essex","2020-03-12",3,24,13,-20,-4,2,34013
+"154147","US","United States","New Jersey","Gloucester","2020-03-12",7,22,33,7,0,1,34015
+"154204","US","United States","New Jersey","Hudson","2020-03-12",7,39,0,-20,-12,5,34017
+"154318","US","United States","New Jersey","Mercer","2020-03-12",5,17,32,-22,-6,3,34021
+"154375","US","United States","New Jersey","Middlesex","2020-03-12",4,27,8,-19,-9,5,34023
+"154432","US","United States","New Jersey","Monmouth","2020-03-12",8,23,12,-15,-5,3,34025
+"154489","US","United States","New Jersey","Morris","2020-03-12",6,37,9,-15,-5,3,34027
+"154546","US","United States","New Jersey","Ocean","2020-03-12",7,23,18,11,1,1,34029
+"154603","US","United States","New Jersey","Passaic","2020-03-12",6,27,24,-4,-2,1,34031
+"154660","US","United States","New Jersey","Salem","2020-03-12",9,17,27,8,0,0,34033
+"154717","US","United States","New Jersey","Somerset","2020-03-12",8,31,13,-15,-7,5,34035
+"154831","US","United States","New Jersey","Union","2020-03-12",5,29,13,-13,-4,2,34039
+"154888","US","United States","New Jersey","Warren","2020-03-12",11,16,17,-6,-1,1,34041
+"155002","US","United States","New Mexico","Bernalillo","2020-03-12",12,37,26,2,-8,1,35001
+"155344","US","United States","New Mexico","Eddy","2020-03-12",13,30,33,7,4,-1,35015
+"155572","US","United States","New Mexico","Lea","2020-03-12",8,35,-9,-3,3,-1,35025
+"156085","US","United States","New Mexico","San Juan","2020-03-12",16,47,36,7,0,-2,35045
+"156199","US","United States","New Mexico","Sandoval","2020-03-12",19,45,55,2,-1,0,35043
+"156256","US","United States","New Mexico","Santa Fe","2020-03-12",8,51,49,22,-2,1,35049
+"156574","US","United States","New Mexico","Valencia","2020-03-12",15,38,9,15,-18,2,35061
+"156688","US","United States","New York","Albany","2020-03-12",2,32,6,-3,-1,1,36001
+"156802","US","United States","New York","Bronx","2020-03-12",6,29,2,-7,-3,2,36005
+"156859","US","United States","New York","Broome","2020-03-12",10,22,42,8,-6,1,36007
+"157429","US","United States","New York","Dutchess","2020-03-12",6,29,14,-15,0,1,36027
+"157486","US","United States","New York","Erie","2020-03-12",9,31,42,4,3,-1,36029
+"157942","US","United States","New York","Kings","2020-03-12",2,31,3,-11,-7,4,36047
+"158170","US","United States","New York","Monroe","2020-03-12",8,38,40,2,-1,0,36055
+"158284","US","United States","New York","Nassau","2020-03-12",3,30,2,-19,-4,3,36059
+"158341","US","United States","New York","New York","2020-03-12",-19,20,-4,-20,-18,8,36061
+"158398","US","United States","New York","Niagara","2020-03-12",10,35,42,11,3,-1,36063
+"158455","US","United States","New York","Oneida","2020-03-12",12,23,29,4,3,-1,36065
+"158512","US","United States","New York","Onondaga","2020-03-12",8,26,40,3,2,0,36067
+"158569","US","United States","New York","Ontario","2020-03-12",12,25,39,19,3,-1,36069
+"158626","US","United States","New York","Orange","2020-03-12",5,29,24,-2,-2,2,36071
+"158911","US","United States","New York","Queens","2020-03-12",2,31,12,-14,-5,4,36081
+"158968","US","United States","New York","Rensselaer","2020-03-12",10,16,23,1,-4,1,36083
+"159025","US","United States","New York","Richmond","2020-03-12",3,24,1,-9,-3,3,36085
+"159082","US","United States","New York","Rockland","2020-03-12",0,30,19,-8,-2,3,36087
+"159139","US","United States","New York","Saratoga","2020-03-12",4,27,16,0,0,1,36091
+"159538","US","United States","New York","Suffolk","2020-03-12",3,27,15,-13,0,1,36103
+"159766","US","United States","New York","Ulster","2020-03-12",5,27,30,8,-1,2,36111
+"159994","US","United States","New York","Westchester","2020-03-12",1,18,7,-22,-10,5,36119
+"160222","US","United States","North Carolina","Alamance","2020-03-12",12,15,62,7,0,0,37001
+"160783","US","United States","North Carolina","Buncombe","2020-03-12",7,19,53,-3,-1,0,37021
+"161621","US","United States","North Carolina","Cumberland","2020-03-12",11,14,45,11,-1,0,37051
+"161963","US","United States","North Carolina","Durham","2020-03-12",4,14,32,-7,-8,2,37063
+"162077","US","United States","North Carolina","Forsyth","2020-03-12",10,21,66,11,0,-1,37067
+"162436","US","United States","North Carolina","Guilford","2020-03-12",9,12,62,0,0,0,37081
+"162607","US","United States","North Carolina","Haywood","2020-03-12",9,16,27,9,2,0,37087
+"162664","US","United States","North Carolina","Henderson","2020-03-12",9,20,55,-10,2,-1,37089
+"162835","US","United States","North Carolina","Iredell","2020-03-12",9,22,63,21,-11,0,37097
+"163461","US","United States","North Carolina","Mecklenburg","2020-03-12",8,27,30,-9,-1,1,37119
+"163746","US","United States","North Carolina","New Hanover","2020-03-12",10,10,59,-3,-1,-1,37129
+"163860","US","United States","North Carolina","Onslow","2020-03-12",15,16,20,-6,-1,0,37133
+"163917","US","United States","North Carolina","Orange","2020-03-12",3,7,32,-5,-11,3,37135
+"164257","US","United States","North Carolina","Pitt","2020-03-12",9,18,46,0,-2,0,37147
+"165226","US","United States","North Carolina","Wake","2020-03-12",5,18,45,-11,-6,2,37183
+"165949","US","United States","North Dakota","Cass","2020-03-12",10,19,2,11,-1,0,38017
+"167413","US","United States","Ohio","Butler","2020-03-12",8,35,43,5,0,0,39017
+"167926","US","United States","Ohio","Cuyahoga","2020-03-12",5,29,42,-3,-2,1,39035
+"168097","US","United States","Ohio","Delaware","2020-03-12",10,39,51,5,-3,2,39041
+"168325","US","United States","Ohio","Franklin","2020-03-12",5,31,27,-5,-3,1,39049
+"168667","US","United States","Ohio","Hamilton","2020-03-12",6,28,30,-2,-1,1,39061
+"169351","US","United States","Ohio","Lake","2020-03-12",12,43,60,-2,-1,0,39085
+"169465","US","United States","Ohio","Licking","2020-03-12",13,32,53,6,1,0,39089
+"169579","US","United States","Ohio","Lorain","2020-03-12",14,43,63,-24,2,0,39093
+"169636","US","United States","Ohio","Lucas","2020-03-12",8,31,55,7,2,-1,39095
+"170143","US","United States","Ohio","Montgomery","2020-03-12",7,33,24,3,0,0,39113
+"171208","US","United States","Ohio","Stark","2020-03-12",6,25,64,5,-1,1,39151
+"171265","US","United States","Ohio","Summit","2020-03-12",10,25,55,0,-2,1,39153
+"171322","US","United States","Ohio","Trumbull","2020-03-12",11,47,71,6,1,-1,39155
+"171605","US","United States","Ohio","Warren","2020-03-12",11,48,67,-1,0,1,39165
+"172977","US","United States","Oklahoma","Garfield","2020-03-12",18,20,26,24,1,-2,40047
+"174265","US","United States","Oklahoma","Muskogee","2020-03-12",17,14,1,10,5,-2,40101
+"174489","US","United States","Oklahoma","Oklahoma","2020-03-12",11,31,76,8,2,-2,40109
+"175383","US","United States","Oklahoma","Tulsa","2020-03-12",11,22,91,17,0,-2,40143
+"175821","US","United States","Oregon","Benton","2020-03-12",5,19,70,2,-9,3,41003
+"175878","US","United States","Oregon","Clackamas","2020-03-12",3,16,44,1,-3,1,41005
+"176220","US","United States","Oregon","Deschutes","2020-03-12",6,16,41,-17,-2,0,41017
+"176277","US","United States","Oregon","Douglas","2020-03-12",8,11,28,8,-1,1,41019
+"176484","US","United States","Oregon","Jackson","2020-03-12",7,12,54,8,0,0,41029
+"176598","US","United States","Oregon","Josephine","2020-03-12",6,13,43,-10,-1,1,41033
+"176655","US","United States","Oregon","Klamath","2020-03-12",6,21,59,10,0,0,41035
+"176759","US","United States","Oregon","Lane","2020-03-12",6,18,45,2,-3,1,41039
+"176873","US","United States","Oregon","Linn","2020-03-12",8,22,31,5,-1,1,41043
+"176987","US","United States","Oregon","Marion","2020-03-12",4,18,66,7,0,0,41047
+"177101","US","United States","Oregon","Multnomah","2020-03-12",0,16,43,-9,-5,2,41051
+"177329","US","United States","Oregon","Umatilla","2020-03-12",7,9,27,9,1,-1,41059
+"177539","US","United States","Oregon","Washington","2020-03-12",4,18,39,-10,-6,3,41067
+"177767","US","United States","Pennsylvania","Allegheny","2020-03-12",8,29,49,-9,-5,1,42003
+"177881","US","United States","Pennsylvania","Beaver","2020-03-12",15,21,26,-6,-1,0,42007
+"177995","US","United States","Pennsylvania","Berks","2020-03-12",11,26,35,-5,-2,0,42011
+"178166","US","United States","Pennsylvania","Bucks","2020-03-12",11,25,37,-10,-2,2,42017
+"178451","US","United States","Pennsylvania","Chester","2020-03-12",10,18,29,-11,-5,2,42029
+"178793","US","United States","Pennsylvania","Cumberland","2020-03-12",8,21,87,3,-3,0,42041
+"178850","US","United States","Pennsylvania","Dauphin","2020-03-12",8,13,43,-3,-2,0,42043
+"178907","US","United States","Pennsylvania","Delaware","2020-03-12",9,22,19,-5,-4,1,42045
+"179021","US","United States","Pennsylvania","Erie","2020-03-12",9,30,56,1,-1,0,42049
+"179534","US","United States","Pennsylvania","Lackawanna","2020-03-12",7,24,63,17,0,0,42069
+"179591","US","United States","Pennsylvania","Lancaster","2020-03-12",9,17,30,-5,0,0,42071
+"179762","US","United States","Pennsylvania","Lehigh","2020-03-12",9,25,9,16,-7,1,42077
+"179819","US","United States","Pennsylvania","Luzerne","2020-03-12",8,23,14,-1,0,0,42079
+"179876","US","United States","Pennsylvania","Lycoming","2020-03-12",6,21,11,-2,0,1,42081
+"180104","US","United States","Pennsylvania","Monroe","2020-03-12",9,23,14,-2,0,0,42089
+"180161","US","United States","Pennsylvania","Montgomery","2020-03-12",9,22,29,-13,-6,2,42091
+"180275","US","United States","Pennsylvania","Northampton","2020-03-12",7,24,38,2,-2,1,42095
+"180446","US","United States","Pennsylvania","Philadelphia","2020-03-12",3,22,37,-8,-3,1,42101
+"181094","US","United States","Pennsylvania","Washington","2020-03-12",10,26,51,-3,0,-1,42125
+"181208","US","United States","Pennsylvania","Westmoreland","2020-03-12",12,20,78,9,0,0,42129
+"181322","US","United States","Pennsylvania","York","2020-03-12",12,17,60,-10,0,0,42133
+"181493","US","United States","Rhode Island","Kent","2020-03-12",8,35,31,-7,-1,1,44003
+"181607","US","United States","Rhode Island","Providence","2020-03-12",6,22,36,-13,-1,1,44007
+"181664","US","United States","Rhode Island","Washington","2020-03-12",7,19,25,9,-3,1,44009
+"181835","US","United States","South Carolina","Aiken","2020-03-12",10,17,25,21,0,-1,45003
+"181928","US","United States","South Carolina","Anderson","2020-03-12",3,18,37,12,-1,0,45007
+"182156","US","United States","South Carolina","Berkeley","2020-03-12",10,17,44,-34,1,-1,45015
+"182270","US","United States","South Carolina","Charleston","2020-03-12",9,12,27,15,-1,0,45019
+"182726","US","United States","South Carolina","Dorchester","2020-03-12",9,9,23,7,0,-1,45035
+"183011","US","United States","South Carolina","Greenville","2020-03-12",5,15,21,12,1,0,45045
+"183182","US","United States","South Carolina","Horry","2020-03-12",22,21,99,29,2,-2,45051
+"183239","US","United States","South Carolina","Jasper","2020-03-12",19,16,52,17,4,-2,45053
+"183524","US","United States","South Carolina","Lexington","2020-03-12",9,15,56,11,-6,1,45063
+"183973","US","United States","South Carolina","Richland","2020-03-12",9,14,43,13,-1,0,45079
+"184087","US","United States","South Carolina","Spartanburg","2020-03-12",10,12,50,-5,1,0,45083
+"184315","US","United States","South Carolina","York","2020-03-12",11,25,54,16,-1,0,45091
+"185430","US","United States","South Dakota","Minnehaha","2020-03-12",-1,23,19,5,-1,1,46099
+"185527","US","United States","South Dakota","Pennington","2020-03-12",8,31,24,8,-3,0,46103
+"186183","US","United States","Tennessee","Blount","2020-03-12",9,20,64,-15,-1,-1,47009
+"186297","US","United States","Tennessee","Campbell","2020-03-12",10,22,40,14,1,0,47013
+"186956","US","United States","Tennessee","Davidson","2020-03-12",4,26,17,-9,-11,3,47037
+"187752","US","United States","Tennessee","Hamilton","2020-03-12",6,28,12,0,-2,1,47065
+"188491","US","United States","Tennessee","Knox","2020-03-12",6,26,25,-4,0,-1,47093
+"189345","US","United States","Tennessee","Montgomery","2020-03-12",6,32,6,-3,-1,1,47125
+"189911","US","United States","Tennessee","Rutherford","2020-03-12",8,30,25,2,-2,1,47149
+"190139","US","United States","Tennessee","Shelby","2020-03-12",6,27,29,0,-2,-1,47157
+"190301","US","United States","Tennessee","Sullivan","2020-03-12",7,15,67,15,2,0,47163
+"190946","US","United States","Tennessee","Williamson","2020-03-12",-1,37,30,9,-18,6,47187
+"191003","US","United States","Tennessee","Wilson","2020-03-12",3,18,28,4,-16,2,47189
+"191726","US","United States","Texas","Bell","2020-03-12",11,21,92,18,-21,2,48027
+"191783","US","United States","Texas","Bexar","2020-03-12",8,20,43,-5,-20,2,48029
+"192011","US","United States","Texas","Brazoria","2020-03-12",16,37,30,0,-19,3,48039
+"192068","US","United States","Texas","Brazos","2020-03-12",3,24,41,-21,-35,4,48041
+"192580","US","United States","Texas","Cameron","2020-03-12",14,19,14,-2,-1,-2,48061
+"193138","US","United States","Texas","Collin","2020-03-12",9,31,47,0,-22,4,48085
+"193252","US","United States","Texas","Comal","2020-03-12",16,32,206,5,-16,1,48091
+"193713","US","United States","Texas","Dallas","2020-03-12",10,25,40,-2,-7,0,48113
+"193895","US","United States","Texas","Denton","2020-03-12",11,28,90,4,-13,2,48121
+"194246","US","United States","Texas","El Paso","2020-03-12",10,24,-15,9,-4,0,48141
+"194303","US","United States","Texas","Ellis","2020-03-12",16,24,94,3,-20,1,48139
+"194597","US","United States","Texas","Fort Bend","2020-03-12",12,51,33,14,-21,4,48157
+"194882","US","United States","Texas","Galveston","2020-03-12",28,44,125,63,-19,2,48167
+"195707","US","United States","Texas","Harris","2020-03-12",9,37,33,-7,-11,1,48201
+"195890","US","United States","Texas","Hays","2020-03-12",22,23,66,23,-1,-1,48209
+"196004","US","United States","Texas","Hidalgo","2020-03-12",12,22,20,6,-1,-2,48215
+"196679","US","United States","Texas","Jefferson","2020-03-12",7,24,26,8,-6,0,48245
+"197971","US","United States","Texas","Lubbock","2020-03-12",16,19,54,5,1,-2,48303
+"198533","US","United States","Texas","Midland","2020-03-12",5,11,40,5,-12,1,48329
+"198760","US","United States","Texas","Montgomery","2020-03-12",10,37,34,7,-17,2,48339
+"199154","US","United States","Texas","Nueces","2020-03-12",18,28,86,7,-17,1,48355
+"199324","US","United States","Texas","Orange","2020-03-12",11,26,42,6,4,-1,48361
+"199495","US","United States","Texas","Parker","2020-03-12",20,18,66,6,-3,-1,48367
+"199722","US","United States","Texas","Potter","2020-03-12",13,25,47,10,0,-2,48375
+"200808","US","United States","Texas","Smith","2020-03-12",12,18,85,12,-17,1,48117
+"201101","US","United States","Texas","Tarrant","2020-03-12",11,24,65,-10,-17,2,48439
+"201386","US","United States","Texas","Travis","2020-03-12",7,18,35,-17,-4,0,48453
+"201894","US","United States","Texas","Walker","2020-03-12",12,29,50,24,-22,2,48471
+"202122","US","United States","Texas","Webb","2020-03-12",12,21,25,-3,0,-2,48479
+"202408","US","United States","Texas","Williamson","2020-03-12",11,25,58,4,-4,0,48491
+"203203","US","United States","Utah","Davis","2020-03-12",8,65,50,5,0,0,49011
+"203688","US","United States","Utah","Salt Lake","2020-03-12",8,44,48,-11,-2,0,49035
+"203911","US","United States","Utah","Summit","2020-03-12",-4,2,3,-31,-4,3,49043
+"204082","US","United States","Utah","Utah","2020-03-12",14,61,84,17,0,0,49049
+"204196","US","United States","Utah","Washington","2020-03-12",17,48,81,4,0,-1,49053
+"204253","US","United States","Utah","Weber","2020-03-12",13,38,87,6,1,-1,49057
+"204538","US","United States","Vermont","Chittenden","2020-03-12",3,9,15,-5,-1,2,50007
+"205281","US","United States","Virginia","Alexandria","2020-03-12",3,41,45,-5,-2,3,51510
+"205565","US","United States","Virginia","Arlington","2020-03-12",-4,20,-25,-19,-13,6,51013
+"206388","US","United States","Virginia","Charlottesville","2020-03-12",-5,14,15,-17,-19,1,51540
+"206445","US","United States","Virginia","Chesapeake","2020-03-12",11,13,67,9,1,0,51550
+"206502","US","United States","Virginia","Chesterfield","2020-03-12",11,21,43,0,-1,0,51041
+"207178","US","United States","Virginia","Fairfax","2020-03-12",6,22,16,-15,-6,3,51059
+"208129","US","United States","Virginia","Hampton","2020-03-12",9,22,40,4,1,-1,51650
+"208300","US","United States","Virginia","Henrico","2020-03-12",6,24,52,-6,-5,1,51087
+"208903","US","United States","Virginia","Loudoun","2020-03-12",10,30,28,-11,-18,7,51107
+"209689","US","United States","Virginia","Newport News","2020-03-12",8,20,28,-1,1,-1,51700
+"209746","US","United States","Virginia","Norfolk","2020-03-12",10,11,50,-2,1,-1,51710
+"210593","US","United States","Virginia","Prince William","2020-03-12",12,22,26,4,-2,1,51153
+"210783","US","United States","Virginia","Richmond","2020-03-12",5,14,29,-2,-5,0,51159
+"210896","US","United States","Virginia","Roanoke","2020-03-12",8,17,38,-5,-1,-1,51161
+"211848","US","United States","Virginia","Virginia Beach","2020-03-12",8,16,60,0,-1,0,51810
+"212589","US","United States","Washington","Benton","2020-03-12",8,22,102,11,-2,0,53005
+"212646","US","United States","Washington","Chelan","2020-03-12",4,8,48,15,-5,0,53007
+"212703","US","United States","Washington","Clallam","2020-03-12",6,15,36,27,-1,1,53009
+"212760","US","United States","Washington","Clark","2020-03-12",5,16,68,1,-1,1,53011
+"212817","US","United States","Washington","Cowlitz","2020-03-12",11,14,59,22,1,-1,53015
+"213003","US","United States","Washington","Grant","2020-03-12",9,29,74,6,-2,-3,53025
+"213060","US","United States","Washington","Grays Harbor","2020-03-12",9,24,45,2,-2,1,53027
+"213117","US","United States","Washington","Island","2020-03-12",2,15,36,-14,-7,3,53029
+"213231","US","United States","Washington","King","2020-03-12",-11,10,30,-33,-32,12,53033
+"213288","US","United States","Washington","Kitsap","2020-03-12",4,14,36,-17,-5,2,53035
+"213345","US","United States","Washington","Kittitas","2020-03-12",4,20,32,17,-13,1,53037
+"213459","US","United States","Washington","Lewis","2020-03-12",9,14,48,8,0,0,53041
+"213783","US","United States","Washington","Pierce","2020-03-12",4,20,59,-9,-5,2,53053
+"213897","US","United States","Washington","Skagit","2020-03-12",1,12,42,1,-4,2,53057
+"214011","US","United States","Washington","Snohomish","2020-03-12",0,15,30,-18,-16,7,53061
+"214068","US","United States","Washington","Spokane","2020-03-12",6,19,49,-2,-2,1,53063
+"214182","US","United States","Washington","Thurston","2020-03-12",5,21,39,5,-4,2,53067
+"214296","US","United States","Washington","Whatcom","2020-03-12",-3,15,45,-3,-7,3,53073
+"214410","US","United States","Washington","Yakima","2020-03-12",8,19,29,11,-2,-1,53077
+"215362","US","United States","West Virginia","Kanawha","2020-03-12",6,13,14,7,-9,1,54039
+"215938","US","United States","West Virginia","Monongalia","2020-03-12",10,28,52,-4,1,-1,54061
+"217291","US","United States","Wisconsin","Brown","2020-03-12",4,23,-11,-2,0,1,55009
+"217745","US","United States","Wisconsin","Dane","2020-03-12",2,30,1,-1,0,2,55025
+"218640","US","United States","Wisconsin","Kenosha","2020-03-12",17,27,-32,9,2,0,55059
+"218754","US","United States","Wisconsin","La Crosse","2020-03-12",3,28,7,6,1,1,55063
+"219204","US","United States","Wisconsin","Milwaukee","2020-03-12",5,25,25,-1,0,0,55079
+"219432","US","United States","Wisconsin","Outagamie","2020-03-12",3,22,5,-4,2,1,55087
+"219816","US","United States","Wisconsin","Racine","2020-03-12",9,17,24,0,0,0,55101
+"219930","US","United States","Wisconsin","Rock","2020-03-12",7,26,19,6,0,0,55105
+"220214","US","United States","Wisconsin","Sheboygan","2020-03-12",8,20,15,-6,1,0,55117
+"220727","US","United States","Wisconsin","Waukesha","2020-03-12",8,27,31,-3,1,1,55133
+"220898","US","United States","Wisconsin","Winnebago","2020-03-12",5,18,-10,-5,1,1,55139
+"221528","US","United States","Wyoming","Laramie","2020-03-12",5,26,8,7,1,-1,56021
+"221642","US","United States","Wyoming","Natrona","2020-03-12",4,31,-13,5,0,1,56025

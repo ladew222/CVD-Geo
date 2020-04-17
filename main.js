@@ -2,7 +2,7 @@
 const config_new = {
 
     label: function(d) {
-        var text = "<b class='p-head'>"+ d.County + "</b><span class='p-other'></br>Confirmed: " + d.Confirmed + "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death +  "<BR/>Fatality Rate: " + d.Fatality_Rate +  "<BR/>Population: "+ d.TotalPop + "</br>Gini Index: " + d.IncomeIneq + "</BR>Grocery Mobility: " + d['Grocery & pharmacy'] +  "</BR>Retail and Recreation: " + d['Retail & recreation'] + "</BR>Residential Mobility: " + d.Residential +  "</BR>Workplace Mobility: " + d.Workplace_map + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>No Insur 35-64 10k: " + d.insured35to64_per10k + "</span>" ;
+        var text = "<b class='p-head'>"+ d.County + "</b><span class='p-other'></br>Confirmed: " + d.Confirmed + "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death +  "<BR/>Fatality Rate: " + d.Fatality_Rate +  "<BR/>Population: "+ d.TotalPop + "</br>Gini Index: " + d.IncomeIneq + "</BR>Grocery Mobility: " + d['Grocery & pharmacy'] +  "</BR>Retail and Recreation: " + d['Retail & recreation'] + "</BR>Residential Mobility: " + d.Residential +  "</BR>Workplace Mobility: " + d.Workplace + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>No Insur 35-64 10k: " + d.insured35to64_per10k + "</span>" ;
         return "" + text;
     },
     ocean: "transparent",
@@ -1017,17 +1017,15 @@ function get_data(day_num){
                     return mItem.fips == result[0].fips
                 });
                 if(result2[0]){
-                    result[0].Residential = (result2[0] !== undefined) ? parseFloat(result2[0].Residential) : null;
-                    result[0]['Grocery & pharmacy'] = (result2[0] !== undefined) ? parseFloat(result2[0]['Grocery & pharmacy']) : null;
-                    result[0]['Retail & recreation'] = (result2[0] !== undefined) ? parseFloat(result2[0]['Retail & recreation']) : null;
-                    result[0].Workplace = (result2[0] !== undefined) ? parseFloat(result2[0].Workplace): null;
-                    result[0].Workplace_map = (result2[0] !== undefined) ? parseFloat(result2[0].Workplace)+100: 0;
+                    result[0].Residential = (result2[0] !== undefined) ? parseFloat(result2[0].residential_percent_change_from_baseline) : null;
+                    result[0]['Grocery & pharmacy'] = (result2[0] !== undefined) ? parseFloat(result2[0]['grocery_and_pharmacy_percent_change_from_baseline']) : null;
+                    result[0]['Retail & recreation'] = (result2[0] !== undefined) ? parseFloat(result2[0]['retail_and_recreation_percent_change_from_baseline']) : null;
+                    result[0].Workplace = (result2[0] !== undefined) ? parseFloat(result2[0].workplaces_percent_change_from_baseline): null;
                 }
                 else{
                     result[0]['Grocery & pharmacy']=null;
                     result[0]['Retail & recreation']=null;
                     result[0].Workplace =null;
-                    result[0].Workplace_map = 0;
                     result[0].Residential=null;
                 }
                 Object.assign(result[0],cvItem);
