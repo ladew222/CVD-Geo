@@ -416,7 +416,12 @@ d3.csv("us-state-fips.csv").then(function(data) {
         .text(function (d) { return d.stname; });
 }).then(function (day_num) {
     //$('.js-multiple').select2();
-
+  /*  $('.js-multiple').multiselect({
+        onChange: function(option, checked, select) {
+            alert('Changed option ' + $(option).val() + '.');
+            viz.active_state = $('.js-multiple option:selected').map(function(a, item){return item.value;});
+        }
+    });*/
 });
 
 function paddy(num, padlen, padchar) {
@@ -513,7 +518,7 @@ function plot(type){
                 total_confirmed: d3.sum(v, function(d) { return d.Confirmed; }),
                 total_death: d3.sum(v, function(d) { return d.Death; }),
                 total_pop: d3.sum(v, function(d) { return d.TotalPop; }),
-                total_confirmed_per10k: (d3.sum(v, function(d) { return d.Confirmed; }) > 0) ? ((d3.sum(v, function(d) { return d.TotalPop; }))/10000)/d3.sum(v, function(d) { return d.Confirmed }):0,
+                total_confirmed_per10k: d3.sum(v, function(d) { return d.Confirmed; })/(d3.sum(v, function(d) { return d.TotalPop; })/10000).toFixed(2),
                 log_total_death: d3.sum(v, function(d) { return Math.log10(d.Death); }),
                 log_total_confirmed: d3.sum(v, function(d) { return Math.log10(d.Confirmed); }),
                 avg_confirmed: d3.mean(v, function(d) { return d.Confirmed; }),
