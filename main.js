@@ -2,7 +2,7 @@
 const config_new = {
 
     label: function(d) {
-        var text = "<b class='p-head'>"+ d.County + "</b><span class='p-other'></br>Confirmed: " + d.Confirmed + "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death +  "<BR/>Fatality Rate: " + d.Fatality_Rate +  "<BR/>Population: "+ d.TotalPop + "</br>Gini Index: " + d.IncomeIneq + "</BR>Grocery Mobility: " + d['Grocery & pharmacy'] +  "</BR>Retail and Recreation: " + d['Retail & recreation'] + "</BR>Residential Mobility: " + d.Residential +  "</BR>Workplace Mobility: " + d.Workplace + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>No Insur 35-64 10k: " + d.insured35to64_per10k + "</span>" ;
+        var text = "<b class='p-head'>"+ d.County + "</b><span class='p-other'></br>Confirmed: " + d.Confirmed + "</br>Per10K: " + d.ConfirmedPer10K + "</br> Deaths: " + d.Death +  "<BR/>Fatality Rate: " + d.Fatality_Rate +  "<BR/>Population: "+ d.TotalPop + "</br>Gini Index: " + d.IncomeIneq + "</BR>Grocery Mobility: " + d['Grocery & pharmacy'] +  "</BR>Retail and Recreation: " + d['Retail & recreation'] + "</BR>Residential Mobility: " + d.Residential +  "</BR>Workplace Mobility: " + d.Workplace + "</BR>Asia born 10k: "+ d.AsiaPop10k +"</br>Europe Born 10k:  " +d.EuropePop10k + "</br>No Insur 35-64 10k: " + d.insured35to64_per10k + "</br>Percent Uninsured: " + d.p_Uninsured + "<br/>Percent in Poor Health:"+ d['p_Fair.or.Poor.Health'] + "</br>Primary Care Physicians Per 100k:"+ d['Primary.Care.Physicians.Rate'] + "</br>Flu Vaccine Rate:" +d.p_Vaccinated + "</span>" ; ;
         return "" + text;
     },
     ocean: "transparent",
@@ -861,7 +861,7 @@ function draw_plot(data){
 }
 
 function corr_test(the_day){
-    let testArr=["IncomeIneq","EuropePop10k","AsiaPop10k","insured35to64_per10k","white10k","med_age","perCapitaIncome","bachelor_degreeM_per10k","perCapitaIncome","UrbanPer10k","Grocery & pharmacy","Retail & recreation","Residential","Workplace"];
+    let testArr=["IncomeIneq","EuropePop10k","AsiaPop10k","insured35to64_per10k","white10k","med_age","perCapitaIncome","bachelor_degreeM_per10k","perCapitaIncome","UrbanPer10k","Grocery & pharmacy","Retail & recreation","Residential","Workplace","p_Uninsured","p_Fair.or.Poor.Health","p_Vaccinated","Primary.Care.Physicians.Rate","Social.Association.Rate"];
     /*if(viz.mobility_data==true){
         testArr.push("Residential","Workplace");
     }*/
@@ -895,6 +895,26 @@ function corr_test(the_day){
         let title="";
         let short="";
         switch (val) {
+            case 'p_Uninsured':
+                title ='Percent Uninsured';
+                short = "Percent Uninsured'";
+                break;
+            case 'p_Fair.or.Poor.Health':
+                title ='Percent Poor Health';
+                short = "Percent Poor Health";
+                break;
+            case 'p_Vaccinated':
+                title ='Percent Flu Vaccinations';
+                short = "Percent Flu Vaccinations";
+                break;
+            case 'Primary.Care.Physicians.Rate':
+                title ='Primary Care Physicians Rate per 100K';
+                short = "Primary.Care.Physicians.Rate";
+                break;
+            case 'Social.Association.Rate':
+                title ='Social Association Rate';
+                short = "Social Association Rate";
+                break;
             case 'Grocery & pharmacy':
                 short = "Grocery and Pharmacy Mobility";
                 title ='Mobility trends for grocery and pharmacies. The data is relative to the baseline which is the median value, for the corresponding day of the week, during the 5-week period Jan 3–Feb 6, 2020.';
@@ -910,10 +930,6 @@ function corr_test(the_day){
             case 'AsiaPop10k':
                 title ='Number of people born in Asia per 10k relative to confirmed cases';
                 short = "Asian Population (10k)";
-                break;
-            case 'insured35to64_per10k':
-                short = "Insured 35-64 year olds(10K)";
-                title ='Number of people insured(35 to 64) per 10k relative to confirmed cases';
                 break;
             case 'white10k':
                 title ='Number of white people per 10k relative to confirmed cases';
@@ -1012,6 +1028,12 @@ function get_data(day_num){
                 result[0].perCapitaIncome = parseFloat(result[0].perCapitaIncome);
                 result[0].bachelor_degreeM_per10k = parseFloat(result[0].bachelor_degreeM_per10k);
                 result[0].UrbanPer10k = parseFloat(result[0].UrbanPer10k);
+                result[0].primary_rate = parseFloat(result[0]['Primary.Care.Physicians.Rate']);
+                result[0].poor_health_rate = parseFloat(result[0]['Poor.Health']);
+                result[0].preventable_hospitalization_rate = parseFloat(result[0]['Preventable.Hospitalization.Rate']);
+                result[0].someker_rate = parseFloat(result[0]['p_Smokers']);
+                result[0].social_association_rate = parseFloat(result[0]['Social.Association.Rate']);
+                result[0].percent_insured = parseFloat(result[0]['p_Uninsured']);
                 ///add ga data
                 const result2 = files[2].filter(function(mItem) {
                     return mItem.fips == result[0].fips;
