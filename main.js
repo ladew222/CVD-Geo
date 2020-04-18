@@ -1014,7 +1014,7 @@ function get_data(day_num){
                 result[0].UrbanPer10k = parseFloat(result[0].UrbanPer10k);
                 ///add ga data
                 const result2 = files[2].filter(function(mItem) {
-                    return mItem.fips == result[0].fips
+                    return mItem.fips == result[0].fips;
                 });
                 if(result2[0]){
                     result[0].Residential = (result2[0] !== undefined) ? parseFloat(result2[0].residential_percent_change_from_baseline) : null;
