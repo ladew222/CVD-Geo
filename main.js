@@ -255,7 +255,7 @@ $(document).ready(function(){
 
     $( "#slider-range" ).slider({
         range: true,
-        min: new Date('2020-03-14').getTime() / 1000,
+        min: new Date('2020-02-15').getTime() / 1000,
         max: new Date().getTime() / 1000,
         step: 86400,
         values: [ new Date(new Date().getTime() - (240 * 60 * 60 * 1000)).getTime() / 1000, new Date(new Date().getTime() - (48 * 60 * 60 * 1000)).getTime() / 1000 ],
