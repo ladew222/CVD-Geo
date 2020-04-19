@@ -39,7 +39,8 @@ var viz = {
     plot_x:0,
     nested_data:null,
     state_lookup:null,
-    plot_details: false
+    plot_details: false,
+    Filtered: null
 };
 ["#14BF00", "#3FB800","#6AB100","#95AA00","#AAA600","#D59F00","#EB9C00"]
 
@@ -62,15 +63,15 @@ const timeConv = d3.timeParse("%m-%d-%Y");
 
 
 function build_map(primary_var){
-    let Filtered = null;
+
     if(viz.active_state!=0){
-        Filtered = viz.itemList[viz.active_day].filter(function (el) {
+        viz.Filtered = viz.itemList[viz.active_day].filter(function (el) {
             return viz.active_state.indexOf(parseInt(el.state)) !=-1;
 
         });
     }
     else{
-        Filtered = viz.itemList[viz.active_day].filter(function (el) {
+        viz.Filtered = viz.itemList[viz.active_day].filter(function (el) {
             return el.state !=360;
 
         });
@@ -84,7 +85,7 @@ function build_map(primary_var){
 
             if (viz.color_range==0){
                 map
-                    .data(Filtered)
+                    .data(viz.Filtered)
                     .colorScaleConfig(Color_Scale)
                     .fitFilter(function(d) {
                       const state = parseInt(d.id.split('US')[1].substring(0, 2));
@@ -100,7 +101,7 @@ function build_map(primary_var){
             }
             else{
                 map
-                    .data(Filtered)
+                    .data(viz.Filtered)
                     .colorScaleConfig(Color_Scale)
                     .colorScale(primary_var)
                     .colorScaleConfig({scale: "jenks"})
@@ -114,7 +115,7 @@ function build_map(primary_var){
     else{
         if (viz.color_range==0){
             map
-                .data(Filtered)
+                .data(viz.Filtered)
                 .colorScaleConfig(Color_Scale)
                 .fitFilter(function(d) {
                       const state = parseInt(d.id.split('US')[1].substring(0, 2));
@@ -130,7 +131,7 @@ function build_map(primary_var){
         }
         else{
             map
-                .data(Filtered)
+                .data(viz.Filtered)
                 .colorScaleConfig(Color_Scale)
                 .fitFilter(function(d) {
                       const state = parseInt(d.id.split('US')[1].substring(0, 2));
@@ -474,9 +475,9 @@ function delta(){
             ...(a2.find((itmInner) => itmInner.id === a1[i].id))}
         );
     }
-    viz.itemList[viz.active_day] = merged;
+    viz.Filtered = merged;
     //viz.itemList[0].forEach(function(d){ d['Confirmed'] = +d['Confirmed']; });
-    viz.itemList[viz.active_day].forEach(function(d){
+    viz.Filtered.forEach(function(d){
         if( isFinite(d['Percent_Change'])==false){
             d['Percent_Change']=1000;
         }
@@ -522,9 +523,9 @@ function plot(type){
                 log_total_death: d3.sum(v, function(d) { return Math.log10(d.Death); }),
                 log_total_confirmed: d3.sum(v, function(d) { return Math.log10(d.Confirmed); }),
                 avg_confirmed: d3.mean(v, function(d) { return d.Confirmed; }),
-                avg_residential: d3.mean(v, function(d) { return d.Residential; }),
-                avg_workplace: d3.mean(v, function(d) { return d.Workplace; }),
-                avg_recreation: d3.mean(v, function(d) { return d['Retail & recreation']; })
+                avg_residential: d3.mean(v, function(d) { return d.Residential; }).toFixed(2),
+                avg_workplace: d3.mean(v, function(d) { return d.Workplace; }).toFixed(2),
+                avg_recreation: d3.mean(v, function(d) { return d['Retail & recreation']; }).toFixed(2)
             }; })
             .key(function(d) { return d.day; })
             .entries(viz.total);
