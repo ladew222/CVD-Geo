@@ -358,6 +358,9 @@ $(document).ready(function(){
         if( viz.primary_var=="Retail & recreation") {
             $("#slider").slider('option',{ min:-60,max: 100,step: 1});
         }
+        if( viz.primary_var=="Residential") {
+            $("#slider").slider('option',{ min:-60,max: 100,step: 1});
+        }
 
     });
     var isshow = localStorage.getItem('isshow');
@@ -519,13 +522,13 @@ function plot(type){
                 total_confirmed: d3.sum(v, function(d) { return d.Confirmed; }),
                 total_death: d3.sum(v, function(d) { return d.Death; }),
                 total_pop: d3.sum(v, function(d) { return d.TotalPop; }),
-                total_confirmed_per10k: d3.sum(v, function(d) { return d.Confirmed; })/(d3.sum(v, function(d) { return d.TotalPop; })/10000).toFixed(2),
+                total_confirmed_per10k: d3.sum(v, function(d) { return d.Confirmed; })/(d3.sum(v, function(d) { return d.TotalPop; })/10000),
                 log_total_death: d3.sum(v, function(d) { return Math.log10(d.Death); }),
                 log_total_confirmed: d3.sum(v, function(d) { return Math.log10(d.Confirmed); }),
                 avg_confirmed: d3.mean(v, function(d) { return d.Confirmed; }),
-                avg_residential: d3.mean(v, function(d) { return d.Residential; }).toFixed(2),
-                avg_workplace: d3.mean(v, function(d) { return d.Workplace; }).toFixed(2),
-                avg_recreation: d3.mean(v, function(d) { return d['Retail & recreation']; }).toFixed(2)
+                avg_residential: d3.mean(v, function(d) { return d.Residential; }),
+                avg_workplace: d3.mean(v, function(d) { return d.Workplace; }),
+                avg_recreation: d3.mean(v, function(d) { return d['Retail & recreation']; })
             }; })
             .key(function(d) { return d.day; })
             .entries(viz.total);
@@ -1029,7 +1032,7 @@ function get_data(day_num){
                 result[0].bachelor_degreeM_per10k = parseFloat(result[0].bachelor_degreeM_per10k);
                 result[0].UrbanPer10k = parseFloat(result[0].UrbanPer10k);
                 result[0].primary_rate = parseFloat(result[0]['Primary.Care.Physicians.Rate']);
-                result[0].poor_health_rate = parseFloat(result[0]['Poor.Health']);
+                result[0].poor_health_rate = parseFloat(result[0]['p_Fair.or.Poor.Health']);
                 result[0].preventable_hospitalization_rate = parseFloat(result[0]['Preventable.Hospitalization.Rate']);
                 result[0].someker_rate = parseFloat(result[0]['p_Smokers']);
                 result[0].social_association_rate = parseFloat(result[0]['Social.Association.Rate']);
@@ -1040,6 +1043,7 @@ function get_data(day_num){
                 });
                 if(result2[0]){
                     result[0].Residential = (result2[0] !== undefined) ? parseFloat(result2[0].residential_percent_change_from_baseline) : null;
+                    result[0].Residential = isFinite(result[0].Residential)? result[0].Residential: null;
                     result[0]['Grocery & pharmacy'] = (result2[0] !== undefined) ? parseFloat(result2[0]['grocery_and_pharmacy_percent_change_from_baseline']) : null;
                     result[0]['Retail & recreation'] = (result2[0] !== undefined) ? parseFloat(result2[0]['retail_and_recreation_percent_change_from_baseline']) : null;
                     result[0].Workplace = (result2[0] !== undefined) ? parseFloat(result2[0].workplaces_percent_change_from_baseline): null;
