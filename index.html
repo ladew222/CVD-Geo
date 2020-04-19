@@ -220,10 +220,22 @@
         </div>
         <BR/>
         <div class="b-container">
-            <div class="fixed">
-                <input id = "test" type="submit" title="This will display for the Pearson correlation coefficients for the display variables and Confirmed cases for the state or all for the selected day. Higher numbers indicate stronger relationships. A value of 1 indicates a perfect positive correlation. A value of -1 indicates a perfect negative correlation. In essence, long green bars suggest when increases in that value predict increases in confirmed cases. Large red bars indicate when that variable goes up, Confirmed cases goes down. Note that not all correlations indicate causation. The mobility data, for example, is most likly showing a reaction to confirmed cases rather than the affect of the behavior as it is on the same day. " value=" Show Correlations"/>
-            </div>
+            <div class="fixed-old">
+                <div class="two-col">
+                    <div class="e1">
+                        <input id = "test" type="submit" title="This will display for the Pearson correlation coefficients for the display variables and Confirmed cases for the state or all for the selected day. Higher numbers indicate stronger relationships. A value of 1 indicates a perfect positive correlation. A value of -1 indicates a perfect negative correlation. In essence, long green bars suggest when increases in that value predict increases in confirmed cases. Large red bars indicate when that variable goes up, Confirmed cases goes down. Note that not all correlations indicate causation. The mobility data, for example, is most likly showing a reaction to confirmed cases rather than the affect of the behavior as it is on the same day. " value=" Show Correlations"/>
+                    </div>
+                    <div class="e2">
+                        <select class="form-control" title="Variable to test correlations against" id="corr_main">
+                            <option value="Confirmed" selected>Confirmed</option>
+                            <option value="Death">Fatalities</option>
+                            <option value="ConfirmedPer10K">Confirmed Per 10k</option>
+                        </select>
+                    </div>
+                </div>
 
+
+            </div>
             <div class="flex-item">
 
             </div>

@@ -869,6 +869,8 @@ function corr_test(the_day){
     /*if(viz.mobility_data==true){
         testArr.push("Residential","Workplace");
     }*/
+
+    let corr_var = $('#corr_main').val();
     let out_str="<div class='corr-rs'>";
     testArr.forEach(function(number, i) {
         let val = testArr[i];
@@ -886,13 +888,13 @@ function corr_test(the_day){
 
         var bodyVars = {
             [val]: 'metric',
-            Confirmed: 'metric'
+            [corr_var]: 'metric'
         };
 
         var stats = new Statistics(Filtered, bodyVars);
-        Filtered.forEach(function(d){ d['Confirmed'] = +d['Confirmed']; });
+        Filtered.forEach(function(d){ d[corr_var] = +d[corr_var]; });
         Filtered.forEach(function(d){ d[val] = +d[val]; });
-        var r = stats.correlationCoefficient(val, 'Confirmed');
+        var r = stats.correlationCoefficient(val, corr_var);
         console.log(r);
         const result =r.correlationCoefficient.toFixed(2);
         const bar = create_bar(result,140);
