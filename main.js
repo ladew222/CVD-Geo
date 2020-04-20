@@ -422,7 +422,7 @@ d3.csv("us-state-fips.csv").then(function(data) {
     //$('.js-multiple').select2();
   $('.js-multiple').multiselect({
         onChange: function(option, checked, select) {
-            alert('Changed option ' + $(option).val() + '.');
+           // alert('Changed option ' + $(option).val() + '.');
             viz.active_state =  Array.from($('.js-multiple option:selected').map(function(a, item){return parseInt(item.value);}));
         }
     });
