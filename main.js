@@ -420,12 +420,12 @@ d3.csv("us-state-fips.csv").then(function(data) {
         .text(function (d) { return d.stname; });
 }).then(function (day_num) {
     //$('.js-multiple').select2();
-  /*  $('.js-multiple').multiselect({
+  $('.js-multiple').multiselect({
         onChange: function(option, checked, select) {
             alert('Changed option ' + $(option).val() + '.');
-            viz.active_state = $('.js-multiple option:selected').map(function(a, item){return item.value;});
+            viz.active_state =  Array.from($('.js-multiple option:selected').map(function(a, item){return parseInt(item.value);}));
         }
-    });*/
+    });
 });
 
 function paddy(num, padlen, padchar) {
@@ -865,7 +865,7 @@ function draw_plot(data){
 }
 
 function corr_test(the_day){
-    let testArr=["IncomeIneq","EuropePop10k","AsiaPop10k","insured35to64_per10k","white10k","med_age","perCapitaIncome","bachelor_degreeM_per10k","perCapitaIncome","UrbanPer10k","Grocery & pharmacy","Retail & recreation","Residential","Workplace","p_Uninsured","p_Fair.or.Poor.Health","p_Vaccinated","Primary.Care.Physicians.Rate","Social.Association.Rate"];
+    let testArr=["IncomeIneq","EuropePop10k","AsiaPop10k","white10k","med_age","perCapitaIncome","bachelor_degreeM_per10k","perCapitaIncome","UrbanPer10k","Grocery & pharmacy","Retail & recreation","Residential","Workplace","p_Uninsured","p_Fair.or.Poor.Health","p_Vaccinated","Primary.Care.Physicians.Rate","Social.Association.Rate"];
     /*if(viz.mobility_data==true){
         testArr.push("Residential","Workplace");
     }*/
