@@ -45,7 +45,7 @@ var viz = {
 ["#14BF00", "#3FB800","#6AB100","#95AA00","#AAA600","#D59F00","#EB9C00"]
 
 Color_Scale = {
-    color:(["#496c08","#7d780f","#8e7b11","#9f7f13","#c28718","#d38b1a","#e58f1d","#f6931f"]),
+    color:(["#496c08","#7d780f","#8e7b11","#9f7f13","#c28718","#d38b1a","#e58f1d","#f6931f","#ff8a00"]),
     scale: "jenks",
     tickSize: 0,
     titleConfig: {
