@@ -1047,8 +1047,9 @@ function get_data(day_num){
                     result[0].Residential = (result2[0] !== undefined) ? parseFloat(result2[0].residential_percent_change_from_baseline) : null;
                     result[0].Residential = isFinite(result[0].Residential)? result[0].Residential: null;
                     result[0]['Grocery & pharmacy'] = (result2[0] !== undefined) ? parseFloat(result2[0]['grocery_and_pharmacy_percent_change_from_baseline']) : null;
-                    result[0]['Retail & recreation'] = (result2[0] !== undefined) ? parseFloat(result2[0]['retail_and_recreation_percent_change_from_baseline']) : null;
-                    result[0].Workplace = (result2[0] !== undefined) ? parseFloat(result2[0].workplaces_percent_change_from_baseline): null;
+                    result[0]['Retail & recreation'] = (result2[0] !== undefined && isFinite(result2[0]['retail_and_recreation_percent_change_from_baseline'])) ? parseFloat(result2[0]['retail_and_recreation_percent_change_from_baseline']) : null;
+                    //result[0]['Retail & recreation'] = (result2[0] !== undefined) ? parseFloat(result2[0]['retail_and_recreation_percent_change_from_baseline']) : null;
+                    result[0].Workplace = (result2[0] !== undefined && isFinite(result[0].Workplace) ) ? parseFloat(result2[0].workplaces_percent_change_from_baseline): null;
                 }
                 else{
                     result[0]['Grocery & pharmacy']=null;

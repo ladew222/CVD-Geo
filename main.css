@@ -240,11 +240,14 @@ border-radius: 0px;
   justify-content: space-between;
 }
 
-.c1,.d1,.e1{
+.c1,.d1{
   width: 50%;
 }
-.c2,.d2,.e2{
+.c2,.d2{
   width: 50%;
+}
+.e1,.e2{
+  width: 45%;
 }
 .days{
   display: none;
