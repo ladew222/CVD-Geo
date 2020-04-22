@@ -865,7 +865,7 @@ function draw_plot(data){
 }
 
 function corr_test(the_day){
-    let testArr=["IncomeIneq","EuropePop10k","AsiaPop10k","white10k","med_age","perCapitaIncome","bachelor_degreeM_per10k","perCapitaIncome","UrbanPer10k","Grocery & pharmacy","Retail & recreation","Residential","Workplace","p_Uninsured","p_Fair.or.Poor.Health","p_Vaccinated","Primary.Care.Physicians.Rate","Social.Association.Rate"];
+    let testArr=["IncomeIneq","EuropePop10k","AsiaPop10k","white10k","med_age","perCapitaIncome","bachelor_degreeM_per10k","UrbanPer10k","Grocery & pharmacy","Retail & recreation","Residential","Workplace","p_Uninsured","p_Fair.or.Poor.Health","p_Vaccinated","Primary.Care.Physicians.Rate","Social.Association.Rate","TotalPop"];
     /*if(viz.mobility_data==true){
         testArr.push("Residential","Workplace");
     }*/
@@ -901,6 +901,10 @@ function corr_test(the_day){
         let title="";
         let short="";
         switch (val) {
+            case 'TotalPop':
+                title ='Total Population';
+                short = "Total Population";
+                break;
             case 'p_Uninsured':
                 title ='Percent Uninsured';
                 short = "Percent Uninsured'";
