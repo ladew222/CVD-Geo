@@ -11,6 +11,22 @@ const config_new = {
     type: "Geomap"
 };
 
+80
+
+function stringToDate(_date,_format,_delimiter)
+{
+    var formatLowerCase=_format.toLowerCase();
+    var formatItems=formatLowerCase.split(_delimiter);
+    var dateItems=_date.split(_delimiter);
+    var monthIndex=formatItems.indexOf("mm");
+    var dayIndex=formatItems.indexOf("dd");
+    var yearIndex=formatItems.indexOf("yyyy");
+    var month=parseInt(dateItems[monthIndex]);
+    month-=1;
+    var formatedDate = new Date(dateItems[yearIndex],month,dateItems[dayIndex]);
+    return formatedDate;
+}
+
 Date.prototype.addDays = function(days) {
     var date = new Date(this.valueOf());
     date.setDate(date.getDate() + days);
@@ -40,7 +56,8 @@ var viz = {
     nested_data:null,
     state_lookup:null,
     plot_details: false,
-    Filtered: null
+    Filtered: null,
+    state_data: null
 };
 ["#14BF00", "#3FB800","#6AB100","#95AA00","#AAA600","#D59F00","#EB9C00"]
 
@@ -161,7 +178,7 @@ make_day = d3.timeFormat('%b %d');
 $(document).ready(function(){
     const start_date = new Date(new Date().getTime() - (240 * 60 * 60 * 1000));
     viz.start_date = start_date;
-    const end_date= new Date(new Date().getTime() - (48 * 60 * 60 * 1000));
+    const end_date = new Date(new Date().getTime() - (48 * 60 * 60 * 1000));
     viz.end_date= end_date;
     const start_month = start_date.getUTCMonth() + 1; //months from 1-12
     const start_day = start_date.getUTCDate(); + 1; //months from 1-12
@@ -657,6 +674,23 @@ function draw_plot(data){
          d.date = parseTime(d.date.toISOString());
          d.close = +d.close;
      });*/
+    let policy = viz.state_data.filter(function (el) {
+        return el.fips == parseInt(viz.active_state[0]);
+    });
+    //let at_home = stringToDate(policy[0]['Stay.at.home..shelter.in.place'],"mm/dd/yyyy","/");
+    let slices3 = [];
+    policy.forEach((element) => {
+        let policy_slice = {
+            Shelter_in_Place: moment(element['Stay.at.home..shelter.in.place'], 'MM/DD/YYYY').toDate() ,
+            State_of_Emergency: moment(element['State.of.emergency'], 'MM/DD/YYYY').toDate() ,
+            Closed_Nonessential_business: moment(element['Closed.non.essential.businesses'], 'MM/DD/YYYY').toDate(),
+            ClosedK12_Schools: moment(element['Date.closed.K.12.schools'], 'MM/DD/YYYY').toDate(),
+            Banned_Nursing_Visit: moment(element['Date.banned.visitors.to.nursing.homes'], 'MM/DD/YYYY').toDate(),
+            ClosedDayCare: moment(element['Closed.day.cares'], 'MM/DD/YYYY').toDate(),
+            Religious_Close_Without_Distance: moment(element['Religious.Gatherings.Exempt.Without.Clear.Social.Distance.Mandate.'], 'MM/DD/YYYY').toDate(),
+        }
+        slices3.push({id:element.fips, values:policy_slice});
+    });
     let slices = [];
     let id = 0;
     if(viz.plot_details==false){
@@ -790,6 +824,8 @@ function draw_plot(data){
     var myColor = d3.scaleOrdinal().domain(slices)
         .range(d3.schemeSet3);
 
+
+
     svg.append("g")
         .attr("class", "axis")
         .attr("transform", "translate(0," + height + ")")
@@ -816,7 +852,29 @@ function draw_plot(data){
         .attr("stroke", function(d){return myColor(d) })
         .attr("d", function(d) { return line(d.values); });
 
+    let pol = svg.append("g");
     slices.forEach(function(number, i) {
+        /// do policy
+        const policy_info = slices3.filter(function(item) {
+            return item.id == slices3[i].id;
+        });
+
+        for (let [key, value] of Object.entries(policy_info[0].values)) {
+            const match = slices[i].values.filter(function(item) {
+                return item.date.getTime() == value.getTime();
+            });
+
+            pol.append("circle")
+                .attr("r", 5)
+                .attr("cx", function(d) { return x(value) })
+                .attr("cy", function(d) { return y(match[i].measurement) });
+            pol.append('text')
+                .attr('class', 'barsEndlineText')
+                .attr('text-anchor', 'middle')
+                .attr("x", x(value))
+                .attr("y", y(match[i].measurement))
+                .text(key)
+        }
         // Add the scatterplot
         svg.selectAll("dot")
             .data(slices[i].values)
@@ -980,8 +1038,21 @@ function corr_test(the_day){
     return out_str
 
 }
+function get_state_data(day_num){
+    d3.csv("policy.csv").then(function(data) {
+        /*console.log(data.filter(function(d, i) {
+            return i < 2;
+        }));*/
+        console.log("policy");
+        console.log(data);
+        viz.state_data = data;
+        return data;
+    })
+}
+
 
 function get_data(day_num){
+    get_state_data();
     viz.itemList[day_num] = [];
     let the_day = parseInt(viz.start_day)+day_num;
     let formattedDay = null;
