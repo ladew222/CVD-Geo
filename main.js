@@ -674,12 +674,12 @@ function draw_plot(data){
          d.date = parseTime(d.date.toISOString());
          d.close = +d.close;
      });*/
-    let policy = viz.state_data.filter(function (el) {
+    /*let policy = viz.state_data.filter(function (el) {
         return el.fips == parseInt(viz.active_state[0]);
-    });
+    });*/
     //let at_home = stringToDate(policy[0]['Stay.at.home..shelter.in.place'],"mm/dd/yyyy","/");
     let slices3 = [];
-    policy.forEach((element) => {
+    viz.state_data.forEach((element) => {
         let policy_slice = {
             Shelter_in_Place: moment(element['Stay.at.home..shelter.in.place'], 'MM/DD/YYYY').toDate() ,
             State_of_Emergency: moment(element['State.of.emergency'], 'MM/DD/YYYY').toDate() ,
@@ -702,6 +702,7 @@ function draw_plot(data){
             const state= element.key;
             let State = viz.state_lookup.filter(function(d){return parseInt(d.st) == element.key;});
             const State_name = State[0].stname;
+            const State_id = element.key;
             let slices2 = element.values.map(function(d){
                 return {
                     title: State_name,
@@ -713,7 +714,7 @@ function draw_plot(data){
                     total_pop:Math.round(d.value.total_pop),
                 }
             });
-            slices.push({id:State_name, values:slices2});
+            slices.push({id:State_name,num:State_id, values:slices2});
         });
 
     }
@@ -856,24 +857,32 @@ function draw_plot(data){
     slices.forEach(function(number, i) {
         /// do policy
         const policy_info = slices3.filter(function(item) {
-            return item.id == slices3[i].id;
+            return item.id == slices[i].num;
         });
 
         for (let [key, value] of Object.entries(policy_info[0].values)) {
             const match = slices[i].values.filter(function(item) {
                 return item.date.getTime() == value.getTime();
             });
+            if(match.length>0){
+                pol.append("circle")
+                    .attr("r", 5)
+                    .attr("cx", function(d) { return x(value) })
+                    .attr("cy", function(d) { return y(match[0].measurement) });
+                pol.append('text')
+                    .attr('class', 'barsEndlineText')
+                    // .attr("style", "writing-mode: tb; glyph-orientation-vertical: 0")
+                    .attr("x", x(value))
+                    .attr("y", y(match[0].measurement+6))
+                    .text(key)
+                    .on("mouseover", function(d) {
+                            d3.select(this).style("opacity", ".9");
+                        })
+                    .on("mouseout", function(d) {
+                        d3.select(this).style("opacity", ".4");
+                    });
+            }
 
-            pol.append("circle")
-                .attr("r", 5)
-                .attr("cx", function(d) { return x(value) })
-                .attr("cy", function(d) { return y(match[i].measurement) });
-            pol.append('text')
-                .attr('class', 'barsEndlineText')
-                .attr('text-anchor', 'middle')
-                .attr("x", x(value))
-                .attr("y", y(match[i].measurement))
-                .text(key)
         }
         // Add the scatterplot
         svg.selectAll("dot")

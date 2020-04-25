@@ -463,3 +463,14 @@ div.tooltip {
 .js-multiple{
   HEIGHT: 120PX !important;
 }
+
+.barsEndlineText{
+  opacity: .5;
+}
+
+.barsEndlineText {
+  color: hsla(0, 100%, 100%, 0.4); }
+.barsEndlineText:hover {
+  color: hsla(0, 100%, 100%, 0.0);
+  pointer-events: none;
+}
