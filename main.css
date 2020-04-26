@@ -469,8 +469,9 @@ div.tooltip {
 }
 
 .barsEndlineText {
-  color: hsla(0, 100%, 100%, 0.4); }
+  color: hsla(0, 100%, 100%, 0.05); }
 .barsEndlineText:hover {
   color: hsla(0, 100%, 100%, 0.0);
   pointer-events: none;
+  z-index: 1000;
 }
