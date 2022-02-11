@@ -7,7 +7,7 @@ const config_new = {
     },
     ocean: "transparent",
     projection: "geoAlbersUsa",
-    topojson: "https://d3plus.org/topojson/counties.json",
+    topojson: "https://datausa.io/topojson/County.json",
     type: "Geomap"
 };
 
